@@ -9,8 +9,8 @@
 ## Build App with convinience
 
 <h2 align="center"> 
-  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_store_.png" width="440" />
-  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_electron_.png" width="440" /> 
+  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_store__.png" width="340" />
+  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_electron_.png" width="340" /> 
 </h2>
 
 ## Stunning Set Of UI Elements
