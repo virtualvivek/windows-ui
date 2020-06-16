@@ -22,7 +22,26 @@
 </h2>
 
 ## Stunning Set Of UI Elements
+
+<img align="left" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_ui_teaser.PNG" width="440" />
+
 <p>
-	Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
-	
+Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
+
+<br>
 </p>
+<h1>Clean, Native Container with Navigation</h1>
+
+<br>
+<br><br>
+
+
+<img align="right" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_progress_line.PNG" width="440" />
+
+<p>
+<br><br>
+<br><br><br>
+</p>
+
+<h1> &nbsp &nbsp Finest Form Elements <br> &nbsp &nbsp for your apps</h1>
+
