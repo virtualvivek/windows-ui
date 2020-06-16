@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_top_title.PNG" width="400" /> 
+  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_title_flat.png" width="440" /> 
 </h2>
 
 <p align="center">
