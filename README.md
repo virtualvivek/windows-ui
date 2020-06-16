@@ -6,10 +6,10 @@
 	Build Windows 10 look & feel web apps or electron apps using html, CSS & JavaScript.Provides rich native ui elements & components.
 </p>
 
-## Build App with convinience
+<h2 align="center">Build App with convinience</h2>
 
 <p align="center">
-	Build your Windows apps just with your web skills using HTML,CSS and JavaScript, Develop apps for Windows Platform combinely using ElectronJs framework and publish it on Windows App Store on the go!. <br>
+	Build your Windows apps just with your web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform combinely using ElectronJs framework and publish it on Windows App Store on the go!. <br>
 	
 </p>
 
