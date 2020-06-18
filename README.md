@@ -68,9 +68,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 </p>
 <h1> &nbsp &nbsp Custom Hybrid Elements <br> &nbsp &nbsp </h1>
 
-
-<br>
-<br><br><br>
+<h1></h1>
 <h1>Getting Started</h1>
 
 ### Code container looks like this
