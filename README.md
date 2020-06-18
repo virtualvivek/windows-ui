@@ -69,45 +69,52 @@ Provides you with the rich UI Components that to completely matches the latest W
 <h1> &nbsp &nbsp Custom Hybrid Elements <br> &nbsp &nbsp </h1>
 
 
-<br><br>
+<br>
 <br><br><br>
-<!-- Getting Started here ->
-
-<h2>Getting Started</h2>
+<h1>Getting Started</h1>
 
 ### Code container looks like this
 
 ```htm
 
-<body>
-			
+<body>			
   <div class="app-container">
 	<!-- Top Navigation -->
     	<div class="app-tabs"> 
         	<div id="app-wrapper">           
      			<nav class="animate">       
-        		<!-- For App Name--> 
-        		<span id="app-name">Windows10 Framework</span>
-        		<ul>
-            		<a href="#" class="btn btn-default app-nav-toggler" id="menu-toggle"></a><br>
-            		<div class="searchBarAuto-container" style="z-index:999;width: 95%;margin-left: 14px;">  
-				<select name="" class="searchAutoBar" id="searchAutoBarNav">
-				<option value="1">Search</option>
-				<option value="2">Elements</option>
-				<option value="3">ProgressBar</option>
-				<option value="4">Theme</option>
-				</select>
-			</div> 
-			    <li><a href="#app-section-1" class="nav-icon icons8-grid-3"><span>Tab 1</span></a></li>
-			    <li><a href="#app-section-2" class="nav-icon icons8-tasks"><span>Tab 2</span></a></li>
-			    <li><a href="#app-section-3" class="nav-icon icons8-bar-chart"><span>Tab 3</span></a></li>
-			    <li><a href="#app-section-4" class="nav-icon icons8-up-squared"><span>Tab 4</span></a></li>
-			</ul>
+        			<!-- Your App Name--> 
+        			<span id="app-name">Windows10 Framework</span>
+        			<ul>
+				   <a href="#" class="btn btn-default app-nav-toggler" id="menu-toggle"></a><br>
+
+				   <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
+				   <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
+				   <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
+				   <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
+				</ul>
         		</nav>
        		</div>
 		
-    	    <div class="app-content-wrap">					
+    	 <div class="app-content-wrap">					
      		<section id="app-section-1">      
         		<div class="app-section-container">
+			......
+			<Your Content>
+			......
+			</div>
+		</section>
+		..........
+		<section id="app-section-4">      
+        		<div class="app-section-container">
+			......
+			<Your Content>
+			......
+			</div>
+		</section>
+	</div>
+      </div>
+   </div>
+</body>
 
 ```
