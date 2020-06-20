@@ -127,7 +127,7 @@ You can customize entire app color including all components using `accentColor.c
 
 ```css
 	:root {
-	    --AppColor: #2D7D9A;
+	    --AppColor: #2D7D9A;  //Customize this with your own color
 	    --alpha_c : #eee;
 	}
 
