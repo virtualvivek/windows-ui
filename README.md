@@ -81,18 +81,18 @@ Provides you with the rich UI Components that to completely matches the latest W
 	<!-- Top Navigation -->
     	<div class="app-tabs"> 
         	<div id="app-wrapper">           
-     		     <nav class="animate">       
-        	       <!-- Your App Name--> 
-        		<span id="app-name">Windows10 Framework</span>
-        		   <ul>
-			     <a href="#" class="app-nav-toggler" id="menu-toggle"></a><br>
-			     <!-- Navigation items--> 
-                             <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
-			     <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
-			     <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
-		             <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
-			   </ul>
-        	     </nav>
+     		   <nav class="animate">       
+        	     <!-- Your App Name--> 
+        	      <span id="app-name">Windows10 Framework</span>
+        		<ul>
+			  <a href="#" class="app-nav-toggler" id="menu-toggle"></a><br>
+			  <!-- Navigation items--> 
+                          <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
+			  <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
+			  <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
+		          <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
+			</ul>
+        	   </nav>
        		</div>
 		
     	 <div class="app-content-wrap">					
