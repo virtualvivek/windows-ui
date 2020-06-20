@@ -75,7 +75,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <h1></h1>
 <h1>Getting Started</h1>
 
-### Code container looks like this
+### Code container template
 
 ```htm
 
@@ -84,18 +84,18 @@ Provides you with the rich UI Components that to completely matches the latest W
 	<!-- Top Navigation -->
     	<div class="app-tabs"> 
         	<div id="app-wrapper">           
-     			<nav class="animate">       
-        			<!-- Your App Name--> 
-        			<span id="app-name">Windows10 Framework</span>
-        			<ul>
-				   <a href="#" class="btn btn-default app-nav-toggler" id="menu-toggle"></a><br>
-
-				   <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
-				   <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
-				   <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
-				   <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
-				</ul>
-        		</nav>
+     		     <nav class="animate">       
+        	       <!-- Your App Name--> 
+        		<span id="app-name">Windows10 Framework</span>
+        		   <ul>
+			     <a href="#" class="app-nav-toggler" id="menu-toggle"></a><br>
+			     <!-- Navigation items--> 
+                             <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
+			     <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
+			     <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
+		             <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
+			   </ul>
+        	     </nav>
        		</div>
 		
     	 <div class="app-content-wrap">					
@@ -120,3 +120,45 @@ Provides you with the rich UI Components that to completely matches the latest W
 </body>
 
 ```
+
+### Configure App Color
+You can customize entire app color including all components using `accentColor.css` file
+#### ./ projectDirectory / app_config / css / accentColor.css
+
+```css
+	:root {
+	    --AppColor: #2D7D9A;
+	    --alpha_c : #eee;
+	}
+
+```
+
+
+
+
+
+
+## License
+
+	MIT License
+
+	Copyright (c) 2020 vivekverma007
+	Author:	Vivek Verma
+
+	Permission is hereby granted, free of charge, to any person obtaining a copy
+	of this software and associated documentation files (the "Software"), to deal
+	in the Software without restriction, including without limitation the rights
+	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+	copies of the Software, and to permit persons to whom the Software is
+	furnished to do so, subject to the following conditions:
+
+	The above copyright notice and this permission notice shall be included in all
+	copies or substantial portions of the Software.
+
+	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+	SOFTWARE.
