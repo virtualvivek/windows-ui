@@ -124,11 +124,34 @@ You can customize entire app color including all components using `accentColor.c
 
 ```css
 	:root {
-	    --AppColor: #2D7D9A;  //Customize this with your own color
+	    --AppColor: #2D7D9A;  /*Customize this with your own color*/
 	    --alpha_c : #eee;
 	}
 
 ```
+
+
+
+### Configure App Font Family / Weight or ScrollBars
+You can customize entire app font family and font weight or scrollbars using `accentConfig.css` file
+#### ./ projectDirectory / app_config / css / accentConfig.css
+
+```css
+	body {
+	    background: #fff;
+	    ....
+	    font-weight: 400;
+	    font-family: Segoe UI, sans-serif; }
+	    
+	::selection{
+	.... }
+	
+	*::-webkit-scrollbar,
+	*::-webkit-scrollbar-thumb {
+	  .... }
+
+```
+
 
 
 
