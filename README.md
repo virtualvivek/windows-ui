@@ -151,7 +151,7 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 ```
 
-### Libraries used:
+### Libraries require:
 
 <a href="https://jquery.com">jQuery - jquery.com</a> <br>
 <a href="https://github.com/icons8/windows-10-icons">icons8/windows-10-icons</a>
