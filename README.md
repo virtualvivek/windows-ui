@@ -2,6 +2,22 @@
   <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_title_flat__.png" width="440" /> 
 </h2>
 
+<p align="center">
+	
+  <a href="https://github.com/vivekverma007/Windows10&#95;framework/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-Apache-darklime.svg?style=flat-square&color=blue"
+      alt="License: Apache" />
+  </a>
+  
+  <a href="https://github.com/vivekverma007/Windows10&#95;framework">
+    <img src="https://img.shields.io/badge/Release-v1.0 Under Construction-darklime.svg?style=flat-square&color=darklime"
+      alt="Release" />
+  </a>
+ 
+</p>
+
+
+
 <h2 align="center">Build App with convinience</h2>
 <h2 align="center">🔧 Work in progress</h2>
 
@@ -150,6 +166,8 @@ You can customize entire app font family and font weight or scrollbars using `ac
 	  .... }
 
 ```
+
+
 
 ### Libraries require:
 
