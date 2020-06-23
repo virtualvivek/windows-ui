@@ -124,7 +124,7 @@ You can customize entire app color including all components using `accentColor.c
 
 ```css
 	:root {
-	    --AppColor: #2D7D9A;  /*Customize this with your own color*/
+	    --AppColor: #2D7D9A;  /*Customize with your own color*/
 	    --alpha_c : #eee;
 	}
 
@@ -138,10 +138,9 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 ```css
 	body {
-	    background: #fff;
-	    ....
 	    font-weight: 400;
-	    font-family: Segoe UI, sans-serif; }
+	    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
+	    .... }
 	    
 	::selection{
 	.... }
