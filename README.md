@@ -5,8 +5,8 @@
 <p align="center">
 	
   <a href="https://github.com/vivekverma007/Windows10&#95;framework/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-Apache-darklime.svg?style=flat-square&color=blue"
-      alt="License: Apache" />
+    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
+      alt="License: MIT" />
   </a>
   
   <a href="https://github.com/vivekverma007/Windows10&#95;framework">
