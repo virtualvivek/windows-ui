@@ -89,6 +89,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <h1>Getting Started</h1>
 
 ### Code container template
+<h3>View <a href="https://github.com/vivekverma007/Windows10-framework/blob/master/templates/screen-main.html">Complete mainframe template</a></h3> 
 
 ```htm
 
