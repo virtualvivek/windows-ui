@@ -1,4 +1,4 @@
-﻿ $('#show-notification-default-simple').on('click', function () {
+   $('#show-notification-default-simple').on('click', function () {
         WinNotification.notify(getOptions());
     });
 
