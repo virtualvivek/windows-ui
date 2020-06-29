@@ -1,7 +1,6 @@
 //Simple Alert
 
-function CallAlert()
-{
+function CallAlert(){
     alert("This is a simple alert!") ;
 }
 
@@ -9,11 +8,12 @@ function CallAlert()
 
 
 //Custom Alert with callbacks
-function AdvCallAlert()
-{
-var buttonList = ["Yes", "No", "Cancel"] ;
-var buttonListFunc = ["YesFunction()", "NoFunction()", "CancelFunction()"] ;
-alert("Click on the following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "../assets/img/favicon.ico") ;
+
+function AdvCallAlert(){
+    var buttonList = ["Yes", "No", "Cancel"] ;
+    var buttonListFunc = ["YesFunction()", "NoFunction()", "CancelFunction()"] ;
+
+    alert("Click on the following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "../assets/img/favicon.ico") ;
 }
 
 
@@ -26,8 +26,3 @@ function NoFunction(){
 function CancelFunction(){
     document.getElementById('clickResult').innerHTML = "CancelFunction" ;
 }
-
-
-
-
-
