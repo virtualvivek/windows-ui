@@ -16,7 +16,6 @@ function AdvCallAlert(){
     alert("Click on the following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "../assets/img/favicon.ico") ;
 }
 
-
 function YesFunction(){
     document.getElementById('clickResult').innerHTML = "YesFunction" ;
 }
