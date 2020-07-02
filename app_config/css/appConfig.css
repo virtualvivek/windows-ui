@@ -34,10 +34,10 @@ a:hover {
 *::-webkit-scrollbar,
 *::-webkit-scrollbar-thumb {
 	
-	  width: 6.5px;
-	  border-radius: 50px;
-	  background-clip: padding-box;
-	  border: 1.5px solid transparent;
+	width: 6.5px;
+	border-radius: 50px;
+	background-clip: padding-box;
+	border: 1.5px solid transparent;
 }
 
 *::-webkit-scrollbar-thumb {        
