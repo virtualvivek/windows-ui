@@ -28,7 +28,7 @@
         }
 
         return options = {
-            description: 'I am a default notification',
+            description: 'I am a default windows notification',
             position: position,
             closeTimeout: closeTimeout,
             closeWith: ['click'],
