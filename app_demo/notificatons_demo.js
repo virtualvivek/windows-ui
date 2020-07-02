@@ -33,7 +33,7 @@
     $('#show-notification-default-error').on('click', function () {
         var options = getOptions();
         options.title = 'Warning!';
-        options.description = 'The data presentation here can be change.';
+        options.description = 'The modified data may lost on proceed.';
         options.type = 'error'; // or danger
         WinNotification.notify(options);
     });
@@ -57,7 +57,7 @@
     $('#show-notification-default-info').on('click', function () {
         var options = getOptions();
         options.title = 'Sorry!';
-        options.description = 'Could not complete your transaction.';
+        options.description = 'Could not complete your request.Try again later!';
         options.type = 'info';
         //options.image = 'img/info.png';
         options.image = {
@@ -105,7 +105,7 @@
     $('#show-notification-icon-error').on('click', function () {
         var options = getOptions();
         options.title = 'Warning!';
-        options.description = 'The data presentation here can be change.';
+        options.description = 'The modified data may lost on proceed.';
         //options.image = 'img/danger.png';
         options.image = {
             visible: true
@@ -137,7 +137,7 @@
     $('#show-notification-icon-info').on('click', function () {
         var options = getOptions();
         options.title = 'Sorry!';
-        options.description = 'Could not complete your transaction.';
+        options.description = 'Could not complete your request.Try again later!';
         options.image = {
             visible: true
         };
