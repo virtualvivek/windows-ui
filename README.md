@@ -93,7 +93,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <body>			
   <div class="app-container">
-	<!-- Top Navigation -->
+	
     	<div class="app-tabs"> 
         	<div id="app-wrapper">           
      		   <nav class="animate">       
