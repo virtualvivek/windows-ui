@@ -2,6 +2,10 @@
   <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_title_flat__.png" width="440" /> 
 </h2>
 
+<meta name='keywords' content='Windows10,framework,html,css,js'>
+<meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
+<meta name='author' content='Vivek Verma'>
+
 <p align="center">
 	
   <a href="https://github.com/vivekverma007/Windows10&#95;framework/blob/master/LICENSE">
