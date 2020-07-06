@@ -183,7 +183,6 @@ You can customize entire app font family and font weight or scrollbars using `ac
 	MIT License
 
 	Copyright (c) 2020 vivekverma007
-	Author:	Vivek Verma
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
