@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  <img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_title_flat__.png" width="440" /> 
+  <img src="app_preview/app_preview_readme_title_flat__.png" width="440" /> 
 </h2>
 
 <meta name='keywords' content='Windows10,framework,html,css,js'>
@@ -30,15 +30,15 @@
 
 <h2 align="center">
 	
-<img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_button_store.png" width="300" />
+<img src="app_preview/app_preview_button_store.png" width="300" />
 
-<img src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_button_electron.png" width="300" />
+<img src="app_preview/app_preview_button_electron.png" width="300" />
 
 </h2>
 
 ## Stunning Set Of UI Elements
 
-<img align="left" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_ui_teaser.PNG" width="440" />
+<img align="left" src="app_preview/app_preview_readme_ui_teaser.PNG" width="440" />
 <p>
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 <br>
@@ -49,7 +49,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br><br>
-<img align="right" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_progress_line.PNG" width="410" />
+<img align="right" src="app_preview/app_preview_readme_progress_line.PNG" width="410" />
 <p>
 <br><br>
 <br><br><br>
@@ -62,8 +62,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br>
 <br><br>
 <br><br><br><br>
-<img align="left" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_splash_screen_dark.PNG" width="300" />
-<img align="left" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_splash_screen.PNG" width="300" />
+<img align="left" src="app_preview/app_preview_readme_splash_screen_dark.PNG" width="300" />
+<img align="left" src="app_preview/app_preview_readme_splash_screen.PNG" width="300" />
 <p>
 <br><br>
 </p>
@@ -77,7 +77,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br><br>
 <br><br><br>
-<img align="right" src="https://github.com/vivekverma007/Windows10_framework/blob/master/app_preview/app_preview_readme_custom_link.PNG" width="440" />
+<img align="right" src="app_preview/app_preview_readme_custom_link.PNG" width="440" />
 <p>
 <br><br>
 </p>
@@ -91,7 +91,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <h1>Getting Started</h1>
 
 ### Code container template
-<h3>View <a href="https://github.com/vivekverma007/Windows10-framework/blob/master/templates/screen-main.html">Complete mainframe template</a></h3> 
+<h3>View <a href="templates/screen-main.html">Complete mainframe template</a></h3> 
 
 ```htm
 
@@ -182,7 +182,7 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 	MIT License
 
-	Copyright (c) 2020 vivekverma007
+	Copyright (c) 2020 Vivek Verma
 
 	Permission is hereby granted, free of charge, to any person obtaining a copy
 	of this software and associated documentation files (the "Software"), to deal
