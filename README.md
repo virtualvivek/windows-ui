@@ -8,12 +8,12 @@
 
 <p align="center">
 	
-  <a href="https://github.com/vivekverma007/Windows10&#95;framework/blob/master/LICENSE">
+  <a href="https://github.com/virtualvivek/Windows10&#95;framework/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
   
-  <a href="https://github.com/vivekverma007/Windows10&#95;framework">
+  <a href="https://github.com/virtualvivek/Windows10&#95;framework">
     <img src="https://img.shields.io/badge/Release-v1.0 Under Construction-darklime.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
