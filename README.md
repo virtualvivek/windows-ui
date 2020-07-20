@@ -66,6 +66,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <p>
 <br><br>
 </p>
+
 <h1> Splash Screens <b>Dark Accent</b> and <b>Light Accent</b> </h1>
 
 
