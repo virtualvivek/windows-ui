@@ -14,7 +14,7 @@
   </a>
   
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
-    <img src="https://img.shields.io/badge/Release-v1.0 Under Construction-darklime.svg?style=flat-square&color=darklime"
+    <img src="https://img.shields.io/badge/Release-v1.0-green.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
 
@@ -22,8 +22,6 @@
 </p>
 
 <h2 align="center">Build App with convinience</h2>
-<h2 align="center">🔧 Work in progress</h2>
-
 <p align="center">
 	Build your Windows apps with just web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform compatible using ElectronJs framework and publish it on Windows App Store on the go!. <br>	
 </p>
@@ -54,7 +52,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br>
 <br><br><br>
 </p>
-<h1> &nbsp &nbsp Finest Form Elements <br> &nbsp &nbsp for your apps</h1>
+<h1>Finest Form Elements <br>for your apps</h1>
 
 
 
@@ -82,7 +80,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <p>
 <br><br>
 </p>
-<h1> &nbsp &nbsp Custom Hybrid <br> &nbsp &nbsp Elements</h1>
+<h1>Custom Hybrid <br>Elements</h1>
 
 
 
@@ -140,7 +138,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 ### Configure App Color
 You can customize entire app color including all components using `accentColor.css` file
-#### ../ projectDirectory / app_config / css / accentColor.css
+#### ./ projectDirectory / app_config / css / accentColor.css
 
 ```css
 	:root {
@@ -154,7 +152,7 @@ You can customize entire app color including all components using `accentColor.c
 
 ### Configure App Font Family / Weight or ScrollBars
 You can customize entire app font family and font weight or scrollbars using `accentConfig.css` file
-#### ../ projectDirectory / app_config / css / accentConfig.css
+#### ./ projectDirectory / app_config / css / accentConfig.css
 
 ```css
 	body {
@@ -174,8 +172,6 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 <a href="https://jquery.com">jQuery - jquery.com</a> <br>
 <a href="https://github.com/icons8/windows-10-icons">icons8/windows-10-icons</a>
-
-
 
 
 
