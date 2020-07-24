@@ -72,19 +72,19 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 
 
-<br>
+<br><br>
 <br><br>
 <br><br><br>
 <img align="right" src="app_preview/app_preview_readme_custom_link_.png" width="440" />
 <p>
-<br>	
+<br><br>	
 <br><br>
 </p>
 <h1>Custom Hybrid <br>Elements</h1>
 
 
 
-
+<br><br>
 <br><br>
 <h1></h1>
 <h1>Getting Started</h1>
