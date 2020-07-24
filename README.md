@@ -47,7 +47,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br><br>
-<img align="right" src="app_preview/app_preview_readme_progress_line.PNG" width="410" />
+<img align="right" src="app_preview/app_preview_readme_progress_line.PNG" width="440" />
 <p>
 <br><br>
 <br><br><br>
@@ -65,7 +65,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br>
 </p>
 
-<h1>Splash Screens <b>Dark Accent</b> and <b>Light Accent</b> </h1>
+<h1>Splash Screens Dark Accent<br> and Light Accent </h1>
 
 
 
