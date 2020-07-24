@@ -75,7 +75,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br><br>
 <br><br><br>
-<img align="right" src="app_preview/app_preview_readme_custom_link.PNG" width="440" />
+<img align="right" src="app_preview/app_preview_readme_custom_link_.png" width="440" />
 <p>
 <br><br>
 </p>
