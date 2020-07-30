@@ -18,13 +18,13 @@ alert("Do you want to enable auto slideshow on desktop?", buttonList, buttonList
 
 
 function YesFunction(){
-    document.getElementById('clickResult').innerHTML = "YesFunction" ;
+    //Do Something on yes button clicked
 }
 function NoFunction(){
-    document.getElementById('clickResult').innerHTML = "NoFunction" ;
+     //Do Something on no button clicked
 }
 function CancelFunction(){
-    document.getElementById('clickResult').innerHTML = "CancelFunction" ;
+     //Do Something on cancel button clicked
 }
 
 
