@@ -17,8 +17,6 @@
     <img src="https://img.shields.io/badge/Release-v1.0-green.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
-
-
 </p>
 
 <h2 align="center">Build Apps with Convinience</h2>
