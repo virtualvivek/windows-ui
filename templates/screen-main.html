@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">	
-<head>  
+<html lang="en">
+	
+<head>
+    
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Windows10 framework</title>
-    <link rel="shortcut icon" href="../assets/img/favicon.ico" />   
-    <link rel="stylesheet" type="text/css" href="../app_config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="../app_config/css/accentColor.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/windows10framework.min.css" />
-    <link rel="stylesheet" href="../assets/fonts/font/fonts.min.css">
+    <title>App Title</title>
+    <link rel="shortcut icon" href="../src/img/favicon.ico" />   
+    <link rel="stylesheet" type="text/css" href="../app-config/css/appConfig.css" />
+    <link rel="stylesheet" type="text/css" href="../app-config/css/accentColor.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/windows10framework.min.css" />
+    <link rel="stylesheet" href="../src/icons/fonts/fonts.min.css">
+
 </head>
-    	
+    
+	
 <body>
 			
-<div class="app-container">			
+<div class="app-container">
+			
 <!-- Top Navigation -->
     <div class="app-tabs"> 
         
-      <div id="app-wrapper">           
-       <nav class="animate">       
+	   <div id="app-wrapper">           
+        <nav class="animate">       
         <!-- For App Name--> 
         <span id="app-name">Your App Title</span>
          <ul>
@@ -36,6 +41,10 @@
        </div>	
     
     <div class="app-content-wrap">
+    
+			
+        
+        
 
      <section id="app-section-1">
         
@@ -43,81 +52,103 @@
             
             <h3>Title 1</h3>
             <h4>Contents Page 1</h4>
-		
             <!--      Contents          -->
   
         </div>
          
      </section>
     
- 
+    
+    
+    
+    
+    
+        
     <section id="app-section-2">
         
         <div class="app-section-container">
          
           <h3>Title 2</h3> 
-          <h4>Contents Page 2</h4>   
-		
+          <h4>Contents Page 2</h4>    
           <!--      Contents          -->
             
         </div>        
         
     </section>    
         
-   
+        
+        
+    
+    
+ 
+    
     <section id="app-section-8">
     
         <div class="app-section-container">
 
           <h3 class="spaning">Title 3</h3>
           <h4>Contents Page 3</h4>
-		
           <!--      Contents          -->
         
         </div>
         
     </section>
     
- 						
+    
+    
+    
+    
+    
+						
     <section id="app-section-3">
     
         <div class="app-section-container">
             
             <h3 class="spaning">Title 4</h3>
             <h4>Contents Page 4</h4>
-		
             <!--      Contents          -->
          
         </div>
    
     </section>
     
-   
+    
+        
+        
+        
+        
+    
      <section id="app-section-4"> 
     
         <div class="app-section-container">
 
             <h3><h3 class="spaning">Title 5</h3> </h3>
             <h4>Contents Page 5</h4>
-		
             <!--      Contents          -->
 
         </div>
     
     </section>
      
- 				
-        </div><!-- /app-content-wrap -->				
+    
+    
+    
+  
+					
+        </div><!-- /app-content-wrap -->
+				
     </div><!-- /app-tabs -->
+
 </div><!-- /app-container -->
 
 
-    <script src="../assets/require/jquery.js"></script>     
-    <script src="../assets/windows10framework.min.js"></script>
-    <!--  Notification plugin required only when app uses notifications feature -->
-    <script src="../assets/require/win-notification.js"></script>  
-    <script src="../app_config/js/notifiyConfig.js"></script> 
+    <script src="../src/js/require/jquery.js"></script>     
+    <script src="../src/js/windows10framework.js"></script>
+    <script src="../src/js/windows10framework-notifications.js"></script>  
+    <!--    App Components Config-->
+    <script src="../app-config/js/notifiyConfig.js"></script> 
 
-   </body>
+
+</body>
 
 </html>

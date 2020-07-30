@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<head>
-    
+<head>   
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Windows10 framework</title>
-    
-    <link rel="shortcut icon" href="assets/img/favicon.ico" />     
-    <link rel="stylesheet" type="text/css" href="app_config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="app_config/css/accentColor.css" />
-    <link rel="stylesheet" type="text/css" href="assets/windows10framework.min.css" />
-    <link rel="stylesheet" href="assets/fonts/font/styles.min.css">
-   
-
-    
-   
-  
+    <title>Windows10 framework</title> 
+    <link rel="shortcut icon" href="src/img/favicon.ico" />     
+    <link rel="stylesheet" type="text/css" href="app-config/css/appConfig.css" />
+    <link rel="stylesheet" type="text/css" href="app-config/css/accentColor.css" />
+    <link rel="stylesheet" type="text/css" href="src/css/windows10framework.min.css" />
+    <link rel="stylesheet" href="src/icons/fonts/fonts.min.css"> 
 </head>
     
 	
@@ -58,18 +51,17 @@
     <!-- Section 1 -->
      <section id="app-section-1">
          
-        
+        <h3 class="fixed">Form Elements</h3>
   
         <div class="app-section-container">
-            
-        <h3>Form Elements</h3>
+        <br><br>
             
             
         <h5 class="spaning">Toggle</h5>
             
             <label class="app-toggle">
                 <input checked="true" type="checkbox"/>
-                <div data-off="Off" data-on="On">Notification</div>
+                <div data-off="Off" data-on="On"></div>
             </label>
 
 
@@ -86,10 +78,10 @@
             
         <h5 class="spaning">Check Box</h5>       
 
-            <div class="app-checkbox">
+              <div class="app-checkbox">
                 <input id="i2" type="checkbox" checked>
                 <label for="i2">Item 1</label>
-            </div>
+              </div>
               <div class="app-checkbox">
                 <input id="i1" type="checkbox">
                 <label for="i1">Item 2</label>
@@ -122,7 +114,7 @@
     
         <h5 class="spaning">InputTextBox</h5> 
 
-            <input type="text" placeholder="Hellow"/>
+            <input type="text" placeholder="Input Text"/>
 
 
         <h5 class="spaning">InputPasswordBox</h5>
@@ -155,9 +147,21 @@
         <h5 class="spaning">SearchBox</h5>  
             
             <div class="searchBar"> 
-                <input type="search" style="margin:auto;" placeholder="Search here"/>
+                <input type="search" placeholder="Search here"/>
                 <input class="search_submit" type="submit" value=" "/>
             </div>
+            
+            
+            
+        <h5 class="spaning">SearchBox Suggestions</h5> 
+            <select name="" class="searchAutoBar" id="searchAutoBar">
+            <option value="Index.html">Search</option>
+            <option value="2">Elements</option>
+            <option value="3">ProgressBar</option>
+            <option value="4">Theme</option>
+            </select>
+            <br>
+             
 
 
             
@@ -231,7 +235,47 @@
                 <span class="app-link-compound-accent step size-36">
                     <i id="icons8" class="icons8-idea"></i></span> App Volume and device preference<p>Customise app volumes and speakers or devices they use</p>
                 </a> 
-            </div>         
+            </div> 
+            
+            
+            
+            
+        <h5 class="spaning">Inputs Fit Content</h5>
+            
+        <h6 class="spaning sub">Inputs occupy only available space</h6> 
+            
+       
+
+            <input class="app-fit-content" type="text" placeholder="Input Text"/> <br><br>
+
+  
+            <div class="password-container app-fit-content">
+              <input type="password" value="" placeholder="Enter Password" id="password" class="password">
+              <button class="unmask" type="button" title="Mask/Unmask password to check content">Unmask</button>
+            </div> <br>
+
+        
+            <div class="app-select app-fit-content">
+                <select name="slct" id="slct">
+                    <option selected>Choose an option</option>
+                    <option value="1">Java</option>
+                    <option value="2">Python</option>
+                    <option value="3">C++</option>
+                </select>
+            </div> <br>
+
+            
+            <div class="searchBar app-fit-content"> 
+                <input type="search" placeholder="Search here"/>
+                <input class="search_submit" type="submit" value=" "/>
+            </div> <br>
+            
+             
+           <input class="app-fit-content" type="date">
+           
+            
+            
+            
             
          </div>
           
@@ -289,20 +333,19 @@
             
             <br>
             <h5 class="spaning">Button with loader</h5>   
-               <div class="button withLoader">
-                <input type="button" class="animate" value="button with loader" />
-                    <div class="app-busy-loader small">
-                        <div class="w-ball-wrapper ball-1">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-2">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-3">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-4">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-5">
-                        <div class=" w-ball"></div></div>
-                    </div>
+               <div class="container withLoader">
+                    <input type="button" class="animate" value="button with loader" />
+                    <div class="app-busy-loader small"> </div>
+               </div>
+            
+            
+            <h5 class="spaning">Radio with loader</h5>   
+               <div class="container withLoader app-width-100">
+                   <div class="app-busy-loader soo-small"></div>
+                    <label class="app-toggle">
+                        <input checked="true" type="checkbox"/>
+                        <div data-off="Off" data-on="On"></div>
+                    </label>  
                </div>
             
             
@@ -363,10 +406,10 @@
             
             <progressBar>
                 <div class="app-progress-container">
-                    <div class="app-progress" id="progBar"></div>
+                    <span class="app-progress" id="progBar"/>
                 </div>
                 <label class="app-label">Input a percent:</label>
-                    <input name="percInput" type="text" id="percent" placeholder="Enter a value to see progress">
+                    <input type="text" id="percent" placeholder="Enter a value to see progress">
                     <input type="button" class="animate" onclick="doSetProgress()" value="Go"/>
             </progressBar>  
 
@@ -377,10 +420,10 @@
             
             <progressBar>
                 <div class="app-progress-container withIcon">
-                    <i class="icons8-hdd"></i><div class="app-progress" id="progBarWtIcon"></div>
+                    <i class="icons8-hdd"></i><span data-icon="icons8-hdd" class="app-progress" id="progBarWtIcon"/>
                 </div>
                 <label class="app-label">Input a percent:</label>
-                    <input name="percInputOfIcon" type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
+                    <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
                     <input type="button" class="animate" onclick="doSetProgressOfIcon()" value="Go"/>
             </progressBar>    
             
@@ -392,84 +435,51 @@
 
             <h5 class="spaning">LoaderBar Horizontal</h5> 
             
-                <div class="app-loaderBar-container">
-                     <div class="app-loaderBar" id="first"></div>
-                     <div class="app-loaderBar" id="second"></div>
-                     <div class="app-loaderBar" id="third"></div>
-                     <div class="app-loaderBar" id="fourth"></div>
-                </div>
+                <div class="app-loaderBar-medium"> </div>
 
 
 
          <h5 class="spaning">Busy Loader</h5>
             <div style="display:flex;">
 
-                <div class="app-busy-loader">
-                    <div class="w-ball-wrapper ball-1">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-2">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-3">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-4">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-5">
-                    <div class=" w-ball"></div></div>
-                </div>
+                <div class="app-busy-loader"></div>
+                
                 &nbsp;
                 &nbsp;&nbsp;
                 &nbsp;&nbsp;&nbsp;&nbsp;
-                <div class="app-busy-loader small">
-                    <div class="w-ball-wrapper ball-1">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-2">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-3">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-4">
-                    <div class="w-ball"></div></div>
-                    <div class="w-ball-wrapper ball-5">
-                    <div class=" w-ball"></div></div>
-                </div>
-        </div>
+                
+                <div class="app-busy-loader small"></div>
+                
+                &nbsp;
+                &nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                
+                <div class="app-busy-loader soo-small"></div>
+                
+            </div>
            
 
 
             <h5 class="spaning">Busy Loader Light</h5>
             
                 <div style="display:flex;">
-                    <div style="background:var(--AppColor);border-radius:50px;width:50px;height:50px;padding: 5px 0px 10px 15px;">
-
-                    <div class="app-busy-loader light">
-                        <div class="w-ball-wrapper ball-1">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-2">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-3">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-4">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-5">
-                        <div class=" w-ball"></div></div>
+                    
+                    <div style="background:var(--AppColor);border-radius:50px;width:50px;height:50px;padding:17px 0 0 15px;">
+                        <div class="app-busy-loader light"></div>
                     </div>
-
-                    </div>&nbsp;&nbsp;&nbsp;&nbsp;
-                    <div style="background:var(--AppColor);border-radius: 50px;width:35px;height:35px;padding: 0px 0px 10px 10px;">
-
-                    <div class="app-busy-loader light small">
-                        <div class="w-ball-wrapper ball-1">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-2">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-3">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-4">
-                        <div class="w-ball"></div></div>
-                        <div class="w-ball-wrapper ball-5">
-                        <div class=" w-ball"></div></div>
-                    </div>
-
-                    </div>    
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <div style="background:var(--AppColor);border-radius:50px;width:35px;height:35px;padding:7px 0 5px 10px;">
+                        <div class="app-busy-loader light small"></div>
+                    </div>  
+                    
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    
+                    <div style="background:var(--AppColor);border-radius:50px;height:38px;padding:4px 0 0 14px;">
+                        <div class="app-busy-loader light soo-small"></div>
+                    </div>   
+                    
                 </div>    
 
 
@@ -487,8 +497,9 @@
     <section id="app-section-4">
     
         <div class="app-section-container">
+            <br><br><br><br>
             
-            <div class=" top_title">
+            <div class="top_title">
             <h5 class="spaning">Bottom Sheet</h5>
                 <h6 class="spaning">Layout menu popup from bottom similar to <b>action sheet</b></h6>
                 
@@ -592,10 +603,10 @@
         <h3>Alerts</h3>
             
         <div class="app-flex-center">
-            <img class="app-user large" src="assets/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
+            <img class="app-user large" src="src/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
             <div class="app-grid">
-                <img class="app-user small" src="assets/img/anim_avatar.jpeg"/>
-                <img class="app-user small" src="assets/img/anim_avatar.jpeg"/></div></div>
+                <img class="app-user small" src="src/img/anim_avatar.jpeg"/>
+                <img class="app-user small" src="src/img/anim_avatar.jpeg"/></div></div>
             <br>    
             
         <h5 class="spaning">Show Primary Alert</h5>        
@@ -623,29 +634,24 @@
 				
     </div><!-- /app-tabs(Inner Body Including Tabs) -->	
 
-</div><!-- /app-container (Main Frame)-->
+ </div><!-- /app-container (Main Frame)-->
 
-
-  
-    <script src="assets/require/jquery.js"></script> 
-    <script src="app_config/appConfig.js"></script>
-    <script src="assets/windows10framework.min.js"></script>
-    <script src="assets/require/win-notification.js"></script>
-    
-    <!--    App Components Config-->
-    <script src="app_config/js/notifiyConfig.js"></script> 
-    
-    <!--  App Demo js  -->
-    <script src="app_demo/progressBarWithIcon_demo.js"></script>
-    <script src="app_demo/progressBarLine_demo.js"></script> 
-    <script src="app_demo/notificatons_demo.js"></script> 
-    <script src="app_demo/alertWin10_demo.js"></script> 
-    
-     
-  
-    
-	
 </body>
 
+    
+    <script src="src/js/require/jquery.js"></script> 
+    <script src="app-config/appConfig.js"></script>
+    <script src="src/js/windows10framework.min.js"></script>
+    <script src="src/js/windows10framework-notifications.js"></script>
+    
+    <!--    App Components Config-->
+    <script src="app-config/js/notifiyConfig.js"></script> 
+    
+    <!--  App Demo Components js  -->
+    <script src="src/js/init/Framework/searchBarSuggestions_demo.js"></script>
+    <script src="src/js/init/Framework/progressBarWithIcon_demo.js"></script>
+    <script src="src/js/init/Framework/progressBarLine_demo.js"></script> 
+    <script src="src/js/init/Framework/notificatons_demo.js"></script> 
+    <script src="src/js/init/Framework/alertWin10_demo.js"></script> 
 
 </html>

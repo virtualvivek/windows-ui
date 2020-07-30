@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>   
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <title>Windows10 framework</title> 
+    <link rel="shortcut icon" href="../src/img/favicon.ico" />     
+    <link rel="stylesheet" type="text/css" href="../app-config/css/appConfig.css" />
+    <link rel="stylesheet" type="text/css" href="../app-config/css/accentColor.css" />
+    <link rel="stylesheet" type="text/css" href="../src/css/windows10framework.css" />
+    <link rel="stylesheet" href="../src/icons/fonts/fonts.min.css"> 
+   
+</head>
+    
+	
+<body>
+			
+<div class="app-container">
+			
+<!-- Top Navigation -->
+    <div class="app-tabs"> 
+        
+	   <div id="app-wrapper">           
+        <nav class="animate">       
+        <!-- For App Name--> 
+        <span id="app-name">Windows10 Framework</span>
+        
+        <ul>
+            <a href="#" class="app-nav-toggler" id="menu-toggle"></a>
+            <br>
+
+            <li><a href="#app-section-1" class="nav-icon icons8-gender-neutral-user"><span>User</span></a></li>
+            <li><a href="#app-section-2" class="nav-icon icons8-monitor"><span>Desktop</span></a></li>
+            <li><a href="#app-section-3" class="nav-icon icons8-generic-sorting"><span>Searchable List</span></a></li>
+            <li><a href="#app-section-4" class="nav-icon icons8-copy"><span>Tab View</span></a></li>
+          
+
+        </ul>
+        </nav>
+       </div>	
+    
+    
+    <div class="app-content-wrap">
+    
+        
+        
+        
+        
+    <!-- Section 1 -->
+     <section id="app-section-1">
+         
+        <h3 class="fixed">User</h3>
+  
+        <div class="app-section-container">
+        <br><br>
+            <br>
+          
+            <div class="app-flex-center">
+            <img class="app-user large" src="../src/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
+            <div class="app-grid">
+                <img class="app-user small" src="../src/img/anim_avatar.jpeg"/>
+                <img class="app-user small" src="../src/img/anim_avatar.jpeg"/>
+            </div>
+            </div>
+            <br>
+            
+            <input type="button" value="Update Image" data-bottomsheet-target="yourTarget" class="bottomsheet-modal-button animate" data-bottomsheet-type="slide-in-bottom" />
+            
+            <h5 class="spaning">Account Name</h5> 
+            <input type="text" placeholder="Alex"/>
+            
+            <br><br>
+            
+            <img src="img/lockscreen.jpg"/>
+            <br><br>
+            
+             <div class="app-link-compound-container withSwitch">
+                <a href="#" class="app-link-compound">
+                    <span class="app-link-compound step size-36">
+                        <i id="icons8" class="icons8-refresh"></i>
+                    </span>Sync Outlook<p>Automatically sync all data from outlook on the go</p>
+                </a>            
+                <label class="app-toggle">
+                    <input checked="true" type="checkbox"/>
+                    <div data-off="Off" data-on="On">Volume</div>
+                </label>       
+            </div>
+            
+            <br><br>
+          
+            
+             <div class="bottomsheet-wrap bottomsheet-modal-wrap" id="yourTarget">
+                <div class="bottomsheet-content bottomsheet-modal">
+                    <div class="bottomsheet-optionBar-container">
+
+                        <div class="bottomsheet-optionBar-container-left">
+                           <button class="bottomsheet-optionBar-option">
+                              <i id="icons8" class="icons8-old-time-camera"></i>
+                              <span class="win-label">Upload New</span>
+                           </button>
+                              <hr class="bottomsheet-optionBar-hr">
+                            <button class="bottomsheet-optionBar-option">
+                              <i id="icons8" class="icons8-picture"></i>
+                              <span class="win-label">View</span>
+                           </button>
+
+                           <button class="bottomsheet-optionBar-option">
+                              <i id="icons8" class="icons8-download"></i>
+                              <span class="win-label">Save</span>
+                           </button>
+                        </div>
+
+                        <div class="bottomsheet-optionBar-container-right">
+                           <button class="bottomsheet-optionBar-option">
+                              <i id="icons8" class="icons8-trash"></i>
+                              <span class="win-label">Remove</span>
+                           </button>
+
+                           <button class="bottomsheet-optionBar-option bottomsheet-modal-close">
+                              <i id="icons8" class="icons8-cancel"></i>
+                              <span class="win-label">Cancel</span>
+                           </button>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+         </div>
+          
+     </section>
+    
+    
+    
+    
+    
+       
+        
+    <!-- Section 2 -->    
+    <section id="app-section-2">
+        
+        <h3 class="fixed">Desktop</h3>
+        
+        <div class="app-section-container">
+         <br><br>
+            <br><br>
+            
+            <img src="img/wallpaper.jpg"/>
+        
+            
+            <h5 class="spaning">Brightness</h5> 
+            
+            <div class="app-range-slider">
+                <input class="range-slider__range" type="range" value="100" min="0" max="500">
+                <span class="range-slider__value" style="">90%</span>
+            </div>
+            
+            <h5 class="spaning">SlideShow</h5>        
+            <input type="button" value="Enable" onclick="AdvCallAlert()" /><br>
+            
+            <h5 class="spaning">Auto color snap</h5>
+            
+            <label class="app-toggle">
+                <input checked="true" type="checkbox"/>
+                <div data-off="Off" data-on="On"></div>
+            </label>
+            
+            
+            
+            
+        </div>        
+        
+    </section>    
+        
+        
+        
+    
+    
+    
+    
+   <!-- Section 3 -->
+    <section id="app-section-3">
+    
+    
+        <div class="app-section-container">
+        
+     
+         <h3 class="spaning">Searchable List</h3>
+            <br>
+             
+            <div class="app-flex">    
+                
+                <div class="searchAuto-select">
+                    <div class="dd-search">
+                        <input id="app-quicksearch" class="dd-searchbox" type="text" placeholder="Search Contacts.."/>
+                    </div>
+                </div>
+                &nbsp;&nbsp;
+                <div class="app-select">
+                    <select id="app-filters-dropdown">
+                        <option  value="*">show all</option>
+                        <option value=".Skrillex">Skrillex</option>
+                        <option value=".transition">transition</option>
+                        <option value=".alkali, .alkaline-earth">alkali and alkaline-earth</option>
+                        <option value=":not(.transition)">not transition</option>
+                        <option value=".metal:not(.transition)">metal but not transition</option>
+                    </select>
+                </div>
+            
+            </div>
+                 
+        
+            <div class="view-hr"></div>
+         
+             <div class="app-searchable-grid">
+                 
+                 
+              <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/mind.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Mind</h3>  
+                    <p class="data-number">80</p>
+                    <p class="sub-data">Skrillex & Diplo</p>
+                  </div>
+              </div>        
+                 
+             <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/laFamilia.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">La Familiia</h3>  
+                    <p class="data-number">81</p>
+                    <p class="sub-data">Lil Wayne</p>
+                  </div>
+              </div>
+                 
+           <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/despacito.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Despacito</h3>  
+                    <p class="data-number">82</p>
+                    <p class="sub-data">Luis fonsi & Daddy Yankee</p>
+                  </div>
+              </div>
+                 
+              <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/meganta%20reddim.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Magenta Reddimm</h3>  
+                    <p class="data-number">84</p>
+                    <p class="sub-data">Dj Snake</p>
+                  </div>
+              </div>
+                 
+             <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/diff_world.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Different World</h3>  
+                    <p class="data-number">85</p>
+                    <p class="sub-data">Allen Walker</p>
+                  </div>
+              </div>
+                 
+              <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/ragga_b.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Ragga Bomb</h3>  
+                    <p class="data-number">86</p>
+                    <p class="sub-data">Skrillex & Diplo</p>
+                  </div>
+              </div>
+                 
+               <div class="element-item  Skrillex">   
+                <p class="data-image"><img class="app-user soo-small" src="img/songs/alone.jpg"></p>
+                  <div class="app-inline">
+                    <h3 class="data-name">Alone</h3>  
+                    <p class="data-number">87</p>
+                    <p class="sub-data">Allen Walker</p>
+                  </div>
+              </div>
+             
+            
+            </div>
+   
+        
+        </div>
+    </section>
+    
+    
+    
+    
+       
+    
+    
+	<!-- Section 4 -->					
+    <section id="app-section-4">
+    
+        <div class="app-section-container">
+            
+            <h3 class="spaning">Tab View</h3>
+            
+            <div class="app-itab-wrapper">
+            <div class="app-itab">
+                <a class="app-itab-item" data-app-itab-active="true" href="">Collections</a>
+                <a class="app-itab-item" href="">Album</a>
+                <a class="app-itab-item" href="">Folder</a>
+                <a class="app-itab-item" href="">People</a>
+            </div>
+            </div>
+            
+            
+            <div class="app-itab-content-wrapper">
+                
+                <div class="app-itab-content" data-app-itab-active="true">
+                </div>
+                
+                <div class="app-itab-content">
+                </div>
+                
+                <div class="app-itab-content">
+                </div>
+                
+                <div class="app-itab-content">
+                </div>
+                
+            </div>
+            
+            
+       
+         
+        </div>
+   
+    </section>
+    
+    
+    
+    
+
+   
+					
+        </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
+				
+    </div><!-- /app-tabs(Inner Body Including Tabs) -->	
+
+ </div><!-- /app-container (Main Frame)-->
+
+</body>
+
+    
+    <script src="../src/js/require/jquery.js"></script> 
+    <script src="../app-config/appConfig.js"></script>
+    <script src="../src/js/windows10framework.js"></script>
+    <script src="../src/js/windows10framework-notifications.js"></script>
+ 
+    <!--    App Components Config-->
+    <script src="../app-config/js/notifiyConfig.js"></script> 
+    
+    <!--  App Demo Components js  -->
+    <script src="js/modules-demo/searchBarSuggestions_demo.js"></script>
+    <script src="js/modules-demo/progressBarWithIcon_demo.js"></script>
+    <script src="js/modules-demo/progressBarLine_demo.js"></script> 
+    <script src="js/modules-demo/notificatons_demo.js"></script> 
+    <script src="js/modules-demo/alertWin10_demo.js"></script> 
+    
+   
+
+</html>
