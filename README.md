@@ -30,7 +30,7 @@
 
 <h2 align="center">
 
-<img src="app_preview/app_preview_button_live_demo.png" width="300" />
+<a href="https://windows10-framework.netlify.app/"><img src="app_preview/app_preview_button_live_demo.png" width="300" /></a>
 
 <img src="app_preview/app_preview_button_store.png" width="300" />
 
@@ -89,8 +89,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br>
-<br><br>
-<h1></h1>
+<br><br><br>
 <h1>Getting Started</h1>
 
 ### Code container template
