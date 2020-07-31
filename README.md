@@ -29,7 +29,9 @@
 
 
 <h2 align="center">
-	
+
+<img src="app_preview/app_preview_button_live_demo.png" width="300" />
+
 <img src="app_preview/app_preview_button_store.png" width="300" />
 
 <img src="app_preview/app_preview_button_electron.png" width="300" />
