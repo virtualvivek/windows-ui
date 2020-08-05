@@ -27,7 +27,8 @@
 </p>
 
 
-
+<p align="center"><b>Note :</b> Please enable <b>Desktop Mode<b> if using Demo in mobile phones.</p>
+	
 <h2 align="center">
 
 <a href="https://windows10-framework.netlify.app/"><img src="app_preview/app_preview_button_live_demo.png" width="300" /></a>
