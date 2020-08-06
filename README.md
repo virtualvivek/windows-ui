@@ -1,5 +1,5 @@
 <h2 align="center"> 
-  <img src="app_preview/app_preview_readme_title_flat__.png" width="440" /> 
+  <img src="_app_preview/app_preview_readme_title_flat__.png" width="440" /> 
 </h2>
 
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
@@ -30,17 +30,17 @@
 
 <h2 align="center">
 
-<a href="https://windows10-framework.netlify.app/"><img src="app_preview/app_preview_button_live_demo.png" width="300" /></a>
+<a href="https://windows10-framework.netlify.app/"><img src="_app_preview/app_preview_button_live_demo.png" width="300" /></a>
 
-<img src="app_preview/app_preview_button_store.png" width="300" />
+<img src="_app_preview/app_preview_button_store.png" width="300" />
 
-<img src="app_preview/app_preview_button_electron.png" width="300" />
+<img src="_app_preview/app_preview_button_electron.png" width="300" />
 
 </h2>
 
 ## Stunning Set Of UI Elements
 
-<img align="left" src="app_preview/app_preview_readme_ui_teaser.PNG" width="440" />
+<img align="left" src="_app_preview/app_preview_readme_ui_teaser.PNG" width="440" />
 <p>
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 <br>
@@ -51,7 +51,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br><br>
-<img align="right" src="app_preview/app_preview_readme_progress_line.PNG" width="440" />
+<img align="right" src="_app_preview/app_preview_readme_progress_line.PNG" width="440" />
 <p>
 <br><br>
 <br><br><br>
@@ -64,7 +64,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br>
 <br><br><br>
 <br><br><br><br>
-<img align="left" src="app_preview/app_preview_readme_splash_screen__.png" width="440" />
+<img align="left" src="_app_preview/app_preview_readme_splash_screen__.png" width="440" />
 <p>
 <br><br>
 </p>
@@ -79,7 +79,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br>
 <br><br>
 <br><br><br>
-<img align="right" src="app_preview/app_preview_readme_custom_link_.png" width="440" />
+<img align="right" src="_app_preview/app_preview_readme_custom_link_.png" width="440" />
 <p>
 <br><br>	
 <br><br><br>
