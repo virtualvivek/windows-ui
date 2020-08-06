@@ -27,7 +27,8 @@
 </p>
 
 
-
+<p align="center"><code><b>Note :</b> Please enable <b>Desktop Mode</b> if using Demo in mobile phones for best experience.</code><p>
+	
 <h2 align="center">
 
 <a href="https://windows10-framework.netlify.app/"><img src="_app_preview/app_preview_button_live_demo.png" width="300" /></a>
@@ -37,6 +38,8 @@
 <img src="_app_preview/app_preview_button_electron.png" width="300" />
 
 </h2>
+
+
 
 ## Stunning Set Of UI Elements
 
@@ -179,6 +182,8 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 
 ## License
+
+
 
 	MIT License
 
