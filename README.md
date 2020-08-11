@@ -16,7 +16,7 @@
   </a>
   
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
-    <img src="https://img.shields.io/badge/Release-v1.1-green.svg?style=flat-square&color=darklime"
+    <img src="https://img.shields.io/badge/Release-v1.2-green.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
 </p>
