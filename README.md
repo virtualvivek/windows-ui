@@ -92,7 +92,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br>
-<br><br><br>
+<br><br><br><br>
 <h1>Getting Started</h1>
 
 ### Code container template
@@ -171,11 +171,6 @@ You can customize entire app font family and font weight or scrollbars using `ac
 
 ```
 
-
-
-### Libraries require:
-
-<a href="https://jquery.com">jQuery - jquery.com</a> <br>
 
 
 
