@@ -1,11 +1,7 @@
 body {
-	background: #fff;
-	color: #74777b;
 	font-weight: 400;
 	font-size: 1em;
 	font-family: Segoe UI, sans-serif;
-    margin: 0;
-    overflow: hidden;
 }
 
 a {
