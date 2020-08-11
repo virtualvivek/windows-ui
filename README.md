@@ -84,6 +84,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br><br>
 <img align="right" src="_app_preview/app_preview_readme_custom_link_.png" width="440" />
 <p>
+<br>
 <br><br>	
 <br><br><br>
 </p>
@@ -92,7 +93,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <br>
 <br><br>
-<br><br><br><br>
+<br><br><br>
 <h1>Getting Started</h1>
 
 ### Code container template
@@ -141,6 +142,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 </body>
 
 ```
+<br>
 
 ### Configure App Color
 You can customize entire app color including all components using `accentColor.css` file
@@ -154,6 +156,7 @@ You can customize entire app color including all components using `accentColor.c
 ```
 
 
+<br>
 
 ### Configure App Font Family / Weight or ScrollBars
 You can customize entire app font family and font weight or scrollbars using `accentConfig.css` file
@@ -172,7 +175,7 @@ You can customize entire app font family and font weight or scrollbars using `ac
 ```
 
 
-
+<br>
 
 ## License
 
