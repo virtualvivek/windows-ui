@@ -158,7 +158,7 @@ You can customize entire app color including all components using `accentColor.c
 
 <br>
 
-### Configure App Font Family / Weight or ScrollBars
+### Configure App Font Family or ScrollBars
 You can customize entire app font family and font weight or scrollbars using `accentConfig.css` file
 #### ./ app-config / css / accentConfig.css
 
