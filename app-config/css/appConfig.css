@@ -11,19 +11,16 @@ a {
 	font-weight: 500;
 }
  
-
-a:hover   {
+a:hover {
 	background-color:#ddd; 
 }
 
-::selection
-{
+::selection {
     background-color:var(--AppColor);
     color: white;
 }
 
-::-moz-selection {
-     
+::-moz-selection {   
     background-color:var(--AppColor);
     color: white;
 }
