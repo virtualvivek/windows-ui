@@ -42,7 +42,7 @@ SOFTWARE.
         var closeTimeout = 3000; //3sec
         var animation = 'slide'; //fade, none, slide
         var showButtons = false;
-        var showProgressBar = false;
+        var showProgressBar = false;  //you can enable progress bar using true
         var animationOptions = {
             open: animation + '-in',
             close: animation + '-out'
