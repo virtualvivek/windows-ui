@@ -144,6 +144,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 ```
 <br>
 
+
+
 ### Configure App Color
 You can customize entire app color including all components using `accentColor.css` file
 #### ./ app-config / css / accentColor.css
