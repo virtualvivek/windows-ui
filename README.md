@@ -162,7 +162,6 @@ You can customize entire app color including all components using `accentColor.c
 	:root {
 	    --AppColor: #2D7D9A;  /*Customize with your own color*/
 	}
-
 ```
 
 
@@ -181,7 +180,6 @@ You can customize entire app font family and font weight or scrollbars using `ac
 	*::-webkit-scrollbar,
 	*::-webkit-scrollbar-thumb {
 	  .... }
-
 ```
 
 
