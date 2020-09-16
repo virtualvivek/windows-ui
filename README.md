@@ -42,7 +42,7 @@
 
 <h2 align="center">
 
-<a href="https://windows10-framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
+<a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
 
 <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="300" />
 
