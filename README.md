@@ -31,7 +31,7 @@
 
 
 <h2 align="center">Build Apps with Convinience</h2>
-<h2 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h2>
+<h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
 
 <p align="center">
 	Build your Windows apps with just web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform compatible using ElectronJs framework and publish it on Windows App Store on the go!. <br>	
