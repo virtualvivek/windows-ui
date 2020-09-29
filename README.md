@@ -1,12 +1,21 @@
 <h2 align="center"> 
+
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
+  
 </h2>
 
+
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
+
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
+
 <meta name='author' content='Vivek Verma'>
   
+
+  
 <p align="center">
+	
+	
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 	
@@ -15,23 +24,31 @@
       alt="License: MIT" />
   </a>
   
+
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
     <img src="https://img.shields.io/badge/Release-v1.2-green.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
 </p>
 
+
+
 <h2 align="center">Build Apps with Convinience</h2>
+
+<h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
+
 <p align="center">
 	Build your Windows apps with just web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform compatible using ElectronJs framework and publish it on Windows App Store on the go!. <br>	
 </p>
 
 
+
 <p align="center"><code><b>Note :</b> Please enable <b>Desktop Mode</b> if using Demo in mobile phones for best experience.</code><p>
 	
+
 <h2 align="center">
 
-<a href="https://windows10-framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
+<a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
 
 <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="300" />
 
@@ -60,6 +77,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <br><br><br>
 </p>
 <h1>Finest Form Elements <br>for your apps</h1>
+
 
 
 
@@ -144,6 +162,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 ```
 <br>
 
+
+
 ### Configure App Color
 You can customize entire app color including all components using `accentColor.css` file
 #### ./ app-config / css / accentColor.css
@@ -152,7 +172,6 @@ You can customize entire app color including all components using `accentColor.c
 	:root {
 	    --AppColor: #2D7D9A;  /*Customize with your own color*/
 	}
-
 ```
 
 
@@ -171,7 +190,6 @@ You can customize entire app font family and font weight or scrollbars using `ac
 	*::-webkit-scrollbar,
 	*::-webkit-scrollbar-thumb {
 	  .... }
-
 ```
 
 
