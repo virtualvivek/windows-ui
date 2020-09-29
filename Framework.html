@@ -6,38 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Windows10 framework</title> 
-    <link rel="shortcut icon" href="src/img/favicon.ico" />     
-    <link rel="stylesheet" type="text/css" href="app-config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="app-config/css/accentColor.css" />
-    <link rel="stylesheet" type="text/css" href="src/css/windows10framework.min.css" />
-    <link rel="stylesheet" href="src/icons/fonts/fonts.min.css"> 
-</head>
-    
+    <link rel="shortcut icon" href="src/core/img/favicon.ico" />     
+    <link rel="stylesheet" type="text/css" href="src/core/app-config/css/appConfig.css" />
+    <link rel="stylesheet" type="text/css" href="src/core/app-config/css/accentColor.css" />
+    <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.min.css" />
+    <link rel="stylesheet" href="src/core/icons/fonts/fonts.min.css"> 
+</head>   
 	
 <body>
-			
-<div class="app-container">
-			
-<!-- Top Navigation -->
-    <div class="app-tabs"> 
-        
-	   <div id="app-wrapper">           
-        <nav class="animate">       
-        <!-- For App Name--> 
-        <span id="app-name">Windows10 Framework</span>
-        
-        <ul>
-            <a href="#" class="app-nav-toggler" id="menu-toggle"></a> 
-            <br>
-            <li><a href="#app-section-1" class="nav-icon icons8-grid-3"><span>Form Elements</span></a></li>
-            <li><a href="#app-section-2" class="nav-icon icons8-tasks"><span>Advance Component</span></a></li>
-            <li><a href="#app-section-3" class="nav-icon icons8-bar-chart"><span>Progress Bars</span></a></li>
-            <li><a href="#app-section-4" class="nav-icon icons8-up-squared"><span>Bottom Sheet</span></a></li>
-            <li><a href="#app-section-5" class="nav-icon icons8-comments"><span>Notifications</span></a></li>
-            <li><a href="#app-section-6" class="nav-icon icons8-advertising"><span>Alerts</span></a></li>
 
-        </ul>
-        </nav>
+    <div class="app-container"> 
+        
+       <!-- Side Navigation -->
+	   <div id="app-nav-wrapper">           
+         <nav animate>       
+            <!-- App Name--> 
+            <div class="app-flex"><a href="index.html" app-back></a><span id="app-name">Windows10 Framework</span></div>
+            <ul>
+                <a href="#" id="app-nav-toggle"></a>
+                <li><a href="#app-section-1" class="nav-icon icons10-grid-3"><span>Form Elements</span></a></li>
+                <li><a href="#app-section-2" class="nav-icon icons10-tasks"><span>Advance Component</span></a></li>
+                <li><a href="#app-section-3" class="nav-icon icons10-bar-chart"><span>Progress Controls</span></a></li>
+                <li><a href="#app-section-4" class="nav-icon icons10-up-squared"><span>Bottom Sheet</span></a></li>
+                <li><a href="#app-section-5" class="nav-icon icons10-deathly-hallows"><span>Icons</span></a></li>
+                <li><a href="#app-section-6" class="nav-icon icons10-notification"><span>Notifications</span></a></li>
+                <li><a href="#app-section-7" class="nav-icon icons10-advertising"><span>Alerts</span></a></li>
+            </ul>
+         </nav>
        </div>	
     
     
@@ -56,132 +51,193 @@
         <br><br>
             
             
-        <h5 class="spaning">Toggle</h5>
+        <h5 class="spaning">Switch</h5>
             
-            <label class="app-toggle">
-                <input checked="true" type="checkbox"/>
-                <div data-off="Off" data-on="On"></div>
-            </label>
+            <div class="app-flex">
+                
+                <label class="app-switch">
+                    <input checked type="checkbox"/>
+                    <div data-off="Off" data-on="On"></div>
+                </label>
+
+                <label class="app-switch">
+                    <input checked disabled type="checkbox"/>
+                    <div data-off="Disabled Off" data-on="Disabled On"></div>
+                </label>
+                
+            </div>
+            <div class="margin20"></div>
+            <div class="app-flex">
+                
+                <label class="app-switch">
+                    <input type="checkbox"/>
+                    <div data-off="Off" data-on="On"></div>
+                </label>
+
+                <label class="app-switch">
+                    <input disabled type="checkbox"/>
+                    <div data-off="Disabled Off" data-on="Disabled On"></div>
+                </label>
+                
+            </div>
+            
 
 
         <h5 class="spaning">SliderBar</h5> 
             
             <div class="app-range-slider">
-                <input class="range-slider__range" type="range" value="100" min="0" max="500">
-                <span class="range-slider__value" style="">100</span>
+                <input type="range" value="100" min="0" max="500">
+                <span>100</span>
             </div>
             
+            <div class="app-range-slider round">
+                <input type="range" value="242" min="0" max="500">
+                <span>242</span>
+            </div>
             
-            
-            
+                      
             
         <h5 class="spaning">Check Box</h5>       
 
+            <div class="app-flex">
+                
               <div class="app-checkbox">
                 <input id="i2" type="checkbox" checked>
-                <label for="i2">Item 1</label>
+                <label for="i2">Checked</label>
               </div>
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+              <div class="app-checkbox">
+                <input id="i4" type="checkbox" disabled checked>
+                <label for="i4">Disabled Checked</label>
+              </div>
+                
+            </div>
+            
+            <div class="app-flex">
+            
               <div class="app-checkbox">
                 <input id="i1" type="checkbox">
-                <label for="i1">Item 2</label>
+                <label for="i1">Unchecked</label>
               </div>
+                
+                &nbsp;&nbsp;
+                
+             <div class="app-checkbox">
+                <input id="i5" type="checkbox" disabled>
+                <label for="i5">Unchecked Disabled</label>
+              </div>
+             
+            </div>
+            
+            <div class="app-flex">
+                
+              <div class="app-checkbox app-checkbox-inline">
+                  <input id="i10" type="checkbox" checked>
+                  <label for="i10">Inline...</label>
+              </div>
+
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              
               <div class="app-checkbox">
                 <input id="i3" type="checkbox">
                 <!-- Use label even if no text required -->
                 <label for="i3"></label>
-              </div>
-
-              <div class="app-checkbox">
-                <input id="i4" type="checkbox" disabled="disabled" checked>
-                <label for="i4">Disabled Checked</label>
-              </div>
-              <div class="app-checkbox">
-                <input id="i5" type="checkbox" disabled="disabled">
-                <label for="i5">Disabled</label>
-              </div>
-
-              <div>
-                <div class="app-checkbox app-checkbox-inline">
-                  <input id="i10" type="checkbox">
-                  <label for="i10">Inline & Centered</label>
-                </div>
-              </div>
-            
-            
-            
+              </div> 
+                
+            </div>
+   
     
-    
-        <h5 class="spaning">InputTextBox</h5> 
-
-            <input type="text" placeholder="Input Text"/>
+        <h5 class="spaning">InputTextBox</h5>    
+            <input type="text" placeholder="Input Text"/> &nbsp;
+            <input type="text" placeholder="Input Text Disabled" disabled/>
+                
+           
 
 
         <h5 class="spaning">InputPasswordBox</h5>
-            
-            <div class="password-container">
-              <input type="password" value="" placeholder="Enter Password" id="password" class="password">
-              <button class="unmask" type="button" title="Mask/Unmask password to check content"></button>
-            </div> 
+            <input class="app-password" type="password" placeholder="Input Password"> &nbsp;
+            <input class="app-password" type="password" placeholder="Input Password Disabled" disabled>
 
 
           <h5 class="spaning">InputQuantity</h5>
-            
-            <div class="quantity">
-            <input type="number" min="1" max="9" step="1" value="1">
-            </div>        
+   
+                <div class="app-quantity">
+                    <input type="number" min="1" max="9" step="1" value="1">
+                </div> &nbsp;
+
+                <div class="app-quantity" disabled>
+                    <input type="number" min="1" max="9" step="1" value="1">
+                </div> 
+           
 
 
-        <h5 class="spaning">OptionBox</h5> 
+        <h5 class="spaning">OptionBox</h5>          
+          
+                <div class="app-select">
+                    <select>
+                        <option selected>Choose an option</option>
+                        <option value="1">Java</option>
+                        <option value="2">Python</option>
+                        <option value="3">C++</option>
+                    </select>
+                </div>
+                 &nbsp;
+                <div class="app-select" disabled>
+                    <select>
+                        <option selected>Choose an option Disabled</option>
+                        <option value="1">Java</option>
+                        <option value="2">Python</option>
+                        <option value="3">C++</option>
+                    </select>
+                </div>
             
-            <div class="app-select">
-                <select name="slct" id="slct">
-                    <option selected>Choose an option</option>
-                    <option value="1">Java</option>
-                    <option value="2">Python</option>
-                    <option value="3">C++</option>
-                </select>
-            </div>  
+                
+
+
+                  
+       <h5 class="spaning">Date Picker</h5>     
+           <input type="date"> &nbsp;
+            <input type="date" disabled>    
+              
 
 
         <h5 class="spaning">SearchBox</h5>  
             
-            <div class="searchBar"> 
+            <div class="app-searchBar"> 
                 <input type="search" placeholder="Search here"/>
-                <input class="search_submit" type="submit" value=" "/>
+                <button type="submit"></button>
+            </div>
+             &nbsp;
+            <div class="app-searchBar" disabled> 
+                <input type="search" placeholder="Search here"/>
+                <button type="submit"></button>
             </div>
             
             
             
         <h5 class="spaning">SearchBox Suggestions</h5> 
-            <select name="" class="searchAutoBar" id="searchAutoBar">
-            <option value="Index.html">Search</option>
-            <option value="2">Elements</option>
-            <option value="3">ProgressBar</option>
-            <option value="4">Theme</option>
+            <select name="" class="app-searchBarAuto" id="searchBarAuto">
+                <option value="1">Search</option>
+                <option value="2">Elements</option>
+                <option value="3">ProgressBar</option>
+                <option value="4">Theme</option>
             </select>
             <br>
-             
-
-
-            
-            
-       <h5 class="spaning">Date Picker</h5>     
-           <input type="date">
-           
-            
-                     
-            
+     
+                      
             
             
       <h5 class="spaning">Buttons</h5>
-            
-        <h6 class="spaning">Default Button</h6>       
-            <input type="button" value="Demo button" />
-
-
-
-        <h6 class="spaning">Animate Button</h6>         
-            <input type="button" class="animate" value="Animate button" />
+            <input type="button" value="Default button" /> &nbsp;
+            <input type="button" value="Accent button" accent/>
+            <br><br>            
+            <input type="button" value="Animate button" animate/> &nbsp;
+            <input type="button" value="Animate accent" accent animate/>
+            <br><br>   
+            <input type="button" value="Default disabled" disabled/> &nbsp;
+            <input type="button" value="Accent disabled" accent disabled/>
 
 
 
@@ -190,17 +246,17 @@
         <h5 class="spaning">Radio Buttons</h5>         
             <div class="app-radio">
                 <input id="radio-1" name="radio" type="radio" checked>
-                <label for="radio-1" class="app-radio-label"><span class="app-radio-span">Checked</span></label>
+                <label for="radio-1"><span>Checked</span></label>
             </div>
 
             <div class="app-radio">
                 <input id="radio-2" name="radio" type="radio">
-                <label  for="radio-2" class="app-radio-label"><span class="app-radio-span">Unchecked</span></label>
+                <label  for="radio-2"><span>Unchecked</span></label>
             </div>
 
             <div class="app-radio">
                 <input id="radio-3" name="radio" type="radio" disabled>
-                <label for="radio-3" class="app-radio-label"><span class="app-radio-span">Disabled</span></label>
+                <label for="radio-3"><span>Disabled</span></label>
             </div>
 
 
@@ -217,24 +273,48 @@
 
 
         <h6 class="spaning sub">Link with icon</h6>        
-            <a href="#" class="app-link"><span class="step app-link size-24"><i id="icons8-electrical" class="icons8-monitor"></i></span> App Link with icon</a><br><br>
+            <a href="#" class="app-link"><i class="app-link icons10-monitor"></i>App Link with icon</a>
+            <br><br>
 
 
         <h6 class="spaning sub">Compound Link bar</h6>        
-            <div class="app-link-compound-container"><a href="#" class="app-link-compound">
-                <span class="app-link-compound step size-36">
-                    <i id="icons8" class="icons8-timeline"></i>
-                </span> App Volume and device preference<p>Customise app volumes or devices they use</p>
-                </a> 
-            </div> 
+            <a href="#" class="app-link-compound">
+                <div><i class="icons10-timeline"></i>
+                    <span>App Volume and device preference</span>
+                    <p>Customise app volumes or devices they use</p>
+                </div></a>
 
 
         <h6 class="spaning sub">Accent Compound Link bar</h6>        
-            <div class="app-link-compound-accent-container"><a href="#" class="app-link-compound-accent">
-                <span class="app-link-compound-accent step size-36">
-                    <i id="icons8" class="icons8-idea"></i></span> App Volume and device preference<p>Customise app volumes and speakers or devices they use</p>
-                </a> 
-            </div> 
+            <a href="#" class="app-link-compound-accent">
+                <div><i class="icons10-notification-image"></i>
+                    <span>App Notification and device preference</span>
+                    <p>Customise app volumes and speakers or devices they use</p>
+                </div></a>
+            
+            
+            
+            
+              <h5 class="spaning">Classic SliderBar</h5> 
+                <div class="app-range-slider classic">
+                    <input type="range" value="100" min="0" max="500">
+                    <span>100</span>
+                </div>
+            
+             <div class="app-range-slider classic app-fit-content">
+                    <input type="range" value="100" min="0" max="500">
+                    <span>100</span>
+                </div>
+            
+            <h5 class="spaning">Classic Switch</h5> 
+                 <label class="app-switch classic">
+                    <input type="checkbox"/>
+                    <div data-off="Off" data-on="On"></div>
+                </label><br>
+                 <label class="app-switch classic">
+                    <input checked type="checkbox"/>
+                    <div data-off="Off" data-on="On"></div>
+                </label>
             
             
             
@@ -242,39 +322,20 @@
         <h5 class="spaning">Inputs Fit Content</h5>
             
         <h6 class="spaning sub">Inputs occupy only available space</h6> 
-            
-       
 
-            <input class="app-fit-content" type="text" placeholder="Input Text"/> <br><br>
-
+            <input class="app-fit-content" type="text" placeholder="Input Text"/> <br>
   
-            <div class="password-container app-fit-content">
-              <input type="password" value="" placeholder="Enter Password" id="password" class="password">
-              <button class="unmask" type="button" title="Mask/Unmask password to check content"></button>
-            </div> <br>
-
-        
-            <div class="app-select app-fit-content">
-                <select name="slct" id="slct">
-                    <option selected>Choose an option</option>
-                    <option value="1">Java</option>
-                    <option value="2">Python</option>
-                    <option value="3">C++</option>
-                </select>
-            </div> <br>
-
-            
-            <div class="searchBar app-fit-content"> 
+            <input class="app-password app-fit-content" type="password" placeholder="Input Password"> <br>
+  
+            <div class="app-searchBar app-fit-content"> 
                 <input type="search" placeholder="Search here"/>
-                <input class="search_submit" type="submit" value=" "/>
-            </div> <br>
-            
-             
+                <button type="submit"></button>
+            </div> 
+            <br>
+               
            <input class="app-fit-content" type="date">
            
-            
-            
-            
+   
             
          </div>
           
@@ -296,52 +357,54 @@
             
   
             <h5 class="spaning">Compound link with switch</h5>             
-                <div class="app-link-compound-container withSwitch">
-                <a href="#" class="app-link-compound">
-                    <span class="app-link-compound step size-36">
-                        <i id="icons8" class="icons8-idea"></i>
-                    </span>App Volume and device preference<p>Customise app volumes or devices they use</p>
-                </a>            
-                <label class="app-toggle">
-                    <input checked="true" type="checkbox"/>
-                    <div data-off="Off" data-on="On"></div>
-                </label>       
-                </div>
+              
+                <a href="#" class="app-link-compound withSwitch">
+                    <div><i class="icons10-idea"></i>
+                        <span>App Brightness and device preference</span>
+                        <p>Customise app volumes or devices they use</p>   
+                    </div>
+                    <label class="app-switch">
+                        <input checked="true" type="checkbox"/>
+                        <div data-off="Off" data-on="On"></div>
+                    </label> 
+                </a>
             
             
             
             <h5 class="spaning sub">Compound Accent-icon Link bar</h5>    
-                <div class="app-link-compound-container"><a href="#" class="app-link-compound">
-                    <span class="app-link-compound step icon-accent size-36">
-                        <i id="icons8" class="icons8-camera"></i>
-                    </span>App Camera and device preference<p>Customise app camera or devices they use</p>
-                    </a> 
-                </div> 
+             
+                <a href="#" class="app-link-compound icon-bg-accent">
+                  <div><i class="icons10-camera"></i>
+                     <span>App Camera and device preference</span>
+                     <p>Customise app volumes or devices they use</p>
+                  </div>
+                </a>
             
             
             
             <h5 class="spaning sub">Compound Add Link bar</h5>        
-                <div class="app-link-compound-container"><a href="#" class="app-link-compound">
-                    <span class="app-link-compound step icon-add size-36">
-                        <i id="icons8" class="icons8-google-wallet"></i>
-                    </span>Add more apps<p>apps available in store show here</p>
-                    </a> 
-                </div> 
+              
+                <a href="#" class="app-link-compound icon-bg-grey">
+                   <div><i class="icons10-plus-2"></i>
+                      <span>Add more apps</span>
+                      <p>apps available in store show here</p>
+                   </div>
+                </a>
             
             
             
             <br>
             <h5 class="spaning">Button with loader</h5>   
-               <div class="container withLoader">
-                    <input type="button" class="animate" value="button with loader" />
-                    <div class="app-busy-loader small"> </div>
+               <div class="container app-flex-center">
+                    <input type="button" value="button with loader" animate/>
+                    &nbsp;&nbsp;<div class="app-busy-loader small"></div>
                </div>
             
             
-            <h5 class="spaning">Radio with loader</h5>   
-               <div class="container withLoader app-width-100">
+            <h5 class="spaning">Switch with loader</h5>   
+               <div class="container app-width-150 app-flex-center">
                    <div class="app-busy-loader soo-small"></div>
-                    <label class="app-toggle">
+                    <label class="app-switch">
                         <input checked="true" type="checkbox"/>
                         <div data-off="Off" data-on="On"></div>
                     </label>  
@@ -376,9 +439,9 @@
              
                     <a href="#" class="app-link">Still cant connect? Open the troubleshooter</a><br>
              
-                    <h6 class="spaning">Related Settings</h6>
-                        <a href="#" class="app-link">Change Adaptor option</a><br>             
-                        <a href="#" class="app-link">Change Advance sharing option</a><br>         
+                <h6 class="spaning">Related Settings</h6>
+                    <a href="#" class="app-link">Change Adaptor option</a><br>             
+                    <a href="#" class="app-link">Change Advance sharing option</a><br>         
             </div>
             
             
@@ -395,67 +458,59 @@
    <!-- Section 3 -->
     <section id="app-section-3">
     
-    
         <div class="app-section-container">
         
      
          <h4 class="spaning">ProgressBar</h4>
 
             <h5 class="spaning">Default progress</h5>
-            
-            <progressBar>
-                <div class="app-progress-container">
-                    <span class="app-progress" id="progBar"/>
+          
+                <div class="app-progress">
+                    <span id="progBar"/>
                 </div>
-                <label class="app-label">Input a percent:</label>
-                    <input type="text" id="percent" placeholder="Enter a value to see progress">
-                    <input type="button" class="animate" onclick="doSetProgress()" value="Go"/>
-            </progressBar>  
+                <!-- <label class="app-label">Input percent:</label>-->
+                <input type="text" id="percent" placeholder="Enter a value to see progress">
+                <input type="button" onclick="doSetProgress()" value="Go" animate/>
 
 
 
-
-        <h5 class="spaning">Progress with icon</h5> 
+            <h5 class="spaning">Progress with icon</h5> 
             
-            <progressBar>
-                <div class="app-progress-container withIcon">
-                    <i class="icons8-hdd"></i><span data-icon="icons8-hdd" class="app-progress" id="progBarWtIcon"/>
+                <div class="app-progress withIcon">
+                    <i class="icons10-hdd"></i><span id="progBarWtIcon"/>
                 </div>
-                <label class="app-label">Input a percent:</label>
-                    <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
-                    <input type="button" class="animate" onclick="doSetProgressOfIcon()" value="Go"/>
-            </progressBar>    
-            
+                <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
+                <input type="button" onclick="doSetProgressOfIcon()" value="Go" animate/>
+           
+            <h5 class="spaning">Progress Indeterminate</h5> 
+                <div class="app-progress-indeterminate">
+                    <div progress-bar></div>
+                </div>
             
 
          <h4 class="spaning">LoaderBars</h4>      
 
-
-
             <h5 class="spaning">LoaderBar Horizontal</h5> 
             
-                <div class="app-loaderBar-medium"> </div>
+                <div class="app-loaderBar-medium"></div>
 
 
 
-         <h5 class="spaning">Busy Loader</h5>
-            <div style="display:flex;">
+             <h5 class="spaning">Busy Loader</h5>
+            
+                <div style="display:flex;">
 
-                <div class="app-busy-loader"></div>
-                
-                &nbsp;
-                &nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                
-                <div class="app-busy-loader small"></div>
-                
-                &nbsp;
-                &nbsp;&nbsp;
-                &nbsp;&nbsp;&nbsp;&nbsp;
-                
-                <div class="app-busy-loader soo-small"></div>
-                
-            </div>
+                    <div class="app-busy-loader"></div>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <div class="app-busy-loader small"></div>
+
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    <div class="app-busy-loader soo-small"></div>
+
+                </div>
            
 
 
@@ -502,49 +557,44 @@
             <h5 class="spaning">Bottom Sheet</h5>
                 <h6 class="spaning">Layout menu popup from bottom similar to <b>action sheet</b></h6>
                 
-                <input type="button" data-bottomsheet-target="yourTarget" class="bottomsheet-modal-button animate" data-bottomsheet-type="slide-in-bottom" value="Show Bottom Sheet">
+                <input type="button" data-bottomsheet-target="yourTarget" class="bottomsheet-modal-button" value="Show Bottom Sheet" animate/>
             </div>
             
-            <div class="bottomsheet-wrap bottomsheet-modal-wrap" id="yourTarget">
-                <div class="bottomsheet-content bottomsheet-modal">
-                    <div class="bottomsheet-optionBar-container">
-
-                        <div class="bottomsheet-optionBar-container-left">
-                           <button class="bottomsheet-optionBar-option">
-                              <i id="icons8" class="icons8-old-time-camera"></i>
-                              <span class="win-label">Upload New</span>
-                           </button>
-                              <hr class="bottomsheet-optionBar-hr">
-                            <button class="bottomsheet-optionBar-option">
-                              <i id="icons8" class="icons8-picture"></i>
-                              <span class="win-label">View</span>
-                           </button>
-
-                           <button class="bottomsheet-optionBar-option">
-                              <i id="icons8" class="icons8-download"></i>
-                              <span class="win-label">Save</span>
-                           </button>
-                        </div>
-
-                        <div class="bottomsheet-optionBar-container-right">
-                           <button class="bottomsheet-optionBar-option">
-                              <i id="icons8" class="icons8-trash"></i>
-                              <span class="win-label">Remove</span>
-                           </button>
-
-                           <button class="bottomsheet-optionBar-option bottomsheet-modal-close">
-                              <i id="icons8" class="icons8-cancel"></i>
-                              <span class="win-label">Cancel</span>
-                           </button>
-                        </div>
-                        
-                    </div>
+            <div class="bottomsheet-modal-wrap" id="yourTarget">
+                <div class="bottomsheet-content">
+                   <button><i class="icons10-camera"></i><span>Upload New</span></button>
+                    <hr/>
+                    <button><i class="icons10-picture"></i><span>View</span></button>
+                    <button><i class="icons10-download"></i><span>Save</span></button>   
+                    <bottomsheet-optionBar-space></bottomsheet-optionBar-space>
+                    <button><i class="icons10-trash"></i><span>Remove</span></button>
+                    <button class="bottomsheet-modal-close"><i class="icons10-cross"></i><span>Cancel</span></button>
                 </div>
             </div>
          
         </div>
    
     </section>
+        
+        
+        
+        
+        <!-- Section 5 -->
+     <section id="app-section-5" data-scroll="false"> 
+    
+        <div class="app-section-container">
+
+            <h3>Icons</h3>
+            
+            <body style="margin:0px;padding:0px;overflow:hidden">
+            <iframe src="src/core/icons/fonts/iframe-preview.html" frameborder="0" style="overflow:hidden;height:80vh;" height="100%" width="100%"></iframe>
+            </body>
+            
+
+        </div>
+    
+    </section>
+     
     
     
         
@@ -552,8 +602,8 @@
         
        
         
-    <!-- Section 5 -->
-     <section id="app-section-5"> 
+    <!-- Section 6 -->
+     <section id="app-section-6"> 
     
         <div class="app-section-container">
 
@@ -561,26 +611,26 @@
 
 
             <h6 class="spaning no-margin">Default Notification</h6>
-                <input id="show-notification-default-alert" type="button" class="animate" value="Show me a notification (Default)" /><br><br>
+                <input id="show-notification-default-alert" type="button" value="Show me a notification (Default)" animate/><br><br>
 
             <h6 class="spaning no-margin">Default with icon Notification</h6>
-                <input id="show-notification-icon-alert" type="button" class="animate" value="Show me a notification with icon (Default)" /><br><br>
+                <input id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)" animate/><br><br>
 
             <h6 class="spaning no-margin">Default with icon and buttons Notification</h6>
-                <input id="show-notification-icon-info" type="button" class="animate" value="Show me a notification (Info)" /><br>
+                <input id="show-notification-icon-info" type="button" value="Show me a notification (Info)" animate/><br>
 
 
 
             <h5 class="spaning">Custom Notifications</h5>
 
-              <input id="show-notification-default-success" type="button" class="animate" value="Show me a notification (Success)" /><br>
-              <input id="show-notification-default-error" type="button" class="animate" value="Show me a notification (Error)" /><br>
-              <input id="show-notification-default-warning" type="button" class="animate" value="Show me a notification (Warning)" /><br>
+              <input id="show-notification-default-success" type="button" value="Show me a notification (Success)" animate/><br>
+              <input id="show-notification-default-error" type="button" value="Show me a notification (Error)" animate/><br>
+              <input id="show-notification-default-warning" type="button" value="Show me a notification (Warning)" animate/><br>
             
             <h5 class="spaning">Custom Notifications with icon</h5>
-              <input id="show-notification-icon-success" type="button" class="animate" value="Show me a notification with icon (Success)" /><br>
-              <input id="show-notification-icon-error" type="button" class="animate" value="Show me a notification with icon (Error)" /><br>
-              <input id="show-notification-icon-warning" type="button" class="animate" value="Show me a notification with icon (Warning)" /><br>
+              <input id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)" animate/><br>
+              <input id="show-notification-icon-error" type="button" value="Show me a notification with icon (Error)" animate/><br>
+              <input id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)" animate/><br>
 
 
         </div>
@@ -593,8 +643,8 @@
   
     
         
-    <!-- Section 6 -->
-     <section id="app-section-6">
+    <!-- Section 7 -->
+     <section id="app-section-7">
     
     
         <div class="app-section-container">
@@ -602,10 +652,10 @@
         <h3>Alerts</h3>
             
         <div class="app-flex-center">
-            <img class="app-user large" src="src/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
+            <img class="app-user large" src="src/core/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
             <div class="app-grid">
-                <img class="app-user small" src="src/img/anim_avatar.jpeg"/>
-                <img class="app-user small" src="src/img/anim_avatar.jpeg"/></div></div>
+                <img class="app-user small" src="src/core/img/anim_avatar.jpeg"/>
+                <img class="app-user small" src="src/core/img/anim_avatar.jpeg"/></div></div>
             <br>    
             
         <h5 class="spaning">Show Primary Alert</h5>        
@@ -631,22 +681,20 @@
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
 				
-    </div><!-- /app-tabs(Inner Body Including Tabs) -->	
-
- </div><!-- /app-container (Main Frame)-->
+    </div><!-- /app-container(Tabs Content Including Tabs) -->	
 
 </body>
-    
-    <script src="src/js/require/jquery.js"></script> 
-    <script src="app-config/appConfig.js"></script>
-    <script src="src/js/windows10framework.min.js"></script>
-    <script src="src/js/windows10framework-notifications.js"></script>
-    
+  
+    <script src="src/core/js/require/jquery.js"></script> 
+    <script src="src/core/app-config/appConfig.js"></script>
+    <script src="src/core/js/windows10framework.min.js"></script>
+    <script src="src/core/js/windows10framework-notifications.js"></script>
+ 
     <!--  App Demo Components js  -->
-    <script src="src/js/init/Framework/searchBarSuggestions_demo.js"></script>
-    <script src="src/js/init/Framework/progressBarWithIcon_demo.js"></script>
-    <script src="src/js/init/Framework/progressBarLine_demo.js"></script> 
-    <script src="src/js/init/Framework/notificatons_demo.js"></script> 
-    <script src="src/js/init/Framework/alertWin10_demo.js"></script> 
+    <script src="src/core/js/init/framework/searchBarSuggestions_demo.js"></script>
+    <script src="src/core/js/init/framework/progressBarWithIcon_demo.js"></script>
+    <script src="src/core/js/init/framework/progressBarLine_demo.js"></script> 
+    <script src="src/core/js/init/framework/notificatons_demo.js"></script> 
+    <script src="src/core/js/init/framework/alertWin10_demo.js"></script> 
 
 </html>

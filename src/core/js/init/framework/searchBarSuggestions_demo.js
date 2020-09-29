@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     
-    app_register_auto_search(".searchAutoBar","selectorid2");
+    app_register_auto_search(".app-searchBarAuto","selectorid2");
     
     //app_register_auto_search("#searchAutoBarNav","selectorid1");
     //app_register_auto_search("#searchAutoBarNav","selectorid n ");
