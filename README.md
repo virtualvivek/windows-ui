@@ -60,53 +60,22 @@
 
 ## Stunning Set Of UI Elements
 
-<img align="left" src="kitchen-sink/_md_preview/app_preview_readme_ui_teaser.PNG" width="440" />
+<img src="kitchen-sink/_md_preview/app_framework_preview.png" width="440" />
 <p>
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
-<br>
-</p>
-<h1>Clean, Native Container with Navigation</h1>
-
-
-
-<br>
-<br><br><br>
-<img align="right" src="kitchen-sink/_md_preview/app_preview_readme_progress_line.PNG" width="440" />
-<p>
-<br><br>
-<br><br><br>
-</p>
-<h1>Finest Form Elements <br>for your apps</h1>
-
-
-
-
-
-<br><br>
-<br><br><br>
-<br><br><br><br>
-<img align="left" src="kitchen-sink/_md_preview/app_preview_readme_splash_screen__.png" width="440" />
-<p>
-<br><br>
 </p>
 
-<h1>Splash Screens Dark Accent and Light Accent </h1>
+# Documentation
+### Docs including component example
 
-
-
-
-
-
-<br><br>
-<br><br>
-<br><br><br>
-<img align="right" src="kitchen-sink/_md_preview/app_preview_readme_custom_link_.png" width="440" />
-<p>
-<br>
-<br><br>	
-<br><br><br>
+<p align="center">
+	<img src="src/core/docs/root_md_preview/docs_forms.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_icons.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_alerts.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="440" />
 </p>
-<h1>Custom Hybrid <br>Elements</h1>
 
 
 <br>
