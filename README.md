@@ -1,21 +1,14 @@
 <h2 align="center"> 
-
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
-  
 </h2>
 
 
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
-
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
-
 <meta name='author' content='Vivek Verma'>
   
-
   
 <p align="center">
-	
-	
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 	
@@ -26,14 +19,15 @@
   
 
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
-    <img src="https://img.shields.io/badge/Release-v1.2-green.svg?style=flat-square&color=darklime"
+    <img src="https://img.shields.io/badge/Release-v2.0-green.svg?style=flat-square&color=darklime"
       alt="Release" />
   </a>
+  
 </p>
 
 
 
-<h2 align="center">Build Apps with Convinience</h2>
+<h2 align="center">Build Windows Apps with Convinience</h2>
 
 <h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
 
@@ -47,13 +41,11 @@
 	
 
 <h2 align="center">
+  <a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
 
-<a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="300" /></a>
+  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="300" />
 
-<img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="300" />
-
-<img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="300" />
-
+  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="300" />
 </h2>
 
 
@@ -81,7 +73,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 <h1>Getting Started</h1>
 
 ### Code container template
-<h3>View <a href="templates/screen-main.html">Complete mainframe template</a></h3> 
+<h3>View <a href="templates/screen-main.html">Complete App template</a></h3> 
 
 ```htm
 
@@ -144,12 +136,13 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 
 ### Configure App Color
-You can customize entire app color including all components using `accentColor.css` file
-#### ./ app-config / css / accentColor.css
+Customize `entire app color` including all components using `accentColor.css` file
+#### ./src /core /app-config /css /accentColor.css
+<a href="src/core/app-config/css/accentColor.css">View accentColor.css</a>
 
 ```css
 	:root {
-	    --AppColor: #2D7D9A;  /*Customize with your own color*/
+	    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
 	}
 ```
 
@@ -157,8 +150,9 @@ You can customize entire app color including all components using `accentColor.c
 <br>
 
 ### Configure App Font Family or ScrollBars
-You can customize entire app font family and font weight or scrollbars using `accentConfig.css` file
-#### ./ app-config / css / accentConfig.css
+You can customize entire app font family, font-weight or scrollbars using `appConfig.css` file
+#### ./src /core /app-config /css /appConfig.css
+<a href="src/core/app-config/css/appConfig.css">View appConfig.css</a>
 
 ```css
 	body {
