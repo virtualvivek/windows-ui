@@ -60,8 +60,8 @@
 
 ## Stunning Set Of UI Elements
 
-<img src="kitchen-sink/_md_preview/app_framework_preview.png" width="440" />
-<p>
+<h1 align="center"><img src="kitchen-sink/_md_preview/app_framework_preview.png" width="850" /></h1>
+<p align="center">
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
 
@@ -69,18 +69,15 @@ Provides you with the rich UI Components that to completely matches the latest W
 ### Docs including component example
 
 <p align="center">
-	<img src="src/core/docs/root_md_preview/docs_forms.png" width="440" />
-	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="440" />
-	<img src="src/core/docs/root_md_preview/docs_icons.png" width="440" />
-	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="440" />
-	<img src="src/core/docs/root_md_preview/docs_alerts.png" width="440" />
-	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="440" />
+	<img src="src/core/docs/root_md_preview/docs_forms.png" width="400" />
+	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" />
+	<img src="src/core/docs/root_md_preview/docs_icons.png" width="400" />
+	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="400" />
+	<img src="src/core/docs/root_md_preview/docs_alerts.png" width="400" />
+	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="400" />
 </p>
 
 
-<br>
-<br><br>
-<br><br><br>
 <h1>Getting Started</h1>
 
 ### Code container template
@@ -88,44 +85,57 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 ```htm
 
-<body>			
-  <div class="app-container">
-	
-    	<div class="app-tabs"> 
-        	<div id="app-wrapper">           
-     		   <nav class="animate">       
-        	     <!-- Your App Name--> 
-        	      <span id="app-name">Windows10 Framework</span>
-        		<ul>
-			  <a href="#" class="app-nav-toggler" id="menu-toggle"></a><br>
-			  <!-- Navigation items--> 
-                          <li><a href="#app-section-1" class="nav-icon icon-1"><span>Tab 1</span></a></li>
-			  <li><a href="#app-section-2" class="nav-icon icon-2"><span>Tab 2</span></a></li>
-			  <li><a href="#app-section-3" class="nav-icon icon-3"><span>Tab 3</span></a></li>
-		          <li><a href="#app-section-4" class="nav-icon icon-4"><span>Tab 4</span></a></li>
-			</ul>
-        	   </nav>
-       		</div>
-		
-    	 <div class="app-content-wrap">					
-     		<section id="app-section-1">      
-        		<div class="app-section-container">
-			......
-			<Your Content>
-			......
-			</div>
-		</section>
-		..........
-		<section id="app-section-4">      
-        		<div class="app-section-container">
-			......
-			<Your Content>
-			......
-			</div>
-		</section>
-	</div>
-      </div>
-   </div>
+<body>
+
+    <div class="app-container"> 
+        
+       <!-- Side Navigation -->
+	   <div id="app-nav-wrapper">           
+         <nav animate>       
+            <!-- App Name--> 
+            <div class="app-flex"><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
+            <ul>
+                <a href="#" id="app-nav-toggle"></a>
+                <li><a href="#app-section-1" class="nav-icon icons10-circle"><span>Tab 1</span></a></li>
+                <li><a href="#app-section-2" class="nav-icon icons10-circle"><span>Tab 2</span></a></li>
+                <li><a href="#app-section-3" class="nav-icon icons10-circle"><span>Tab 3</span></a></li>
+                <li><a href="#app-section-4" class="nav-icon icons10-circle"><span>Tab 4</span></a></li>
+            </ul>
+         </nav>
+       </div>	
+    
+    <div class="app-content-wrap">
+      
+        
+    <!-- Section 1 -->
+     <section id="app-section-1">
+         
+        <h3 class="fixed">Tab 1</h3>
+  
+        <div class="app-section-container">
+           <!-- Contents -->
+         </div>
+          
+     </section>
+  
+    .......2 .....3 .........
+    
+    <!-- Section 4 -->					
+    <section id="app-section-4">
+        
+        <h3 class="fixed">Tab 4</h3>
+
+            <div class="app-section-container">
+		<!-- Contents -->
+             </div>
+        
+    </section>
+    
+					
+        </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
+				
+    </div><!-- /app-container(Tabs Content Including Tabs) -->	
+
 </body>
 
 ```
