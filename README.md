@@ -86,7 +86,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 	   <div id="app-nav-wrapper">           
          <nav animate>       
             <!-- App Name--> 
-            <div class="app-flex"><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
+            <div><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
             <ul>
                 <a href="#" id="app-nav-toggle"></a>
                 <li><a href="#app-section-1" class="icons10-circle"><span>Tab 1</span></a></li>
@@ -151,7 +151,7 @@ Customize `entire app color` including all components using `accentColor.css` fi
 <br>
 
 ### Configure App Font Family or ScrollBars
-You can customize entire app font family, font-weight or scrollbars using `appConfig.css` file
+You can customize entire app `font family`, `font-weight` or `scrollbars` using `appConfig.css` file
 #### ./src /core /app-config /css /appConfig.css
 <a href="src/core/app-config/css/appConfig.css">View appConfig.css</a>
 
