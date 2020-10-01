@@ -58,7 +58,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 </p>
 
 # Documentation
-### Docs including component example
+### Docs including `component examples`
+<br>
 
 <p align="center">
 	<img src="src/core/docs/root_md_preview/docs_forms.png" width="400" />
@@ -88,10 +89,10 @@ Provides you with the rich UI Components that to completely matches the latest W
             <div class="app-flex"><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
             <ul>
                 <a href="#" id="app-nav-toggle"></a>
-                <li><a href="#app-section-1" class="nav-icon icons10-circle"><span>Tab 1</span></a></li>
-                <li><a href="#app-section-2" class="nav-icon icons10-circle"><span>Tab 2</span></a></li>
-                <li><a href="#app-section-3" class="nav-icon icons10-circle"><span>Tab 3</span></a></li>
-                <li><a href="#app-section-4" class="nav-icon icons10-circle"><span>Tab 4</span></a></li>
+                <li><a href="#app-section-1" class="icons10-circle"><span>Tab 1</span></a></li>
+                <li><a href="#app-section-2" class="icons10-circle"><span>Tab 2</span></a></li>
+                <li><a href="#app-section-3" class="icons10-circle"><span>Tab 3</span></a></li>
+                <li><a href="#app-section-4" class="icons10-circle"><span>Tab 4</span></a></li>
             </ul>
          </nav>
        </div>	
