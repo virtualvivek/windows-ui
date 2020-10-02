@@ -58,7 +58,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 </p>
 
 # Documentation
-### Docs including `component examples`
+### Docs including ` component examples `
 <br>
 
 <p align="center">
