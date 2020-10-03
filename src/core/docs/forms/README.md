@@ -91,7 +91,7 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 
 
 # Input Text
-The checkbox is shown as a square box that is ticked (checked) when activated.
+The input element, having the "text" value in its type attribute, represents a field for text input. The control associated to this field is a text box.
 
 ### Default InputText
 <img src="inputText/inputText_default.png" width="300" />
@@ -113,7 +113,7 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 
 
 # Input Password
-The checkbox is shown as a square box that is ticked (checked) when activated.
+The input element, having the "password" value in its type attribute, represents a field for password input. The control associated to this field is a password box.
 
 ### Default InputPassword
 <img src="inputPassword/inputPassword_default.png" width="300" />
@@ -134,7 +134,7 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 
 
 # Input Quantity
-The checkbox is shown as a square box that is ticked (checked) when activated.
+Defines a field for entering a number. Use the following attributes to specify restrictions: max - specifies the maximum value allowed. min - specifies the minimum value allowed.
 
 ### Default InputQuantity
 <img src="inputQuantity/inputQuantity_default.png" width="300" />
@@ -162,7 +162,7 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 
 
 # Links
-The checkbox is shown as a square box that is ticked (checked) when activated.
+links are hyperlinks. You can click on a link and jump to another document.
 
 ### Compound Link
 <img src="links/compound_default.png" width="360" />
@@ -209,5 +209,144 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 </a>
 ```
 ---
+
+
+
+
+# Radio
+Radio buttons are normally presented in radio groups (a collection of radio buttons describing a set of related options). Only one radio button in a group can be selected at the same time.
+
+### Default Radio
+<img src="radio/radio_default.png" width="140" />
+
+```html
+<div class="app-radio">
+    <input id="radio-1" name="radio" type="radio" checked>
+    <label for="radio-1"><span>Checked</span></label>
+</div>
+```
+### Disabled Radio
+<img src="radio/radio_disabled.png" width="140" />
+
+```html
+<div class="app-radio">
+    <input id="radio-3" name="radio" type="radio" disabled>
+    <label for="radio-3"><span>Disabled</span></label>
+</div>
+```
+---
+
+
+
+
+
+
+
+
+
+# Search
+Search Input defines a text field for entering a search string.
+
+### Default Search
+<img src="search/search_default.png" width="310" />
+
+```html
+<div class="app-searchBar"> 
+    <input type="search" placeholder="Search here"/>
+    <button type="submit"></button>
+</div>
+```
+### Suggestions Search
+<img src="search/search_suggestions.png" width="310" />
+
+```html
+<select name="" class="app-searchBarAuto" id="searchBarAuto">
+    <option value="1">Search</option>
+    <option value="2">Elements</option>
+    <option value="3">ProgressBar</option>
+    <option value="4">Theme</option>
+</select>
+```
+---
+
+
+
+
+
+
+
+
+
+
+
+# Select
+The 'select' element is most often used in a form, to collect user input. The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
+
+### Default Select
+<img src="select/select_default.png" width="300" />
+
+```html
+<div class="app-select">
+    <select>
+        <option selected>Choose an option</option>
+        <option value="1">Java</option>
+        <option value="2">Python</option>
+        <option value="3">C++</option>
+    </select>
+</div>
+```
+### Disabled Select
+<img src="select/select_disabled.png" width="300" />
+
+```html
+<div class="app-select" disabled>
+    <select>
+        <option selected>Choose an option Disabled</option>
+        <option value="1">Java</option>
+        <option value="2">Python</option>
+        <option value="3">C++</option>
+    </select>
+</div>
+```
+---
+
+
+
+
+
+
+
+# SliderBar
+Defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the attributes below.
+
+### Default SliderBar
+<img src="sliderbar/slider_default.png" width="340" />
+
+```html
+<div class="app-range-slider">
+    <input type="range" value="100" min="0" max="500">
+    <span>100</span>
+</div>
+```
+### Round SliderBar
+<img src="sliderbar/slider_round.png" width="340" />
+
+```html
+<div class="app-range-slider round">
+    <input type="range" value="242" min="0" max="500">
+    <span>100</span>
+</div>
+```
+### Classic SliderBar
+<img src="sliderbar/slider_classic.png" width="340" />
+
+```html
+<div class="app-range-slider classic">
+    <input type="range" value="100" min="0" max="500">
+    <span>100</span>
+</div>
+```
+---
+
 
 
