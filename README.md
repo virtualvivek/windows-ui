@@ -58,7 +58,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 </p>
 
 # Documentation
-### Docs including `component examples`
+### Docs including ` component examples `
 <br>
 
 <p align="center">
@@ -83,7 +83,7 @@ Provides you with the rich UI Components that to completely matches the latest W
     <div class="app-container"> 
         
        <!-- Side Navigation -->
-	   <div id="app-nav-wrapper">           
+	   <div id="app-nav-wrap">           
          <nav animate>       
             <!-- App Name--> 
             <div><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
@@ -102,10 +102,10 @@ Provides you with the rich UI Components that to completely matches the latest W
         
     <!-- Section 1 -->
      <section id="app-section-1">
-         
-        <h3 class="fixed">Tab 1</h3>
-  
-        <div class="app-section-container">
+     
+	<div class="app-section-container">
+	
+	  <h3 class="fixed">Tab 1</h3>
            <!-- Contents -->
          </div>
           
@@ -113,21 +113,21 @@ Provides you with the rich UI Components that to completely matches the latest W
   
     .......2 .....3 .........
     
-    <!-- Section 4 -->					
-    <section id="app-section-4">
-        
-        <h3 class="fixed">Tab 4</h3>
-
-            <div class="app-section-container">
-		<!-- Contents -->
-             </div>
-        
-    </section>
+    <!-- Section 4 -->
+     <section id="app-section-4">
+     
+	<div class="app-section-container">
+	
+	  <h3>Tab 4</h3>
+           <!-- Contents -->
+         </div>
+          
+     </section>
     
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
 				
-    </div><!-- /app-container(Tabs Content Including Tabs) -->	
+    </div><!-- /app-container(Tabs Content Including Navigation) -->	
 
 </body>
 
