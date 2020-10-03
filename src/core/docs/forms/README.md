@@ -1,5 +1,14 @@
 # Forms
 
+# Index
+
+  * [Switch](#switch)
+  * [Button](#button)
+  * [Checkbox](#checkbox)
+  * [Input Text](#input-text)
+  * [Input Password](#input-password)
+  * [Input Quantity](#input-quantity)
+  * [Links](#links)
 
 
 # Switch
