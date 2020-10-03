@@ -1,6 +1,6 @@
 # Forms
 
-# Index
+# Table of Contents
 
   * [Switch](#switch)
   * [Button](#button)
@@ -9,6 +9,13 @@
   * [Input Password](#input-password)
   * [Input Quantity](#input-quantity)
   * [Links](#links)
+  * [Radio](#radio)
+  * [Search](#search)
+  * [Select](#select)
+  * [SliderBar](#sliderbar)
+
+---
+
 
 
 # Switch
