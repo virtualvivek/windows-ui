@@ -56,13 +56,13 @@
 <p align="center">
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
+<br>
 
 # Documentation
-### Docs including ` component examples `
 <br>
 
 <p align="center">
-	<img src="src/core/docs/root_md_preview/docs_forms.png" width="400" />
+	<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="400" /></a>
 	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_icons.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="400" />
@@ -70,7 +70,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="400" />
 </p>
 
-
+<br>
 <h1>Getting Started</h1>
 
 ### Code container template
