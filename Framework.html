@@ -18,19 +18,19 @@
     <div class="app-container"> 
         
        <!-- Side Navigation -->
-	   <div id="app-nav-wrapper">           
+	   <div id="app-nav-wrap">           
          <nav animate>       
             <!-- App Name--> 
-            <div class="app-flex"><a href="index.html" app-back></a><span id="app-name">Windows10 Framework</span></div>
+            <div><a href="index.html" app-back></a><span id="app-name">Windows10 Framework</span></div>
             <ul>
                 <a href="#" id="app-nav-toggle"></a>
-                <li><a href="#app-section-1" class="nav-icon icons10-grid-3"><span>Form Elements</span></a></li>
-                <li><a href="#app-section-2" class="nav-icon icons10-tasks"><span>Advance Component</span></a></li>
-                <li><a href="#app-section-3" class="nav-icon icons10-bar-chart"><span>Progress Controls</span></a></li>
-                <li><a href="#app-section-4" class="nav-icon icons10-up-squared"><span>Bottom Sheet</span></a></li>
-                <li><a href="#app-section-5" class="nav-icon icons10-deathly-hallows"><span>Icons</span></a></li>
-                <li><a href="#app-section-6" class="nav-icon icons10-notification"><span>Notifications</span></a></li>
-                <li><a href="#app-section-7" class="nav-icon icons10-advertising"><span>Alerts</span></a></li>
+                <li><a href="#app-section-1" class="icons10-grid-3"><span>Form Elements</span></a></li>
+                <li><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
+                <li><a href="#app-section-3" class="icons10-bar-chart"><span>Progress Controls</span></a></li>
+                <li><a href="#app-section-4" class="icons10-up-squared"><span>Bottom Sheet</span></a></li>
+                <li><a href="#app-section-5" class="icons10-deathly-hallows"><span>Icons</span></a></li>
+                <li><a href="#app-section-6" class="icons10-notification"><span>Notifications</span></a></li>
+                <li><a href="#app-section-7" class="icons10-advertising"><span>Alerts</span></a></li>
             </ul>
          </nav>
        </div>	
@@ -44,12 +44,10 @@
         
     <!-- Section 1 -->
      <section id="app-section-1">
-         
-        <h3 class="fixed">Form Elements</h3>
   
-        <div class="app-section-container">
-        <br><br>
+        <div class="app-section-container">  
             
+            <h3 class="fixed">Form Elements</h3>
             
         <h5 class="spaning">Switch</h5>
             
@@ -394,7 +392,7 @@
             
             
             <br>
-            <h5 class="spaning">Button with loader</h5>   
+            <h5 class="spaning sub">Button with loader</h5>   
                <div class="container app-flex-center">
                     <input type="button" value="button with loader" animate/>
                     &nbsp;&nbsp;<div class="app-busy-loader small"></div>
@@ -553,22 +551,21 @@
         <div class="app-section-container">
             <br><br><br><br>
             
-            <div class="top_title">
+            <div class="splash-screen-title">
             <h5 class="spaning">Bottom Sheet</h5>
                 <h6 class="spaning">Layout menu popup from bottom similar to <b>action sheet</b></h6>
-                
-                <input type="button" data-bottomsheet-target="yourTarget" class="bottomsheet-modal-button" value="Show Bottom Sheet" animate/>
+                <input type="button" data-bottomsheet-target="yourTarget" class="app-bottomsheet-button" value="Show Bottom Sheet" animate/>
             </div>
             
-            <div class="bottomsheet-modal-wrap" id="yourTarget">
-                <div class="bottomsheet-content">
-                   <button><i class="icons10-camera"></i><span>Upload New</span></button>
+            <div class="app-bottomsheet" id="yourTarget">
+                <div>
+                    <button><i class="icons10-camera"></i><span>Upload</span></button>
                     <hr/>
                     <button><i class="icons10-picture"></i><span>View</span></button>
-                    <button><i class="icons10-download"></i><span>Save</span></button>   
+                    <button><i class="icons10-download"></i><span>Save</span></button>               
                     <bottomsheet-optionBar-space></bottomsheet-optionBar-space>
                     <button><i class="icons10-trash"></i><span>Remove</span></button>
-                    <button class="bottomsheet-modal-close"><i class="icons10-cross"></i><span>Cancel</span></button>
+                    <button class="app-bottomsheet-close"><i class="icons10-cross"></i><span>Cancel</span></button>
                 </div>
             </div>
          
