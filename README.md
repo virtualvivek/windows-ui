@@ -67,7 +67,6 @@ Provides you with the rich UI Components that to completely matches the latest W
   * [Alerts](src/core/docs/forms/README.md)
   * [Notifications](src/core/docs/forms/README.md)
   
-<br>
 
 <p align="center">
 	<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="400" /></a>
