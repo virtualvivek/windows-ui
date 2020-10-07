@@ -73,7 +73,7 @@
                 </label>
 
                 <label class="app-switch">
-                    <input disabled type="checkbox"/>
+                    <input type="checkbox" disabled/>
                     <div data-off="Disabled Off" data-on="Disabled On"></div>
                 </label>
                 
@@ -88,7 +88,7 @@
                 <span>100</span>
             </div>
             
-            <div class="app-range-slider round">
+            <div class="app-range-slider" round>
                 <input type="range" value="242" min="0" max="500">
                 <span>242</span>
             </div>
@@ -147,7 +147,7 @@
             </div>
    
     
-        <h5 class="spaning">InputTextBox</h5>    
+        <h5 class="spaning">InputText</h5>    
             <input type="text" placeholder="Input Text"/> &nbsp;
             <input type="text" placeholder="Input Text Disabled" disabled/>
                 
@@ -271,7 +271,7 @@
 
 
         <h6 class="spaning sub">Link with icon</h6>        
-            <a href="#" class="app-link"><i class="app-link icons10-monitor"></i>App Link with icon</a>
+            <a href="#" class="app-link"><i class="icons10-collection"></i>App Link with icon</a>
             <br><br>
 
 
@@ -283,8 +283,8 @@
                 </div></a>
 
 
-        <h6 class="spaning sub">Accent Compound Link bar</h6>        
-            <a href="#" class="app-link-compound-accent">
+        <h6 class="spaning sub">Compound Link bar Accent</h6>        
+            <a href="#" class="app-link-compound" accent>
                 <div><i class="icons10-notification-image"></i>
                     <span>App Notification and device preference</span>
                     <p>Customise app volumes and speakers or devices they use</p>
@@ -294,22 +294,22 @@
             
             
               <h5 class="spaning">Classic SliderBar</h5> 
-                <div class="app-range-slider classic">
+                <div class="app-range-slider" classic>
                     <input type="range" value="100" min="0" max="500">
                     <span>100</span>
                 </div>
             
-             <div class="app-range-slider classic app-fit-content">
+             <div class="app-range-slider app-fit-content" classic>
                     <input type="range" value="100" min="0" max="500">
                     <span>100</span>
                 </div>
             
             <h5 class="spaning">Classic Switch</h5> 
-                 <label class="app-switch classic">
+                 <label class="app-switch" classic>
                     <input type="checkbox"/>
                     <div data-off="Off" data-on="On"></div>
                 </label><br>
-                 <label class="app-switch classic">
+                 <label class="app-switch" classic>
                     <input checked type="checkbox"/>
                     <div data-off="Off" data-on="On"></div>
                 </label>
@@ -395,13 +395,13 @@
             <h5 class="spaning sub">Button with loader</h5>   
                <div class="container app-flex-center">
                     <input type="button" value="button with loader" animate/>
-                    &nbsp;&nbsp;<div class="app-busy-loader small"></div>
+                    &nbsp;&nbsp;<div class="app-loader-busy" small></div>
                </div>
             
             
             <h5 class="spaning">Switch with loader</h5>   
                <div class="container app-width-150 app-flex-center">
-                   <div class="app-busy-loader soo-small"></div>
+                   <div class="app-loader-busy" soo-small></div>
                     <label class="app-switch">
                         <input checked="true" type="checkbox"/>
                         <div data-off="Off" data-on="On"></div>
@@ -425,7 +425,7 @@
                 <p class="app-para">This is paragraph used to display long text in your windows application.</p>
             
             <h5 class="spaning">Paragraph Light</h5>  
-                <p class="app-para light">This is light paragraph used to display long text in your windows application.</p>
+                <p class="app-para" light>This is light paragraph used to display long text in your windows application.</p>
             
             
             
@@ -433,7 +433,7 @@
             
             <div class="app-section-container-right">
                 <h6 class="spaning no-margin">Right Section Container</h6>             
-                    <p class="app-para light">If you cant find the network you want select to show available networks to open the list of available networks</p>
+                    <p class="app-para" light>If you cant find the network you want select to show available networks to open the list of available networks</p>
              
                     <a href="#" class="app-link">Still cant connect? Open the troubleshooter</a><br>
              
@@ -463,10 +463,7 @@
 
             <h5 class="spaning">Default progress</h5>
           
-                <div class="app-progress">
-                    <span id="progBar"/>
-                </div>
-                <!-- <label class="app-label">Input percent:</label>-->
+                <div class="app-progress"><span id="progBar"/></div>
                 <input type="text" id="percent" placeholder="Enter a value to see progress">
                 <input type="button" onclick="doSetProgress()" value="Go" animate/>
 
@@ -474,62 +471,56 @@
 
             <h5 class="spaning">Progress with icon</h5> 
             
-                <div class="app-progress withIcon">
-                    <i class="icons10-hdd"></i><span id="progBarWtIcon"/>
-                </div>
+                <div class="app-progress withIcon"><i class="icons10-hdd"></i><span id="progBarWtIcon"/></div>
                 <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
                 <input type="button" onclick="doSetProgressOfIcon()" value="Go" animate/>
            
             <h5 class="spaning">Progress Indeterminate</h5> 
-                <div class="app-progress-indeterminate">
-                    <div progress-bar></div>
-                </div>
+                <div class="app-progress-indeterminate"></div>
             
 
          <h4 class="spaning">LoaderBars</h4>      
 
-            <h5 class="spaning">LoaderBar Horizontal</h5> 
+            <h5 class="spaning">Loader Bar</h5> 
             
-                <div class="app-loaderBar-medium"></div>
+                <div class="app-loader-bar"></div>
+                <br>
+                <div class="app-loader-bar" light></div>
 
 
 
-             <h5 class="spaning">Busy Loader</h5>
+             <h5 class="spaning">Loader Busy</h5>
             
                 <div style="display:flex;">
 
-                    <div class="app-busy-loader"></div>
+                    <div class="app-loader-busy"></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div class="app-loader-busy" small></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-                    <div class="app-busy-loader small"></div>
-
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                    <div class="app-busy-loader soo-small"></div>
+                    <div class="app-loader-busy" soo-small></div>
 
                 </div>
            
 
 
-            <h5 class="spaning">Busy Loader Light</h5>
+            <h5 class="spaning">Loader Busy Light</h5>
             
                 <div style="display:flex;">
                     
                     <div style="background:var(--AppColor);border-radius:50px;width:50px;height:50px;padding:17px 0 0 15px;">
-                        <div class="app-busy-loader light"></div>
+                        <div class="app-loader-busy" light></div>
                     </div>
                     
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     
                     <div style="background:var(--AppColor);border-radius:50px;width:35px;height:35px;padding:7px 0 5px 10px;">
-                        <div class="app-busy-loader light small"></div>
+                        <div class="app-loader-busy" small light></div>
                     </div>  
                     
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     
                     <div style="background:var(--AppColor);border-radius:50px;height:38px;padding:4px 0 0 14px;">
-                        <div class="app-busy-loader light soo-small"></div>
+                        <div class="app-loader-busy" soo-small light></div>
                     </div>   
                     
                 </div>    
@@ -668,12 +659,7 @@
     
     </section>
     
-    
-    
-    
-    
-    
-
+   
    
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
