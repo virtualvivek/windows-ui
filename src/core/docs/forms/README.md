@@ -35,7 +35,7 @@ Switches are special checkboxes used for binary states such as on / off.
 
 ```html
 <label class="app-switch">
-    <input checked disabled type="checkbox"/>
+    <input type="checkbox" checked disabled/>
     <div data-off="Disabled Off" data-on="Disabled On"></div>
 </label>
 ```
@@ -195,7 +195,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 <img src="links/compound_accent.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound-accent">
+<a href="#" class="app-link-compound" accent>
     <div><i class="icons10-notification-image"></i>
         <span>App Notification and device preference</span>
         <p>Customise app volumes and speakers or devices they use</p>
@@ -348,7 +348,7 @@ Defines a control for entering a number whose exact value is not important (like
 <img src="sliderbar/slider_round.png" width="340" />
 
 ```html
-<div class="app-range-slider round">
+<div class="app-range-slider" round>
     <input type="range" value="242" min="0" max="500">
     <span>100</span>
 </div>
@@ -357,7 +357,7 @@ Defines a control for entering a number whose exact value is not important (like
 <img src="sliderbar/slider_classic.png" width="340" />
 
 ```html
-<div class="app-range-slider classic">
+<div class="app-range-slider" classic>
     <input type="range" value="100" min="0" max="500">
     <span>100</span>
 </div>
