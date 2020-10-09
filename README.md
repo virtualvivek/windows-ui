@@ -63,7 +63,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
   * [Form Elements](src/core/docs/forms/README.md)
   * [Progress Controls](src/core/docs/progressControls/README.md)
-  * [Icons](src/core/docs/forms/README.md)
+  * [Icons](src/core/docs/icons/README.md)
   * [Bottom Sheet](src/core/docs/forms/README.md)
   * [Alerts](src/core/docs/forms/README.md)
   * [Notifications](src/core/docs/forms/README.md)
@@ -71,8 +71,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <p align="center">
 	<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="400" /></a>
-	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" />
-	<img src="src/core/docs/root_md_preview/docs_icons.png" width="400" />
+	<a href="src/core/docs/progressControls/README.md"><img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" /></a>
+	<a href="src/core/docs/icons/README.md"><img src="src/core/docs/root_md_preview/docs_icons.png" width="400" /></a>
 	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_alerts.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="400" />
