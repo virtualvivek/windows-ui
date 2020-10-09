@@ -11,4 +11,7 @@
 ```html
 <i class="icons10-iconName"></i>
 ```
-<img src="img/icons_large.png" width="580" />
+
+<br>
+
+<img src="img/icons_large.png" width="940" />
