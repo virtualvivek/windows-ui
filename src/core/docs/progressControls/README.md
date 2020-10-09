@@ -2,9 +2,9 @@
 
 # Table of Contents
 
-  * [LoaderBar](#switch)
-  * [LoaderBusy](#button)
-  * [Progress](#checkbox)
+  * [LoaderBar](#loaderbar)
+  * [LoaderBusy](#loaderbusy)
+  * [Progress](#progress)
 
 ---
 
