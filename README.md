@@ -62,7 +62,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 # Documentation
 
   * [Form Elements](src/core/docs/forms/README.md)
-  * [Progress Controls](src/core/docs/forms/README.md)
+  * [Progress Controls](src/core/docs/progressControls/README.md)
   * [Icons](src/core/docs/forms/README.md)
   * [Bottom Sheet](src/core/docs/forms/README.md)
   * [Alerts](src/core/docs/forms/README.md)
