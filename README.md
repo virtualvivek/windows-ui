@@ -37,7 +37,7 @@
 <h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
 
 <p align="center">
-	Build your Windows apps with just web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform compatible using ElectronJs framework and publish it on Windows App Store on the go!. <br>	
+	Build full featured Windows 10 look & feel UI apps or Electron apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
 </p>
 
 
