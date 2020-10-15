@@ -151,7 +151,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 ### Configure App Preferences
 Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file
 #### ./src /core /app-config /appConfig.js
-<a href="src/core/app-config/appConfig.js">View accentColor.css</a>
+<a href="src/core/app-config/appConfig.js">View appConfig.js</a>
 
 ```js
 	let BlurEnabled = true;  //'true' get drop shadows for components
@@ -170,7 +170,7 @@ You can customize entire app `accent color`, `font family`, more using `appConfi
 
 ```css
 	:root {
-		    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
+	    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
 		}
 	
 	body {
