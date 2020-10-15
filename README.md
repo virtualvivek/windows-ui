@@ -1,13 +1,17 @@
 <h2 align="center"> 
 
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
+
 </h2>
+
+
 
 
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
   
+
   
 <p align="center">
 
@@ -33,7 +37,7 @@
 <h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
 
 <p align="center">
-	Build your Windows apps with just web skills using <b>HTML</b>, <b>CSS</b> and <b>JavaScript</b>, Develop apps for Windows Platform compatible using ElectronJs framework and publish it on Windows App Store on the go!. <br>	
+	Build full featured Windows 10 look & feel UI apps or Electron apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
 </p>
 
 
@@ -63,7 +67,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 
   * [Form Elements](src/core/docs/forms/README.md)
   * [Progress Controls](src/core/docs/progressControls/README.md)
-  * [Icons](src/core/docs/forms/README.md)
+  * [Icons](src/core/docs/icons/README.md)
   * [Bottom Sheet](src/core/docs/forms/README.md)
   * [Alerts](src/core/docs/forms/README.md)
   * [Notifications](src/core/docs/forms/README.md)
@@ -71,8 +75,8 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 <p align="center">
 	<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="400" /></a>
-	<img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" />
-	<img src="src/core/docs/root_md_preview/docs_icons.png" width="400" />
+	<a href="src/core/docs/progressControls/README.md"><img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" /></a>
+	<a href="src/core/docs/icons/README.md"><img src="src/core/docs/root_md_preview/docs_icons.png" width="400" /></a>
 	<img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_alerts.png" width="400" />
 	<img src="src/core/docs/root_md_preview/docs_notifications.png" width="400" />
