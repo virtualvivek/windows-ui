@@ -155,7 +155,7 @@ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `ap
 
 ```js
 	let BlurEnabled = true;  //'true' get drop shadows for components
-	let AlertStyle = 'Win10';  //Win8,Win10
+	let AlertStyle = 'Win10';  //'Win8','Win10'
 	let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
 	let NightMode = false;  //'true' get dark mode when app mounted
 ```
