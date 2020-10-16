@@ -91,9 +91,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 ```htm
 
 <body>
-
-    <div class="app-container"> 
-        
+    <div class="app-container">       
        <!-- Side Navigation -->
 	   <div id="app-nav-wrap">           
          <nav animate>       
@@ -109,8 +107,7 @@ Provides you with the rich UI Components that to completely matches the latest W
          </nav>
        </div>	
     
-    <div class="app-content-wrap">
-      
+    <div class="app-content-wrap">    
         
     <!-- Section 1 -->
      <section id="app-section-1">
@@ -134,8 +131,7 @@ Provides you with the rich UI Components that to completely matches the latest W
            <!-- Contents -->
          </div>
           
-     </section>
-    
+     </section> 
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
 				
@@ -154,10 +150,10 @@ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `ap
 <a href="src/core/app-config/appConfig.js">View appConfig.js</a>
 
 ```js
-	let BlurEnabled = true;  //'true' get drop shadows for components
-	let AlertStyle = 'Win10';  //'Win8','Win10'
-	let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
-	let NightMode = false;  //'true' get dark mode when app mounted
+let BlurEnabled = true;  //'true' get drop shadows for components
+let AlertStyle = 'Win10';  //'Win8','Win10'
+let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
+let NightMode = false;  //'true' get dark mode when app mounted
 ```
 
 
@@ -169,18 +165,18 @@ You can customize entire app `accent color`, `font family`, more using `appConfi
 <a href="src/core/app-config/css/appConfig.css">View appConfig.css</a>
 
 ```css
-	:root {
-	    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
-		}
-	
-	body {
-	    font-weight: 400;
-	    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
-	    .... }
-	  
-	*::-webkit-scrollbar,
-	*::-webkit-scrollbar-thumb {
-	  .... }
+:root {
+    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
+	}
+
+body {
+    font-weight: 400;
+    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
+    .... }
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  .... }
 ```
 
 
