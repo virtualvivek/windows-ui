@@ -30,7 +30,7 @@
 
 
 
-    $('#show-notification-default-error').on('click', function () {
+    $('#show-notification-default-danger').on('click', function () {
         var options = getOptions();
         options.title = 'Warning!';
         options.description = 'The data presentation here can be change.';
@@ -102,7 +102,7 @@
 
 
 
-    $('#show-notification-icon-error').on('click', function () {
+    $('#show-notification-icon-danger').on('click', function () {
         var options = getOptions();
         options.title = 'Warning!';
         options.description = 'The data presentation here can be change.';
