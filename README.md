@@ -7,10 +7,16 @@
 
 
 
+
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
   
+
+
+
+
+
 
   
 <p align="center">
@@ -91,9 +97,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 ```htm
 
 <body>
-
-    <div class="app-container"> 
-        
+    <div class="app-container">       
        <!-- Side Navigation -->
 	   <div id="app-nav-wrap">           
          <nav animate>       
@@ -109,8 +113,7 @@ Provides you with the rich UI Components that to completely matches the latest W
          </nav>
        </div>	
     
-    <div class="app-content-wrap">
-      
+    <div class="app-content-wrap">    
         
     <!-- Section 1 -->
      <section id="app-section-1">
@@ -134,8 +137,7 @@ Provides you with the rich UI Components that to completely matches the latest W
            <!-- Contents -->
          </div>
           
-     </section>
-    
+     </section> 
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
 				
@@ -148,34 +150,39 @@ Provides you with the rich UI Components that to completely matches the latest W
 
 
 
-### Configure App Color
-Customize `entire app color` including all components using `accentColor.css` file
-#### ./src /core /app-config /css /accentColor.css
-<a href="src/core/app-config/css/accentColor.css">View accentColor.css</a>
+### Configure App Preferences
+Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file
+#### ./src /core /app-config /appConfig.js
+<a href="src/core/app-config/appConfig.js">View appConfig.js</a>
 
-```css
-	:root {
-	    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
-	}
+```js
+let BlurEnabled = true;  //'true' get drop shadows for components
+let AlertStyle = 'Win10';  //'Win8','Win10'
+let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
+let NightMode = false;  //'true' get dark mode when app mounted
 ```
 
 
 <br>
 
-### Configure Font Family or ScrollBars
-You can customize entire app `font family`, `font-weight` or `scrollbars` using `appConfig.css` file
+### Configure App Color, Font Family or ScrollBars
+You can customize entire app `accent color`, `font family`, more using `appConfig.css` file
 #### ./src /core /app-config /css /appConfig.css
 <a href="src/core/app-config/css/appConfig.css">View appConfig.css</a>
 
 ```css
-	body {
-	    font-weight: 400;
-	    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
-	    .... }
-	  
-	*::-webkit-scrollbar,
-	*::-webkit-scrollbar-thumb {
-	  .... }
+:root {
+    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
+	}
+
+body {
+    font-weight: 400;
+    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
+    .... }
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+  .... }
 ```
 
 
