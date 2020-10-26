@@ -26,6 +26,7 @@
                 <li><a href="#app-section-1" class="icons10-grid-3"><span>Form Elements</span></a></li>
                 <li><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
                 <li><a href="#app-section-3" class="icons10-bar-chart"><span>Progress Controls</span></a></li>
+                <li><a href="#app-section-8" class="icons10-list-search"><span>Searchable List</span></a></li>
                 <li><a href="#app-section-4" class="icons10-up-squared"><span>Bottom Sheet</span></a></li>
                 <li><a href="#app-section-5" class="icons10-deathly-hallows"><span>Icons</span></a></li>
                 <li><a href="#app-section-6" class="icons10-notification"><span>Notifications</span></a></li>
@@ -147,7 +148,8 @@
    
     
         <h5 class="spaning">InputText</h5>    
-            <input type="text" placeholder="Input Text"/> &nbsp;
+            <input type="text" placeholder="Input Text"/> 
+            &nbsp;
             <input type="text" placeholder="Input Text Disabled" disabled/>
                 
            
@@ -162,7 +164,8 @@
    
                 <div class="app-quantity">
                     <input type="number" min="1" max="9" step="1" value="1">
-                </div> &nbsp;
+                </div> 
+                &nbsp;
 
                 <div class="app-quantity" disabled>
                     <input type="number" min="1" max="9" step="1" value="1">
@@ -172,6 +175,7 @@
 
         <h5 class="spaning">Select</h5>          
           
+                <h6 class="spaning sub">Select default</h6>
                 <div class="app-select">
                     <select>
                         <option selected>Choose an option</option>
@@ -181,10 +185,32 @@
                     </select>
                 </div>
                  &nbsp;
+            
                 <div class="app-select" disabled>
                     <select>
                         <option selected>Choose an option Disabled</option>
                         <option value="1">Java</option>
+                        <option value="2">Python</option>
+                        <option value="3">C++</option>
+                    </select>
+                </div>
+                <br>
+            
+                <h6 class="spaning sub">Select accent</h6> 
+            
+                <div class="app-select" accent>
+                    <select>
+                        <option value="1" selected>Apple</option>
+                        <option value="2">Orange</option>
+                        <option value="3">Peach</option>
+                    </select>
+                </div>
+                &nbsp;
+            
+                <div class="app-select" accent>
+                    <label>Language</label>
+                    <select>
+                        <option value="1" selected>Java</option>
                         <option value="2">Python</option>
                         <option value="3">C++</option>
                     </select>
@@ -276,18 +302,18 @@
 
         <h6 class="spaning sub">Compound Link bar</h6>        
             <a href="#" class="app-link-compound">
-                <div><i class="icons10-timeline"></i>
+                <i class="icons10-timeline"></i>
                     <span>App Volume and device preference</span>
                     <p>Customise app volumes or devices they use</p>
-                </div></a>
+                </a>
 
 
         <h6 class="spaning sub">Compound Link bar Accent</h6>        
             <a href="#" class="app-link-compound" accent>
-                <div><i class="icons10-notification-image"></i>
+                <i class="icons10-notification-image"></i>
                     <span>App Notification and device preference</span>
                     <p>Customise app volumes and speakers or devices they use</p>
-                </div></a>
+                </a>
             
             
             
@@ -307,7 +333,8 @@
                  <label class="app-switch" classic>
                     <input type="checkbox"/>
                     <div data-off="Off" data-on="On"></div>
-                </label><br>
+                </label>
+                <br>
                  <label class="app-switch" classic>
                     <input checked type="checkbox"/>
                     <div data-off="Off" data-on="On"></div>
@@ -370,23 +397,21 @@
             
             <h5 class="spaning sub">Compound Accent-icon Link bar</h5>    
              
-                <a href="#" class="app-link-compound icon-bg-accent">
-                  <div><i class="icons10-camera"></i>
+                <a href="#" class="app-link-compound">
+                  <i class="icons10-camera" accent-bg></i>
                      <span>App Camera and device preference</span>
                      <p>Customise app volumes or devices they use</p>
-                  </div>
-                </a>
+                    </a>
             
             
             
             <h5 class="spaning sub">Compound Add Link bar</h5>        
               
-                <a href="#" class="app-link-compound icon-bg-grey">
-                   <div><i class="icons10-plus"></i>
+                <a href="#" class="app-link-compound">
+                   <i class="icons10-plus" grey-bg></i>
                       <span>Add more apps</span>
                       <p>apps available in store show here</p>
-                   </div>
-                </a>
+                    </a>
             
             
             
@@ -421,10 +446,10 @@
                
             
             <h5 class="spaning">Paragraph</h5>     
-                <p class="app-para">This is paragraph used to display long text in your windows application.</p>
+                <p>This is paragraph used to display long text in your windows application.</p>
             
             <h5 class="spaning">Paragraph Light</h5>  
-                <p class="app-para" light>This is light paragraph used to display long text in your windows application.</p>
+                <p light>This is light paragraph used to display long text in your windows application.</p>
             
             
             
@@ -432,7 +457,7 @@
             
             <div class="app-section-container-right">
                 <h6 class="spaning no-margin">Right Section Container</h6>             
-                    <p class="app-para" light>If you cant find the network you want select to show available networks to open the list of available networks</p>
+                    <p light>If you cant find the network you want select to show available networks to open the list of available networks</p>
              
                     <a href="#" class="app-link">Still cant connect? Open the troubleshooter</a><br>
              
@@ -484,7 +509,7 @@
             
                 <div class="app-loader-bar"></div>
                 <br>
-                <div class="app-loader-bar" light></div>
+                <div style="background: var(--AppColor);" class="app-loader-bar" light></div>
 
 
 
@@ -500,33 +525,104 @@
 
                 </div>
            
+                <br>
+                <div style="display: flex;background: var(--AppColor);width: 200px;padding: 15px 0 15px 18px;">
+                    
+                    <div class="app-loader-busy" light></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+                    <div class="app-loader-busy" small light></div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-            <h5 class="spaning">Loader Busy Light</h5>
-            
-                <div style="display:flex;">
-                    
-                    <div style="background:var(--AppColor);border-radius:50px;width:50px;height:50px;padding:17px 0 0 15px;">
-                        <div class="app-loader-busy" light></div>
-                    </div>
-                    
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    
-                    <div style="background:var(--AppColor);border-radius:50px;width:35px;height:35px;padding:7px 0 5px 10px;">
-                        <div class="app-loader-busy" small light></div>
-                    </div>  
-                    
-                    &nbsp;&nbsp;&nbsp;&nbsp;
-                    
-                    <div style="background:var(--AppColor);border-radius:50px;height:38px;padding:4px 0 0 14px;">
-                        <div class="app-loader-busy" soo-small light></div>
-                    </div>   
+                    <div class="app-loader-busy" soo-small light></div>
                     
                 </div>    
 
 
         
         </div>
+    </section>
+        
+        
+        
+        
+           <!-- Section 8 -->
+    <section id="app-section-8">
+    
+        <div class="app-section-container">
+        
+         <h3 class="spaning">Searchable List</h3>
+            <br>
+         
+            <div class="app-searchBar"> 
+                <input type="search" placeholder="Search here"/>
+                <button type="submit"></button>
+            </div>
+                 
+            <div class="app-hr"></div>
+         
+            <ul class="app-list">
+                <li clickable><a href="#">
+                  <i class="icons10-file" accent></i>
+                    <div>
+                      <title>file</title>
+                      <subtitle>file details</subtitle>
+                    </div>
+                    <info>8.4<b>MB</b></info>
+                    </a>
+                </li>
+                
+                <li clickable><a href="#">
+                  <i class="icons10-opened-folder" accent></i>
+                    <div>
+                      <title>folder</title>
+                      <subtitle>folder details</subtitle>
+                    </div>
+                    <info>24-10-20</info>
+                    </a>
+                </li>
+                
+                <li clickable><a href="#">
+                  <i class="icons10-phone" accent-bg></i>
+                    <div>
+                      <title>Apps</title>
+                      <subtitle>app details</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                
+                <li clickable><a href="#">
+                  <i class="icons10-controller" accent-bg></i>
+                    <div>
+                      <title>Games</title>
+                      <subtitle>games details</subtitle>
+                    </div>
+                    <info>turbo <b>On</b></info>
+                    </a>
+                </li>
+                
+                <li clickable><a href="#">
+                  <img src="kitchen-sink/img/songs/laFamilia.jpg" />
+                    <div>
+                      <title>Music</title>
+                      <subtitle>4:18 | genre</subtitle>
+                    </div>
+                    <info>play</info>
+                    </a>
+                </li>
+                
+                <li clickable><a href="#">
+                  <img src="src/core/img/anim_avatar.jpeg" />
+                    <div>
+                      <title>User</title>
+                      <subtitle>details</subtitle>
+                    </div>
+                    <info>Online</info>
+                    </a>
+                </li>
+                  
+            </ul>
+        </div>
+     
     </section>
     
     
@@ -539,11 +635,11 @@
     <section id="app-section-4">
     
         <div class="app-section-container">
-            <br><br><br><br>
+            <h4 class="spaning">BottomSheet</h4>
             
-            <div class="splash-screen-title">
-            <h5 class="spaning">Bottom Sheet</h5>
-                <h6 class="spaning">Layout menu popup from bottom similar to <b>action sheet</b></h6>
+            <div class="app-fit-content">
+            <h5 class="spaning">Bottom Sheet Component :</h5>
+                <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
                 <input type="button" data-bottomsheet-target="yourTarget" class="app-bottomsheet-button" value="Show Bottom Sheet" animate/>
             </div>
             
@@ -658,7 +754,6 @@
     
     </section>
     
-   
    
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
