@@ -22,6 +22,7 @@
 <p align="center">
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
+
 	
   <a href="https://github.com/virtualvivek/Windows10&#95;framework/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
