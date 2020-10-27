@@ -5,7 +5,7 @@
   * [Notification Default](#notification-default)
   * [Notification Default Icon](#notification-default-icon)
   * [Notification Success](#notification-success)
-  * [Notification Warning](#notificationd-warning)
+  * [Notification Warning](#notification-warning)
   * [Notification Danger](#notification-danger)
 
 ---
