@@ -1,74 +1,72 @@
-# Progress Controls
+# Alerts
 
 # Table of Contents
 
-  * [LoaderBar](#loaderbar)
-  * [LoaderBusy](#loaderbusy)
-  * [Progress](#progress)
+  * [Default](#loaderbar)
+  * [Advance](#loaderbusy)
 
 ---
 
 
 
-# LoaderBar
-The Loader bar is a graphical horizontal control element used to visualize the indeterminate progression of an extended computer operation. 
+An alert box is often used if you want to make sure information comes through to the user. Note: The alert box takes the focus away from the current window, and forces the browser to read the message.
 
-### Default LoaderBar
-<img src="loaderBar/loaderBar_default.gif" width="350" />
+# Alert Default
+<img src="img/alert_default.png" width="550" />
+
+## Defining alert
+
+```js
+function CallAlert()
+ {
+   alert("This is a simple alert!") ;
+ }
+```
+
+## Calling alert
 
 ```html
-<div class="app-loader-bar"></div>
+ <input type="button" value="Show Alert" onclick="CallAlert()"/>
 ```
-### LoaderBar Light
-<img src="loaderBar/loaderBar_light.gif" width="350" />
 
-```html
-<div class="app-loader-bar" light></div>
-```
 ---
 
 
+# Alert Advance
+<img src="img/alert_advance.png" width="550" />
+
+## Defining alert
+
+```js
+//alert("Message",buttonsList,buttonsFunctions,"Custom image");
+
+function AdvCallAlert()
+{
+ var buttonList = ["Yes", "No", "Cancel"] ;
+ var buttonListFunc = ["YesFunction()", "NoFunction()", "CancelFunction()"] ;
+
+ alert("Click on the following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "../../img/favicon.ico") ;
+}
 
 
-# LoaderBusy
-The Loader busy is a graphical circular control element used to visualize the indeterminate progression of an extended computer operation. 
+function YesFunction(){
+    document.getElementById('clickResult').innerHTML = "YesFunction" ;
+}
+function NoFunction(){
+    document.getElementById('clickResult').innerHTML = "NoFunction" ;
+}
+function CancelFunction(){
+    document.getElementById('clickResult').innerHTML = "CancelFunction" ;
+}
 
-### Default LoaderBusy
-<img src="loaderBusy/loaderBusy.gif" width="240" />
-
-```html
-<div class="app-loader-busy"></div>
-
-<div class="app-loader-busy" small></div>
-
-<div class="app-loader-busy" soo-small></div>
 ```
 
-### LoaderBusy Light
-<img src="loaderBusy/loaderBusy_light.gif" width="240" />
+## Calling alert
 
 ```html
-<div class="app-loader-busy" light></div>
-
-<div class="app-loader-busy" small light></div>
-
-<div class="app-loader-busy" soo-small light></div>
+ <input type="button" value="Show Alert" onclick="AdvCallAlert()" /><br>
+ <span class="app-label">Function Called :</span><span class="app-label" id="clickResult"></span>
 ```
----
-
-
-
-
-# Progress
-The progress bar is a graphical control element used to visualize the progression of an extended computer operation. 
-
-### Progress Indeterminate
-<img src="progress_indeterminate/progress_indeterminate.gif" width="350" />
-
-```html
-<div class="app-progress-indeterminate"></div>
-```
----
 
 
 
