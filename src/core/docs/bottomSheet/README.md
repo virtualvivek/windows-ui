@@ -3,7 +3,7 @@
 
 Bottom sheets are surfaces containing supplementary content that are anchored to the bottom of the screen.
 
-<br><img src="img/bottomSheet_default.png" width="580" />
+<br><img src="img/bottomSheet_default.png" width="820" />
 
 <b>Note</b> ```yourTarget``` is the unique id use to access bottomSheet.
 
