@@ -2,8 +2,8 @@
 
 # Table of Contents
 
-  * [Default](#alertdefault)
-  * [Advance](#alertadvance)
+  * [Default](#alert-default)
+  * [Advance](#alert-advance)
 
 ---
 
@@ -12,7 +12,7 @@
 An alert box is often used if you want to make sure information comes through to the user. Note: The alert box takes the focus away from the current window, and forces the browser to read the message.
 
 # Alert Default
-<img src="img/alert_default.png" width="580" />
+<img src="img/alert_default.png" width="595" />
 
 ## Defining alert
 
@@ -33,7 +33,7 @@ function CallAlert()
 
 
 # Alert Advance
-<img src="img/alert_advance.png" width="580" />
+<img src="img/alert_advance.png" width="595" />
 
 ## Defining alert
 
@@ -45,7 +45,7 @@ function AdvCallAlert()
  var buttonList = ["Yes", "No", "Cancel"] ;
  var buttonListFunc = ["YesFunction()", "NoFunction()", "CancelFunction()"] ;
 
- alert("Click following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "img/favicon.ico") ;
+ alert("Click following buttons to call the corresponding methods.", buttonList, buttonListFunc, "Alert Box", "img/favicon.png") ;
 }
 
 
@@ -64,8 +64,8 @@ function CancelFunction(){
 ## Calling alert
 
 ```html
- <input type="button" value="Show Alert" onclick="AdvCallAlert()" /><br>
- <span>Function Called :</span><span id="clickResult"></span>
+ <input type="button" value="Show Alert" onclick="AdvCallAlert()" />
+ <span>function Called :</span><span id="clickResult"></span>
 ```
 
 
