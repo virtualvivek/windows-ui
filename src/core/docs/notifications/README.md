@@ -2,10 +2,11 @@
 
 # Table of Contents
 
-  * [Notification Default](#loaderbar)
-  * [Notification Success](#loaderbusy)
-  * [Notification Warning](#progress)
-  * [Notification Danger](#progress)
+  * [Notification Default](#notification-default)
+  * [Notification Default Icon](#notification-default-icon)
+  * [Notification Success](#notification-success)
+  * [Notification Warning](#notificationd-warning)
+  * [Notification Danger](#notification-danger)
 
 ---
 
