@@ -14,7 +14,7 @@ An alert box is often used if you want to make sure information comes through to
 # Alert Default
 <img src="img/alert_default.png" width="595" />
 
-## Defining alert
+## Step 1. Defining alert
 
 ```js
 function CallAlert()
@@ -23,7 +23,7 @@ function CallAlert()
  }
 ```
 
-## Calling alert
+## Step 2. Calling alert
 
 ```html
  <input type="button" value="Show Alert" onclick="CallAlert()"/>
@@ -35,7 +35,7 @@ function CallAlert()
 # Alert Advance
 <img src="img/alert_advance.png" width="595" />
 
-## Defining alert
+## Step 1. Defining alert
 
 ```js
 //alert("Message",buttonsList,buttonsFunctions,"Custom image");
@@ -61,11 +61,12 @@ function CancelFunction(){
 
 ```
 
-## Calling alert
+## Step 2. Calling alert
 
 ```html
- <input type="button" value="Show Alert" onclick="AdvCallAlert()" />
- <span>function Called :</span><span id="clickResult"></span>
+<input type="button" value="Show Alert" onclick="AdvCallAlert()" />  
+<p>function called:</p><span id="clickResult"></span>
+ 
 ```
 
 
