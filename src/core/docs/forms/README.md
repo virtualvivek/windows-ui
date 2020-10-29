@@ -206,7 +206,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 <img src="links/compound_accent_bg.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound icon-bg-accent">
+<a href="#" class="app-link-compound" accent-bg>
     <div><i class="icons10-camera"></i>
        <span>App Camera and device preference</span>
        <p>Customise app volumes or devices they use</p>
@@ -217,7 +217,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 <img src="links/compound_grey_bg.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound icon-bg-grey">
+<a href="#" class="app-link-compound" grey-bg>
     <div><i class="icons10-plus"></i>
        <span>Add more apps</span>
        <p>apps available in store show here</p>

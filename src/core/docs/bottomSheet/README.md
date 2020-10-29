@@ -1,76 +1,37 @@
-# Progress Controls
-
-# Table of Contents
-
-  * [LoaderBar](#loaderbar)
-  * [LoaderBusy](#loaderbusy)
-  * [Progress](#progress)
-
----
+# BottomSheet
 
 
+Bottom sheets are surfaces containing supplementary content that are anchored to the bottom of the screen.
 
-# LoaderBar
-The Loader bar is a graphical horizontal control element used to visualize the indeterminate progression of an extended computer operation. 
+<br><img src="img/bottomSheet_default.png" width="820" />
 
-### Default LoaderBar
-<img src="loaderBar/loaderBar_default.gif" width="350" />
+<b>Note</b> ```yourTarget``` is the unique id use to access bottomSheet.
+
+## Step 1. Defining structure
 
 ```html
-<div class="app-loader-bar"></div>
+ <div class="app-bottomsheet" id="yourTarget">
+    <div>
+       <button><i class="icons10-camera"></i><span>Upload</span></button>
+       <hr/> <!-- use to show a hr line between -->
+       <button><i class="icons10-picture"></i><span>View</span></button>
+       <button><i class="icons10-download"></i><span>Save</span></button>               
+       <bottomsheet-optionBar-space></bottomsheet-optionBar-space>  <!-- use to show space between -->
+       <button><i class="icons10-trash"></i><span>Remove</span></button>
+       <button class="app-bottomsheet-close"><i class="icons10-cross"></i><span>Cancel</span></button>  
+          <!-- use to hide bottomsheet using class="app-bottomsheet-close" -->
+    </div>
+ </div>
 ```
-### LoaderBar Light
-<img src="loaderBar/loaderBar_light.gif" width="350" />
+## Step 2. Calling Bottomsheet
 
 ```html
-<div class="app-loader-bar" light></div>
-```
----
-
-
-
-
-# LoaderBusy
-The Loader busy is a graphical circular control element used to visualize the indeterminate progression of an extended computer operation. 
-
-### Default LoaderBusy
-<img src="loaderBusy/loaderBusy.gif" width="240" />
-
-```html
-<div class="app-loader-busy"></div>
-
-<div class="app-loader-busy" small></div>
-
-<div class="app-loader-busy" soo-small></div>
+ <input type="button" data-bottomsheet-target="yourTarget" class="app-bottomsheet-button" value="Show Bottom Sheet" />
 ```
 
-### LoaderBusy Light
-<img src="loaderBusy/loaderBusy_light.gif" width="240" />
+## Result. 
 
-```html
-<div class="app-loader-busy" light></div>
-
-<div class="app-loader-busy" small light></div>
-
-<div class="app-loader-busy" soo-small light></div>
-```
----
-
-
-
-
-# Progress
-The progress bar is a graphical control element used to visualize the progression of an extended computer operation. 
-
-### Progress Indeterminate
-<img src="progress_indeterminate/progress_indeterminate.gif" width="350" />
-
-```html
-<div class="app-progress-indeterminate"></div>
-```
----
-
-
+<img src="img/bottomSheet_preview.png" width="880" />
 
 
 

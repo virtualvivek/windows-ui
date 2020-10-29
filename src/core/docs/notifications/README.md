@@ -1,72 +1,136 @@
-# Progress Controls
+# Notifications
 
 # Table of Contents
 
-  * [LoaderBar](#loaderbar)
-  * [LoaderBusy](#loaderbusy)
-  * [Progress](#progress)
+  * [Notification Default](#notification-default)
+  * [Notification Default Icon](#notification-default-icon)
+  * [Notification Success](#notification-success)
+  * [Notification Warning](#notification-warning)
+  * [Notification Danger](#notification-danger)
 
 ---
 
 
+A notification is a message that your app provide the user with reminders, communication from other people, or other timely information from your app. Users can tap the notification to open your app or take an action directly from the notification. 
 
-# LoaderBar
-The Loader bar is a graphical horizontal control element used to visualize the indeterminate progression of an extended computer operation. 
+### Notification Default
+<img src="img/notifications_default.png" width="340" />
 
-### Default LoaderBar
-<img src="loaderBar/loaderBar_default.gif" width="350" />
+### Step 1. Defining
 
-```html
-<div class="app-loader-bar"></div>
+```js
+function CallNotificationDefault()
+ {
+    var options = getOptions();
+    options.title = 'Hello!';
+    options.description = 'I am a default windows notification.';
+    options.width = 350;
+    WinNotification.notify(options);
+ }
 ```
-### LoaderBar Light
-<img src="loaderBar/loaderBar_light.gif" width="350" />
+### Step 2. Calling
 
 ```html
-<div class="app-loader-bar" light></div>
-```
----
-
-
-
-
-# LoaderBusy
-The Loader busy is a graphical circular control element used to visualize the indeterminate progression of an extended computer operation. 
-
-### Default LoaderBusy
-<img src="loaderBusy/loaderBusy.gif" width="240" />
-
-```html
-<div class="app-loader-busy"></div>
-
-<div class="app-loader-busy" small></div>
-
-<div class="app-loader-busy" soo-small></div>
-```
-
-### LoaderBusy Light
-<img src="loaderBusy/loaderBusy_light.gif" width="240" />
-
-```html
-<div class="app-loader-busy" light></div>
-
-<div class="app-loader-busy" small light></div>
-
-<div class="app-loader-busy" soo-small light></div>
+<input type="button" value="Show Notification" onclick="CallNotificationDefault()"/>
 ```
 ---
 
 
 
 
-# Progress
-The progress bar is a graphical control element used to visualize the progression of an extended computer operation. 
+### Notification Default Icon
+<img src="img/notifications_default_icon.png" width="380" />
 
-### Progress Indeterminate
-<img src="progress_indeterminate/progress_indeterminate.gif" width="350" />
+### Step 1. Defining
+
+```js
+function CallNotificationDefaultIcon()
+ {
+    var options = getOptions();
+    options.title = 'Hello!';
+    options.description = 'I am a default windows notification.';
+    //options.image = 'img/default.png';
+    options.image = {
+        visible: true
+    };
+    WinNotification.notify(options);
+ }
+```
+### Step 2. Calling
 
 ```html
-<div class="app-progress-indeterminate"></div>
+<input type="button" value="Show Notification" onclick="CallNotificationDefaultIcon()"/>
+```
+---
+
+
+### Notification Success
+<img src="img/notifications_success.png" width="380" />
+
+### Step 1. Defining
+
+```js
+function CallNotificationSuccess()
+ {
+    var options = getOptions();
+    options.title = 'Well Done!';
+    options.description = 'Data has been succesfully recored.';
+    options.type = 'success';
+    WinNotification.notify(options);
+ }
+```
+### Step 2. Calling
+
+```html
+<input type="button" value="Show Notification" onclick="CallNotificationSuccess()"/>
+```
+---
+
+
+
+### Notification Warning
+<img src="img/notifications_warning.png" width="380" />
+
+### Step 1. Defining
+
+```js
+function CallNotificationWarning()
+ {
+    var options = getOptions();
+    options.title = 'Reminder!';
+    options.description = 'You have a meeting at 9:11 АМ';
+    options.type = 'warning';
+    WinNotification.notify(options);
+ }
+```
+### Step 2. Calling
+
+```html
+<input type="button" value="Show Notification" onclick="CallNotificationWarning()"/>
+```
+---
+
+
+
+### Notification Danger
+<img src="img/notifications_danger.png" width="380" />
+
+### Step 1. Defining
+
+```js
+function CallNotificationDanger()
+ {
+    var options = getOptions();
+    options.title = 'Warning!';
+    options.description = 'The data presentation here can be change.';
+    options.type = 'danger'; // or 'error'
+    WinNotification.notify(options);
+ }
+```
+### Step 2. Calling
+
+```html
+<input type="button" value="Show Notification" onclick="CallNotificationDanger()"/>
 ```
 ---
 
