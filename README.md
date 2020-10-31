@@ -5,22 +5,14 @@
 </h2>
 
 
-
-
-
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
-
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
   
 
-
-
-
-
-
   
 <p align="center">
+	
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 
@@ -65,7 +57,8 @@
 
 ## Stunning Set Of UI Elements
 
-<h1 align="center"><img src="kitchen-sink/_md_preview/app_framework_preview.png" width="850" /></h1>
+<h1 align="center"><img src="kitchen-sink/_md_preview/md_glance_forms.png" width="850" />
+<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="850" /></h1>
 <p align="center">
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
