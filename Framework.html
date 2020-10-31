@@ -97,54 +97,24 @@
             
         <h5 class="m-b-15">Check Box</h5>       
 
-            <div class="app-flex">
+            <div class="app-flex">  
                 
-              <div class="app-checkbox">
-                <input id="i2" type="checkbox" checked>
-                <label for="i2">Checked</label>
-              </div>
+                <label class="app-checkbox"><input type="checkbox" value="value" checked> Checked</label>
+                    <space s=40></space>
+                <label class="app-checkbox"><input type="checkbox" value="value" checked disabled> Disabled Checked</label>
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            <p class="m-b-20"></p>
+            <div class="app-flex">  
                 
-              <div class="app-checkbox">
-                <input id="i4" type="checkbox" disabled checked>
-                <label for="i4">Disabled Checked</label>
-              </div>
+                <label class="app-checkbox"><input type="checkbox" value="value"> Unchecked</label>
+                    <space s=20></space>
+                <label class="app-checkbox"><input type="checkbox" value="value" disabled> Disabled Unchecked</label>
                 
             </div>
             
-            <div class="app-flex">
+            <p>Checkbox <input class="app-checkbox" type="checkbox" checked> Inline</p>
             
-              <div class="app-checkbox">
-                <input id="i1" type="checkbox">
-                <label for="i1">Unchecked</label>
-              </div>
-                
-                &nbsp;&nbsp;
-                
-             <div class="app-checkbox">
-                <input id="i5" type="checkbox" disabled>
-                <label for="i5">Unchecked Disabled</label>
-              </div>
-             
-            </div>
-            
-            <div class="app-flex">
-                
-              <div class="app-checkbox app-checkbox-inline">
-                  <input id="i10" type="checkbox" checked>
-                  <label for="i10">Inline...</label>
-              </div>
-
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              
-              <div class="app-checkbox">
-                <input id="i3" type="checkbox">
-                <!-- Use label even if no text required -->
-                <label for="i3"></label>
-              </div> 
-                
-            </div>
    
     
         <h5 class="m-b-15">InputText</h5>    
@@ -176,45 +146,41 @@
         <h5 class="m-b-15">Select</h5>          
           
                 <h6 class="m-tb-10">Select default</h6>
-                <div class="app-select">
-                    <select>
+                
+                    <select class="app-select">
                         <option selected>Choose an option</option>
                         <option value="1">Java</option>
                         <option value="2">Python</option>
                         <option value="3">C++</option>
                     </select>
-                </div>
-                 &nbsp;
-            
-                <div class="app-select" disabled>
-                    <select>
+                
+                    &nbsp;   
+                    <select class="app-select" disabled>
                         <option selected>Choose an option Disabled</option>
                         <option value="1">Java</option>
                         <option value="2">Python</option>
                         <option value="3">C++</option>
                     </select>
-                </div>
+                
                 <br>
             
                 <h6 class="m-tb-10">Select accent</h6> 
             
-                <div class="app-select" accent>
-                    <select>
+                    <select class="app-select" accent>
                         <option value="1" selected>Apple</option>
                         <option value="2">Orange</option>
                         <option value="3">Peach</option>
                     </select>
-                </div>
-                &nbsp;
-            
-                <div class="app-select" accent>
-                    <label>Language</label>
-                    <select>
-                        <option value="1" selected>Java</option>
-                        <option value="2">Python</option>
-                        <option value="3">C++</option>
-                    </select>
-                </div>
+              
+                    &nbsp;
+                    <label class="app-label">Language
+                        <select class="app-select" accent>
+                            <option value="1" selected>Java</option>
+                            <option value="2">Python</option>
+                            <option value="3">C++</option>
+                        </select>
+                    </label>
+               
             
                 
 
@@ -275,22 +241,12 @@
 
 
         <h5 class="m-b-15">Radio Buttons</h5>         
-            <div class="app-radio">
-                <input id="radio-1" name="radio" type="radio" checked>
-                <label for="radio-1"><span>Checked</span></label>
-            </div>
-
-            <div class="app-radio">
-                <input id="radio-2" name="radio" type="radio">
-                <label  for="radio-2"><span>Unchecked</span></label>
-            </div>
-
-            <div class="app-radio">
-                <input id="radio-3" name="radio" type="radio" disabled>
-                <label for="radio-3"><span>Disabled</span></label>
-            </div>
-
-
+           
+            <label class="app-label"><input type="radio" name="1" class="app-radio"  checked/> Checked</label>
+            <br>
+            <label class="app-label"><input type="radio" name="1" class="app-radio"/> Unchecked</label>
+            <br>
+            <label class="app-label"><input type="radio" name="1" class="app-radio" disabled/> Disabled</label>
 
 
 
@@ -566,10 +522,19 @@
          <h3 class="m-b-15">Searchable List</h3>
             <br>
          
+            <div class="app-flex">
             <div class="app-searchBar"> 
                 <input type="search" placeholder="Search here"/>
                 <button type="submit"></button>
             </div>
+            
+            <select class="app-select" accent>
+                        <option selected>Choose an option</option>
+                        <option value="1">Java</option>
+                        <option value="2">Python</option>
+                        <option value="3">C++</option>
+                    </select>
+                </div>
                  
             <div class="app-hr"></div>
          
