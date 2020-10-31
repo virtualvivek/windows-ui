@@ -1,397 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<head>   
+<head>  
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Windows10 framework</title> 
-    <link rel="shortcut icon" href="../src/core/img/favicon.ico" />     
+    <title>App Title</title>
+    <link rel="shortcut icon" href="../src/core/img/favicon.ico" />   
     <link rel="stylesheet" type="text/css" href="../src/core/app-config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="../src/core/app-config/css/accentColor.css" />
     <link rel="stylesheet" type="text/css" href="../src/core/css/windows10framework.min.css" />
-    <link rel="stylesheet" href="../src/core/icons/fonts/fonts.min.css"> 
-   
-</head>
-    
+    <link rel="stylesheet" href="../src/core/icons/fonts/fonts.min.css">
+</head>  
 	
 <body>
 
     <div class="app-container"> 
         
        <!-- Side Navigation -->
-	   <div id="app-nav-wrapper">           
+	   <div id="app-nav-wrap">           
          <nav animate>       
             <!-- App Name--> 
-            <div class="app-flex"><a href="../index.html" app-back></a><span id="app-name">Windows10 Framework</span></div>
+            <div><a href="../index.html" app-back></a><span id="app-name">App Name</span></div>
             <ul>
                 <a href="#" id="app-nav-toggle"></a>
-                <li><a href="#app-section-1" class="nav-icon icons10-user"><span>User</span></a></li>
-                <li><a href="#app-section-2" class="nav-icon icons10-monitor"><span>Desktop</span></a></li>
-                <li><a href="#app-section-3" class="nav-icon icons10-generic-sorting"><span>Searchable List</span></a></li>
-                <li><a href="#app-section-4" class="nav-icon icons10-copy"><span>Tab View</span></a></li>
+                <li><a href="#app-section-1" class="icons10-user"><span>User</span></a></li>
+                <li><a href="#app-section-2" class="icons10-circle"><span>Tab 2</span></a></li>
+                <li><a href="#app-section-3" class="icons10-circle"><span>Tab 3</span></a></li>
+                <li><a href="#app-section-4" class="icons10-circle"><span>Tab 4</span></a></li>
             </ul>
          </nav>
        </div>	
     
     
     <div class="app-content-wrap">
-    
-        
+       
         
         
         
     <!-- Section 1 -->
      <section id="app-section-1">
-      
-        <h3 class="fixed">User</h3>
   
-        <div class="app-section-container">
-        <br><br>
-            <br>
-          
-            <div class="app-flex-center">
-            <img class="app-user large" src="../src/core/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
-            <div class="app-grid">
-                <img class="app-user small" src="../src/core/img/anim_avatar.jpeg"/>
-                <img class="app-user small" src="../src/core/img/anim_avatar.jpeg"/>
-            </div>
-            </div>
-            <br>
+        <div class="app-section-container">  
             
-            <input type="button" value="Update Image" data-bottomsheet-target="yourTarget" class="bottomsheet-modal-button" animate/>
-            
-            <h5 class="spaning">Account Name</h5> 
-            <input type="text" placeholder="User"/>
-            
-            <br><br>
-            
-            <img src="img/lockscreen.jpg"/>
-            <br><br>
-            
-            <a href="#" class="app-link-compound withSwitch">
-                    <div><i class="icons10-refresh"></i>
-                        <span>Sync Outlook</span>
-                        <p>Automatically sync all data from outlook on the go!</p>   
-                    </div>
-                    <label class="app-switch">
-                        <input checked="true" type="checkbox"/>
-                        <div data-off="Off" data-on="On"></div>
-                    </label> 
-            </a>
-            
-            
-            <br><br>
-          
-            
-             <div class="bottomsheet-modal-wrap" id="yourTarget">
-                <div class="bottomsheet-content">
-                   <button>
-                      <i class="icons10-camera"></i>
-                      <span>Upload New</span>
-                   </button>
-                      <hr/>
-                    <button>
-                      <i class="icons10-picture"></i>
-                      <span>View</span>
-                   </button>
-                   <button>
-                      <i class="icons10-download"></i>
-                      <span>Save</span>
-                   </button>
-                    <bottomsheet-optionBar-space></bottomsheet-optionBar-space>
-                   <button>
-                      <i class="icons10-trash"></i>
-                      <span>Remove</span>
-                   </button>
-                   <button class="bottomsheet-modal-close">
-                      <i class="icons10-cancel"></i>
-                      <span>Cancel</span>
-                   </button>
-                </div>
-            </div>
+            <div class="app-flex-center m-tb-20">
                
+                <img class="app-user medium" src="../src/core/img/anim_avatar.jpeg"/><space s=25></space>
+
+                 <div class="app-grid">
+                    <h2 class="m-0"><b>John Doe</b></h2>
+                    <a href="#" class="app-link bold">github.com/virtualvivek/Windows10-framework</a>
+                     <p>Web Designer</p>
+                 </div>       
+                
+            </div>
+            
+                
+            <div class="app-searchBar"> 
+                <input type="search" placeholder="Search apps"/>
+                <button type="submit"></button>
+            </div>
+                 
+            <div class="app-hr"></div>
+         
+            <ul class="app-list">
+                
+                <li><a href="#">
+                  <i class="icons10-phone" accent-bg></i>
+                    <div>
+                      <title>Phone</title>
+                      <subtitle>contacts</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                
+                <li><a href="#">
+                  <i class="icons10-calendar" accent-bg></i>
+                    <div>
+                      <title>Calendar</title>
+                      <subtitle>general</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                
+                <li><a href="#">
+                  <i class="icons10-camera" accent-bg></i>
+                    <div>
+                      <title>Camera</title>
+                      <subtitle>utility</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                
+                <li><a href="#">
+                  <i class="icons10-map" accent-bg></i>
+                    <div>
+                      <title>Maps</title>
+                      <subtitle>general</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                
+                <li><a href="#">
+                  <i class="icons10-news" accent-bg></i>
+                    <div>
+                      <title>News</title>
+                      <subtitle>entertainment</subtitle>
+                    </div>
+                    <info>installed</info>
+                    </a>
+                </li>
+                  
+            </ul>           
+           
+         </div>
+          
+     </section>
+        
+        
+        
+        
+    <!-- Section 1 -->
+     <section id="app-section-2">
+  
+        <div class="app-section-container">  
+            
+            <h3>Tab 2</h3>
+            
+                <h4>Contents</h4>
+                <!--    Contents    -->
             
          </div>
           
      </section>
-    
-    
-    
-    
-    
-       
-        
-    <!-- Section 2 -->    
-    <section id="app-section-2">
-        
-       <h3 class="fixed">Desktop</h3>
-        
-        <div class="app-section-container">
-         <br><br>
-            <br><br>
-            
-            <img src="img/wallpaper.jpg"/>
-        
-            
-            <h5 class="spaning">Brightness</h5> 
-            
-            <div class="app-range-slider">
-                <input type="range" value="100" min="0" max="500">
-                <span>90%</span>
-            </div>
-            
-            <h5 class="spaning">SlideShow</h5>        
-            <input type="button" value="Enable" onclick="AdvCallAlert()"/><br>
-            
-            <h5 class="spaning">Auto color snap</h5>
-            
-            <label class="app-switch">
-                <input checked="true" type="checkbox"/>
-                <div data-off="Off" data-on="On"></div>
-            </label>
-            
-            
-        </div>       
-        
-    </section>    
         
         
         
-    
-    
-    
-    
-   <!-- Section 3 -->
-    <section id="app-section-3">
-    
-        <div class="app-section-container">
-        
-     
-         <h3 class="spaning">Searchable List</h3>
-            <br>
-             
-            <div class="app-flex">    
-                
-                <div class="searchAuto-select">
-                    <div class="dd-search">
-                        <input id="app-quicksearch" class="dd-searchbox" type="text" placeholder="Search Contacts.."/>
-                    </div>
-                </div>
-                &nbsp;&nbsp;
-                <div class="app-select">
-                    <select id="app-filters-dropdown">
-                        <option  value="*">show all</option>
-                        <option value=".Skrillex">Skrillex</option>
-                        <option value=".transition">transition</option>
-                        <option value=".alkali, .alkaline-earth">alkali and alkaline-earth</option>
-                        <option value=":not(.transition)">not transition</option>
-                        <option value=".metal:not(.transition)">metal but not transition</option>
-                    </select>
-                </div>
+    <!-- Section 1 -->
+     <section id="app-section-3">
+  
+        <div class="app-section-container">  
             
-            </div>
-                 
-        
-            <div class="view-hr"></div>
-         
-             <div class="app-searchable-grid">
-                 
-                 
-              <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/mind.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Mind</h3>  
-                    <p class="data-number">80</p>
-                    <p class="sub-data">Skrillex & Diplo</p>
-                  </div>
-              </div>        
-                 
-             <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/laFamilia.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">La Familiia</h3>  
-                    <p class="data-number">81</p>
-                    <p class="sub-data">Lil Wayne</p>
-                  </div>
-              </div>
-                 
-           <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/despacito.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Despacito</h3>  
-                    <p class="data-number">82</p>
-                    <p class="sub-data">Luis fonsi & Daddy Yankee</p>
-                  </div>
-              </div>
-                 
-              <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/meganta%20reddim.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Magenta Reddimm</h3>  
-                    <p class="data-number">84</p>
-                    <p class="sub-data">Dj Snake</p>
-                  </div>
-              </div>
-                 
-             <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/diff_world.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Different World</h3>  
-                    <p class="data-number">85</p>
-                    <p class="sub-data">Allen Walker</p>
-                  </div>
-              </div>
-                 
-              <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/ragga_b.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Ragga Bomb</h3>  
-                    <p class="data-number">86</p>
-                    <p class="sub-data">Skrillex & Diplo</p>
-                  </div>
-              </div>
-                 
-               <div class="element-item  Skrillex">   
-                <p class="data-image"><img class="app-user soo-small" src="img/songs/alone.jpg"></p>
-                  <div class="app-inline">
-                    <h3 class="data-name">Alone</h3>  
-                    <p class="data-number">87</p>
-                    <p class="sub-data">Allen Walker</p>
-                  </div>
-              </div>
-             
+            <h3>Tab 3</h3>
             
-            </div>
+                <h4>Contents</h4>
+                <!--    Contents    -->
+            
+         </div>
+          
+     </section>
+        
+        
+        
+    <!-- Section 1 -->
+     <section id="app-section-4">
+  
+        <div class="app-section-container">  
+            
+            <h3>Tab 4</h3>
+            
+                <h4>Contents</h4>
+                <!--    Contents    -->
+            
+         </div>
+          
+     </section>    
+    
+    
+    
    
-        
-        </div>
-     
-    </section>
-    
-    
-    
-    
-       
-    
-    
-	<!-- Section 4 -->					
-    <section id="app-section-4">
-    
-       <div class="app-section-container">
-            
-            <h3 class="spaning">Tab View</h3>
-            
-            <div class="app-itab-wrapper">
-                <div class="app-itab">
-                    <a class="app-itab-item" data-app-itab-active="true" href="">Collections</a>
-                    <a class="app-itab-item" href="">Album</a>
-                    <a class="app-itab-item" href="">Folder</a>
-                </div>
-            </div>
-            
-            
-            <div class="app-itab-content-wrapper">
-                
-                <div class="app-itab-content" data-app-itab-active="true">
-                
-                    <div class="app-folder large">
-                        <div class="app-folder_ default" title="" data-name="Folder Default">
-                         <img/><img/>
-                        </div> 
-                    </div>
-
-                     <div class="app-folder large">
-                        <div class="app-folder_ default" title="" data-name="hellow">
-                         <img/><img/>
-                        </div> 
-                    </div>
-       
-                </div>
-                
-                <div class="app-itab-content">
-                    
-                    <div class="app-folder medium">
-                        <div class="app-folder_ default" data-name="hellow">
-                        <img/><img/>
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder medium">
-                        <div class="app-folder_ default" data-name="hellow">
-                        <img/><img/>
-                        </div> 
-                    </div>
-             
-                </div>
-                
-                <div class="app-itab-content">
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_" title="" data-name="Default folder">  
-                        </div> 
-                        <info data-center="8/14/2020 9:41 AM" data-end="12KB"></info>
-                    </div>
-                    
-                     <div class="app-folder small">
-                        <div class="app-folder_ folder" title="" data-name="Folder open">
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_ file" title="" data-name="System file">
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_ pdf" title="" data-name="Pdf file">
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_ audio" title="hellow" data-name="Audio file">
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_ video" title="" data-name="Video file">
-                        </div> 
-                    </div>
-                    
-                    <div class="app-folder small">
-                        <div class="app-folder_ image" title="" data-name="Image file">
-                        </div> 
-                    </div>
-                    
-                    
-                </div>
-                
-                <!-- Tabs template
-                <div class="app-itab-content">
-                </div>
-                -->
-                
-            </div>
-         
-        </div>
-    
-    </section>
-     
-    
-    
-     
 					
         </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
 				
-    </div><!-- /app-container(Tabs Content Including Tabs) -->	
+    </div><!-- /app-container(Tabs Content Including Navigation) -->	
 
 </body>
-    
+
     <script src="../src/core/js/require/jquery.js"></script> 
     <script src="../src/core/app-config/appConfig.js"></script>
     <script src="../src/core/js/windows10framework.min.js"></script>
-  
-    <!--  App Demo Components js  -->
-    <script src="js/modules-demo/alertWin10_demo.js"></script> 
-
+    <script src="../src/core/js/windows10framework-notifications.js"></script>  
+    
+   
 </html>
