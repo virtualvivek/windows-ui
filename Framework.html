@@ -85,12 +85,17 @@
             
             <div class="app-range-slider">
                 <input type="range" value="100" min="0" max="500">
-                <span>100</span>
+                <span>100</span><span>%</span>
             </div>
             
             <div class="app-range-slider" round>
                 <input type="range" value="242" min="0" max="500">
                 <span>242</span>
+            </div>
+            
+            <div class="app-range-slider" round-border>
+                <input type="range" value="142" min="0" max="500">
+                <span>142</span>
             </div>
             
                       
@@ -187,27 +192,26 @@
 
                   
         <h5 class="m-b-15">Date Picker</h5>     
-           <input type="date"> &nbsp;
+           <input type="date" placeholder="Enter Date"> &nbsp;
             <input type="date" disabled>    
               
 
 
         <h5 class="m-b-15">SearchBox</h5>  
             
-            <div class="app-searchBar"> 
+            <div class="app-searchbar"> 
                 <input type="search" placeholder="Search here"/>
                 <button type="submit"></button>
             </div>
              &nbsp;
-            <div class="app-searchBar" disabled> 
-                <input type="search" placeholder="Search here"/>
-                <button type="submit"></button>
+            <div class="app-search">
+                <input class="app-searchbox" type="search" placeholder="Search here..">
             </div>
             
             
             
         <h5 class="m-b-15">SearchBox Suggestions</h5> 
-            <select name="" class="app-searchBarAuto" id="searchBarAuto">
+            <select name="" class="app-searchbar-auto" id="searchBarAuto">
                 <option value="1">Search</option>
                 <option value="2">Elements</option>
                 <option value="3">ProgressBar</option>
@@ -235,8 +239,8 @@
             <input type="button" value="Accent disabled" accent disabled/>
 
             <br><br>      
-            <button class="app-button bg-red" accent animate><i class="icons10-advertising"></i>Button danger</button>
-            <button class="app-button bg-green" accent animate><i class="icons10-checkmark"></i>Button success</button>
+            <button class="app-button bg-danger" accent animate><i class="icons10-advertising"></i>Button danger</button>
+            <button class="app-button bg-success" accent animate><i class="icons10-checkmark"></i>Button success</button>
 
 
 
@@ -246,7 +250,7 @@
             <br>
             <label class="app-label"><input type="radio" name="1" class="app-radio"/> Unchecked</label>
             <br>
-            <label class="app-label"><input type="radio" name="1" class="app-radio" disabled/> Disabled</label>
+            <label class="app-label"><input type="radio" name="2" class="app-radio" checked disabled/> Disabled</label>
 
 
 
@@ -256,7 +260,7 @@
             
         <h6 class="m-tb-10">Default Links</h6>     
             <a href="#" class="app-link">Default App Link</a><br>
-            <a href="#" class="app-link bold">Default Bold App Link</a><br><br>    
+            <a href="#" class="app-link"><b>Default Bold App Link</b></a><br><br>    
 
 
         <h6 class="m-tb-10">Link with icon</h6>        
@@ -315,7 +319,7 @@
   
             <input class="app-password app-fit-content" type="password" placeholder="Input Password"> <br>
   
-            <div class="app-searchBar app-fit-content"> 
+            <div class="app-searchbar app-fit-content"> 
                 <input type="search" placeholder="Search here"/>
                 <button type="submit"></button>
             </div> 
@@ -385,6 +389,9 @@
                     <input type="button" value="button with loader" animate/>
                     &nbsp;&nbsp;<div class="app-loader-busy" small></div>
                </div>
+            <br>
+            
+            <button class="app-button" animate><div class="app-loader-busy" soo-small></div><span>Button loading</span></button>
             
             
             <h5 class="m-b-15">Switch with loader</h5>   
@@ -413,10 +420,10 @@
                 <p>This is paragraph used to display long text in your windows application.</p>
             
             <h5 class="m-b-15">Paragraph Success</h5>     
-                <p class="color-green">This is success paragraph used to display success text in your windows application.</p>
+                <p class="color-success">This is success paragraph used to display success text in your windows application.</p>
             
             <h5 class="m-b-15">Paragraph Danger</h5>     
-                <p class="color-red">This is danger paragraph used to display danger text in your windows application.</p>
+                <p class="color-danger">This is danger paragraph used to display danger text in your windows application.</p>
             
             <h5 class="m-b-15">Paragraph Light</h5>  
                 <p light>This is light paragraph used to display long text in your windows application.</p>
@@ -520,21 +527,10 @@
         <div class="app-section-container">
         
          <h3 class="m-b-15">Searchable List</h3>
-            <br>
-         
-            <div class="app-flex">
-            <div class="app-searchBar"> 
-                <input type="search" placeholder="Search here"/>
-                <button type="submit"></button>
-            </div>
             
-            <select class="app-select" accent>
-                        <option selected>Choose an option</option>
-                        <option value="1">Java</option>
-                        <option value="2">Python</option>
-                        <option value="3">C++</option>
-                    </select>
-                </div>
+            <div class="app-search">
+                <input class="app-searchbox" type="search" placeholder="Search here..">
+            </div>
                  
             <div class="app-hr"></div>
          
@@ -619,18 +615,19 @@
             <div class="app-fit-content">
             <h5 class="m-b-15">Bottom Sheet Component :</h5>
                 <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
-                <input type="button" data-bottomsheet-target="yourTarget" class="app-bottomsheet-button" value="Show Bottom Sheet" animate/>
+                <input type="button" class="app-bottomsheet-toggle" data-id="mm" value="Show Bottom Sheet" animate/>
             </div>
             
-            <div class="app-bottomsheet" id="yourTarget">
-                <div>
+            
+            <div class="app-bottomsheet" id="mm">
+                <div class="app-bottomsheet-toggle" data-id="mm"></div>
+                <div class="app-bottomsheet-wrapper">
                     <button><i class="icons10-camera"></i><span>Upload</span></button>
                     <hr/>
                     <button><i class="icons10-picture"></i><span>View</span></button>
                     <button><i class="icons10-download"></i><span>Save</span></button>               
-                    <bottomsheet-optionBar-space></bottomsheet-optionBar-space>
                     <button><i class="icons10-trash"></i><span>Remove</span></button>
-                    <button class="app-bottomsheet-close"><i class="icons10-cross"></i><span>Cancel</span></button>
+                    <button class="app-bottomsheet-toggle" data-id="mm"><i class="icons10-cross"></i><span>Cancel</span></button>
                 </div>
             </div>
          
@@ -716,11 +713,12 @@
         <h3>Alerts</h3>
             
         <div class="app-flex-center">
-            <img class="app-user large" src="src/core/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
+            <img class="app-avatar large" src="src/core/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
             <div class="app-grid">
-                <img class="app-user small" src="src/core/img/anim_avatar.jpeg"/>
-                <img class="app-user small" src="src/core/img/anim_avatar.jpeg"/></div></div>
-            <br>    
+                <img class="app-avatar small" src="src/core/img/anim_avatar.jpeg"/>
+                <img class="app-avatar small" src="src/core/img/anim_avatar.jpeg"/>
+            </div>
+        </div>   
             
         <h5 class="m-b-15">Show Primary Alert</h5>        
             <input type="button" value="Show Alert" onclick="CallAlert()"/>

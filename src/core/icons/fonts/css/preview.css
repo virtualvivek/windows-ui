@@ -57,3 +57,18 @@ pre {
     font-weight: bold;
 }
 
+@media only screen and (max-width: 760px) {
+    pre{
+        font-size: 6px;
+    }
+    .preview-glyphs{
+        width: 90px;
+    }
+    .size-60{
+        font-size: 30px;
+        width: 90px;
+    }
+    .container{
+        padding-bottom: 80px;
+    }
+}
