@@ -2,17 +2,27 @@
 
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
 
+
 </h2>
+
+
+
 
 
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
+
   
+
+
+
+
 
   
 <p align="center">
 	
+
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 
@@ -22,6 +32,7 @@
       alt="License: MIT" />
   </a>
   
+
 
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
     <img src="https://img.shields.io/badge/Release-v2.0-green.svg?style=flat-square&color=darklime"
