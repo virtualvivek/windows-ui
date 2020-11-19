@@ -10,6 +10,8 @@
     <link rel="stylesheet" type="text/css" href="src/core/app-config/css/appConfig.css" />
     <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.min.css" />
     <link rel="stylesheet" href="src/core/icons/fonts/fonts.min.css"> 
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="src/core/app/manifest.json">
 </head>   
 	
 <body>
@@ -24,7 +26,7 @@
             <ul>
                 <a href="#" id="app-nav-toggle"></a>
                 <li><a href="#app-section-1" class="icons10-grid-3"><span>Form Elements</span></a></li>
-                <li><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
+                <li class="bbb"><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
                 <li><a href="#app-section-3" class="icons10-bar-chart"><span>Progress Controls</span></a></li>
                 <li><a href="#app-section-8" class="icons10-list-search"><span>Searchable List</span></a></li>
                 <li><a href="#app-section-4" class="icons10-up-squared"><span>Bottom Sheet</span></a></li>
@@ -94,8 +96,8 @@
             </div>
             
             <div class="app-range-slider" round-border>
-                <input type="range" value="142" min="0" max="500">
-                <span>142</span>
+                <input type="range" value="156" min="0" max="500">
+                <span>156</span><span>"</span>
             </div>
             
                       
@@ -292,10 +294,6 @@
                     <span>100</span>
                 </div>
             
-             <div class="app-range-slider app-fit-content" classic>
-                    <input type="range" value="100" min="0" max="500">
-                    <span>100</span>
-                </div>
             
             <h5 class="m-b-15">Classic Switch</h5> 
                  <label class="app-switch" classic>
@@ -744,7 +742,7 @@
     <script src="src/core/js/require/jquery.js"></script> 
     <script src="src/core/app-config/appConfig.js"></script>
     <script src="src/core/js/windows10framework.min.js"></script>
-    <script src="src/core/js/windows10framework-notifications.js"></script>
+    <script src="src/core/js/windows10framework-notifications.min.js"></script>
  
     <!--  App Demo Components js  -->
     <script src="src/core/js/init/framework/searchBarSuggestions_demo.js"></script>
