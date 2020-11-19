@@ -10,5 +10,5 @@
   ],
   "start_url": "../../../framework.html",
   "display": "standalone",
-  "orientation": "landscape"
+  "orientation": "portrait"
 }
