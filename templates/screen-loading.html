@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="../src//core/app-config/css/appConfig.css" />
         <link rel="stylesheet" type="text/css" href="../src/core/css/windows10framework.min.css" />
         <link rel="stylesheet" href="../src//core/icons/fonts/fonts.min.css"> 
-        <meta name="theme-color" content="#555" />
+        <meta name="theme-color" content="var(--AppColor)" />
     </head>
     
     <body>
@@ -39,5 +39,8 @@
         </div>
 
     </body>
+    <script src="../src/core/js/windows10framework.api.js"></script>
+    <!-- API for setting current statusbar accent   -->
+    <script>setStatusBarAccent();</script>
 
 </html>
