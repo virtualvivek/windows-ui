@@ -23,6 +23,9 @@
 
 
 
+
+
+
   
 <p align="center">
 	
@@ -55,9 +58,6 @@
 	Build full featured Windows 10 look & feel UI apps or Electron apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
 </p>
 
-
-
-<p align="center"><code><b>Note :</b> Please enable <b>Desktop Mode</b> if using Demo in mobile phones for best experience.</code><p>
 	
 
 <h2 align="center">
