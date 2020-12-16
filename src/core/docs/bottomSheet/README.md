@@ -10,23 +10,31 @@ Bottom sheets are surfaces containing supplementary content that are anchored to
 ## Step 1. Defining structure
 
 ```html
- <div class="app-bottomsheet" id="yourTarget">
-    <div>
-       <button><i class="icons10-camera"></i><span>Upload</span></button>
-       <hr/> <!-- use to show a hr line between -->
-       <button><i class="icons10-picture"></i><span>View</span></button>
-       <button><i class="icons10-download"></i><span>Save</span></button>               
-       <bottomsheet-optionBar-space></bottomsheet-optionBar-space>  <!-- use to show space between -->
-       <button><i class="icons10-trash"></i><span>Remove</span></button>
-       <button class="app-bottomsheet-close"><i class="icons10-cross"></i><span>Cancel</span></button>  
-          <!-- use to hide bottomsheet using class="app-bottomsheet-close" -->
+ <div class="app-bottomsheet" id="targetSheetID">
+    <div class="app-bottomsheet-toggle" data-id="targetSheetID"></div>
+    <div class="app-bottomsheet-wrapper">
+        <button><i class="icons10-camera"></i><span>Upload</span></button>
+        <hr/>
+        <button><i class="icons10-picture"></i><span>View</span></button>
+        <button><i class="icons10-download"></i><span>Save</span></button>               
+        <button><i class="icons10-trash"></i><span>Remove</span></button>
+        <button class="app-bottomsheet-toggle" data-id="mm"><i class="icons10-cross"></i><span>Cancel</span></button>
     </div>
- </div>
+</div>
 ```
 ## Step 2. Calling Bottomsheet
 
+```
+Add two attributes to make a component(Button,Link..) bottomsheet callable 
+
+1. class="app-bottomsheet-toggle"
+2. data-id="targetSheetID" 
+```
+
+Then :
+
 ```html
- <input type="button" data-bottomsheet-target="yourTarget" class="app-bottomsheet-button" value="Show Bottom Sheet" />
+ <input type="button" class="app-bottomsheet-toggle" data-id="targetSheetID" value="Show Bottom Sheet" />
 ```
 
 ## Result. 

@@ -85,19 +85,17 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 <img src="checkbox/checkbox_default.png" width="150" />
 
 ```html
-<div class="app-checkbox">
-   <input id="i2" type="checkbox" checked>
-   <label for="i2">Checked</label>
-</div>
+<label class="app-checkbox">
+    <input type="checkbox" value="value" checked> Checked
+</label>
 ```
 ### Disabled CheckBox
 <img src="checkbox/checkbox_disabled.png" width="220" />
 
 ```html
-<div class="app-checkbox">
-   <input id="i4" type="checkbox" disabled checked>
-   <label for="i4">Disabled Checked</label>
-</div>
+<label class="app-checkbox">
+    <input type="checkbox" value="value" checked disabled> Checked
+</label>
 ```
 ---
 
@@ -185,10 +183,9 @@ links are hyperlinks. You can click on a link and jump to another document.
 
 ```html
 <a href="#" class="app-link-compound">
-    <div><i class="icons10-timeline"></i>
-        <span>App Volume and device preference</span>
-        <p>Customise app volumes or devices they use</p>
-    </div>
+    <i class="icons10-timeline"></i>
+    <span>App Volume and device preference</span>
+    <p>Customise app volumes or devices they use</p>
 </a>
 ```
 ### Compound Link Accent
@@ -196,32 +193,29 @@ links are hyperlinks. You can click on a link and jump to another document.
 
 ```html
 <a href="#" class="app-link-compound" accent>
-    <div><i class="icons10-notification-image"></i>
-        <span>App Notification and device preference</span>
-        <p>Customise app volumes and speakers or devices they use</p>
-    </div>
+    <i class="icons10-notification-image"></i>
+    <span>App Notification and device preference</span>
+    <p>Customise app volumes and speakers or devices they use</p>
 </a>
 ```
 ### Compound Link BG Accent
 <img src="links/compound_accent_bg.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound" accent-bg>
-    <div><i class="icons10-camera"></i>
-       <span>App Camera and device preference</span>
-       <p>Customise app volumes or devices they use</p>
-    </div>
+<a href="#" class="app-link-compound">
+   <i class="icons10-camera" accent-bg></i>
+   <span>App Camera and device preference</span>
+   <p>Customise app volumes or devices they use</p>
 </a>
 ```
 ### Compound Link BG Grey
 <img src="links/compound_grey_bg.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound" grey-bg>
-    <div><i class="icons10-plus"></i>
-       <span>Add more apps</span>
-       <p>apps available in store show here</p>
-    </div>
+<a href="#" class="app-link-compound">
+    <i class="icons10-plus" grey-bg></i>
+    <span>Add more apps</span>
+    <p>apps available in store show here</p>
 </a>
 ```
 ---
@@ -236,19 +230,17 @@ Radio buttons are normally presented in radio groups (a collection of radio butt
 <img src="radio/radio_default.png" width="140" />
 
 ```html
-<div class="app-radio">
-    <input id="radio-1" name="radio" type="radio" checked>
-    <label for="radio-1"><span>Checked</span></label>
-</div>
+<label class="app-label">
+  <input type="radio" name="1" class="app-radio"  checked/> Checked
+</label>
 ```
 ### Disabled Radio
 <img src="radio/radio_disabled.png" width="140" />
 
 ```html
-<div class="app-radio">
-    <input id="radio-3" name="radio" type="radio" disabled>
-    <label for="radio-3"><span>Disabled</span></label>
-</div>
+<label class="app-label">
+  <input type="radio" name="1" class="app-radio" checked disabled/> Checked
+</label>
 ```
 ---
 
@@ -302,27 +294,23 @@ The 'select' element is most often used in a form, to collect user input. The na
 <img src="select/select_default.png" width="300" />
 
 ```html
-<div class="app-select">
-    <select>
-        <option selected>Choose an option</option>
-        <option value="1">Java</option>
-        <option value="2">Python</option>
-        <option value="3">C++</option>
-    </select>
-</div>
+<select class="app-select">
+    <option selected>Choose an option</option>
+    <option value="1">Java</option>
+    <option value="2">Python</option>
+    <option value="3">C++</option>
+</select>
 ```
 ### Disabled Select
 <img src="select/select_disabled.png" width="300" />
 
 ```html
-<div class="app-select" disabled>
-    <select>
-        <option selected>Choose an option Disabled</option>
-        <option value="1">Java</option>
-        <option value="2">Python</option>
-        <option value="3">C++</option>
-    </select>
-</div>
+<select class="app-select" disabled>
+    <option selected>Choose an option Disabled</option>
+    <option value="1">Java</option>
+    <option value="2">Python</option>
+    <option value="3">C++</option>
+</select>
 ```
 ---
 

@@ -72,12 +72,21 @@
 
 ## Stunning Set Of UI Elements
 
-<h1 align="center"><img src="kitchen-sink/_md_preview/md_glance_forms.png" width="850" />
-<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="850" /></h1>
+<h1 align="center">
+	<img src="kitchen-sink/_md_preview/md_glance_forms.png" width="850" />
+	<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="850" />
+</h1>
 <p align="center">
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
 <br>
+
+## Build Universal Windows or Web Apps
+Create apps that run fluently on every device
+
+<h1 align="center">
+	<img src="kitchen-sink/_md_preview/app_preview_responsive.gif" width="250" />
+</h1>
 
 # Documentation
 
