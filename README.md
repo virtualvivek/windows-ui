@@ -2,12 +2,7 @@
 
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
 
-
 </h2>
-
-
-
-
 
 
 
@@ -15,18 +10,7 @@
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
-  
 
-
-
-
-
-
-
-
-
-
-  
 <p align="center">
 	
 
@@ -115,55 +99,31 @@ Create apps that run fluently on every device
 
 ```htm
 
-<body>
-    <div class="app-container">       
-       <!-- Side Navigation -->
-	   <div id="app-nav-wrap">           
-         <nav animate>       
-            <!-- App Name--> 
-            <div><!-- <a href="#" app-back></a> --><span id="app-name">App Name</span></div>
-            <ul>
-                <a href="#" id="app-nav-toggle"></a>
-                <li><a href="#app-section-1" class="icons10-circle"><span>Tab 1</span></a></li>
-                <li><a href="#app-section-2" class="icons10-circle"><span>Tab 2</span></a></li>
-                <li><a href="#app-section-3" class="icons10-circle"><span>Tab 3</span></a></li>
-                <li><a href="#app-section-4" class="icons10-circle"><span>Tab 4</span></a></li>
-            </ul>
-         </nav>
-       </div>	
-    
-    <div class="app-content-wrap">    
-        
-    <!-- Section 1 -->
-     <section id="app-section-1">
+body 
+├── app-container
+│   ├── app-nav-wrap
+	├── nav
+	    ├── app-back | app-name
+	    ├── ul
+	    	├── li tab1
+		├── li tab2
+	    ├── /ul
+         ├── /nav
+     ├── /app-nav-wrap
      
-	<div class="app-section-container">
-	
-	  <h3 class="fixed">Tab 1</h3>
-           <!-- Contents -->
-         </div>
-          
-     </section>
+  ├── app-content-wrap
   
-    .......2 .....3 .........
-    
-    <!-- Section 4 -->
-     <section id="app-section-4">
-     
-	<div class="app-section-container">
-	
-	  <h3>Tab 4</h3>
-           <!-- Contents -->
-         </div>
-          
-     </section> 
-					
-        </div><!-- /app-content-wrap(App Tab Host Wrapper) -->
-				
-    </div><!-- /app-container(Tabs Content Including Navigation) -->	
-
-</body>
-
+      ├── app-section-1
+      	  ├── app-section-container
+      ├── /app-section-1
+      
+      ├── app-section-2
+      	  ├── app-section-container
+      ├── /app-section-2
+      
+  ├── /app-content-wrap
+├── /app-container
+/body
 ```
 <br>
 
