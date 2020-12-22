@@ -49,11 +49,11 @@
 	
 
 <h2 align="center">
-  <a href="https://windows10framework.github.io"><img src="kitchen-sink/_md_preview/app_preview_button_watch_demo.png" width="300" /></a>
+  <a href="https://windows10framework.github.io"><img src="kitchen-sink/_md_preview/app_preview_button_watch_demo.png" width="250" /></a>
 
-  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="300" />
+  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="250" />
 
-  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="300" />
+  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="250" />
 </h2>
 
 
@@ -133,9 +133,9 @@ body
 
 
 ### Configure App Preferences
-Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file
-#### ./src /core /app-config /appConfig.js
-<a href="src/core/app-config/appConfig.js">View appConfig.js</a>
+Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file <br>
+<b>./src /core /app-config /<a href="src/core/app-config/appConfig.js">appConfig.js </a></b>
+
 
 ```js
 let BlurEnabled = true;  //'true' get drop shadows for components
@@ -148,14 +148,12 @@ let NightMode = false;  //'true' get dark mode when app mounted
 <br>
 
 ### Configure App Color, Font Family or ScrollBars
-You can customize entire app `accent color`, `font family`, more using `appConfig.css` file
-#### ./src /core /app-config /css /appConfig.css
-<a href="src/core/app-config/css/appConfig.css">View appConfig.css</a>
+You can customize entire app `accent color`, `font family`, more using `appConfig.css` file <br>
+<b>./src /core /app-config /css /<a href="src/core/app-config/css/appConfig.css">appConfig.css</a></b>
+
 
 ```css
-:root {
-    --AppColor: #2D7D9A;  /*Customize Entire App Color You Like*/
-	}
+:root {	--AppColor: #2D7D9A; } /*Customize Entire App Color You Like*/
 
 body {
     font-weight: 400;
