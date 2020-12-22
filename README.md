@@ -161,10 +161,6 @@ body {
     font-weight: 400;
     font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
     .... }
-
-*::-webkit-scrollbar,
-*::-webkit-scrollbar-thumb {
-  .... }
 ```
 
 <br>
