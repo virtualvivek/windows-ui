@@ -73,7 +73,7 @@ Provides you with the rich UI Components that to completely matches the latest W
 Create apps that run fluently on every device
 
 <h1 align="center">
-	<img src="kitchen-sink/_md_preview/app_preview_responsive.gif" width="250" />
+	<img src="kitchen-sink/_md_preview/app_preview_responsive.gif" width="200" />
 </h1>
 
 # Documentation
@@ -87,25 +87,24 @@ Create apps that run fluently on every device
   
 
 <p align="center">
-<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="400" /></a>
-<a href="src/core/docs/progressControls/README.md"><img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="400" /></a>
-<a href="src/core/docs/icons/README.md"><img src="src/core/docs/root_md_preview/docs_icons.png" width="400" /></a>
-<a href="src/core/docs/bottomSheet/README.md"><img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="400" /></a>
-<a href="src/core/docs/alerts/README.md"><img src="src/core/docs/root_md_preview/docs_alerts.png" width="400" /></a>
-<a href="src/core/docs/notifications/README.md"><img src="src/core/docs/root_md_preview/docs_notifications.png" width="400" /></a>
+<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="300" /></a>
+<a href="src/core/docs/progressControls/README.md"><img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="300" /></a>
+<a href="src/core/docs/icons/README.md"><img src="src/core/docs/root_md_preview/docs_icons.png" width="300" /></a>
+<a href="src/core/docs/bottomSheet/README.md"><img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="300" /></a>
+<a href="src/core/docs/alerts/README.md"><img src="src/core/docs/root_md_preview/docs_alerts.png" width="300" /></a>
+<a href="src/core/docs/notifications/README.md"><img src="src/core/docs/root_md_preview/docs_notifications.png" width="300" /></a>
 </p>
 
 <br>
 <h1>Getting Started</h1>
 
 ### Code container template
-<h3>View <a href="templates/screen-main.html">Complete App template</a></h3> 
+<h3>View <a href="templates/screen-main.html">App template</a></h3> 
 
 ```htm
-
 body 
 ├── app-container
-│   ├── app-nav-wrap
+    ├── app-nav-wrap
 	├── nav
 	    ├── app-back | app-name
 	    ├── ul
@@ -168,6 +167,10 @@ body {
   .... }
 ```
 
+<br>
+
+## Find this library useful? :heart:
+Support it by joining [stargazers](https://github.com/virtualvivek/Windows10-framework/stargazers) for this repository. :star:
 
 <br>
 
