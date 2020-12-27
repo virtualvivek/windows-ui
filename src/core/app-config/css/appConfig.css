@@ -1,37 +1,37 @@
 :root {
     --AppColor: #0078D4;
- /*   --AppColor:#D13438; */
+ /*   Change of your choice */
 }
 
 body {
 	font-weight: 400;
 	font-size: 1em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-    text-shadow: rgba(0,0,0,.01) 0 0 1px;
+    text-shadow: rgba(0,0,0,0.01) 0 0 1px;
     text-rendering: optimizeLegibility !important;
-    -webkit-font-smoothing: antialiased !important;
-    -moz-osx-font-smoothing: grayscale !important;
-    font-smooth:always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: always;
 }
 
 a {
-	color:#444;
+	color: #444;
 	text-decoration: none;
 	outline: none;
 	font-weight: 500;
 }
  
 a:hover {
-	background-color:#ddd; 
+	background-color: #DDD; 
 }
 
 ::selection {
-    background-color:var(--AppColor);
+    background-color: var(--AppColor);
     color: white;
 }
 
 ::-moz-selection {   
-    background-color:var(--AppColor);
+    background-color: var(--AppColor);
     color: white;
 }
 ::-webkit-scrollbar { width: 0.55em }

@@ -9,7 +9,7 @@
 }
 
 body {
-    background: #fff;
+    background: #FFF;
     color: #444;
     font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -43,7 +43,7 @@ body {
 }
 
 pre {
-    background-color: #fafafa;
+    background-color: #FAFAFA;
     padding: 4px 2px 4px 2px;
     display: block;
     margin: 2px;
@@ -51,8 +51,8 @@ pre {
     line-height: 1.42857143;
     word-break: break-all;
     word-wrap: break-word;
-    color: #333333;
-    border: 1px solid #eeeeee;
+    color: #333;
+    border: 1px solid #EEEEEE;
     border-radius: 4px;
     font-weight: bold;
 }
