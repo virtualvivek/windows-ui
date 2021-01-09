@@ -154,7 +154,6 @@ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `ap
 
 ```js
 let BlurEnabled = true;  //'true' get drop shadows for components
-let AlertStyle = 'Win10';  //'Win8','Win10'
 let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
 let NightMode = false;  //'true' get dark mode when app mounted
 ```
@@ -168,12 +167,13 @@ You can customize entire app `accent color`, `font family`, more using `appConfi
 
 
 ```css
-:root {	--AppColor: #2D7D9A; } /*Customize Entire App Color You Like*/
+:root {	
+    --AppColor: #2D7D9A; 
+    } /*Customize Entire App Color You Like*/
 
 body {
-    font-weight: 400;
-    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
-    .... }
+    font-family: Segoe UI, sans-serif;  
+    .... } /*Customize with your own font family*/
 ```
 
 <br>
