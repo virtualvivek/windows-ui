@@ -12,6 +12,12 @@
 
 
 
+
+
+
+
+
+
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
@@ -19,6 +25,11 @@
 
 <p align="center">
 	
+
+
+
+
+
 
 
 
@@ -47,7 +58,7 @@
 <h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
 
 <p align="center">
-	Build full featured Windows 10 look & feel UI apps or Electron apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
+	Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
 </p>
 
 	
@@ -112,24 +123,24 @@ body
 	├── nav
 	    ├── app-back | app-name
 	    ├── ul
-	    	├── li tab1
-		├── li tab2
-	    ├── /ul
-         ├── /nav
-     ├── /app-nav-wrap
+	    	└── li tab1
+		└── li tab2
+	    └── /ul
+         └── /nav
+     └── /app-nav-wrap
      
   ├── app-content-wrap
   
       ├── app-section-1
-      	  ├── app-section-container
-      ├── /app-section-1
+      	  └── app-section-container
+      └── /app-section-1
       
       ├── app-section-2
-      	  ├── app-section-container
-      ├── /app-section-2
+      	  └── app-section-container
+      └── /app-section-2
       
-  ├── /app-content-wrap
-├── /app-container
+  └── /app-content-wrap
+└── /app-container
 /body
 ```
 <br>
@@ -143,7 +154,6 @@ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `ap
 
 ```js
 let BlurEnabled = true;  //'true' get drop shadows for components
-let AlertStyle = 'Win10';  //'Win8','Win10'
 let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
 let NightMode = false;  //'true' get dark mode when app mounted
 ```
@@ -157,12 +167,13 @@ You can customize entire app `accent color`, `font family`, more using `appConfi
 
 
 ```css
-:root {	--AppColor: #2D7D9A; } /*Customize Entire App Color You Like*/
+:root {	
+    --AppColor: #2D7D9A; 
+    } /*Customize Entire App Color You Like*/
 
 body {
-    font-weight: 400;
-    font-family: Segoe UI, sans-serif;  /*Customize with your own font family*/
-    .... }
+    font-family: Segoe UI, sans-serif;  
+    .... } /*Customize with your own font family*/
 ```
 
 <br>
@@ -174,24 +185,5 @@ Support it by joining [stargazers](https://github.com/virtualvivek/Windows10-fra
 
 ## License
 
-	MIT License
-
-	Copyright (c) 2020 Vivek Verma
-
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-
-	The above copyright notice and this permission notice shall be included in all
-	copies or substantial portions of the Software.
-
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-	SOFTWARE.
+`Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE).<br>
+Copyright (c) 2020-21 ` Vivek Verma `
