@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 	
-<head>   
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Windows10 framework</title> 
     <link rel="shortcut icon" href="src/core/img/favicon.ico" />     
     <link rel="stylesheet" type="text/css" href="src/core/app-config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.min.css" />
+    <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.css" />
     <link rel="stylesheet" href="src/core/icons/fonts/fonts.min.css"> 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#EEE" />
-    <link rel="manifest" href="src/core/app/manifest.json">
+    <link rel="manifest" href="manifest.json">
 </head>   
 	
 <body>
+    
 
     <div class="app-container"> 
         
        <!-- Side Navigation -->
 	   <div id="app-nav-wrap">           
-         <nav animate>       
+         <nav class="animate">       
             <!-- App Name--> 
-            <div><a href="index.html" app-back></a><span id="app-name">Windows10 Framework</span></div>
+            <div><a href="index.html" class="app-back"></a><span id="app-name">Windows10 Framework</span></div>
+             <div><a href="#" id="app-nav-toggle"></a></div>
             <ul>
-                <a href="#" id="app-nav-toggle"></a>
+                <a class="app-tab-user" href="#"><img src="src/core/img/anim_avatar.jpeg"/><span>User Name</span></a>
+                
+                <div class="app-hr"></div>
                 <li><a href="#app-section-1" class="icons10-grid-3"><span>Form Elements</span></a></li>
-                <li class="bbb"><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
+                <li><a href="#app-section-2" class="icons10-tasks"><span>Advance Component</span></a></li>
                 <li><a href="#app-section-3" class="icons10-bar-chart"><span>Progress Controls</span></a></li>
+                <h1>Framework</h1>
+                <div class="app-hr"></div>
                 <li><a href="#app-section-8" class="icons10-list-search"><span>Searchable List</span></a></li>
                 <li><a href="#app-section-4" class="icons10-up-squared"><span>Bottom Sheet</span></a></li>
                 <li><a href="#app-section-5" class="icons10-deathly-hallows"><span>Icons</span></a></li>
                 <li><a href="#app-section-6" class="icons10-notification"><span>Notifications</span></a></li>
                 <li><a href="#app-section-7" class="icons10-advertising"><span>Alerts</span></a></li>
+                <li><a href="#app-section-8" class="icons10-picture"><span>Images</span></a></li>
             </ul>
          </nav>
        </div>	
@@ -91,12 +98,12 @@
                 <span>100</span><span>%</span>
             </div>
             
-            <div class="app-range-slider" round>
+            <div class="app-range-slider round">
                 <input type="range" value="242" min="0" max="500">
                 <span>242</span>
             </div>
             
-            <div class="app-range-slider" round-border>
+            <div class="app-range-slider round-border">
                 <input type="range" value="156" min="0" max="500">
                 <span>156</span><span>"</span>
             </div>
@@ -108,7 +115,7 @@
             <div class="app-flex">  
                 
                 <label class="app-checkbox"><input type="checkbox" value="value" checked> Checked</label>
-                    <space s=40></space>
+                    <space s="40"></space>
                 <label class="app-checkbox"><input type="checkbox" value="value" checked disabled> Disabled Checked</label>
                 
             </div>
@@ -116,7 +123,7 @@
             <div class="app-flex">  
                 
                 <label class="app-checkbox"><input type="checkbox" value="value"> Unchecked</label>
-                    <space s=20></space>
+                    <space s="20"></space>
                 <label class="app-checkbox"><input type="checkbox" value="value" disabled> Disabled Unchecked</label>
                 
             </div>
@@ -129,6 +136,8 @@
             <input type="text" placeholder="Input Text"/> 
             &nbsp;
             <input type="text" placeholder="Input Text Disabled" disabled/>
+            
+                
                 
            
 
@@ -161,7 +170,6 @@
                         <option value="2">Python</option>
                         <option value="3">C++</option>
                     </select>
-                
                     &nbsp;   
                     <select class="app-select" disabled>
                         <option selected>Choose an option Disabled</option>
@@ -169,12 +177,32 @@
                         <option value="2">Python</option>
                         <option value="3">C++</option>
                     </select>
-                
+            
+                <h6 class="m-tb-10">Select dropdown</h6>
+            
+                   <select class="app-select dropdown" id="fruits">
+                        <option value="hide">Select Fruit</option>
+                        <option value="Apple">Apple</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Peach">Peach</option>
+                    </select>
+                    &nbsp;
+                    <select class="app-select dropdown" id="fruits">
+                        <option value="Apple">Apple</option>
+                        <option value="Orange">Orange</option>
+                        <option value="Banana">Banana</option>
+                        <option value="Peach">Peach</option>
+                    </select>
+            
+            
+            
+                  
                 <br>
             
                 <h6 class="m-tb-10">Select accent</h6> 
             
-                    <select class="app-select" accent>
+                    <select class="app-select accent">
                         <option value="1" selected>Apple</option>
                         <option value="2">Orange</option>
                         <option value="3">Peach</option>
@@ -182,7 +210,7 @@
               
                     &nbsp;
                     <label class="app-label">Language
-                        <select class="app-select" accent>
+                        <select class="app-select accent">
                             <option value="1" selected>Java</option>
                             <option value="2">Python</option>
                             <option value="3">C++</option>
@@ -227,23 +255,23 @@
             
         <h5 class="m-b-15">Buttons</h5>
             <input type="button" value="Default button" /> &nbsp;
-            <input type="button" value="Accent button" accent/> &nbsp;
+            <input type="button" value="Accent button" class="accent"/> &nbsp;
             
             <br><br>
-            <button class="app-button" animate><i class="icons10-plus"></i>Button icon</button> &nbsp;
-            <button class="app-button" accent animate><i class="icons10-user"></i>Button accent</button>
+            <button class="app-button animate"><i class="icons10-plus"></i>Button icon</button> &nbsp;
+            <button class="app-button accent animate"><i class="icons10-user"></i>Button accent</button>
             
             <br><br>            
-            <input type="button" value="Animate button" animate/> &nbsp;
-            <input type="button" value="Animate accent" accent animate/>
+            <input type="button" value="Animate button" class="animate"/> &nbsp;
+            <input type="button" value="Animate accent" class="accent animate"/>
             
             <br><br>   
             <input type="button" value="Default disabled" disabled/> &nbsp;
-            <input type="button" value="Accent disabled" accent disabled/>
+            <input type="button" value="Accent disabled" class="accent" disabled/>
 
             <br><br>      
-            <button class="app-button bg-danger" accent animate><i class="icons10-advertising"></i>Button danger</button>
-            <button class="app-button bg-success" accent animate><i class="icons10-checkmark"></i>Button success</button>
+            <button class="app-button bg-danger animate"><i class="icons10-advertising"></i>Button danger</button>
+            <button class="app-button bg-success animate"><i class="icons10-checkmark"></i>Button success</button>
 
 
 
@@ -280,32 +308,11 @@
 
 
         <h6 class="m-tb-10">Compound Link bar Accent</h6>        
-            <a href="#" class="app-link-compound" accent>
+            <a href="#" class="app-link-compound accent" >
                 <i class="icons10-notification-image"></i>
                     <span>App Notification and device preference</span>
                     <p>Customise app volumes and speakers or devices they use</p>
                 </a>
-            
-            
-            
-            
-              <h5 class="m-b-15">Classic SliderBar</h5> 
-                <div class="app-range-slider" classic>
-                    <input type="range" value="100" min="0" max="500">
-                    <span>100</span>
-                </div>
-            
-            
-            <h5 class="m-b-15">Classic Switch</h5> 
-                 <label class="app-switch" classic>
-                    <input type="checkbox"/>
-                    <div data-off="Off" data-on="On"></div>
-                </label>
-                <p class="m-b-15"></p>
-                 <label class="app-switch" classic>
-                    <input checked type="checkbox"/>
-                    <div data-off="Off" data-on="On"></div>
-                </label>
             
             
             
@@ -365,7 +372,7 @@
             <h5 class="m-tb-10">Compound Accent-icon Link bar</h5>    
              
                 <a href="#" class="app-link-compound">
-                  <i class="icons10-camera" accent-bg></i>
+                  <i class="icons10-camera accent-bg"></i>
                      <span>App Camera and device preference</span>
                      <p>Customise app volumes or devices they use</p>
                     </a>
@@ -375,7 +382,7 @@
             <h5 class="m-tb-10">Compound Add Link bar</h5>        
               
                 <a href="#" class="app-link-compound">
-                   <i class="icons10-plus" grey-bg></i>
+                   <i class="icons10-plus grey-bg"></i>
                       <span>Add more apps</span>
                       <p>apps available in store show here</p>
                     </a>
@@ -385,17 +392,21 @@
             <br>
             <h5 class="m-tb-15">Button with loader</h5>   
                <div class="container app-flex-center">
-                    <input type="button" value="button with loader" animate/>
-                    &nbsp;&nbsp;<div class="app-loader-busy" small></div>
+                    <input type="button" value="button with loader" class="animate"/>
+                    &nbsp;&nbsp;
+                    <div class="app-loader-busy small"></div>
                </div>
             <br>
             
-            <button class="app-button" animate><div class="app-loader-busy" soo-small></div><span>Button loading</span></button>
+            <button class="app-button animate">
+                <div class="app-loader-busy small"></div>
+                <span>Button loading</span>
+            </button>
             
             
             <h5 class="m-b-15">Switch with loader</h5>   
                <div class="container app-width-150 app-flex-center">
-                   <div class="app-loader-busy" soo-small></div>
+                   <div class="app-loader-busy small"></div>
                     <label class="app-switch">
                         <input checked="true" type="checkbox"/>
                         <div data-off="Off" data-on="On"></div>
@@ -425,7 +436,7 @@
                 <p class="color-danger">This is danger paragraph used to display danger text in your windows application.</p>
             
             <h5 class="m-b-15">Paragraph Light</h5>  
-                <p light>This is light paragraph used to display long text in your windows application.</p>
+                <p class="light">This is light paragraph used to display long text in your windows application.</p>
             
             
             
@@ -433,7 +444,7 @@
             
             <div class="app-section-container-right">
                 <h6 class="m-0">Right Section Container</h6>             
-                    <p light>If you cant find the network you want select to show available networks to open the list of available networks</p>
+                    <p class="light">If you cant find the network you want select to show available networks to open the list of available networks</p>
              
                     <a href="#" class="app-link">Still cant connect? Open the troubleshooter</a><br>
              
@@ -465,7 +476,7 @@
           
                 <div class="app-progress"><span id="progBar"/></div>
                 <input type="text" id="percent" placeholder="Enter a value to see progress">
-                <input type="button" onclick="doSetProgress()" value="Go" animate/>
+                <input type="button" onclick="doSetProgress('percent','progBar')" value="Go" class="animate"/>
 
 
 
@@ -473,7 +484,7 @@
             
                 <div class="app-progress withIcon"><i class="icons10-hdd"></i><span id="progBarWtIcon"/></div>
                 <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
-                <input type="button" onclick="doSetProgressOfIcon()" value="Go" animate/>
+                <input type="button" onclick="doSetProgress('percentOfIcon','progBarWtIcon')" value="Go" class="animate"/>
            
             <h5 class="m-b-15">Progress Indeterminate</h5> 
                 <div class="app-progress-indeterminate"></div>
@@ -485,32 +496,35 @@
             
                 <div class="app-loader-bar"></div>
                 <br>
-                <div style="background: var(--AppColor);" class="app-loader-bar" light></div>
-
-
 
              <h5 class="m-b-15">Loader Busy</h5>
             
                 <div class="app-flex">
 
-                    <div class="app-loader-busy"></div> <space s=45></space>
-
-                    <div class="app-loader-busy" small></div> <space s=45></space>
-
-                    <div class="app-loader-busy" soo-small></div>
+                    <div class="app-loader-busy"></div> <space s="45"></space>
+                    <div class="app-loader-busy medium"></div> <space s="45"></space>
+                    <div class="app-loader-busy small"></div>
 
                 </div>
            
                 <br>
-                <div class="app-flex" style="background:var(--AppColor);width:200px;padding:15px 0 15px 18px;">
+               
+            <div class="app-fit-content" style="background:var(--AppColor)">
+            
+                <br><space s="45"></space>
+                <div class="app-loader-bar light"></div> 
+                <br>
                     
-                    <div class="app-loader-busy" light></div> <space s=45></space>
-
-                    <div class="app-loader-busy" small light></div> <space s=45></space>
-
-                    <div class="app-loader-busy" soo-small light></div>
+                <div class="app-flex"><space s="45"></space>
+                    <div class="app-loader-busy light"></div> 
+                    <space s="45"></space>
+                    <div class="app-loader-busy medium light"></div> 
+                    <space s="45"></space>
+                    <div class="app-loader-busy small light"></div>
+                </div>
+                <br>
                     
-                </div>    
+            </div>
 
 
         
@@ -535,7 +549,7 @@
          
             <ul class="app-list">
                 <li><a href="#">
-                  <i class="icons10-file" accent></i>
+                  <i class="icons10-file accent"></i>
                     <div>
                       <title>file</title>
                       <subtitle>file details</subtitle>
@@ -545,7 +559,7 @@
                 </li>
                 
                 <li><a href="#">
-                  <i class="icons10-opened-folder" accent></i>
+                  <i class="icons10-opened-folder accent"></i>
                     <div>
                       <title>folder</title>
                       <subtitle>folder details</subtitle>
@@ -555,7 +569,7 @@
                 </li>
                 
                 <li><a href="#">
-                  <i class="icons10-phone" accent-bg></i>
+                  <i class="icons10-phone accent-bg"></i>
                     <div>
                       <title>Apps</title>
                       <subtitle>app details</subtitle>
@@ -565,7 +579,7 @@
                 </li>
                 
                 <li><a href="#">
-                  <i class="icons10-controller" accent-bg></i>
+                  <i class="icons10-controller accent-bg"></i>
                     <div>
                       <title>Games</title>
                       <subtitle>games details</subtitle>
@@ -614,7 +628,7 @@
             <div class="app-fit-content">
             <h5 class="m-b-15">Bottom Sheet Component :</h5>
                 <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
-                <input type="button" class="app-bottomsheet-toggle" data-id="mm" value="Show Bottom Sheet" animate/>
+                <input type="button" class="app-bottomsheet-toggle" data-id="mm" value="Show Bottom Sheet" class="animate"/>
             </div>
             
             
@@ -671,26 +685,26 @@
 
 
             <h6 class="m-b-15 m-0">Default Notification</h6>
-                <input id="show-notification-default-alert" type="button" value="Show me a notification (Default)" animate/><br><br>
+                <input id="show-notification-default-alert" type="button" value="Show me a notification (Default)" class="animate"/><br><br>
 
             <h6 class="m-b-15 m-0">Default with icon Notification</h6>
-                <input id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)" animate/><br><br>
+                <input id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)" class="animate"/><br><br>
 
             <h6 class="m-b-15 m-0">Default with icon and buttons Notification</h6>
-                <input id="show-notification-icon-info" type="button" value="Show me a notification (Info)" animate/><br>
+                <input id="show-notification-icon-info" type="button" value="Show me a notification (Info)" class="animate"/><br>
 
 
 
             <h5 class="m-b-15">Custom Notifications</h5>
 
-              <input id="show-notification-default-success" type="button" value="Show me a notification (Success)" animate/><br>
-              <input id="show-notification-default-danger" type="button" value="Show me a notification (Danger)" animate/><br>
-              <input id="show-notification-default-warning" type="button" value="Show me a notification (Warning)" animate/><br>
+              <input id="show-notification-default-success" type="button" value="Show me a notification (Success)" class="animate"/><br>
+              <input id="show-notification-default-danger" type="button" value="Show me a notification (Danger)" class="animate"/><br>
+              <input id="show-notification-default-warning" type="button" value="Show me a notification (Warning)" class="animate"/><br>
             
             <h5 class="m-b-15">Custom Notifications with icon</h5>
-              <input id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)" animate/><br>
-              <input id="show-notification-icon-danger" type="button" value="Show me a notification with icon (Danger)" animate/><br>
-              <input id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)" animate/><br>
+              <input id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)" class="animate"/><br>
+              <input id="show-notification-icon-danger" type="button" value="Show me a notification with icon (Danger)" class="animate"/><br>
+              <input id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)" class="animate"/><br>
 
 
         </div>
@@ -731,6 +745,25 @@
         </div>
     
     </section>
+        
+        
+        
+        <!-- Section 6 -->
+     <section id="app-section-8"> 
+    
+        <div class="app-section-container">
+
+            <h3>Images</h3>
+
+
+            <h6 class="m-b-15 m-0">Image Large</h6>
+
+            <img class="app-image medium loadable loading animate" src="kitchen-sink/img/lockscreen.jpg"/>
+            <img class="app-image medium loadable error animate" src="kitchen-sink/img/lockscreen.jpg"/>
+
+        </div>
+    
+    </section>
     
    
 					
@@ -740,15 +773,15 @@
 
 </body>
   
-    <script src="src/core/js/require/jquery.js"></script> 
+    <script src="src/core/js/require/jquery.js"></script>
+    <script src="src/core/js/script.js"></script>
     <script src="src/core/app-config/appConfig.js"></script>
-    <script src="src/core/js/windows10framework.min.js"></script>
+    <script src="src/core/js/windows10framework.js"></script>
     <script src="src/core/js/windows10framework.notifications.js"></script>
  
     <!--  App Demo Components js  -->
     <script src="src/core/js/init/framework/searchBarSuggestions_demo.js"></script>
-    <script src="src/core/js/init/framework/progressBarWithIcon_demo.js"></script>
-    <script src="src/core/js/init/framework/progressBarLine_demo.js"></script> 
+    <script src="src/core/js/init/framework/progressBar_demo.js"></script>
     <script src="src/core/js/init/framework/notificatons_demo.js"></script> 
     <script src="src/core/js/init/framework/alertWin10_demo.js"></script>
 

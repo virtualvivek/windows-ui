@@ -57,11 +57,11 @@
     $("#show-notification-default-info").on("click", function () {
         var options = getOptions();
         options.title = "Sorry!";
-        options.description = "Could not complete your transaction.";
-        options.type = "info";
+        options.description = "Icon Could not complete your transaction.";
         //options.image = "../../../img/favicon.ico";
         options.image = {
-            visible: true
+            visible: true,
+            customImage:"../../../img/favicon.ico"
         };
         WinNotification.notify(options);
     });
@@ -122,11 +122,10 @@
         var options = getOptions();
         options.title = "Reminder!";
         options.description = "You have a meeting at 9:11 АМ";
-        //options.image = "img/warning.png";
         options.image = {
-            visible: true
+            visible: true,
+            customImage:"src/core/img/favicon.ico"
         };
-        options.type = "warning";
         WinNotification.notify(options);
     });
 
@@ -137,13 +136,30 @@
     $("#show-notification-icon-info").on("click", function () {
         var options = getOptions();
         options.title = "Sorry!";
-        options.description = "Could not complete your transaction.";
+        options.description = "Icon Could not complete your transaction.";
         options.image = {
-            visible: true
+            visible: true,
+            customImage:"src/core/img/favicon.ico"
         };
-        options.type = "info";
         options.showButtons=true;
-
+        
+        options.buttons= {
+            action: {
+                text: 'iApply',
+                callback: function () {
+                        console.log('Apply button clicked'); 
+                        alert("Apply button clicked");
+                }
+            },
+            cancel: {
+                text: 'Dismiss',
+                callback: function () {
+                        console.log('Dismiss button clicked'); 
+                        alert("Dismiss button clicked");
+                }
+            }
+        };
+            
         WinNotification.notify(options);
     });
 

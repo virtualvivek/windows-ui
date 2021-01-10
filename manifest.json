@@ -3,12 +3,12 @@
   "name": "Windows10 framework",
   "icons": [
     {
-      "src": "drawable/ic_launcher.png",
+      "src": "src/core/app-config/drawable/ic_launcher.png",
       "sizes": "192x192",
       "type": "image/png"
     }
   ],
-  "start_url": "../../../framework.html",
+  "start_url": "framework.html",
   "display": "standalone",
   "orientation": "portrait"
 }

@@ -1,12 +1,12 @@
 :root {
-    --AppColor: #0078D4;
+/*    --AppColor: #0078D4;*/
  /*   Change of your choice */
+    --AppColor: #16ab9c;
 }
 
 body {
 	font-weight: 400;
-	font-size: 1em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", sans-serif;
     text-shadow: rgba(0,0,0,0.01) 0 0 1px;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased;
@@ -15,14 +15,9 @@ body {
 }
 
 a {
-	color: #444;
 	text-decoration: none;
 	outline: none;
 	font-weight: 500;
-}
- 
-a:hover {
-	background-color: #DDD; 
 }
 
 ::selection {
