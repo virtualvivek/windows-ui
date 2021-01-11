@@ -49,6 +49,12 @@
       alt="Release" />
   </a>
   
+  <a href="https://windows10framework.netlify.app">
+    <img src="https://img.shields.io/badge/⚡ live Demo-here-green.svg?style=flat-square"
+      alt="Live Demo" />
+  </a>
+  
+  
 </p>
 
 
@@ -64,7 +70,7 @@
 	
 
 <h2 align="center">
-  <a href="https://windows10framework.github.io"><img src="kitchen-sink/_md_preview/app_preview_button_watch_demo.png" width="250" /></a>
+  <a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="250" /></a>
 
   <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="250" />
 
