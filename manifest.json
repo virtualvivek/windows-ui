@@ -3,7 +3,7 @@
   "name": "Windows10 framework",
   "icons": [
     {
-      "src": "src/core/app-config/drawable/ic_launcher.png",
+      "src": "src/core/config/drawable/ic_launcher.png",
       "sizes": "192x192",
       "type": "image/png"
     }

@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"> 
     <title>Windows10 framework</title> 
     <link rel="shortcut icon" href="src/core/img/favicon.ico" />     
-    <link rel="stylesheet" type="text/css" href="src/core/app-config/css/appConfig.css" />
+    <link rel="stylesheet" type="text/css" href="src/core/config/css/appConfig.css" />
     <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.css" />
     <link rel="stylesheet" href="src/core/icons/fonts/fonts.min.css"> 
     <meta name="mobile-web-app-capable" content="yes">
@@ -57,9 +57,9 @@
   
         <div class="app-section-container">  
             
-            <h3 class="fixed">Form Elements</h3>
+            <h1 class="fixed">Form Elements</h1>
             
-        <h5 class="m-b-15">Switch</h5>
+        <h3>Switch</h3>
             
             <div class="app-flex">
                 
@@ -91,7 +91,7 @@
             
 
 
-        <h5 class="m-b-15">SliderBar</h5> 
+        <h3>SliderBar</h3> 
             
             <div class="app-range-slider">
                 <input type="range" value="100" min="0" max="500">
@@ -110,7 +110,7 @@
             
                       
             
-        <h5 class="m-b-15">Check Box</h5>       
+        <h3>Check Box</h3>       
 
             <div class="app-flex">  
                 
@@ -132,7 +132,7 @@
             
    
     
-        <h5 class="m-b-15">InputText</h5>    
+        <h3>InputText</h3>    
             <input type="text" placeholder="Input Text"/> 
             &nbsp;
             <input type="text" placeholder="Input Text Disabled" disabled/>
@@ -142,12 +142,12 @@
            
 
 
-        <h5 class="m-b-15">InputPassword</h5>
+        <h3>InputPassword</h3>
             <input class="app-password" type="password" placeholder="Input Password"> &nbsp;
             <input class="app-password" type="password" placeholder="Input Password Disabled" disabled>
 
 
-          <h5 class="m-b-15">InputQuantity</h5>
+          <h3>InputQuantity</h3>
    
                 <div class="app-quantity">
                     <input type="number" min="1" max="9" step="1" value="1">
@@ -160,9 +160,9 @@
            
 
 
-        <h5 class="m-b-15">Select</h5>          
+        <h3>Select</h3>          
           
-                <h6 class="m-tb-10">Select default</h6>
+                <h4 class="m-tb-10">Select default</h4>
                 
                     <select class="app-select">
                         <option selected>Choose an option</option>
@@ -178,7 +178,7 @@
                         <option value="3">C++</option>
                     </select>
             
-                <h6 class="m-tb-10">Select dropdown</h6>
+                <h4 class="m-tb-10">Select dropdown</h4>
             
                    <select class="app-select dropdown" id="fruits">
                         <option value="hide">Select Fruit</option>
@@ -200,7 +200,7 @@
                   
                 <br>
             
-                <h6 class="m-tb-10">Select accent</h6> 
+                <h4 class="m-tb-10">Select accent</h4> 
             
                     <select class="app-select accent">
                         <option value="1" selected>Apple</option>
@@ -222,13 +222,13 @@
 
 
                   
-        <h5 class="m-b-15">Date Picker</h5>     
+        <h3>Date Picker</h3>     
            <input type="date" placeholder="Date"> &nbsp;
             <input type="date" placeholder="Date Disabled" disabled>    
               
 
 
-        <h5 class="m-b-15">SearchBox</h5>  
+        <h3>SearchBox</h3>  
             
             <div class="app-searchbar"> 
                 <input type="search" placeholder="Search here"/>
@@ -241,7 +241,7 @@
             
             
             
-        <h5 class="m-b-15">SearchBox Suggestions</h5> 
+        <h3>SearchBox Suggestions</h3> 
             <select name="" class="app-searchbar-auto" id="searchBarAuto">
                 <option value="1">Search</option>
                 <option value="2">Elements</option>
@@ -253,7 +253,7 @@
                       
             
             
-        <h5 class="m-b-15">Buttons</h5>
+        <h3>Buttons</h3>
             <input type="button" value="Default button" /> &nbsp;
             <input type="button" value="Accent button" class="accent"/> &nbsp;
             
@@ -275,7 +275,7 @@
 
 
 
-        <h5 class="m-b-15">Radio Buttons</h5>         
+        <h3>Radio Buttons</h3>         
            
             <label class="app-label"><input type="radio" name="1" class="app-radio"  checked/> Checked</label>
             <br>
@@ -287,19 +287,19 @@
 
 
 
-        <h5 class="m-b-15">Links</h5>
+        <h3>Links</h3>
             
-        <h6 class="m-tb-10">Default Links</h6>     
+        <h4 class="m-tb-10">Default Links</h4>     
             <a href="#" class="app-link">Default App Link</a><br>
             <a href="#" class="app-link"><b>Default Bold App Link</b></a><br><br>    
 
 
-        <h6 class="m-tb-10">Link with icon</h6>        
+        <h4>Link with icon</h4>        
             <a href="#" class="app-link"><i class="icons10-collection"></i>App Link with icon</a>
             <br><br>
 
 
-        <h6 class="m-tb-10">Compound Link bar</h6>        
+        <h4>Compound Link bar</h4>        
             <a href="#" class="app-link-compound">
                 <i class="icons10-timeline"></i>
                     <span>App Volume and device preference</span>
@@ -307,7 +307,7 @@
                 </a>
 
 
-        <h6 class="m-tb-10">Compound Link bar Accent</h6>        
+        <h4>Compound Link bar Accent</h4>        
             <a href="#" class="app-link-compound accent" >
                 <i class="icons10-notification-image"></i>
                     <span>App Notification and device preference</span>
@@ -317,9 +317,9 @@
             
             
             
-        <h5 class="m-b-15">Inputs Fit Content</h5>
+        <h3>Inputs Fit Content</h3>
             
-        <h6 class="m-tb-10">Inputs occupy only available space</h6> 
+        <h4>Inputs occupy only available space</h4> 
 
             <input class="app-fit-content" type="text" placeholder="Input Text"/> <br>
   
@@ -350,11 +350,11 @@
         
         <div class="app-section-container">
          
-          <h3>Advance Components</h3>   
+          <h1>Advance Components</h1>   
             
             
   
-            <h5 class="m-b-15">Compound link with switch</h5>             
+            <h3>Compound link with switch</h3>             
               
                 <a href="#" class="app-link-compound withSwitch">
                     <div><i class="icons10-idea"></i>
@@ -369,7 +369,7 @@
             
             
             
-            <h5 class="m-tb-10">Compound Accent-icon Link bar</h5>    
+            <h3>Compound Accent-icon Link bar</h3>    
              
                 <a href="#" class="app-link-compound">
                   <i class="icons10-camera accent-bg"></i>
@@ -379,7 +379,7 @@
             
             
             
-            <h5 class="m-tb-10">Compound Add Link bar</h5>        
+            <h3>Compound Add Link bar</h3>        
               
                 <a href="#" class="app-link-compound">
                    <i class="icons10-plus grey-bg"></i>
@@ -390,7 +390,7 @@
             
             
             <br>
-            <h5 class="m-tb-15">Button with loader</h5>   
+            <h3>Button with loader</h3>   
                <div class="container app-flex-center">
                     <input type="button" value="button with loader" class="animate"/>
                     &nbsp;&nbsp;
@@ -404,7 +404,7 @@
             </button>
             
             
-            <h5 class="m-b-15">Switch with loader</h5>   
+            <h3>Switch with loader</h3>   
                <div class="container app-width-150 app-flex-center">
                    <div class="app-loader-busy small"></div>
                     <label class="app-switch">
@@ -419,23 +419,23 @@
             <h2>Heading2</h2>
             <h3>Heading3</h3>
             <h4>Heading4</h4>
-            <h5>Heading5</h5>
+            <h3>Heading5</h3>
             <h6>Heading6</h6>
             
-            <h2 class="m-b-15">Heading No Margin</h2> 
+            <h2>Heading No Margin</h2> 
                 <h3 class="m-0">Heading with no top and bottom margin</h3>
                
             
-            <h5 class="m-b-15">Paragraph</h5>     
+            <h3>Paragraph</h3>     
                 <p>This is paragraph used to display long text in your windows application.</p>
             
-            <h5 class="m-b-15">Paragraph Success</h5>     
+            <h3>Paragraph Success</h3>     
                 <p class="color-success">This is success paragraph used to display success text in your windows application.</p>
             
-            <h5 class="m-b-15">Paragraph Danger</h5>     
+            <h3>Paragraph Danger</h3>     
                 <p class="color-danger">This is danger paragraph used to display danger text in your windows application.</p>
             
-            <h5 class="m-b-15">Paragraph Light</h5>  
+            <h3>Paragraph Light</h3>  
                 <p class="light">This is light paragraph used to display long text in your windows application.</p>
             
             
@@ -443,12 +443,12 @@
             <!--    Right Section Container        -->
             
             <div class="app-section-container-right">
-                <h6 class="m-0">Right Section Container</h6>             
+                <h4 class="m-0">Right Section Container</h4>             
                     <p class="light">If you cant find the network you want select to show available networks to open the list of available networks</p>
              
                     <a href="#" class="app-link">Still cant connect? Open the troubleshooter</a><br>
              
-                <h6 class="m-b-15">Related Settings</h6>
+                <h4>Related Settings</h4>
                     <a href="#" class="app-link">Change Adaptor option</a><br>             
                     <a href="#" class="app-link">Change Advance sharing option</a><br>         
             </div>
@@ -470,9 +470,9 @@
         <div class="app-section-container">
         
      
-         <h4 class="m-b-15">ProgressBar</h4>
+         <h1>ProgressBar</h1>
 
-            <h5 class="m-b-15">Default progress</h5>
+            <h3>Default progress</h3>
           
                 <div class="app-progress"><span id="progBar"/></div>
                 <input type="text" id="percent" placeholder="Enter a value to see progress">
@@ -480,24 +480,24 @@
 
 
 
-            <h5 class="m-b-15">Progress with icon</h5> 
+            <h3>Progress with icon</h3> 
             
                 <div class="app-progress withIcon"><i class="icons10-hdd"></i><span id="progBarWtIcon"/></div>
                 <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
                 <input type="button" onclick="doSetProgress('percentOfIcon','progBarWtIcon')" value="Go" class="animate"/>
            
-            <h5 class="m-b-15">Progress Indeterminate</h5> 
-                <div class="app-progress-indeterminate"></div>
+            <h3>Progress Indeterminate</h3> 
+                <div class="app-progress-indeterminate animate"></div>
             
 
-         <h4 class="m-b-15">LoaderBars</h4>      
+         <h4>LoaderBars</h4>      
 
-            <h5 class="m-b-15">Loader Bar</h5> 
+            <h3>Loader Bar</h3> 
             
                 <div class="app-loader-bar"></div>
                 <br>
 
-             <h5 class="m-b-15">Loader Busy</h5>
+             <h3>Loader Busy</h3>
             
                 <div class="app-flex">
 
@@ -539,7 +539,7 @@
     
         <div class="app-section-container">
         
-         <h3 class="m-b-15">Searchable List</h3>
+         <h1>Searchable List</h1>
             
             <div class="app-search">
                 <input class="app-searchbox" type="search" placeholder="Search here..">
@@ -623,10 +623,10 @@
     <section id="app-section-4">
     
         <div class="app-section-container">
-            <h4 class="m-b-15">BottomSheet</h4>
+            <h1>BottomSheet</h1>
             
             <div class="app-fit-content">
-            <h5 class="m-b-15">Bottom Sheet Component :</h5>
+            <h3>Bottom Sheet Component :</h3>
                 <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
                 <input type="button" class="app-bottomsheet-toggle" data-id="mm" value="Show Bottom Sheet" class="animate"/>
             </div>
@@ -656,7 +656,7 @@
     
         <div class="app-section-container">
 
-            <h3>Icons</h3>
+            <h1>Icons</h1>
             
             <body style="margin:0px;padding:0px;overflow:hidden">
             <iframe src="src/core/icons/fonts/iframe-preview.html" frameborder="0" 
@@ -681,27 +681,27 @@
     
         <div class="app-section-container">
 
-            <h3>Notifications</h3>
+            <h1>Notifications</h1>
 
 
-            <h6 class="m-b-15 m-0">Default Notification</h6>
+            <h4 class="m-b-15 m-0">Default Notification</h4>
                 <input id="show-notification-default-alert" type="button" value="Show me a notification (Default)" class="animate"/><br><br>
 
-            <h6 class="m-b-15 m-0">Default with icon Notification</h6>
+            <h4 class="m-b-15 m-0">Default with icon Notification</h4>
                 <input id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)" class="animate"/><br><br>
 
-            <h6 class="m-b-15 m-0">Default with icon and buttons Notification</h6>
+            <h4 class="m-b-15 m-0">Default with icon and buttons Notification</h4>
                 <input id="show-notification-icon-info" type="button" value="Show me a notification (Info)" class="animate"/><br>
 
 
 
-            <h5 class="m-b-15">Custom Notifications</h5>
+            <h3 class="m-b-15">Custom Notifications</h3>
 
               <input id="show-notification-default-success" type="button" value="Show me a notification (Success)" class="animate"/><br>
               <input id="show-notification-default-danger" type="button" value="Show me a notification (Danger)" class="animate"/><br>
               <input id="show-notification-default-warning" type="button" value="Show me a notification (Warning)" class="animate"/><br>
             
-            <h5 class="m-b-15">Custom Notifications with icon</h5>
+            <h3 class="m-b-15">Custom Notifications with icon</h3>
               <input id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)" class="animate"/><br>
               <input id="show-notification-icon-danger" type="button" value="Show me a notification with icon (Danger)" class="animate"/><br>
               <input id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)" class="animate"/><br>
@@ -723,7 +723,7 @@
     
         <div class="app-section-container">
 
-        <h3>Alerts</h3>
+        <h1>Alerts</h1>
             
         <div class="app-flex-center">
             <img class="app-avatar large" src="src/core/img/anim_avatar.jpeg"/>&nbsp;&nbsp;
@@ -733,11 +733,11 @@
             </div>
         </div>   
             
-        <h5 class="m-b-15">Show Primary Alert</h5>        
+        <h3>Show Primary Alert</h3>        
             <input type="button" value="Show Alert" onclick="CallAlert()"/>
             
 
-        <h5 class="m-b-15">Show Advance Alert</h5>        
+        <h3>Show Advance Alert</h3>        
             <input type="button" value="Show Alert" onclick="AdvCallAlert()" /><br><span class="app-label"><b>Function Called :</b></span>
             <span class="app-label" id="clickResult"></span>
 
@@ -756,7 +756,7 @@
             <h3>Images</h3>
 
 
-            <h6 class="m-b-15 m-0">Image Large</h6>
+            <h4>Image Large</h4>
 
             <img class="app-image medium loadable loading animate" src="kitchen-sink/img/lockscreen.jpg"/>
             <img class="app-image medium loadable error animate" src="kitchen-sink/img/lockscreen.jpg"/>
@@ -775,7 +775,7 @@
   
     <script src="src/core/js/require/jquery.js"></script>
     <script src="src/core/js/script.js"></script>
-    <script src="src/core/app-config/appConfig.js"></script>
+    <script src="src/core/config/appConfig.js"></script>
     <script src="src/core/js/windows10framework.js"></script>
     <script src="src/core/js/windows10framework.notifications.js"></script>
  
