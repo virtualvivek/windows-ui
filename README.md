@@ -125,27 +125,27 @@ Create apps that run fluently on every device
 ```htm
 body 
 ├── app-container
-    ├── app-nav-wrap
-	├── nav
-	    ├── app-back | app-name
-	    ├── ul
-	    	└── li tab1
-		└── li tab2
-	    └── /ul
-         └── /nav
-     └── /app-nav-wrap
-     
-  ├── app-content-wrap
-  
-      ├── app-section-1
-      	  └── app-section-container
-      └── /app-section-1
-      
-      ├── app-section-2
-      	  └── app-section-container
-      └── /app-section-2
-      
-  └── /app-content-wrap
+|    ├── app-nav-wrap
+|    |	├── nav
+|    |  |  ├── app-back | app-name
+|    |  |  ├── ul
+|    |  |  |	└── li tab1
+|    |	|  |	└── li tab2
+|    |  |  └── /ul
+|    |  └── /nav
+|    └── /app-nav-wrap
+|     
+| ├── app-content-wrap
+| | 
+| |   ├── app-section-1
+| |   |	  └── app-section-container
+| |   └── /app-section-1
+| |   |   
+| |   ├── app-section-2
+| |   |	  └── app-section-container
+| |   └── /app-section-2
+| |     
+| └── /app-content-wrap
 └── /app-container
 /body
 ```
