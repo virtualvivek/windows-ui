@@ -155,7 +155,7 @@ body
 
 ### Configure App Preferences
 Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file <br>
-<b>./src /core /app-config /<a href="src/core/app-config/appConfig.js">appConfig.js </a></b>
+<b>./src /core /config /<a href="src/core/config/appConfig.js">appConfig.js </a></b>
 
 
 ```js
@@ -169,7 +169,7 @@ let NightMode = false;  //'true' get dark mode when app mounted
 
 ### Configure App Color, Font Family or ScrollBars
 You can customize entire app `accent color`, `font family`, more using `appConfig.css` file <br>
-<b>./src /core /app-config /css /<a href="src/core/app-config/css/appConfig.css">appConfig.css</a></b>
+<b>./src /core /config /css /<a href="src/core/config/css/appConfig.css">appConfig.css</a></b>
 
 
 ```css
