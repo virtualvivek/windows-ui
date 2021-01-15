@@ -133,9 +133,9 @@
    
     
         <h3>InputText</h3>    
-            <input type="text" placeholder="Input Text"/> 
+            <input class="app-input-text" type="text" placeholder="Input Text"/> 
             &nbsp;
-            <input type="text" placeholder="Input Text Disabled" disabled/>
+            <input class="app-input-text" type="text" placeholder="Input Text Disabled" disabled/>
             
                 
                 
@@ -143,8 +143,8 @@
 
 
         <h3>InputPassword</h3>
-            <input class="app-password" type="password" placeholder="Input Password"> &nbsp;
-            <input class="app-password" type="password" placeholder="Input Password Disabled" disabled>
+            <input class="app-input-text app-input-password" type="password" placeholder="Input Password"> &nbsp;
+            <input class="app-input-text app-input-password" type="password" placeholder="Input Password Disabled" disabled>
 
 
           <h3>InputQuantity</h3>
@@ -223,51 +223,51 @@
 
                   
         <h3>Date Picker</h3>     
-           <input type="date" placeholder="Date"> &nbsp;
-            <input type="date" placeholder="Date Disabled" disabled>    
-              
+            <input class="app-input-text" type="date" placeholder="Date"> &nbsp;
+            <input class="app-input-text" type="date" placeholder="Date Disabled" disabled>    
+            
 
 
         <h3>SearchBox</h3>  
             
-            <div class="app-searchbar"> 
-                <input type="search" placeholder="Search here"/>
+            <div class="app-search-bar"> 
+                <input class="app-input-text app-input-search" type="search" placeholder="Search here"/>
                 <button type="submit"></button>
             </div>
              &nbsp;
-            <div class="app-search">
-                <input class="app-searchbox" type="search" placeholder="Search here..">
+            <div class="app-search-box">
+                <input class="app-input-text app-input-search" type="search" placeholder="Search here..">
             </div>
             
             
             
         <h3>SearchBox Suggestions</h3> 
-            <select name="" class="app-searchbar-auto" id="searchBarAuto">
+            <select class="app-search-box-auto" id="searchBarAuto">
                 <option value="1">Search</option>
                 <option value="2">Elements</option>
                 <option value="3">ProgressBar</option>
                 <option value="4">Theme</option>
             </select>
             <br>
-     
+            <br>  
                       
             
             
         <h3>Buttons</h3>
-            <input type="button" value="Default button" /> &nbsp;
-            <input type="button" value="Accent button" class="accent"/> &nbsp;
+            <input class="app-button" type="button" value="Default button" /> &nbsp;
+            <input  class="app-button accent" type="button" value="Accent button"/> &nbsp;
             
             <br><br>
             <button class="app-button animate"><i class="icons10-plus"></i>Button icon</button> &nbsp;
             <button class="app-button accent animate"><i class="icons10-user"></i>Button accent</button>
             
             <br><br>            
-            <input type="button" value="Animate button" class="animate"/> &nbsp;
-            <input type="button" value="Animate accent" class="accent animate"/>
+            <input class="app-button animate" type="button" value="Animate button"/> &nbsp;
+            <input class="app-button accent animate" type="button" value="Animate accent"/>
             
             <br><br>   
-            <input type="button" value="Default disabled" disabled/> &nbsp;
-            <input type="button" value="Accent disabled" class="accent" disabled/>
+            <input class="app-button" type="button" value="Default disabled" disabled/> &nbsp;
+            <input class="app-button accent" type="button" value="Accent disabled" disabled/>
 
             <br><br>      
             <button class="app-button bg-danger animate"><i class="icons10-advertising"></i>Button danger</button>
@@ -323,15 +323,15 @@
 
             <input class="app-fit-content" type="text" placeholder="Input Text"/> <br>
   
-            <input class="app-password app-fit-content" type="password" placeholder="Input Password"> <br>
+            <input class="app-input-password app-fit-content" type="password" placeholder="Input Password"> <br>
   
-            <div class="app-searchbar app-fit-content"> 
-                <input type="search" placeholder="Search here"/>
+            <div class="app-search-bar app-fit-content"> 
+                <input class="app-input-text app-input-search" type="search" placeholder="Search here"/>
                 <button type="submit"></button>
             </div> 
             <br>
                
-           <input class="app-fit-content" placeholder="Date" type="date">
+           <input class="app-date-picker app-fit-content" placeholder="Date" type="date">
            
    
             
@@ -392,7 +392,7 @@
             <br>
             <h3>Button with loader</h3>   
                <div class="container app-flex-center">
-                    <input type="button" value="button with loader" class="animate"/>
+                    <input class="app-button animate" type="button" value="button with loader"/>
                     &nbsp;&nbsp;
                     <div class="app-loader-busy small"></div>
                </div>
@@ -475,16 +475,16 @@
             <h3>Default progress</h3>
           
                 <div class="app-progress"><span id="progBar"/></div>
-                <input type="text" id="percent" placeholder="Enter a value to see progress">
-                <input type="button" onclick="doSetProgress('percent','progBar')" value="Go" class="animate"/>
+                <input class="app-input-text" type="text" id="percent" placeholder="Enter a value to see progress">
+                <input class="app-button animate" type="button" onclick="doSetProgress('percent','progBar')" value="Go"/>
 
 
 
             <h3>Progress with icon</h3> 
             
                 <div class="app-progress withIcon"><i class="icons10-hdd"></i><span id="progBarWtIcon"/></div>
-                <input type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
-                <input type="button" onclick="doSetProgress('percentOfIcon','progBarWtIcon')" value="Go" class="animate"/>
+                <input class="app-input-text" type="text" id="percentOfIcon" placeholder="Enter a value to see progress">
+                <input class="app-button animate" type="button" onclick="doSetProgress('percentOfIcon','progBarWtIcon')" value="Go"/>
            
             <h3>Progress Indeterminate</h3> 
                 <div class="app-progress-indeterminate animate"></div>
@@ -541,8 +541,8 @@
         
          <h1>Searchable List</h1>
             
-            <div class="app-search">
-                <input class="app-searchbox" type="search" placeholder="Search here..">
+            <div class="app-search-box">
+                <input class="app-input-text app-input-search" type="search" placeholder="Search here..">
             </div>
                  
             <div class="app-hr"></div>
@@ -628,7 +628,7 @@
             <div class="app-fit-content">
             <h3>Bottom Sheet Component :</h3>
                 <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
-                <input type="button" class="app-bottomsheet-toggle" data-id="mm" value="Show Bottom Sheet" class="animate"/>
+                <input class="app-button animate app-bottomsheet-toggle" type="button" data-id="mm" value="Show Bottom Sheet"/>
             </div>
             
             
@@ -685,26 +685,26 @@
 
 
             <h4 class="m-b-15 m-0">Default Notification</h4>
-                <input id="show-notification-default-alert" type="button" value="Show me a notification (Default)" class="animate"/><br><br>
+                <input class="app-button animate" id="show-notification-default-alert" type="button" value="Show me a notification (Default)"/><br><br>
 
             <h4 class="m-b-15 m-0">Default with icon Notification</h4>
-                <input id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)" class="animate"/><br><br>
+                <input class="app-button animate" id="show-notification-icon-alert" type="button" value="Show me a notification with icon (Default)"/><br><br>
 
             <h4 class="m-b-15 m-0">Default with icon and buttons Notification</h4>
-                <input id="show-notification-icon-info" type="button" value="Show me a notification (Info)" class="animate"/><br>
+                <input class="app-button animate" id="show-notification-icon-info" type="button" value="Show me a notification (Info)"/><br>
 
 
 
             <h3 class="m-b-15">Custom Notifications</h3>
 
-              <input id="show-notification-default-success" type="button" value="Show me a notification (Success)" class="animate"/><br>
-              <input id="show-notification-default-danger" type="button" value="Show me a notification (Danger)" class="animate"/><br>
-              <input id="show-notification-default-warning" type="button" value="Show me a notification (Warning)" class="animate"/><br>
+              <input class="app-button animate" id="show-notification-default-success" type="button" value="Show me a notification (Success)"/><br>
+              <input class="app-button animate" id="show-notification-default-danger" type="button" value="Show me a notification (Danger)"/><br>
+              <input class="app-button animate" id="show-notification-default-warning" type="button" value="Show me a notification (Warning)"/><br>
             
             <h3 class="m-b-15">Custom Notifications with icon</h3>
-              <input id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)" class="animate"/><br>
-              <input id="show-notification-icon-danger" type="button" value="Show me a notification with icon (Danger)" class="animate"/><br>
-              <input id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)" class="animate"/><br>
+              <input class="app-button animate" id="show-notification-icon-success" type="button" value="Show me a notification with icon (Success)"/><br>
+              <input class="app-button animate" id="show-notification-icon-danger" type="button" value="Show me a notification with icon (Danger)"/><br>
+              <input class="app-button animate" id="show-notification-icon-warning" type="button" value="Show me a notification with icon (Warning)"/><br>
 
 
         </div>
@@ -734,11 +734,12 @@
         </div>   
             
         <h3>Show Primary Alert</h3>        
-            <input type="button" value="Show Alert" onclick="CallAlert()"/>
+            <input class="app-button animate" type="button" value="Show Alert" onclick="CallAlert()"/>
             
 
         <h3>Show Advance Alert</h3>        
-            <input type="button" value="Show Alert" onclick="AdvCallAlert()" /><br><span class="app-label"><b>Function Called :</b></span>
+            <input class="app-button animate" type="button" value="Show Alert" onclick="AdvCallAlert()" /><br>
+            <span class="app-label"><b>Function Called :</b></span>
             <span class="app-label" id="clickResult"></span>
 
 
