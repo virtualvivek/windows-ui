@@ -4,35 +4,12 @@
 
 </h2>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
 
 <p align="center">
-	
-
-
-
-
-
-
-
-
 
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 
@@ -43,7 +20,6 @@
   </a>
   
 
-
   <a href="https://github.com/virtualvivek/Windows10&#95;framework">
     <img src="https://img.shields.io/badge/Release-v2.0-green.svg?style=flat-square&color=darklime"
       alt="Release" />
@@ -53,11 +29,8 @@
     <img src="https://img.shields.io/badge/⚡ live Demo-here-green.svg?style=flat-square"
       alt="Live Demo" />
   </a>
-  
-  
+   
 </p>
-
-
 
 <h2 align="center">Build Windows Apps with Convinience</h2>
 
@@ -162,9 +135,8 @@ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `ap
 let BlurEnabled = true;  //'true' get drop shadows for components
 let ShowDarkModeSwitch = true;  //'true' get display a switch for dark/light mode
 let NightMode = false;  //'true' get dark mode when app mounted
+let FollowSystemTheme = true;  //'true' follow theme dark, light using system 
 ```
-
-
 <br>
 
 ### Configure App Color, Font Family or ScrollBars
