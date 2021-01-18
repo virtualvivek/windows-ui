@@ -68,26 +68,26 @@ Provides you with the rich UI Components that to completely matches the latest W
 Create apps that run fluently on every device
 
 <h1 align="center">
-	<img src="kitchen-sink/_md_preview/app_preview_responsive.gif" width="200" />
+	<img src="kitchen-sink/_md_preview/app_responsive.png" width="800" />
 </h1>
 
 # Documentation
 
-  * [Form Elements](src/core/docs/forms/README.md)
-  * [Progress Controls](src/core/docs/progressControls/README.md)
-  * [Icons](src/core/docs/icons/README.md)
-  * [Bottom Sheet](src/core/docs/bottomSheet/README.md)
-  * [Alerts](src/core/docs/alerts/README.md)
-  * [Notifications](src/core/docs/notifications/README.md)
+  * [Form Elements](src/core/_docs/forms/README.md)
+  * [Progress Controls](src/core/_docs/progressControls/README.md)
+  * [Icons](src/core/_docs/icons/README.md)
+  * [Bottom Sheet](src/core/_docs/bottomSheet/README.md)
+  * [Alerts](src/core/_docs/alerts/README.md)
+  * [Notifications](src/core/_docs/notifications/README.md)
   
 
 <p align="center">
-<a href="src/core/docs/forms/README.md"><img src="src/core/docs/root_md_preview/docs_forms.png" width="250" /></a>
-<a href="src/core/docs/progressControls/README.md"><img src="src/core/docs/root_md_preview/docs_progress_controls.png" width="250" /></a>
-<a href="src/core/docs/icons/README.md"><img src="src/core/docs/root_md_preview/docs_icons.png" width="250" /></a>
-<a href="src/core/docs/bottomSheet/README.md"><img src="src/core/docs/root_md_preview/docs_bottomsheet.png" width="250" /></a>
-<a href="src/core/docs/alerts/README.md"><img src="src/core/docs/root_md_preview/docs_alerts.png" width="250" /></a>
-<a href="src/core/docs/notifications/README.md"><img src="src/core/docs/root_md_preview/docs_notifications.png" width="250" /></a>
+<a href="src/core/_docs/forms/README.md"><img src="src/core/_docs/root_md_preview/docs_forms.png" width="250" /></a>
+<a href="src/core/_docs/progressControls/README.md"><img src="src/core/_docs/root_md_preview/docs_progress_controls.png" width="250" /></a>
+<a href="src/core/_docs/icons/README.md"><img src="src/core/_docs/root_md_preview/docs_icons.png" width="250" /></a>
+<a href="src/core/_docs/bottomSheet/README.md"><img src="src/core/_docs/root_md_preview/docs_bottomsheet.png" width="250" /></a>
+<a href="src/core/_docs/alerts/README.md"><img src="src/core/_docs/root_md_preview/docs_alerts.png" width="250" /></a>
+<a href="src/core/_docs/notifications/README.md"><img src="src/core/_docs/root_md_preview/docs_notifications.png" width="250" /></a>
 </p>
 
 <br>
@@ -97,31 +97,21 @@ Create apps that run fluently on every device
 <h3>View <a href="templates/screen-main.html">App template</a></h3> 
 
 ```htm
-body 
-├── app-container
-|    ├── app-nav-wrap
-|    |	├── nav
-|    |  |  ├── app-back | app-name
-|    |  |  ├── ul
-|    |  |  |	└── li tab1
-|    |	|  |	└── li tab2
-|    |  |  └── /ul
-|    |  └── /nav
-|    └── /app-nav-wrap
-|     
-| ├── app-content-wrap
-| | 
-| |   ├── app-section-1
-| |   |	  └── app-section-container
-| |   └── /app-section-1
-| |   |   
-| |   ├── app-section-2
-| |   |	  └── app-section-container
-| |   └── /app-section-2
-| |     
-| └── /app-content-wrap
-└── /app-container
-/body
+framework/
+└── src/
+    └── core
+    	├── config/
+    	│   ├── css/
+	│   ├── └── appConfig.css
+    	│   ├── drawable/
+	│   ├── └── ic_launcher.png
+    	│   └── appConfig.js
+    	├── css/
+	│   └── windows10framework.css
+    	└── js/
+	├── windows10framework.js
+	├── windows10framework.api.js
+	└── windows10framework.notifications.js
 ```
 <br>
 
