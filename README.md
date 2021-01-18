@@ -15,14 +15,14 @@
   <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
 
 	
-  <a href="https://github.com/virtualvivek/Windows10&#95;framework/blob/master/LICENSE">
+  <a href="https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
       alt="License: MIT" />
   </a>
   
 
-  <a href="https://github.com/virtualvivek/Windows10&#95;framework">
-    <img src="https://img.shields.io/badge/Release-v2.0-green.svg?style=flat-square&color=darklime"
+  <a href="https://github.com/virtualvivek/Windows10-framework/releases/latest">
+    <img src="https://img.shields.io/github/v/release/virtualvivek/Windows10-framework?label=Release&style=flat-square&color=darklime"
       alt="Release" />
   </a>
   
