@@ -51,27 +51,27 @@ Buttons used to submit forms or anywhere in a document for accessible, standard 
 <img src="button/button_default.png" width="150" />
 
 ```html
-<input type="button" value="Default button" />
+<input class="app-button" type="button" value="Default button" />
 ```
 
 ### Default Disabled Button
 <img src="button/button_disabled.png" width="150" />
 
 ```html
-<input type="button" value="Accent button" disabled/>
+<input class="app-button" type="button" value="Disabled button" disabled/>
 ```
 ### Accent Default Button
 <img src="button/button_default_accent.png" width="150" />
 
 ```html
-<input type="button" value="Default button" accent/>
+<input class="app-button accent" type="button" value="Default button"/>
 ```
 
 ### Accent Disabled Button
 <img src="button/button_disabled_accent.png" width="150" />
 
 ```html
-<input type="button" value="Accent button" accent disabled/>
+<input class="app-button accent" type="button" value="Accent button" disabled/>
 ```
 ---
 
@@ -111,13 +111,13 @@ The input element, having the "text" value in its type attribute, represents a f
 <img src="inputText/inputText_default.png" width="300" />
 
 ```html
-<input type="text" placeholder="Input Text"/>
+<input class="app-input-text" type="text" placeholder="Input Text"/>
 ```
 ### Disabled InputText
 <img src="inputText/inputText_disabled.png" width="300" />
 
 ```html
-<input type="text" placeholder="Input Text Disabled" disabled/>
+<input class="app-input-text" type="text" placeholder="Input Text Disabled" disabled/>
 ```
 ---
 
@@ -133,13 +133,13 @@ The input element, having the "password" value in its type attribute, represents
 <img src="inputPassword/inputPassword_default.png" width="300" />
 
 ```html
-<input class="app-password" type="password" placeholder="Input Password">
+<input class="app-input-text app-input-password" type="password" placeholder="Input Password">
 ```
 ### Disabled InputPassword
 <img src="inputPassword/inputPassword_disabled.png" width="300" />
 
 ```html
-<input class="app-password" type="password" placeholder="Input Password Disabled" disabled>
+<input class="app-input-text app-input-password" type="password" placeholder="Input Password Disabled" disabled>
 ```
 ---
 
@@ -192,7 +192,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 <img src="links/compound_accent.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound" accent>
+<a href="#" class="app-link-compound accent">
     <i class="icons10-notification-image"></i>
     <span>App Notification and device preference</span>
     <p>Customise app volumes and speakers or devices they use</p>
@@ -203,7 +203,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 
 ```html
 <a href="#" class="app-link-compound">
-   <i class="icons10-camera" accent-bg></i>
+   <i class="icons10-camera accent-bg"></i>
    <span>App Camera and device preference</span>
    <p>Customise app volumes or devices they use</p>
 </a>
@@ -213,7 +213,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 
 ```html
 <a href="#" class="app-link-compound">
-    <i class="icons10-plus" grey-bg></i>
+    <i class="icons10-plus grey-bg"></i>
     <span>Add more apps</span>
     <p>apps available in store show here</p>
 </a>
@@ -259,8 +259,8 @@ Search Input defines a text field for entering a search string.
 <img src="search/search_default.png" width="310" />
 
 ```html
-<div class="app-searchBar"> 
-    <input type="search" placeholder="Search here"/>
+<div class="app-search-bar"> 
+    <input class="app-input-text app-input-search" type="search" placeholder="Search here"/>
     <button type="submit"></button>
 </div>
 ```
@@ -268,7 +268,7 @@ Search Input defines a text field for entering a search string.
 <img src="search/search_suggestions.png" width="310" />
 
 ```html
-<select name="" class="app-searchBarAuto" id="searchBarAuto">
+<select class="app-search-box-auto" id="searchBarAuto">
     <option value="1">Search</option>
     <option value="2">Elements</option>
     <option value="3">ProgressBar</option>
@@ -336,20 +336,12 @@ Defines a control for entering a number whose exact value is not important (like
 <img src="sliderbar/slider_round.png" width="340" />
 
 ```html
-<div class="app-range-slider" round>
+<div class="app-range-slider round">
     <input type="range" value="242" min="0" max="500">
     <span>100</span>
 </div>
 ```
-### Classic SliderBar
-<img src="sliderbar/slider_classic.png" width="340" />
 
-```html
-<div class="app-range-slider" classic>
-    <input type="range" value="100" min="0" max="500">
-    <span>100</span>
-</div>
-```
 ---
 
 

@@ -23,7 +23,7 @@ The Loader bar is a graphical horizontal control element used to visualize the i
 <img src="loaderBar/loaderBar_light.gif" width="350" />
 
 ```html
-<div class="app-loader-bar" light></div>
+<div class="app-loader-bar light"></div>
 ```
 ---
 
@@ -39,20 +39,20 @@ The Loader busy is a graphical circular control element used to visualize the in
 ```html
 <div class="app-loader-busy"></div>
 
-<div class="app-loader-busy" small></div>
+<div class="app-loader-busy medium"></div>
 
-<div class="app-loader-busy" soo-small></div>
+<div class="app-loader-busy small"></div>
 ```
 
 ### LoaderBusy Light
 <img src="loaderBusy/loaderBusy_light.gif" width="240" />
 
 ```html
-<div class="app-loader-busy" light></div>
+<div class="app-loader-busy light"></div>
 
-<div class="app-loader-busy" small light></div>
+<div class="app-loader-busy medium light"></div>
 
-<div class="app-loader-busy" soo-small light></div>
+<div class="app-loader-busy small light"></div>
 ```
 ---
 
@@ -66,7 +66,7 @@ The progress bar is a graphical control element used to visualize the progressio
 <img src="progress_indeterminate/progress_indeterminate.gif" width="350" />
 
 ```html
-<div class="app-progress-indeterminate"></div>
+<div class="app-progress-indeterminate animate"></div>
 ```
 ---
 
