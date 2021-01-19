@@ -358,8 +358,8 @@ Defines a control for entering a number whose exact value is not important (like
 
 ```html
 <div class="app-range-slider round-border">
-    <input type="range" value="242" min="0" max="500">
-    <span>100</span>
+    <input type="range" value="156" min="0" max="500">
+ <span>100</span><span>"</span>
 </div>
 ```
 
