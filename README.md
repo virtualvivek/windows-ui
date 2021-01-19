@@ -109,9 +109,9 @@ framework/
     	├── css/
 	│   └── windows10framework.css
     	└── js/
-	├── windows10framework.js
-	├── windows10framework.api.js
-	└── windows10framework.notifications.js
+	    ├── windows10framework.js
+	    ├── windows10framework.api.js
+	    └── windows10framework.notifications.js
 ```
 <br>
 
