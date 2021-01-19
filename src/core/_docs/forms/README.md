@@ -21,7 +21,7 @@
 # Switch
 Switches are special checkboxes used for binary states such as on / off.
 
-### Default Switch
+### Switch Default 
 <img src="switch/switch_default.png" width="90" />
 
 ```html
@@ -30,7 +30,7 @@ Switches are special checkboxes used for binary states such as on / off.
     <div data-off="Off" data-on="On"></div>
 </label>
 ```
-### Disabled Switch
+### Switch Disabled 
 <img src="switch/switch_disabled.png" width="160" />
 
 ```html
@@ -47,27 +47,27 @@ Switches are special checkboxes used for binary states such as on / off.
 # Button
 Buttons used to submit forms or anywhere in a document for accessible, standard button functionality.
 
-### Default Button
+### Button Default 
 <img src="button/button_default.png" width="150" />
 
 ```html
 <input class="app-button" type="button" value="Default button" />
 ```
 
-### Default Disabled Button
+### Button Default Disabled 
 <img src="button/button_disabled.png" width="150" />
 
 ```html
 <input class="app-button" type="button" value="Disabled button" disabled/>
 ```
-### Accent Default Button
+### Button Accent Default 
 <img src="button/button_default_accent.png" width="150" />
 
 ```html
 <input class="app-button accent" type="button" value="Default button"/>
 ```
 
-### Accent Disabled Button
+### Button Accent Disabled 
 <img src="button/button_disabled_accent.png" width="150" />
 
 ```html
@@ -81,7 +81,7 @@ Buttons used to submit forms or anywhere in a document for accessible, standard 
 # CheckBox
 The checkbox is shown as a square box that is ticked (checked) when activated.
 
-### Default CheckBox
+### CheckBox Default 
 <img src="checkbox/checkbox_default.png" width="150" />
 
 ```html
@@ -89,7 +89,7 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
     <input type="checkbox" value="value" checked> Checked
 </label>
 ```
-### Disabled CheckBox
+### CheckBox Disabled 
 <img src="checkbox/checkbox_disabled.png" width="220" />
 
 ```html
@@ -107,13 +107,13 @@ The checkbox is shown as a square box that is ticked (checked) when activated.
 # Input Text
 The input element, having the "text" value in its type attribute, represents a field for text input. The control associated to this field is a text box.
 
-### Default InputText
+### InputText Default 
 <img src="inputText/inputText_default.png" width="300" />
 
 ```html
 <input class="app-input-text" type="text" placeholder="Input Text"/>
 ```
-### Disabled InputText
+### InputText Disabled 
 <img src="inputText/inputText_disabled.png" width="300" />
 
 ```html
@@ -129,13 +129,13 @@ The input element, having the "text" value in its type attribute, represents a f
 # Input Password
 The input element, having the "password" value in its type attribute, represents a field for password input. The control associated to this field is a password box.
 
-### Default InputPassword
+### InputPassword Default 
 <img src="inputPassword/inputPassword_default.png" width="300" />
 
 ```html
 <input class="app-input-text app-input-password" type="password" placeholder="Input Password">
 ```
-### Disabled InputPassword
+### InputPassword Disabled 
 <img src="inputPassword/inputPassword_disabled.png" width="300" />
 
 ```html
@@ -150,7 +150,7 @@ The input element, having the "password" value in its type attribute, represents
 # Input Quantity
 Defines a field for entering a number. Use the following attributes to specify restrictions: max - specifies the maximum value allowed. min - specifies the minimum value allowed.
 
-### Default InputQuantity
+### InputQuantity Default 
 <img src="inputQuantity/inputQuantity_default.png" width="300" />
 
 ```html
@@ -158,7 +158,7 @@ Defines a field for entering a number. Use the following attributes to specify r
     <input type="number" min="1" max="9" step="1" value="1">
 </div>
 ```
-### Disabled InputQuantity
+### InputQuantity Disabled 
 <img src="inputQuantity/inputQuantity_disabled.png" width="300" />
 
 ```html
@@ -226,7 +226,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 # Radio
 Radio buttons are normally presented in radio groups (a collection of radio buttons describing a set of related options). Only one radio button in a group can be selected at the same time.
 
-### Default Radio
+### Radio Default 
 <img src="radio/radio_default.png" width="140" />
 
 ```html
@@ -234,7 +234,7 @@ Radio buttons are normally presented in radio groups (a collection of radio butt
   <input type="radio" name="1" class="app-radio"  checked/> Checked
 </label>
 ```
-### Disabled Radio
+### Radio Disabled 
 <img src="radio/radio_disabled.png" width="140" />
 
 ```html
@@ -255,7 +255,7 @@ Radio buttons are normally presented in radio groups (a collection of radio butt
 # Search
 Search Input defines a text field for entering a search string.
 
-### Default Search
+### Search Bar
 <img src="search/search_default.png" width="310" />
 
 ```html
@@ -264,7 +264,18 @@ Search Input defines a text field for entering a search string.
     <button type="submit"></button>
 </div>
 ```
-### Suggestions Search
+
+### Search Box
+<img src="search/searchbox.png" width="310" />
+
+```html
+<div class="app-search-box"> 
+    <input class="app-input-text app-input-search" type="search" placeholder="Search here"/>
+    <button type="submit"></button>
+</div>
+```
+
+### Search Suggestions 
 <img src="search/search_suggestions.png" width="310" />
 
 ```html
@@ -290,7 +301,7 @@ Search Input defines a text field for entering a search string.
 # Select
 The 'select' element is most often used in a form, to collect user input. The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).
 
-### Default Select
+### Select Default 
 <img src="select/select_default.png" width="300" />
 
 ```html
@@ -301,7 +312,7 @@ The 'select' element is most often used in a form, to collect user input. The na
     <option value="3">C++</option>
 </select>
 ```
-### Disabled Select
+### Select Disabled 
 <img src="select/select_disabled.png" width="300" />
 
 ```html
@@ -323,7 +334,7 @@ The 'select' element is most often used in a form, to collect user input. The na
 # SliderBar
 Defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the attributes below.
 
-### Default SliderBar
+### SliderBar Default 
 <img src="sliderbar/slider_default.png" width="340" />
 
 ```html
@@ -332,11 +343,21 @@ Defines a control for entering a number whose exact value is not important (like
     <span>100</span>
 </div>
 ```
-### Round SliderBar
+### SliderBar Round 
 <img src="sliderbar/slider_round.png" width="340" />
 
 ```html
 <div class="app-range-slider round">
+    <input type="range" value="242" min="0" max="500">
+    <span>100</span>
+</div>
+```
+
+### SliderBar Round-Border 
+<img src="sliderbar/slider_round_border.png" width="340" />
+
+```html
+<div class="app-range-slider round-border">
     <input type="range" value="242" min="0" max="500">
     <span>100</span>
 </div>
