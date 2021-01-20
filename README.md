@@ -94,7 +94,7 @@ Create apps that run fluently on every device
 <h1>Getting Started</h1>
 
 ### Code container template
-<h3>View <a href="templates/screen-main.html">App template</a></h3> 
+<h3>View <a href="templates/screen-main.html">App Boilerplate</a></h3> 
 
 ```htm
 framework/
