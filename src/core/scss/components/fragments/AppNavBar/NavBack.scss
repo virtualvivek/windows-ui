@@ -17,9 +17,9 @@
     @extend .transition-all-400ms;
     @extend .color-dark-text;
     width:fit-content;            
-    line-height: initial !important;
+    line-height: 1 !important;
     font-size: 30px;
-    padding: 2px 22px !important;
+    padding: 7px 22px !important;
 
         &:hover {
             @extend .background-color-link-bg-hover;
@@ -36,7 +36,7 @@
             text-align: center;
             font-size: 40px;
             position: absolute;
-            padding: 0 20px !important;
+            padding: 10px 20px !important;
 
             &.light {
                 @extend .color-white;

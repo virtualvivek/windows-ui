@@ -278,9 +278,9 @@ p.light {
 
 .app-back {
   width: fit-content;
-  line-height: initial !important;
+  line-height: 1 !important;
   font-size: 30px;
-  padding: 2px 22px !important; }
+  padding: 7px 22px !important; }
   .app-back:after {
     position: relative;
     font-family: icons10;
@@ -292,7 +292,7 @@ p.light {
     text-align: center;
     font-size: 40px;
     position: absolute;
-    padding: 0 20px !important; }
+    padding: 10px 20px !important; }
     .app-back.fixed.light:hover {
       background: #EEEEEE44 !important; }
 
@@ -1519,8 +1519,7 @@ button.unmask {
     #app-nav-wrap nav::-webkit-scrollbar {
       height: 0 !important; }
   .app-back {
-    padding: 5px 0px 0px 12px !important;
-    line-height: 1 !important; }
+    padding: 5px 0px 0px 12px !important; }
   #app-nav-toggle,
   #app-nav-wrap nav ul h1,
   #app-nav-wrap nav ul .app-hr,
