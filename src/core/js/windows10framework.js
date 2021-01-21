@@ -144,9 +144,6 @@ jQuery("<br><br><br><br>").insertAfter("h1.fixed");
 
 
 
-
-
-
 // --------------------------------------------    Day Night Switch Config  -----------------------------------------------------------
 
 function setDarkMode() {

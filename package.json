@@ -7,12 +7,12 @@
     "compile:sass": "node-sass src/core/scss/main.scss src/core/css/windows10framework.css"
   },
   "keywords": [
-    "upw",
+    "uwp",
     "framework",
     "windowsUI"
   ],
   "author": "Vivek Verma",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "node-sass": "^5.0.0"
   }
