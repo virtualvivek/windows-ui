@@ -1,0 +1,32 @@
+.app-progress {
+    @extend .transition-background-400ms;
+    position: relative;
+    width: 400px;
+    height: 5px;
+    overflow: hidden;
+    background: var(--color_button);
+    margin-bottom: 10px;
+
+    span {
+        @extend .background-color-accent;
+        position:absolute;
+        height:100%;
+        &::after,&::before {
+            display: none !important;
+        }
+    }
+
+    &.withIcon {
+        overflow: visible;
+        margin-left: 35px;
+        width: 365px;
+
+        i {
+            position: absolute;
+            left: -35px;
+            top: -15px;
+            color: var(--color_dark_text);
+            font-size: 24px;
+        }
+    }
+}

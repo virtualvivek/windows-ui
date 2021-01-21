@@ -1,0 +1,73 @@
+.app-input-text {
+    &.app-input-search {
+        &:active,&:focus {
+            @extend .border-color-accent;
+        }
+    }
+}
+.app-input-search {
+    height: inherit;
+    width: 100%;
+    padding-right: 35px;
+}
+
+.app-search-bar {
+    @extend .transition-background-400ms;
+
+    &:disabled {
+        @extend .input-field-primary-disabled;
+    }
+
+    button {
+        @extend .background-color-nav;
+        @extend .transition-background-400ms;
+        width: 31px;
+        height: 31px;
+        margin-top: 2px;
+        margin-left: -33px;
+        border: none;
+        
+        &:hover,&:active {
+            @extend .background-color-accent;
+        }
+        &:active {
+            opacity: 0.65
+        }
+        &::after { 
+            font-weight: 600;
+            @include setFontIcon("f1b9",var(--color_dark_text),19px);
+        }
+        &:hover::after {
+            color:var(--color_light_bg) !important;
+        }
+        
+    }
+}
+
+.app-search-box {
+    display:inline-flex;
+
+    &::after {
+        z-index:2;
+        font-weight: 600;
+        margin-left: -29px;
+        align-self: center;
+        @include setFontIcon("f1b9",var(--color_dark_text),19px);
+    }
+}
+
+.app-search-bar,
+.app-search-box {
+    width:285px;
+    display:inline-flex;
+    height:35px;
+    vertical-align: middle; 
+}
+
+.index-search {
+    width:fit-content;
+    margin:auto;
+    position:relative;
+    top:24px;
+    display: table;
+}

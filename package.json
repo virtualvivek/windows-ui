@@ -1,0 +1,19 @@
+{
+  "name": "winui",
+  "version": "1.0.0",
+  "description": "build native windows apps or web apps using html, css and javascript",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass src/core/scss/main.scss src/core/css/windows10framework.css"
+  },
+  "keywords": [
+    "upw",
+    "framework",
+    "windowsUI"
+  ],
+  "author": "Vivek Verma",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

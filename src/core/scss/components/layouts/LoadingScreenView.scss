@@ -1,0 +1,28 @@
+.splash-screen-title,
+.splash-screen-subtitle {
+    margin: 0px auto;
+    width: 100%;
+    text-align: center;
+    margin-top:85px;
+}
+.splash-screen-logo{
+    font-size: 110px;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.splash-screen-title.dark {
+    font-weight: 600;
+}
+
+.splash-screen-title,
+.splash-screen-subtitle,
+.splash-screen-logo.light {
+    @extend .color-white;
+}
+
+.splash-screen-logo.dark,
+.splash-screen-title.dark,
+.splash-screen-subtitle.dark {
+    @extend .color-accent-light;
+}

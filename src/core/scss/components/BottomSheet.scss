@@ -1,0 +1,104 @@
+.app-bottomsheet {
+    top: 0;
+    visibility: hidden;
+    height:0%;
+    transition-delay:0.4s;
+
+    >div:first-child {
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: hsla(0, 0%, 0%, 0.24);
+        opacity: 0;
+        transition: visibility 0s linear 0.4s, opacity 0.4s;
+        visibility: hidden;
+      }
+
+      &.is-visible {
+        visibility: visible;
+        transition-delay:0s;
+
+        >div:first-child {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition-delay: 0s;
+                    transition-delay: 0s;
+          }
+          .app-bottomsheet-wrapper {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .app-bottomsheet-wrapper {
+        @extend .background-color-accent;
+        bottom: 0;
+        height: 100px;
+        margin-left: -30px;
+        display: inline-flex;
+        padding-top: 18px;
+        padding-left:calc(28% - 200px);
+        box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.35);
+        transform: translateY(50%);
+        transition: all 0.2s;
+        opacity: 0;
+
+        hr {
+            height: 50px;
+            border: 1px solid var(--color_light_bg);
+            top: 2px;
+            position: relative;
+            margin: 0 10px;
+        }
+    }
+
+    button {
+        margin: 0 15px;
+        width: 55px;
+        height: 55px;
+        border-radius: 50px;
+        border: 2.2px solid #fff;
+        background: transparent;
+        color: #fff;
+        transition: 0.2s ease;
+
+        &:hover {
+            background: #eeeeee6C;
+        }
+        &:active {
+            background: var(--color_light_bg);
+            color: var(--AppColor);
+        }
+
+        i {
+            font-size: 28px;
+            line-height: 1.8;
+        }
+        span {
+            color: #fff;
+            position: relative;
+            top: 10px;
+            font-size: 13.2px;
+        }
+    }
+
+}
+
+.app-bottomsheet,
+.app-bottomsheet-wrapper {
+    position: fixed;
+    z-index:99;
+}
+
+.app-bottomsheet.is-visible,
+.app-bottomsheet>div:first-child {
+     height: 100%;
+}
+
+#modalContainer,
+.app-bottomsheet,
+.app-bottomsheet-wrapper,
+.app-bottomsheet>div:first-child {
+     width: 100%;
+}

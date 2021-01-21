@@ -1,0 +1,46 @@
+.app-content-wrap {
+
+     section {
+         
+        @extend .display-none;
+
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0em 1em 1em 1em;
+        right: 0;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        position: fixed;
+        background: scroll;
+
+        &.content-current {
+             @extend .display-block;
+        }
+
+         .app-section-container {
+            padding-left: 325px;
+            padding-bottom: 124px;
+        }
+
+        .app-section-container-right{
+            float:right;
+            position:absolute;
+            right:25px;
+            max-width:264px;
+            top: 105px;
+        }
+        @media screen and (max-width: 70em) {
+            
+            .app-section-container-right {
+                    max-width: fit-content;
+                    right: auto;
+                    position: relative;
+                    margin-bottom: 85px;
+                    float: left;
+                    top: 25px;
+                }
+            }
+
+     }
+}

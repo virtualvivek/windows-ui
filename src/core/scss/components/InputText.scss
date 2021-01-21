@@ -1,0 +1,37 @@
+.app-input-text {
+    @extend .input-field-primary;
+    @extend .transition-background-400ms;
+
+    &:hover {
+        border-color:#777; 
+    }
+    &:focus {
+        @extend .outline-none;
+        border-color:#666; 
+    }
+
+    + .unmask:after {
+        @include setFontIcon("f189",var(--color_dark_text),24px);
+        cursor: pointer;
+    }
+
+    &::-webkit-calendar-picker-indicator{
+        padding-right: 5px;
+        width: 24px;
+        height: 24px;
+        opacity: 1
+    }
+    &[disabled] {
+        @extend .input-field-primary-disabled;
+    }
+}
+input[type="password"].app-input-text + .unmask:after {
+    content:"\f1db";
+}
+button.unmask{ 
+    margin-left:-40px;
+    background:transparent;
+    border:none;
+    position: relative;
+    vertical-align: middle;
+}
