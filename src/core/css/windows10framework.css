@@ -1519,7 +1519,8 @@ button.unmask {
     #app-nav-wrap nav::-webkit-scrollbar {
       height: 0 !important; }
   .app-back {
-    padding: 0px 0px 0px 12px !important; }
+    padding: 5px 0px 0px 12px !important;
+    line-height: 1 !important; }
   #app-nav-toggle,
   #app-nav-wrap nav ul h1,
   #app-nav-wrap nav ul .app-hr,
