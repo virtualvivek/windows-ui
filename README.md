@@ -50,10 +50,10 @@
 ## Stunning Set Of UI Elements
 
 <h1 align="center">
-	<img src="kitchen-sink/_md_preview/md_glance_forms.png" width="450" />
-	<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="450" />
+	<img src="kitchen-sink/_md_preview/md_glance_forms.png" width="400" />
+	<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="400" />
 </h1>
-<p align="center">
+<p>
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
 
@@ -72,16 +72,7 @@ Create apps that run fluently on every device
   * [Bottom Sheet](src/core/_docs/bottomSheet/README.md)
   * [Alerts](src/core/_docs/alerts/README.md)
   * [Notifications](src/core/_docs/notifications/README.md)
-  
 
-<p align="center">
-<a href="src/core/_docs/forms/README.md"><img src="src/core/_docs/root_md_preview/docs_forms.png" width="250" /></a>
-<a href="src/core/_docs/progressControls/README.md"><img src="src/core/_docs/root_md_preview/docs_progress_controls.png" width="250" /></a>
-<a href="src/core/_docs/icons/README.md"><img src="src/core/_docs/root_md_preview/docs_icons.png" width="250" /></a>
-<a href="src/core/_docs/bottomSheet/README.md"><img src="src/core/_docs/root_md_preview/docs_bottomsheet.png" width="250" /></a>
-<a href="src/core/_docs/alerts/README.md"><img src="src/core/_docs/root_md_preview/docs_alerts.png" width="250" /></a>
-<a href="src/core/_docs/notifications/README.md"><img src="src/core/_docs/root_md_preview/docs_notifications.png" width="250" /></a>
-</p>
 
 <h1>Getting Started</h1>
 
