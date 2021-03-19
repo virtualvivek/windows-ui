@@ -30,3 +30,24 @@
         }
     }
 }
+
+@mixin progress-bar-mobile() {
+    .app-progress,
+    .app-progress.withIcon {
+        width: 90%;
+    }
+    .app-progress {
+        &.withIcon {
+            margin: 45px 0 10px 0;
+            i {
+                left: 0;
+                top: 0;
+                &::before { 
+                    position: relative;
+                    top: -40px;
+                    font-size: 36px;
+                }
+            }
+        }
+    }
+}

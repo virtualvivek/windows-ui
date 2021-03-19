@@ -44,9 +44,23 @@
     }
 
 }
-button,.app-button {
+button,
+.app-button {
     @extend .user-select-none;
     &:focus,&:active,&:focus:active {
         outline: none !important;
+    }
+}
+
+@mixin button-mobile() {
+    .app-button {
+        &:hover {
+            border-color: transparent;
+            filter: none;
+        }
+        &[disabled]:hover {
+            filter: contrast(0.6);
+            cursor: not-allowed;
+        }
     }
 }

@@ -1,7 +1,7 @@
 .app-loader-busy {
-    position: relative;
-    width: 30px;
+  width: 30px;
     height: 30px;
+    position: relative;
     top: -2px;
 
     &.medium{
@@ -33,18 +33,18 @@
     }
 
     .w-ball-wrapper {
-        position: absolute;
         width: 34px;
         height: 34px;
+        position: absolute;
         opacity: 0;
         transform: rotate(225deg);
         animation: orbit 4.8s infinite;
 
         .w-ball {
             @extend .background-color-accent-light;
-            position: absolute;
             width: 4.8px;
             height: 4.8px;
+            position: absolute;
             left: 0;
             top: 0;
             border-radius: 50%;

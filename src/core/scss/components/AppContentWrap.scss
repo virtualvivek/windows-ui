@@ -1,7 +1,6 @@
 .app-content-wrap {
 
      section {
-         
         @extend .display-none;
 
         height: 100%;
@@ -18,9 +17,15 @@
              @extend .display-block;
         }
 
-         .app-section-container {
-            padding-left: 325px;
+        .app-section-container {
+            padding-left: 295px;
             padding-bottom: 124px;
+            &.has-padding {
+                padding-left: 325px; 
+            }
+        }
+        .app-section-sub-container {
+            padding-left: 30px;
         }
 
         .app-section-container-right{
@@ -43,4 +48,23 @@
             }
 
      }
+}
+
+@mixin app-content-wrap-mobile() {
+    .app-content-wrap {
+        section {
+            padding: 0;
+        }
+    }
+    .app-section-container {
+            margin: 0 !important;
+            padding: 90px 0 !important;
+        &.has-padding {
+            margin: 0 15px !important;
+        }
+    }
+    .app-section-sub-container {
+            margin: 0 15px;
+            padding: 0 !important;
+        }
 }

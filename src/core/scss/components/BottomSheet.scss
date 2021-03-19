@@ -1,8 +1,8 @@
 .app-bottomsheet {
     top: 0;
     visibility: hidden;
-    height:0%;
-    transition-delay:0.4s;
+    height: 0%;
+    transition-delay: 0.4s;
 
     >div:first-child {
         position: fixed;
@@ -19,11 +19,10 @@
         visibility: visible;
         transition-delay:0s;
 
-        >div:first-child {
+        > div:first-child {
             opacity: 1;
             visibility: visible;
-            -webkit-transition-delay: 0s;
-                    transition-delay: 0s;
+            transition-delay: 0s;
           }
           .app-bottomsheet-wrapper {
             transform: translateY(0);
@@ -35,10 +34,9 @@
         @extend .background-color-accent;
         bottom: 0;
         height: 100px;
-        margin-left: -30px;
         display: inline-flex;
         padding-top: 18px;
-        padding-left:calc(28% - 200px);
+        padding-left: calc(28% - 200px);
         box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.35);
         transform: translateY(50%);
         transition: all 0.2s;
@@ -88,7 +86,7 @@
 .app-bottomsheet,
 .app-bottomsheet-wrapper {
     position: fixed;
-    z-index:99;
+    z-index: 99;
 }
 
 .app-bottomsheet.is-visible,
@@ -101,4 +99,33 @@
 .app-bottomsheet-wrapper,
 .app-bottomsheet>div:first-child {
      width: 100%;
+}
+
+@mixin bottomsheet-mobile() {
+    .app-bottomsheet {
+        .app-bottomsheet-wrapper {
+            height: 80px;
+            justify-content: center;
+            padding: 12px 0 0 2.5%;
+
+            button {
+                &:hover {
+                    background: transparent !important;
+                }
+                &:active:focus {
+                    background: var(--color_light_bg) !important;
+                    color: var(--AppColor);
+                }
+            }
+        }
+        > div button{
+            width: 45px;
+            height: 45px;
+            padding: 0;
+            margin: 0 3%;
+            i {
+                font-size: 23px;
+            }
+        }
+    }
 }

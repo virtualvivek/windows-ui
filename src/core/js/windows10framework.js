@@ -124,12 +124,13 @@ SOFTWARE.
         
         //adding margin-left property to change on toogle tabBar
         if($("#app-nav-wrap").hasClass("toggled"))
-            {
-                $(".app-section-container").css("padding-left", "120px");
+            {  
+              $(".app-section-container").css("padding-left", "90px");
+              $(".app-section-container.has-padding").css("padding-left", "120px");
             }
         if(!$("#app-nav-wrap").hasClass("toggled"))
             {
-                $(".app-section-container").css("padding-left", ""); 
+              $(".app-section-container").css("padding-left", ""); 
             }
     });
 //Appending <br> to make some space from top when fixed title is there --
@@ -814,8 +815,8 @@ createCustomAlert(alertText, buttonsNames, buttonCallFuncs, imageURL);
 
 if(BlurEnabled==true){
     
-    $(".fixed").css('backdrop-filter','blur(30px)');
-    $(".fixed").css('background','transparent');
+    $("h1.fixed").css('backdrop-filter','blur(30px)');
+    $("h1.fixed").css('background','#ffffff77');
  
 //    $(".app-bottomsheet > div").css('background','var(--alpha_c)');
 //    $(".app-bottomsheet > div").css('backdrop-filter','blur(30px)');

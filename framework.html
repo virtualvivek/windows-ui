@@ -55,10 +55,12 @@
     <!-- Section 1 -->
      <section id="app-section-1">
   
-        <div class="app-section-container">  
-            
-            <h1 class="fixed">Form Elements</h1>
-            
+        <div class="app-section-container">
+
+        <h1 class="fixed">Form Elements</h1>
+
+        <div class="app-section-sub-container">
+                
         <h3>Switch</h3>
             
             <div class="app-flex">
@@ -115,7 +117,7 @@
             <div class="app-flex">  
                 
                 <label class="app-checkbox"><input type="checkbox" value="value" checked> Checked</label>
-                    <space s="40"></space>
+                    <div class="app-space-40"></div>
                 <label class="app-checkbox"><input type="checkbox" value="value" checked disabled> Disabled Checked</label>
                 
             </div>
@@ -123,7 +125,7 @@
             <div class="app-flex">  
                 
                 <label class="app-checkbox"><input type="checkbox" value="value"> Unchecked</label>
-                    <space s="20"></space>
+                    <div class="app-space-20"></div>
                 <label class="app-checkbox"><input type="checkbox" value="value" disabled> Disabled Unchecked</label>
                 
             </div>
@@ -336,6 +338,7 @@
    
             
          </div>
+        </div>
           
      </section>
     
@@ -349,15 +352,16 @@
     <section id="app-section-2">
         
         <div class="app-section-container">
+
+        <div class="app-section-sub-container">    
          
           <h1>Advance Components</h1>   
-            
-            
   
             <h3>Compound link with switch</h3>             
               
                 <a href="#" class="app-link-compound withSwitch">
-                    <div><i class="icons10-idea"></i>
+                    <div>
+                        <i class="icons10-idea"></i>
                         <span>App Brightness and device preference</span>
                         <p>Customise app volumes or devices they use</p>   
                     </div>
@@ -454,7 +458,8 @@
             </div>
             
             
-        </div>        
+        </div>
+    </div>     
         
     </section>    
         
@@ -467,8 +472,7 @@
    <!-- Section 3 -->
     <section id="app-section-3">
     
-        <div class="app-section-container">
-        
+        <div class="app-section-container has-padding">
      
          <h1>ProgressBar</h1>
 
@@ -501,8 +505,10 @@
             
                 <div class="app-flex">
 
-                    <div class="app-loader-busy"></div> <space s="45"></space>
-                    <div class="app-loader-busy medium"></div> <space s="45"></space>
+                    <div class="app-loader-busy"></div>
+                    <div class="app-space-45"></div>
+                    <div class="app-loader-busy medium"></div>
+                    <div class="app-space-45"></div>
                     <div class="app-loader-busy small"></div>
 
                 </div>
@@ -511,15 +517,16 @@
                
             <div class="app-fit-content" style="background:var(--AppColor)">
             
-                <br><space s="45"></space>
+                <br><div class="app-space-45"></div>
                 <div class="app-loader-bar light"></div> 
                 <br>
                     
-                <div class="app-flex"><space s="45"></space>
+                <div class="app-flex">
+                    <div class="app-space-45"></div>
                     <div class="app-loader-busy light"></div> 
-                    <space s="45"></space>
+                    <div class="app-space-45"></div>
                     <div class="app-loader-busy medium light"></div> 
-                    <space s="45"></space>
+                    <div class="app-space-45"></div>
                     <div class="app-loader-busy small light"></div>
                 </div>
                 <br>
@@ -527,8 +534,8 @@
             </div>
 
 
-        
         </div>
+
     </section>
         
         
@@ -537,7 +544,7 @@
            <!-- Section 8 -->
     <section id="app-section-8">
     
-        <div class="app-section-container">
+        <div class="app-section-container has-padding"> 
         
          <h1>Searchable List</h1>
             
@@ -610,7 +617,6 @@
                   
             </ul>
         </div>
-     
     </section>
     
     
@@ -623,6 +629,7 @@
     <section id="app-section-4">
     
         <div class="app-section-container">
+        <div class="app-section-sub-container">    
             <h1>BottomSheet</h1>
             
             <div class="app-fit-content">
@@ -630,8 +637,7 @@
                 <p>A Windows UI menu popup from bottom similar as an <b>action sheet</b></p>
                 <input class="app-button animate app-bottomsheet-toggle" type="button" data-id="mm" value="Show Bottom Sheet"/>
             </div>
-            
-            
+        </div>
             <div class="app-bottomsheet" id="mm">
                 <div class="app-bottomsheet-toggle" data-id="mm"></div>
                 <div class="app-bottomsheet-wrapper">
@@ -643,9 +649,7 @@
                     <button class="app-bottomsheet-toggle" data-id="mm"><i class="icons10-cross"></i><span>Cancel</span></button>
                 </div>
             </div>
-         
         </div>
-   
     </section>
         
         
@@ -654,7 +658,7 @@
         <!-- Section 5 -->
      <section id="app-section-5" data-scroll="false"> 
     
-        <div class="app-section-container">
+        <div class="app-section-container has-padding">    
 
             <h1>Icons</h1>
             
@@ -666,7 +670,6 @@
             
 
         </div>
-    
     </section>
      
     
@@ -679,7 +682,7 @@
     <!-- Section 6 -->
      <section id="app-section-6"> 
     
-        <div class="app-section-container">
+        <div class="app-section-container has-padding">
 
             <h1>Notifications</h1>
 
@@ -708,7 +711,6 @@
 
 
         </div>
-    
     </section>
      
    
@@ -721,7 +723,7 @@
      <section id="app-section-7">
     
     
-        <div class="app-section-container">
+        <div class="app-section-container has-padding">
 
         <h1>Alerts</h1>
             

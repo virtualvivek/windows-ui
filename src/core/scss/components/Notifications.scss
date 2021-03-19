@@ -1,12 +1,12 @@
 .app-notification {
     @extend .background-color-accent;
-    box-shadow:0 0 30px 0 rgba(0,0,0,.1);
-    min-height:56px;
-    min-width:230px;
-    position:fixed;
-    color:#fff;
+    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    min-height: 56px;
+    min-width: 230px;
+    position: fixed;
+    color: #fff;
     font-size: 15px;
-    z-index:1056;
+    z-index: 1056;
     transition:bottom 0.2s;
 
     .app-notification__body {
@@ -25,10 +25,10 @@
             left: -8px;
             top: -12px;
             &:after {
-                @include setFontIcon("f13e",#fff,24px);
+                @include setFontIcon("f13e", #fff, 24px);
             }
         }
-        .app-notification__image--custom{
+        .app-notification__image--custom {
             background: none !important;
             height: auto;
             width: auto;
@@ -45,7 +45,7 @@
     }
 
     .app-notification__buttons {
-        display:none;
+        display: none;
         margin: 0 10px 10px 10px;
 
         .app-notification__button {
@@ -74,14 +74,14 @@
         }
     }
 
-    .app-notification__close{
-        cursor:pointer;
-        font-size:12px;
-        line-height:12px;
-        position:absolute;
-        right:8px;
-        top:8px;
-        transition:color 0.1s;
+    .app-notification__close {
+        cursor: pointer;
+        font-size: 12px;
+        line-height: 12px;
+        position: absolute;
+        right: 8px;
+        top: 8px;
+        transition: color 0.1s;
 
         .app-notification__close-icon {
             &::after {
@@ -97,20 +97,20 @@
         }
     }
 
-    &.position-bottom-right.animation-slide-in{
+    &.position-bottom-right.animation-slide-in {
         animation:position-right-slide-in 0.2s forwards;
         transform:translateX(100%);
     }
-    &.position-bottom-right.animation-slide-out{
+    &.position-bottom-right.animation-slide-out {
         animation:position-right-slide-out 0.2s forwards;
         transform:translateX(0);
     }
-    @keyframes position-right-slide-in{
+    @keyframes position-right-slide-in {
         to{
             transform:translateX(0);
         }
     }
-    @keyframes position-right-slide-out{
+    @keyframes position-right-slide-out {
         to{
             transform:translateX(100%);
         }
@@ -121,29 +121,58 @@
     display:flex
 }
 .app-notification--warning {
-    background:#b09c38
+    background:#b09c38;
 }
 .app-notification--success {
-    background:#4e946d
+    background:#4e946d;
 }
 .app-notification--danger,
 .app-notification--error {
-    background:#c94836
+    background:#c94836;
 }
-.app-notification--default .app-notification__image:after{
-    content:"\f13e"
+.app-notification--default .app-notification__image:after {
+    content:"\f13e";
 }
-.app-notification--info .app-notification__image:after{
-    content:"\f178"
+.app-notification--info .app-notification__image:after {
+    content:"\f178";
 }
-.app-notification--success .app-notification__image:after{
-    content:"\f12c"
+.app-notification--success .app-notification__image:after {
+    content:"\f12c";
 }
-.app-notification--warning .app-notification__image:after{
-    content:"\f18d"
+.app-notification--warning .app-notification__image:after {
+    content:"\f18d";
 }
 .app-notification--danger .app-notification__image:after,
-.app-notification--error .app-notification__image:after{
-    content:"\f157"
+.app-notification--error .app-notification__image:after {
+    content:"\f157";
 }
 
+@mixin app-notifications-mobile() {
+    .app-notification {
+        &.position-bottom-right.animation-slide-in {
+            animation: position-bottom-slide-in 0.2s forwards;
+            transform: translateY(100%);
+        }
+        &.position-bottom-right.animation-slide-out {
+            animation: position-bottom-slide-out 0.2s forwards;
+            transform:translateY(0);
+            margin: 0;
+        }
+        &.position-bottom-right.animation-slide-in,
+        &.position-bottom-right.animation-slide-out {
+        width: 100% !important;
+        right: 0 !important;
+        bottom: 0 !important;
+        }
+        @keyframes position-bottom-slide-in {
+            to{
+                transform: translateY(0);
+            }
+        }
+        @keyframes position-bottom-slide-out {
+            to{
+                transform: translateY(100%);
+            }
+        }
+    }
+}

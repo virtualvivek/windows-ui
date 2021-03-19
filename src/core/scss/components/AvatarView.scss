@@ -1,16 +1,36 @@
-.app-avatar{
+.app-avatar {
     border: 1px solid var(--color_light_grey);
     border-radius: 50%;
+
+    &.large {
+        width: 164px;
+        height: 164px;
+    }
+    &.medium {
+        width: 124px;
+        height: 124px;
+    }
+    &.small {
+        width: 84px;
+        height: 84px;
+    }
 }
-.app-avatar.large{
-    width: 164px;
-    height: 164px;
-}
-.app-avatar.medium{
-    width: 124px;
-    height: 124px;
-}
-.app-avatar.small{
-    width: 84px;
-    height: 84px;
+
+@mixin avatar-view-mobile() {
+    .app-avatar {
+        &.large {
+            width: 144px;
+            height: 144px;
+        }
+        
+        &.medium {
+            width: 104px;
+            height: 104px;
+        }
+        
+        &.small {
+            width: 64px;
+            height: 64px;
+        }
+    }
 }

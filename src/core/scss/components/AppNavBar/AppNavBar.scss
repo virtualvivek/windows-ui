@@ -1,19 +1,23 @@
-@import "./fragments/AppNavBar/NavBack.scss";
+@import "./sub-components/NavBack.scss";
+@import "./mobile/AppNavBar_Mobile.scss";
 
 #app-nav-wrap {
 
     &.toggled {
         @extend .background-color-nav;
         @extend .transition-background-400ms;
+        width: 74px;
         height: 100%;
         position: absolute;
         top: 0;
-        overflow-x: hidden; 
-        display:inline-block; 
-        width:74px; 
+        display: inline-block;
+        overflow-x: hidden;
         z-index: 1;
 
-        #app-name, .app-switch, nav a span, nav ul h1 {
+        #app-name,
+        .app-switch,
+        nav a span,
+        nav ul h1 {
             @extend .display-none;
         }
 
@@ -21,29 +25,29 @@
             width: 56px;
             margin-left: 8px;
         }
-        nav > div:first-child, nav > div:nth-child(2) {
+        nav > div:first-child,
+        nav > div:nth-child(2) {
             width: auto;
         }
 
     }
 
     nav {
-
         @extend .transition-background-400ms;
         @extend .background-color-nav;
-        height:100%;
-        width:280px; 
-        position:absolute;
-        left:0;
-        top:0; 
+        height: 100%;
+        width: 280px; 
+        position: absolute;
+        left: 0;
+        top: 0;
         padding: 0;
-        display:block; 
-        overflow-x: hidden;       
+        display: block;
+        overflow-x: hidden;
         overflow-y: scroll;
-        z-index: 2; 
+        z-index: 2;
 
-        &::-webkit-scrollbar { 
-            width: 2px !important 
+        &::-webkit-scrollbar {
+            width: 2px !important;
         }
 
         &.animate {
@@ -107,9 +111,7 @@
                     height: 41px;
                     background: var(--AppColor);
                     content: '';
-                    -webkit-transition: -webkit-transform 0.1s;
                     transition: transform 0.1s;
-                    -webkit-transform: translate3d(-150%,0,0);
                     transform: translate3d(-150%,0,0); 
                 }
                 a:before {
@@ -125,8 +127,7 @@
                         @extend .font-weight-500;
                         
                         &::after {
-                            -webkit-transform: translate3d(0,0,0);
-                            transform: translate3d(0,0,0);
+                            transform: translate3d(0, 0, 0);
                         }
                     }
                     span::after {
@@ -182,7 +183,8 @@
 
     }
     
-    nav > div:first-child, nav > div:nth-child(2) {
+    nav > div:first-child,
+    nav > div:nth-child(2) {
         @extend .background-color-nav;
         width: inherit;
         display: flex;
@@ -195,7 +197,7 @@
         padding-bottom: 8px;
     }
     nav > div:nth-child(2) {
-        top: 50px; 
+        top: 50px;
     }
 
     #app-nav-toggle {
@@ -208,9 +210,8 @@
         &:active {
             @extend .background-color-link-bg-active;
         }
-        &:after{
-            @include setFontIcon("f106",var(--color_dark_text),24px);
+        &:after {
+            @include setFontIcon("f106", var(--color_dark_text), 24px);
         }
-    }    
-   
+    }
 }

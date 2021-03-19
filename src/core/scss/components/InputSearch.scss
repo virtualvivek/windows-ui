@@ -1,6 +1,7 @@
 .app-input-text {
     &.app-input-search {
-        &:active,&:focus {
+        &:active,
+        &:focus {
             @extend .border-color-accent;
         }
     }
@@ -27,11 +28,12 @@
         margin-left: -33px;
         border: none;
         
-        &:hover,&:active {
+        &:hover,
+        &:active {
             @extend .background-color-accent;
         }
         &:active {
-            opacity: 0.65
+            opacity: 0.65;
         }
         &::after { 
             font-weight: 600;
@@ -48,7 +50,7 @@
     display:inline-flex;
 
     &::after {
-        z-index:2;
+        z-index: 2;
         font-weight: 600;
         margin-left: -29px;
         align-self: center;
@@ -58,9 +60,9 @@
 
 .app-search-bar,
 .app-search-box {
-    width:285px;
+    width: 285px;
+    height: 35px;
     display:inline-flex;
-    height:35px;
     vertical-align: middle; 
 }
 
@@ -68,6 +70,23 @@
     width:fit-content;
     margin:auto;
     position:relative;
-    top:24px;
+    top: 24px;
     display: table;
+}
+
+@mixin input-search() {
+    
+    .app-search-bar {
+        button:not(:active) {
+            &:hover {
+                background: var(--color_nav);
+                &::after {
+                    color: var(--color_dark_text) !important;
+                }
+            }
+        }
+        button:active {
+            opacity: 1;
+        }
+    }
 }

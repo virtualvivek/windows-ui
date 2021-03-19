@@ -1,0 +1,107 @@
+.app-link-compound {
+    @extend .color-dark-text;
+    @extend .transition-all-400ms;
+    width: 310px;
+    height: fit-content;
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 8px 12px 10px;
+    border: 2px solid transparent;
+    
+    margin-bottom:5px;
+    text-align: start;
+
+    &:hover {
+        @extend .background-color-light-grey;
+    }
+    &:active {
+        @extend .transition-scale-0_95;
+        background: var(--color_link_bg_hover) !important;
+    }
+    i {
+        font-size: 36px;
+        top: 16px;
+        line-height: 0 !important;
+        &.bg-accent::before,&.bg-grey::before {
+            font-size: 30px;
+            padding: 3px; 
+        }
+    }
+    span {
+        @extend .color-dark-text;
+        width: 250px;
+        height: 20px;
+        display: inline-block;
+        top: 7px;
+        left: 7px;
+        line-break: anywhere;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    p {
+        height: fit-content;
+        padding: 0 0 5px 48px;
+        margin: 2px 0 0 0;
+        font-size: 12px;
+        opacity: 0.7;
+        overflow: hidden;
+        line-height: 1.2;
+        text-overflow: ellipsis;
+        
+    }
+    span,i {
+        position: relative;
+        line-height: 1;
+    }
+
+
+    &.accent {
+
+        &:hover {
+            border: 2px solid var(--color_link_bg_hover);
+            background: transparent !important;
+        }
+        &:active {
+            background: var(--color_light_grey) !important;
+            border: 2px solid var(--color_link_bg_active);
+        }
+        i {
+            @extend .color-accent;
+        }
+    }
+
+    &.withSwitch { 
+        width: auto;
+        display: inline-flex;
+        padding: 0 0 12px 10px;
+        align-items: center;
+        .app-switch {
+            position: relative;
+            left: 20px;
+        }
+    }
+    
+}
+
+@mixin link-compound-mobile() {
+    .app-link-compound {
+        &:hover,
+        &.accent:hover {
+            background: transparent;
+            border-color: transparent;  
+        }
+        &.withSwitch {
+            display: block;
+            padding: 0 0 20px 10px;
+            span {
+                width: calc(100% - 60px);
+            }
+            .app-switch {
+                left: 0;
+                top: 10px;
+            }
+        }
+    }
+}

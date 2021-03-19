@@ -1,12 +1,13 @@
 .searchAuto-select {
-    font-size: 14px;
     height: 0;
+    font-size: 14px;
     line-height: 1;
     white-space: nowrap;
     position: relative;
     float: left;
 
-    &:hover,&:focus {
+    &:hover,
+    &:focus {
         @extend .background-color-light-bg;     
     }
     &:after {
@@ -24,7 +25,8 @@
             color: var(--color_dark_text);
             padding: 13px 15px;
 
-            &:hover,&:active {
+            &:hover,
+            &:active {
                 background-color: #CFCFCF !important;
                 color: #333 !important;
             }
@@ -43,19 +45,19 @@
         border: none;
 
         ul {
+            width: 100%;
             list-style: none;
             padding: 0;
             margin: 0;
             background: #F2F2F2;
             box-shadow: 0px 5px 8px var(--color_button);
             position: absolute;
-            width: 100%;
             z-index: 999;
         }
     }
 }
 
 .app-search-box-auto,
-.searchAuto-select:after{
+.searchAuto-select:after {
     display: none !important;
 }

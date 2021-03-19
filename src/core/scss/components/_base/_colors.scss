@@ -13,23 +13,23 @@
     --color_button_active: #999;
     --color_button_active_border: #888;
     --color_accent_light: var(--AppColor);
-    --color_accent_dark: var(--AppColor);    
+    --color_accent_dark: var(--AppColor);
 }
 
-.color-danger{
-    color:#C50500 
+.color-danger {
+    color:#C50500;
 }
-.color-success{
-    color:#2C8B2C 
+.color-success {
+    color:#2C8B2C;
 }
 
-.bg-danger{
-    background:#C50500 !important
+.bg-danger {
+    background:#C50500 !important;
 }
-.bg-success{
-    background:#2C8B2C !important
+.bg-success {
+    background:#2C8B2C !important;
 }
 .bg-danger,
 .bg-success {
-    color: #fff !important
+    color: #fff !important;
 }

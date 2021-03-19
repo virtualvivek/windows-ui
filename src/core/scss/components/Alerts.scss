@@ -1,42 +1,42 @@
 #modalContainer {
+    height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
     z-index:10;
-    background:#77777777;
-    height: 100vh;
+    background: #77777777;
 
     #alertBox {
         @extend .background-color-accent;
         @extend .color-white;
-        position:relative;
-        width:55%;
-        min-height:20px;
-        margin-top:30vh;
-        position:fixed;	
+        position: relative;
+        width: 55%;
+        min-height: 20px;
+        margin-top: 30vh;
+        position: fixed;
         box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);
 
         h1 {
-            margin:0;
+            margin: 0;
             font-size: 1.7em;
             padding: 25px 32px 10px 32px;
         }
         #msgconobj {
             font-size: 1em;
-            text-align:justify;
+            text-align: justify;
             min-height: 80px;
             padding: 0 32px;
         }
         #btnDiv {
-            display:block ;
+            display: block;
             text-align: right ;
             padding: 10px 10px 30px 10px;
         }
         .alertButtons {
-            display:inline;
+            display: inline;
             padding: 5px 3.5vw;
             margin: 15px;
-            border:2px solid #fff;
+            border: 2px solid #fff;
             width: 200px;
             color: #fff;
 
@@ -50,22 +50,36 @@
             }
         }
     }
-
   }
 
 #bodyContainer,
 #headerContainer {
-	padding:0;
+	padding: 0;
 }
 
 #alertBox h1,
 #alertBox #btnDiv,
 #alertBox #msgconobj,
 #alertBox .alertButtons {
-   background-color:transparent !important;	 
+   background-color: transparent !important;
 }
 #bodyContainer,
 #modalContainer,
 #alertBox #msgconobj {
-    height: 100%
+    height: 100%;
+}
+
+@mixin alert-mobile() {
+    #modalContainer > #alertBox {
+        background: var(--AppColor);
+        width: 100%;
+        min-height: 20px;
+        left: 0 !important;
+        margin: 0;
+        
+        .alertButtons {
+            padding: 3px 30px;
+            margin: 15px 15px 15px 0;
+        }
+    }
 }

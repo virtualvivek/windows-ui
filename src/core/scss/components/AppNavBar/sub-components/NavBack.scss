@@ -18,8 +18,8 @@
     @extend .color-dark-text;
     width:fit-content;            
     line-height: 1 !important;
-    font-size: 30px;
-    padding: 7px 22px !important;
+    font-size: 26px;
+    padding: 7px 24px !important;
 
         &:hover {
             @extend .background-color-link-bg-hover;
@@ -45,4 +45,16 @@
                 }
             }
         }
+}
+
+@mixin app-back-mobile() {
+    .app-back {
+        padding: 5px 0px 0px 12px !important;
+    }
+    a.app-back {
+        &:hover,
+        &.fixed.light:hover {
+            background: transparent !important;
+        }
+    }
 }

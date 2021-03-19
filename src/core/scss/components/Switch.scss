@@ -75,3 +75,13 @@
         }
     }
 }
+
+@mixin switch-mobile() {
+    .app-switch {
+        > div {
+            &:hover {
+                opacity:1; 
+            }
+        }
+    }
+}

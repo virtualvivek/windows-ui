@@ -9,30 +9,30 @@
         width: 6px;
         height: 6px;
         position: relative;
+        left: -10px;
         border-radius: 50%;
-        left: -10px
     }
 
     &.light {
         .app-loaderBar{
-            background-color:#fff;
+            background-color: #fff;
         }
     }
 
     #first {
-        animation: move 2s infinite cubic-bezier(0.2,0.64,0.81,0.23);
+        animation: move 2s infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
     #second {
         top: -6px;
-        animation: move 2s 150ms infinite cubic-bezier(0.2,0.64,0.81,0.23);
+        animation: move 2s 150ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
     #third {
         top: -12px;
-        animation: move 2s 300ms infinite cubic-bezier(.2,.64,.81,.23);
+        animation: move 2s 300ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
     #fourth {
         top: -18px;
-        animation: move 2s 450ms infinite cubic-bezier(.2,.64,.81,.23);
+        animation: move 2s 450ms infinite cubic-bezier(0.2, 0.64, 0.81, 0.23);
     }
       
       @-webkit-keyframes move {
@@ -47,5 +47,10 @@
         0% {left: 0%;}
         100% {left:100%;}
       }
+}
 
+@mixin loader-bar-mobile() {
+    .app-loader-bar {
+        width: 90%;
+    }
 }
