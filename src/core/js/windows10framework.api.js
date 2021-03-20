@@ -4,7 +4,7 @@
 
 function setStatusBarAccent(){
     var style = getComputedStyle(document.body);
-    var theColorIs = style.getPropertyValue("--AppColor");
+    var theColorIs = style.getPropertyValue("--PrimaryColor");
     
     var meta=document.createElement("meta");
     meta.name="theme-color";

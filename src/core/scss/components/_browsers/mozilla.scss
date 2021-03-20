@@ -1,14 +1,14 @@
 @-moz-document url-prefix() {
       
     .app-content-wrap section {  
-        scrollbar-color:#999 transparent;
+        scrollbar-color: #999 transparent;
     }
     #app-nav-wrap nav{
-        scrollbar-width:thin
+        scrollbar-width: thin;
     }
     
     h1.fixed,h2.fixed,h3.fixed,h4.fixed,h5.fixed {
-        background: var(--color_light_bg) !important
+        background: var(--color_light_bg) !important;
     }
     .app-select-options {
         background-color: #F9FBF9 !important;
@@ -17,8 +17,7 @@
         background-color: var(--color_nav) !important;
     }
     #modalContainer > #alertBox{
-        background-color: var(--AppColor) !important
+        background-color: var(--PrimaryColor) !important;
     }
-  
     
 }

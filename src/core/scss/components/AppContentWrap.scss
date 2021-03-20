@@ -6,7 +6,7 @@
         height: 100%;
         width: 100%;
         margin: 0 auto;
-        padding: 0em 1em 1em 1em;
+        padding: 0;
         right: 0;
         overflow-y: scroll;
         overflow-x: hidden;
@@ -18,10 +18,9 @@
         }
 
         .app-section-container {
-            padding-left: 295px;
-            padding-bottom: 124px;
+            padding-left: 280px;
             &.has-padding {
-                padding-left: 325px; 
+                padding-left: 310px; 
             }
         }
         .app-section-sub-container {
@@ -58,7 +57,7 @@
     }
     .app-section-container {
             margin: 0 !important;
-            padding: 90px 0 !important;
+            padding: 90px 0 0 0 !important;
         &.has-padding {
             margin: 0 15px !important;
         }

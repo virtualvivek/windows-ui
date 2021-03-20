@@ -29,7 +29,6 @@
         nav > div:nth-child(2) {
             width: auto;
         }
-
     }
 
     nav {
@@ -43,12 +42,8 @@
         padding: 0;
         display: block;
         overflow-x: hidden;
-        overflow-y: scroll;
+        overflow-y: auto;
         z-index: 2;
-
-        &::-webkit-scrollbar {
-            width: 2px !important;
-        }
 
         &.animate {
             ul li {
@@ -94,8 +89,6 @@
             justify-content: left;
 
             li {
-                z-index: 1;
-                flex: 1;
 
                 &:hover {
                     @extend .background-color-link-bg-hover;
@@ -109,7 +102,7 @@
                     left: 0;
                     width: 5px;
                     height: 41px;
-                    background: var(--AppColor);
+                    background: var(--PrimaryColor);
                     content: '';
                     transition: transform 0.1s;
                     transform: translate3d(-150%,0,0); 
@@ -145,6 +138,7 @@
     
             .app-hr {
                 margin: 10px 15px;
+                width: 90%;
             }
         }
 
@@ -194,7 +188,7 @@
     }
 
     nav > div:first-child {
-        padding-bottom: 8px;
+        padding-bottom: 10px;
     }
     nav > div:nth-child(2) {
         top: 50px;

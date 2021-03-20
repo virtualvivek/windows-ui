@@ -46,10 +46,10 @@
         &:checked {
             +div {
                 @extend .background-color-accent;
-                border-color: var(--AppColor);
+                border-color: var(--PrimaryColor);
 
                 &:before {
-                    color: var(--AppColor);
+                    color: var(--PrimaryColor);
                     -webkit-transform: translateX(280%);
                     transform: translateX(280%);
                     -webkit-transform: translateX(calc(2*100% - 3px));

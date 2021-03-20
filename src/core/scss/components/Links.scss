@@ -37,7 +37,7 @@ i.bg-grey::before {
 @mixin links-mobile() {
     .app-link {
         &:hover {
-            color: var(--AppColor);
+            color: var(--PrimaryColor);
         }
     }
 }

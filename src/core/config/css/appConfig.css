@@ -1,13 +1,11 @@
 :root {
 /*    --AppColor: #0078D4;*/
  /*   Change of your choice */
-    --AppColor: #16ab9c;
+    --PrimaryColor: #0078D4;
 }
 
 body {
-    font-weight: 400;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Helvetica Neue", sans-serif;
-    text-shadow: rgba(0,0,0,0.01) 0 0 1px;
     text-rendering: optimizeLegibility !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -21,14 +19,13 @@ a {
 }
 
 ::selection {
-    background-color: var(--AppColor);
+    background-color: var(--PrimaryColor);
     color: #fff;
 }
 
 ::-moz-selection {   
-    background-color: var(--AppColor);
+    background-color: var(--PrimaryColor);
     color: #fff;
 }
 ::-webkit-scrollbar { width: 0.85em }
 ::-webkit-scrollbar-thumb { background-color: #999 }
-

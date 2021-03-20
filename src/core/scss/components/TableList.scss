@@ -70,12 +70,12 @@
 @mixin table-list-mobile() {
 
     .app-list li a:hover {
-        background:transparent;
-        border-color:transparent;
+        background: transparent;
+        border-color: transparent;
     }
     
     
-    .app-list li a:active{
+    .app-list li a:active {
         background: var(--color_link_bg_hover);
     }
     

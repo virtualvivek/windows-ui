@@ -125,8 +125,8 @@ SOFTWARE.
         //adding margin-left property to change on toogle tabBar
         if($("#app-nav-wrap").hasClass("toggled"))
             {  
-              $(".app-section-container").css("padding-left", "90px");
-              $(".app-section-container.has-padding").css("padding-left", "120px");
+              $(".app-section-container").css("padding-left", "75px");
+              $(".app-section-container.has-padding").css("padding-left", "105px");
             }
         if(!$("#app-nav-wrap").hasClass("toggled"))
             {
@@ -180,7 +180,7 @@ function setLightMode() {
         document.documentElement.style.setProperty('--color_button_hover','#666');
         document.documentElement.style.setProperty('--color_button_active','#999');
         document.documentElement.style.setProperty('--color_button_active_border','#888');
-        document.documentElement.style.setProperty('--color_accent_light','var(--AppColor)');   
+        document.documentElement.style.setProperty('--color_accent_light','var(--PrimaryColor)');   
 }
 
 
@@ -321,7 +321,7 @@ function changeType(x, type) {
 
 // --------------------------------------------    WIN Color Alpha Accent    -----------------------------------------------------------
 
-let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--AppColor');
+let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
 alphaColor = alphaColor.trim();
 alphaColor = alphaColor+'9C';
 document.documentElement.style.setProperty('--alpha_c', alphaColor);
@@ -330,7 +330,7 @@ document.documentElement.style.setProperty('--alpha_c', alphaColor);
 // ----------------------------------------------- API setStatusBarAccent() -------------------------------------
 function setStatusBarAccent(){
     var style = getComputedStyle(document.body);
-    var theColorIs = style.getPropertyValue('--AppColor');
+    var theColorIs = style.getPropertyValue('--PrimaryColor');
     
     var meta=document.createElement('meta');
     meta.name='theme-color';
@@ -357,7 +357,7 @@ function setStatusBarAccent(){
 
 // First let's set the colors of our sliders
 const settings={
-  fill: 'var(--AppColor)',
+  fill: 'var(--PrimaryColor)',
   background: '#999999'   
 }
 
@@ -816,7 +816,7 @@ createCustomAlert(alertText, buttonsNames, buttonCallFuncs, imageURL);
 if(BlurEnabled==true){
     
     $("h1.fixed").css('backdrop-filter','blur(30px)');
-    $("h1.fixed").css('background','#ffffff77');
+    $("h1.fixed").css('background','transparent');
  
 //    $(".app-bottomsheet > div").css('background','var(--alpha_c)');
 //    $(".app-bottomsheet > div").css('backdrop-filter','blur(30px)');

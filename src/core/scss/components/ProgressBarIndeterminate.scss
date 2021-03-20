@@ -12,7 +12,7 @@
     height: 100%;
     width: 100%;
     background-image: radial-gradient(circle at 50% 50% ,
-                      var(--AppColor) 10%, transparent 90%);
+                      var(--PrimaryColor) 10%, transparent 90%);
     animation: indeterminateAnimation 1s infinite linear;
     transform-origin: 0% 50%;
     transition-property: background;

@@ -46,7 +46,7 @@
             &:active {
                 background: #fff !important;
                 opacity: 1;
-                color: var(--AppColor);
+                color: var(--PrimaryColor);
             }
         }
     }
@@ -71,7 +71,7 @@
 
 @mixin alert-mobile() {
     #modalContainer > #alertBox {
-        background: var(--AppColor);
+        background: var(--PrimaryColor);
         width: 100%;
         min-height: 20px;
         left: 0 !important;

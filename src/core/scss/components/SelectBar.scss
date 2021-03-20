@@ -8,7 +8,7 @@
     background: var(--color_light_bg);
 
     &:hover{
-        border-color:#777
+        border-color: #777;
     }
 
     &:focus {
@@ -24,7 +24,7 @@
         width: fit-content;
         width: -moz-min-content;
         display: inline-flex;
-        color: var(--AppColor);
+        color: var(--PrimaryColor);
         font-size: 16.8px;
         padding: 0;
     }
