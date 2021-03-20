@@ -118,7 +118,7 @@ You can customize entire app `accent color`, `font family`, more using `appConfi
 
 ```css
 :root {
-    --AppColor: #6632a8;
+    --PrimaryColor: #6632a8;
     /* Change color you like */
 }
 body {
