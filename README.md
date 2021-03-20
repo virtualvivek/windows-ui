@@ -39,11 +39,11 @@
 	
 
 <h2 align="center">
-  <a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="250" /></a>
+  <a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="180" /></a>
 
-  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="250" />
+  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="180" />
 
-  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="250" />
+  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="180" />
 </h2>
 
 
