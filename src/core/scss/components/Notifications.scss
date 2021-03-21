@@ -112,13 +112,13 @@
     }
     @keyframes position-right-slide-out {
         to{
-            transform:translateX(100%);
+            transform: translateX(100%);
         }
     }    
 }
 .app-notification .app-notification__body,
 .app-notification .app-notification__buttons.is-visible {
-    display:flex
+    display: flex;
 }
 .app-notification--warning {
     background: #b09c38;

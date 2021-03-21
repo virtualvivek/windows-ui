@@ -312,7 +312,7 @@ SOFTWARE.
                                 open: "slide-in",
                                 close: "slide-out"
                             },
-                            animationDuration: .2,
+                            animationDuration: 0.2,
                             position: "bottom-right",
                             showBorder: !1,
                             showButtons: !1,

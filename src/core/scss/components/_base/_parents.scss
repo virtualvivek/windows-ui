@@ -1,38 +1,38 @@
 .background-color-light-grey {
-    background-color:var(--color_light_grey); 
+    background-color: var(--color_light_grey); 
 }
 
 .background-color-light-bg {
-    background-color:var(--color_light_bg); 
+    background-color: var(--color_light_bg); 
 }
 
 .background-color-dark-text {
-    background-color:var(--color_dark_text); 
+    background-color: var(--color_dark_text); 
 }
 
 .background-color-nav {
-    background-color:var(--color_nav); 
+    background-color: var(--color_nav); 
 }
 
 .background-color-primary {
-    background-color:var(--PrimaryColor); 
+    background-color: var(--PrimaryColor); 
 }
 
 .background-color-primary-light {
-    background-color:var(--color_primary_light); 
+    background-color: var(--color_primary_light); 
 }
 
 .background-color-primary-dark {
-    background-color:var(--color_primary_dark); 
+    background-color: var(--color_primary_dark); 
 }
 
 
 .background-color-link-bg-hover {
-    background-color:var(--color_link_bg_hover); 
+    background-color: var(--color_link_bg_hover); 
 }
 
 .background-color-link-bg-active {
-    background-color:var(--color_link_bg_active); 
+    background-color: var(--color_link_bg_active); 
 }
 
 .background-color-button-active {
@@ -97,13 +97,13 @@
 .transition-all-400ms {
     transition-property: background, transform, border;
     transition-duration: 0.4s;
-    transition-timing-function: ease
+    transition-timing-function: ease;
 }
 .transition-scale-0_95 {
     transition-property: background, transform;
     transition-duration: 0.09s;
     transition-timing-function: ease;
-    transform: scale(0.965,0.965); 
+    transform: scale(0.965, 0.965); 
 }
 
 .user-select-none {

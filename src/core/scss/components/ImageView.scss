@@ -2,11 +2,12 @@
     @extend .transition-all-400ms;
     object-fit: cover;
 
-    &.loading,&.error{
-        filter: brightness(0.5); 
+    &.loading,
+    &.error {
+        filter: brightness(0.5);
     }
-    &.loaded{
-        filter: brightness(1); 
+    &.loaded {
+        filter: brightness(1);
     }
 
     &.small {
@@ -27,11 +28,11 @@
 }
 
 
-.app-image-wrapper{
+.app-image-wrapper {
     width: fit-content;
     height: fit-content;
 
-    .app-loader-busy{
+    .app-loader-busy {
         transform: translateY(-80px);
         left: -55%;
         width: fit-content;
@@ -45,12 +46,12 @@
     display: inline-block;
 }
 
-.app-image.error + .app-loader-busy>div,
+.app-image.error + .app-loader-busy > div,
 .app-image.loaded + .app-loader-busy,
 .app-image-wrapper .app-loader-busy {
     display: none
 }
-.app-image.error + .app-loader-busy::after{
+.app-image.error + .app-loader-busy::after {
     font-family: icons10;
     content: "\f1aa";
     font-size: 40px;

@@ -188,7 +188,7 @@ function setLightMode() {
 
 // --------------------------------------------    Show Day Night Switch  -----------------------------------------------------------
 
-if(ShowDarkModeSwitch==true){
+if(ShowDarkModeSwitch===true){
     let DMSwicth= '<label class="app-switch"><input id="DayNightSwitch" type="checkbox" autocomplete="off"/><div data-off="Day" data-on="Night"></div></label>';  
         jQuery(DMSwicth).insertAfter('#app-nav-toggle');
         jQuery(DMSwicth).insertAfter('#index-switch');
@@ -215,7 +215,7 @@ $("#DayNightSwitch").on('change', function() {
 
 // -----------------------------------------   Checking Dark Mode is Activated on App Mount    -----------------------------
 
-if(NightMode==true || localStorage.getItem("isNight")=='true'){
+if(NightMode===true || localStorage.getItem("isNight")=='true'){
     $("body").css('transition', 'none');
     $(".app-container nav").css('transition', 'none');
     setDarkMode();
@@ -517,7 +517,7 @@ function app_register_auto_search(search_id ,selectId) {
             var selected = $(this).find('option:selected');
             
             
-            if(BlurEnabled==true){ 
+            if(BlurEnabled===true){ 
                  $(".list ul").css('backdrop-filter', 'blur(30px)');
                  $(".list ul").css('background', 'transparent');
             }
@@ -544,7 +544,7 @@ function filter(searchBoxid,selectId){
         (text.toLowerCase().indexOf(valThis.toLowerCase()) > -1) ? $(this).show() : $(this).hide(); 
         
         //code to hide >li childs when no text in search
-        if ($(searchBoxid).val()==0){
+        if ($(searchBoxid).val()===0){
             $('#'+selectId+' ul > li').hide();
         }
    });
@@ -724,13 +724,13 @@ function createCustomAlert(alertText, buttonsNames, buttonCallFuncs) {
 		btn.appendChild(d.createTextNode(buttonsNames[count]));
 		functionName = buttonCallFuncs[count] ;
 		btn.href = "javascript:" + functionName + ";removeCustomAlert();" ;
-        if(count == 0) btn.focus();
+        if(count === 0) btn.focus();
 	}
 	
 	d.onkeyup=function(e){
 		var e=window.event || e
 		var keyunicode=e.keyCode? e.keyCode : e.charCode ;
-		if(keyunicode == 27) removeCustomAlert() ;	
+		if(keyunicode === 27) removeCustomAlert() ;	
 	}
     
     

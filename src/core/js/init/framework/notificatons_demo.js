@@ -147,14 +147,14 @@
             action: {
                 text: 'iApply',
                 callback: function () {
-                        console.log('Apply button clicked'); 
+                        console.log('Apply button clicked');
                         alert("Apply button clicked");
                 }
             },
             cancel: {
                 text: 'Dismiss',
                 callback: function () {
-                        console.log('Dismiss button clicked'); 
+                        console.log('Dismiss button clicked');
                         alert("Dismiss button clicked");
                 }
             }
