@@ -31,7 +31,7 @@
     }
 
     .app-bottomsheet-wrapper {
-        @extend .background-color-accent;
+        @extend .background-color-primary;
         bottom: 0;
         height: 100px;
         display: inline-flex;

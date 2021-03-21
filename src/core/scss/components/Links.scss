@@ -1,5 +1,5 @@
 .app-link {
-    @extend .color-accent;
+    @extend .color-primary;
     font-size: 15px;
     display: inline-flex;
     font-weight: 400;
@@ -26,9 +26,9 @@
     }
 }
 
-i.bg-accent::before {
+i.bg-primary::before {
     @extend .color-white;
-    @extend .background-color-accent;
+    @extend .background-color-primary;
 }
 i.bg-grey::before {
     @extend .background-color-link-bg-active;

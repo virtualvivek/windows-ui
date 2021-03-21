@@ -27,8 +27,8 @@
     span {  margin-left: 32px;  }
 
 
-    &.accent {
-        @extend .background-color-accent;
+    &.primary {
+        @extend .background-color-primary;
         @extend .color-light-bg;
 
         &:active {

@@ -1,8 +1,8 @@
 
-// ----------------------------------------------- API setStatusBarAccent() -------------------------------------
+// ----------------------------------------------- API setStatusBarPrimary() -------------------------------------
 
 
-function setStatusBarAccent(){
+function setStatusBarPrimary(){
     var style = getComputedStyle(document.body);
     var theColorIs = style.getPropertyValue("--PrimaryColor");
     
@@ -27,8 +27,8 @@ function setDarkModeAPI() {
     document.documentElement.style.setProperty('--color_button_hover','#999');
     document.documentElement.style.setProperty('--color_button_active','#222');
     document.documentElement.style.setProperty('--color_button_active_border','#EEE');
-    document.documentElement.style.setProperty('--color_accent_light','#FFF');
-    document.documentElement.style.setProperty('--color_accent_dark','#403E41');
+    document.documentElement.style.setProperty('--color_primary_light','#FFF');
+    document.documentElement.style.setProperty('--color_primary_dark','#403E41');
 }
 
 //Setting night mode on the page

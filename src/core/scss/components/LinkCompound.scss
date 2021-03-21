@@ -6,7 +6,7 @@
     font-size: 15px;
     display: inline-block;
     cursor: pointer;
-    padding: 0 8px 12px 10px;
+    padding: 0 10px 12px 10px;
     border: 2px solid transparent;
     
     margin-bottom:5px;
@@ -23,7 +23,8 @@
         font-size: 36px;
         top: 16px;
         line-height: 0 !important;
-        &.bg-accent::before,&.bg-grey::before {
+        &.bg-primary::before,
+        &.bg-grey::before {
             font-size: 30px;
             padding: 3px; 
         }
@@ -49,7 +50,6 @@
         overflow: hidden;
         line-height: 1.2;
         text-overflow: ellipsis;
-        
     }
     span,i {
         position: relative;
@@ -57,7 +57,7 @@
     }
 
 
-    &.accent {
+    &.primary {
 
         &:hover {
             border: 2px solid var(--color_link_bg_hover);
@@ -68,7 +68,7 @@
             border: 2px solid var(--color_link_bg_active);
         }
         i {
-            @extend .color-accent;
+            @extend .color-primary;
         }
     }
 
@@ -82,13 +82,12 @@
             left: 20px;
         }
     }
-    
 }
 
 @mixin link-compound-mobile() {
     .app-link-compound {
         &:hover,
-        &.accent:hover {
+        &.primary:hover {
             background: transparent;
             border-color: transparent;  
         }

@@ -7,7 +7,7 @@
     background: #77777777;
 
     #alertBox {
-        @extend .background-color-accent;
+        @extend .background-color-primary;
         @extend .color-white;
         position: relative;
         width: 55%;

@@ -162,7 +162,7 @@ function setDarkMode() {
         document.documentElement.style.setProperty('--color_button_hover','#999');
         document.documentElement.style.setProperty('--color_button_active','#222');
         document.documentElement.style.setProperty('--color_button_active_border','#EEE');
-        document.documentElement.style.setProperty('--color_accent_light','#FFF');    
+        document.documentElement.style.setProperty('--color_primary_light','#FFF');    
 }
 
 function setLightMode() {
@@ -180,7 +180,7 @@ function setLightMode() {
         document.documentElement.style.setProperty('--color_button_hover','#666');
         document.documentElement.style.setProperty('--color_button_active','#999');
         document.documentElement.style.setProperty('--color_button_active_border','#888');
-        document.documentElement.style.setProperty('--color_accent_light','var(--PrimaryColor)');   
+        document.documentElement.style.setProperty('--color_primary_light','var(--PrimaryColor)');   
 }
 
 
@@ -319,7 +319,7 @@ function changeType(x, type) {
 
 
 
-// --------------------------------------------    WIN Color Alpha Accent    -----------------------------------------------------------
+// --------------------------------------------    WIN Color Alpha Primary    -----------------------------------------------------------
 
 let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
 alphaColor = alphaColor.trim();
@@ -327,8 +327,8 @@ alphaColor = alphaColor+'9C';
 document.documentElement.style.setProperty('--alpha_c', alphaColor);
 
 
-// ----------------------------------------------- API setStatusBarAccent() -------------------------------------
-function setStatusBarAccent(){
+// ----------------------------------------------- API setStatusBarPrimary() -------------------------------------
+function setStatusBarPrimary(){
     var style = getComputedStyle(document.body);
     var theColorIs = style.getPropertyValue('--PrimaryColor');
     

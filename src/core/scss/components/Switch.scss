@@ -45,7 +45,7 @@
         
         &:checked {
             +div {
-                @extend .background-color-accent;
+                @extend .background-color-primary;
                 border-color: var(--PrimaryColor);
 
                 &:before {

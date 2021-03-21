@@ -1,5 +1,5 @@
 .app-notification {
-    @extend .background-color-accent;
+    @extend .background-color-primary;
     box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
     min-height: 56px;
     min-width: 230px;
@@ -85,7 +85,7 @@
 
         .app-notification__close-icon {
             &::after {
-                @include setFontIcon("f1b0",#fff,22px);
+                @include setFontIcon("f114",#fff,22px);
                 position: relative;
                 top: 7px;
                 right: 5px;
