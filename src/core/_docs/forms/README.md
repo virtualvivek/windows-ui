@@ -60,18 +60,18 @@ Buttons used to submit forms or anywhere in a document for accessible, standard 
 ```html
 <input class="app-button" type="button" value="Disabled button" disabled/>
 ```
-### Button Accent Default 
+### Button Primary Default 
 <img src="button/button_default_accent.png" width="150" />
 
 ```html
-<input class="app-button accent" type="button" value="Default button"/>
+<input class="app-button primary" type="button" value="Default button"/>
 ```
 
-### Button Accent Disabled 
+### Button Primary Disabled 
 <img src="button/button_disabled_accent.png" width="150" />
 
 ```html
-<input class="app-button accent" type="button" value="Accent button" disabled/>
+<input class="app-button primary" type="button" value="Accent button" disabled/>
 ```
 ---
 
@@ -188,22 +188,22 @@ links are hyperlinks. You can click on a link and jump to another document.
     <p>Customise app volumes or devices they use</p>
 </a>
 ```
-### Compound Link Accent
+### Compound Link Primary
 <img src="links/compound_accent.png" width="360" />
 
 ```html
-<a href="#" class="app-link-compound accent">
+<a href="#" class="app-link-compound primary">
     <i class="icons10-notification-image"></i>
     <span>App Notification and device preference</span>
     <p>Customise app volumes and speakers or devices they use</p>
 </a>
 ```
-### Compound Link BG Accent
+### Compound Link BG Primary
 <img src="links/compound_accent_bg.png" width="360" />
 
 ```html
 <a href="#" class="app-link-compound">
-   <i class="icons10-camera accent-bg"></i>
+   <i class="icons10-camera bg-primary"></i>
    <span>App Camera and device preference</span>
    <p>Customise app volumes or devices they use</p>
 </a>
@@ -213,7 +213,7 @@ links are hyperlinks. You can click on a link and jump to another document.
 
 ```html
 <a href="#" class="app-link-compound">
-    <i class="icons10-plus grey-bg"></i>
+    <i class="icons10-plus bg-grey"></i>
     <span>Add more apps</span>
     <p>apps available in store show here</p>
 </a>
@@ -364,6 +364,3 @@ Defines a control for entering a number whose exact value is not important (like
 ```
 
 ---
-
-
-
