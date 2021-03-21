@@ -1,5 +1,6 @@
 .app-switch {
-    display:table;
+    @extend .tap-highlight-none;
+    display: table;
     margin-right: 70px;
 
     > div {

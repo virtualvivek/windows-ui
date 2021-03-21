@@ -4,6 +4,7 @@
     @include app-content-wrap-mobile();
     @include app-body-mobile();
     @include app-navbar-mobile();
+    @include app-back-mobile();
     @include avatar-view-mobile();
     @include button-mobile();
     @include bottomsheet-mobile();
@@ -18,6 +19,7 @@
     @include input-text-mobile();
     @include input-search();
     @include slider-bar-mobile();
+    @include switch-mobile();
     
     @include layout-index-mobile();
    
