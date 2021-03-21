@@ -16,13 +16,13 @@
         &::-webkit-slider-thumb {
             width: 8px;
             height: 26px;
-            -webkit-appearance: none;
-            appearance: none;
             border-radius: 100px;
             background: var(--PrimaryColor);
             cursor: pointer;
             transition: background 0.15s ease-in-out;
             user-select: none;
+            -webkit-appearance: none;
+            appearance: none;
 
             &:hover {
                 background: #555;

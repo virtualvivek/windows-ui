@@ -16,9 +16,9 @@
     }
 
     &::-webkit-calendar-picker-indicator {
-        padding-right: 5px;
         width: 24px;
         height: 24px;
+        padding-right: 5px;
         opacity: 1;
     }
     &[disabled] {
@@ -26,7 +26,7 @@
     }
 }
 input[type="password"].app-input-text + .unmask:after {
-    content:"\f1db";
+    content: "\f1db";
 }
 button.unmask { 
     margin-left: -40px;
@@ -39,6 +39,6 @@ button.unmask {
 @mixin input-text-mobile() {
     input[type="date"].app-input-text:before {
         content: attr(placeholder);
-        padding-right:5px;
+        padding-right: 5px;
     }
 }

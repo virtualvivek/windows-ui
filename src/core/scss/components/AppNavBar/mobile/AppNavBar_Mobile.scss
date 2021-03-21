@@ -1,8 +1,8 @@
 @mixin app-navbar-mobile() {
     #app-nav-wrap nav {
         width: 100%;
-        overflow-y: hidden;
         height: 93px;
+        overflow-y: hidden;
         overflow-x: scroll;
         box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.2);
 
@@ -19,9 +19,10 @@
                     opacity: 0.6;
                     user-select: none;
                     -webkit-tap-highlight-color: transparent;
+
                     &::after {
-                        height: 3px;
                         width: 90%;
+                        height: 3px;
                         bottom: 0;
                         left: 6.5px;
                     }
@@ -30,7 +31,7 @@
                     opacity: 1;
                 }
                 &:last-child {
-                    padding-right:32px;
+                    padding-right: 32px;
                 }               
             }
             &.app-mobile-has-icons {
@@ -42,8 +43,8 @@
                             font-size: 28px;
                         }
                         &::after {
-                            left: 0;
                             width: 100%;
+                            left: 0;
                         }
                     }
                 }
@@ -59,9 +60,9 @@
         }
         .app-switch {
             margin: 0;
-            position: fixed;
             display: block;
             margin-top: -40px;
+            position: fixed;
             left: 70%;
         }
         a {
@@ -76,7 +77,7 @@
         &::-webkit-scrollbar { 
             height: 0 !important 
         }
-        scrollbar-width:none; /* Mozilla ScrollBar */
+        scrollbar-width: none; /* Mozilla ScrollBar */
     }
 
     #app-nav-toggle,

@@ -3,15 +3,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index:10;
+    z-index: 10;
     background: #77777777;
 
     #alertBox {
         @extend .background-color-primary;
         @extend .color-white;
-        position: relative;
         width: 55%;
-        min-height: 20px;
+        min-height: 20px;        
         margin-top: 30vh;
         position: fixed;
         box-shadow: 0 0 24vh rgba(0, 0, 0, 0.25);

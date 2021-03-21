@@ -1,6 +1,6 @@
 .index-box-header {
     @extend .background-color-nav;
-    padding: 15px 0 ;
+    padding: 15px 0;
 
     .app-link-compound.primary {
         width: max-content;
@@ -9,12 +9,12 @@
         padding-right: 15px; 
 
         p { 
-            padding:2px;
-            top:5px; 
+            padding: 2px;
+            top: 5px; 
         }
         span { 
-            left:2px;
-            top:2.5px; 
+            left: 2px;
+            top: 2.5px; 
         }
         i { 
             @extend .color-dark-text;

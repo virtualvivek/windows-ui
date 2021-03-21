@@ -1,23 +1,23 @@
 .app-notification {
     @extend .background-color-primary;
-    box-shadow: 0 0 30px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     min-height: 56px;
     min-width: 230px;
     position: fixed;
     color: #fff;
     font-size: 15px;
     z-index: 1056;
-    transition:bottom 0.2s;
+    transition: bottom 0.2s;
 
     .app-notification__body {
-        align-items:center;
+        align-items: center;
         min-height:56px;
-        padding:15px 25px;
+        padding: 15px 25px;
 
         .app-notification__title {
-            font-size:18px;
-            font-weight:600;
-            margin-top:-2px;
+            font-size: 18px;
+            font-weight: 600;
+            margin-top: -2px;
             margin-bottom: 5px;
         }
         .app-notification__image {
@@ -63,7 +63,7 @@
             border: 2px solid transparent;
 
             &:hover {
-                background:rgba(0,0,0,.02);
+                background:rgba(0, 0, 0, 0.02);
                 border: 2px solid #ffffff77;
             }
             &:active {
@@ -92,22 +92,22 @@
                 opacity: 0.5;
             }
             &:hover::after {
-                opacity:1;
+                opacity: 1;
             }
         }
     }
 
     &.position-bottom-right.animation-slide-in {
-        animation:position-right-slide-in 0.2s forwards;
-        transform:translateX(100%);
+        animation: position-right-slide-in 0.2s forwards;
+        transform: translateX(100%);
     }
     &.position-bottom-right.animation-slide-out {
-        animation:position-right-slide-out 0.2s forwards;
-        transform:translateX(0);
+        animation: position-right-slide-out 0.2s forwards;
+        transform: translateX(0);
     }
     @keyframes position-right-slide-in {
         to{
-            transform:translateX(0);
+            transform: translateX(0);
         }
     }
     @keyframes position-right-slide-out {
@@ -121,30 +121,30 @@
     display:flex
 }
 .app-notification--warning {
-    background:#b09c38;
+    background: #b09c38;
 }
 .app-notification--success {
-    background:#4e946d;
+    background: #4e946d;
 }
 .app-notification--danger,
 .app-notification--error {
-    background:#c94836;
+    background: #c94836;
 }
 .app-notification--default .app-notification__image:after {
-    content:"\f13e";
+    content: "\f13e";
 }
 .app-notification--info .app-notification__image:after {
-    content:"\f178";
+    content: "\f178";
 }
 .app-notification--success .app-notification__image:after {
-    content:"\f12c";
+    content: "\f12c";
 }
 .app-notification--warning .app-notification__image:after {
-    content:"\f18d";
+    content: "\f18d";
 }
 .app-notification--danger .app-notification__image:after,
 .app-notification--error .app-notification__image:after {
-    content:"\f157";
+    content: "\f157";
 }
 
 @mixin app-notifications-mobile() {
@@ -155,7 +155,7 @@
         }
         &.position-bottom-right.animation-slide-out {
             animation: position-bottom-slide-out 0.2s forwards;
-            transform:translateY(0);
+            transform: translateY(0);
             margin: 0;
         }
         &.position-bottom-right.animation-slide-in,

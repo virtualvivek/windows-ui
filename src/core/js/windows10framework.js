@@ -324,7 +324,7 @@ function changeType(x, type) {
 let alphaColor = window.getComputedStyle(document.documentElement).getPropertyValue('--PrimaryColor');
 alphaColor = alphaColor.trim();
 alphaColor = alphaColor+'9C';
-document.documentElement.style.setProperty('--alpha_c', alphaColor);
+document.documentElement.style.setProperty('--color_primary_alpha', alphaColor);
 
 
 // ----------------------------------------------- API setStatusBarPrimary() -------------------------------------
@@ -686,7 +686,7 @@ function createCustomAlert(alertText, buttonsNames, buttonCallFuncs) {
      // Styling Config as Blur Enabled    
     
    if(BlurEnabled==true){
-                $("#alertBox").css('background', 'var(--alpha_c)');
+                $("#alertBox").css('background', 'var(--color_primary_alpha)');
                 $("#alertBox").css('backdrop-filter', 'blur(30px)');
     }
     $("#alertBox").css('left', '24vw');    
@@ -818,7 +818,7 @@ if(BlurEnabled==true){
     $("h1.fixed").css('backdrop-filter','blur(30px)');
     $("h1.fixed").css('background','transparent');
  
-//    $(".app-bottomsheet > div").css('background','var(--alpha_c)');
+//    $(".app-bottomsheet > div").css('background','var(--color_primary_alpha)');
 //    $(".app-bottomsheet > div").css('backdrop-filter','blur(30px)');
     
     $(".searchAuto-select.list.ul").css('backdrop-filter','blur(30px)');

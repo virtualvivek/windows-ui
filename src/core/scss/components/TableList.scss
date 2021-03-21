@@ -12,13 +12,14 @@
             }
             &:active {
                 @extend .background-color-link-bg-hover;
-                transform: scale(0.99,0.99);
+                transform: scale(0.99, 0.99);
                 transition: 0.04s ease;
             }
         }
         i {
             font-size: 50px;
             line-height: 0;
+
             &.bg-primary {
                 &:before {
                     font-size: 34px;
@@ -46,11 +47,11 @@
             }
         }
         div{
+            width: 75%;
+            height: fit-content;
             margin-left: 20px;
             display: inline-grid;
-            align-items: center;
-            height: fit-content;
-            width: 75%;
+            align-items: center;  
         }
 
         span.app-list-title,
@@ -62,26 +63,15 @@
 }
 .app-list li,
 .app-list li a {
-    display: flex;
     width: 100%;
+    display: flex;
     color: var(--color_dark_text);
 }
 
 @mixin table-list-mobile() {
-
-    .app-list li a:hover {
-        background: transparent;
-        border-color: transparent;
+    .app-list li {
+        a:hover:not(:active) {
+            background: transparent;
+        }
     }
-    
-    
-    .app-list li a:active {
-        background: var(--color_link_bg_hover);
-    }
-    
-    .app-list li a:active,
-    .app-list li a:focus {
-        border-bottom: 1px solid var(--color_light_grey);
-    }
-
 }

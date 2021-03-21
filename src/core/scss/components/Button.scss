@@ -11,7 +11,7 @@
     vertical-align: middle;
 
     &:hover {
-        border-color:var(--color_button_hover);
+        border-color: var(--color_button_hover);
         filter: opacity(0.8);
     }
     &:active {
@@ -20,34 +20,41 @@
         transition: 0.04s ease;
     }
 
-    i { padding-right:5px;  }
+    i {
+        padding-right: 5px;
+    }
 
-    .app-loader-busy {  display: contents;  }
+    .app-loader-busy {
+        display: contents;
+    }
 
-    span {  margin-left: 32px;  }
-
+    span {
+        margin-left: 32px;
+    }
 
     &.primary {
         @extend .background-color-primary;
         @extend .color-light-bg;
 
         &:active {
-            background: var(--alpha_c); 
+            background: var(--color_primary_alpha); 
         }
     }
     &.animate:active {
-        transform: scale(0.950,0.950);
+        transform: scale(0.950, 0.950);
     }
 
     &[disabled] {
-        @extend .input-field-primary-disabled
+        @extend .input-field-primary-disabled;
     }
 
 }
 button,
 .app-button {
     @extend .user-select-none;
-    &:focus,&:active,&:focus:active {
+    &:focus,
+    &:active,
+    &:focus:active {
         outline: none !important;
     }
 }

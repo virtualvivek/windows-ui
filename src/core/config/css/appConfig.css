@@ -1,7 +1,6 @@
 :root {
-/*    --AppColor: #0078D4;*/
- /*   Change of your choice */
     --PrimaryColor: #0078D4;
+ /*   Change of your choice */
 }
 
 body {
@@ -27,5 +26,9 @@ a {
     background-color: var(--PrimaryColor);
     color: #fff;
 }
-::-webkit-scrollbar { width: 0.85em }
-::-webkit-scrollbar-thumb { background-color: #999 }
+::-webkit-scrollbar {
+    width: 0.85em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}

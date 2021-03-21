@@ -1,25 +1,26 @@
 .app-progress {
     @extend .transition-background-400ms;
-    position: relative;
     width: 400px;
     height: 5px;
+    position: relative;
     overflow: hidden;
     background: var(--color_button);
     margin-bottom: 10px;
 
     span {
         @extend .background-color-primary;
-        position:absolute;
-        height:100%;
-        &::after,&::before {
+        position: absolute;
+        height: 100%;
+        &::before,
+        &::after {
             display: none !important;
         }
     }
 
     &.withIcon {
+        width: 365px;
         overflow: visible;
         margin-left: 35px;
-        width: 365px;
 
         i {
             position: absolute;
