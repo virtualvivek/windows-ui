@@ -30,7 +30,7 @@
 
 <h2 align="center">Build Windows Apps with Convinience</h2>
 
-<h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
+<h3 align="center"><a href="https://windows10framework.netlify.app">windows10framework.netlify.app</a></h3>
 
 <p align="center">
 	Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
