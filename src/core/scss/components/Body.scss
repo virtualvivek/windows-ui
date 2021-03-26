@@ -5,6 +5,15 @@ body {
     margin: 0;
     padding: 0;
 }
+a {
+	text-decoration: none;
+	outline: none;
+    font-weight: 500;
+}
+::selection {
+    background-color: var(--PrimaryColor);
+    color: #fff;
+}
 .app-container-screen {
     @extend .background-color-light-bg;
     height: 100vh;
@@ -17,8 +26,8 @@ h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
 h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
+h5 { font-size: 0.83em; }
+h6 { font-size: 0.75em; }
 
 h1,h2,h3,h4,h5,h6 {
     font-weight: 400;
@@ -59,10 +68,10 @@ h1.fixed,h2.fixed,h3.fixed,h4.fixed,h5.fixed {
     display: grid;
 }
 .app-inline{
-    display:inline;
+    display: inline;
 }
 .app-fit-content{
-    width:fit-content !important;
+    width: fit-content !important;
 }
 
 .app-space-10 {width: 10px;}
@@ -124,6 +133,6 @@ p.light {
         position: absolute;
         top: 90px;
         padding-left: 15px;
-        backdrop-filter:none !important;
+        backdrop-filter: none !important;
     }
 }

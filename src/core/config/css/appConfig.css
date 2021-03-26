@@ -10,25 +10,3 @@ body {
     -moz-osx-font-smoothing: grayscale;
     font-smooth: always;
 }
-
-a {
-	text-decoration: none;
-	outline: none;
-	font-weight: 500;
-}
-
-::selection {
-    background-color: var(--PrimaryColor);
-    color: #fff;
-}
-
-::-moz-selection {   
-    background-color: var(--PrimaryColor);
-    color: #fff;
-}
-::-webkit-scrollbar {
-    width: 0.85em;
-}
-::-webkit-scrollbar-thumb {
-    background-color: #999;
-}

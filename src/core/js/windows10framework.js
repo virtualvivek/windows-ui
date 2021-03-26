@@ -544,7 +544,7 @@ function filter(searchBoxid,selectId){
         (text.toLowerCase().indexOf(valThis.toLowerCase()) > -1) ? $(this).show() : $(this).hide(); 
         
         //code to hide >li childs when no text in search
-        if ($(searchBoxid).val()===0){
+        if ($(searchBoxid).val()==0){
             $('#'+selectId+' ul > li').hide();
         }
    });

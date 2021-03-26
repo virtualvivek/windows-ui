@@ -1,4 +1,11 @@
 
+::-webkit-scrollbar {
+    width: 0.85em;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #999;
+}
+
 #app-nav-wrap nav {
     &::-webkit-scrollbar {
         width: 2px;
