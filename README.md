@@ -76,16 +76,16 @@ Create apps that run fluently on every device
 
 ```htm
 
-./src/
+./src
  └─ core
     ├─ config/
-    │   ├─ css/
-    │   ├─ └─ appConfig.css
-    │   ├─ drawable/
-    │   ├─ └─ ic_launcher.png
-    │   └─ appConfig.js
+    │  ├─ css/
+    │  ├─ └─ appConfig.css
+    │  ├─ drawable/
+    │  ├─ └─ ic_launcher.png
+    │  └─ appConfig.js
     ├─ css/
-    │   └─ windows10framework.css
+    │  └─ windows10framework.css
     └─ js/
        ├─ windows10framework.js
        ├─ windows10framework.api.js
