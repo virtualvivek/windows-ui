@@ -1,16 +1,14 @@
-<h2 align="center"> 
+<p align="center"> 
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
-</h2>
-
+</p>
 
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
-
 <p align="center">
 
-  <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=github&style=flat-square">
+  <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=netlify&style=flat-square">
 	
   <a href="https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
@@ -23,7 +21,7 @@
   </a>
   
   <a href="https://windows10framework.netlify.app">
-    <img src="https://img.shields.io/badge/⚡ live Demo-here-green.svg?style=flat-square"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?style=flat-square&logo=github&color=%23c11adb"
       alt="Live Demo" />
   </a>
    
@@ -45,10 +43,10 @@ https://windows10framework.netlify.app/
 
 ## Stunning Set Of UI Elements
 
-<h1 align="center">
-	<img src="kitchen-sink/_md_preview/md_glance_forms.png" width="400" />
-	<img src="kitchen-sink/_md_preview/md_glance_advance.png" width="400" />
-</h1>
+<p align="center">
+  <img src="kitchen-sink/_md_preview/md_glance_forms.png" width="400" />
+  <img src="kitchen-sink/_md_preview/md_glance_advance.png" width="400" />
+</p>
 <p>
 Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
 </p>
@@ -78,26 +76,26 @@ Create apps that run fluently on every device
 ```htm
 
 ./src
- └─ core
-    ├─ config/
-    │  ├─ css/
-    │  ├─ └─ appConfig.css
-    │  ├─ drawable/
-    │  ├─ └─ ic_launcher.png
-    │  └─ appConfig.js
-    ├─ css/
-    │  └─ windows10framework.css
-    └─ js/
-       ├─ windows10framework.js
-       ├─ windows10framework.api.js
-       └─ windows10framework.notifications.js
+ └ core
+   ├─ config/
+   │  ├─ css/
+   │  ├─ └─ appConfig.css
+   │  ├─ drawable/
+   │  ├─ └─ ic_launcher.png
+   │  └─ appConfig.js
+   ├─ css/
+   │  └─ windows10framework.css
+   └─ js/
+      ├─ windows10framework.js
+      ├─ windows10framework.api.js
+      └─ windows10framework.notifications.js
 ```
 
 
 
-### Configure App Preferences
+## Configure App Preferences
 Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file <br>
-<b>./src /core /config /<a href="src/core/config/appConfig.js">appConfig.js </a></b>
+<b>./src/core/config/<a href="src/core/config/appConfig.js">appConfig.js </a></b>
 
 
 ```js
@@ -107,27 +105,25 @@ let NightMode = false;  	//'true' get dark mode when app mounted
 let FollowSystemTheme = true;  	//'true' follow theme dark, light using system 
 ```
 
-### Configure App Color, Font Family or ScrollBars
+## Configure App Color, Font Family or ScrollBars
 ‣ `appConfig.css` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
-<b>./src /core /config /css /<a href="src/core/config/css/appConfig.css">appConfig.css</a></b>
+<b>./src/core/config/css/<a href="src/core/config/css/appConfig.css">appConfig.css</a></b>
 
 
 ```css
 :root {
-    --PrimaryColor: #6632a8;
-    /* Change color you like */
+    --PrimaryColor: #6632a8;  /* Change color you like */ 
 }
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", sans-serif;
-    /* Change fontfamily you like */
+    font-family: "Segoe UI";  /* Change fontfamily you like */
 }
 ```
 
 
-## Find this framework useful? :heart:
-Support it by joining [stargazers](https://github.com/virtualvivek/Windows10-framework/stargazers) for this repository. :star:
+# Find this framework useful? :heart:
+Support it by joining [**stargazers**](https://github.com/virtualvivek/Windows10-framework/stargazers) for this repository. :star:
 
-## License
+# License
 
 `Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE).<br>
-Copyright (c) 2020-21 ` Vivek Verma `
+Copyright (c) 2020-21 [**Vivek Verma**](https://github.com/virtualvivek)
