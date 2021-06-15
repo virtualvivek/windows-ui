@@ -2,6 +2,7 @@
   <img src="kitchen-sink/_md_preview/app_preview_readme_title_flat__.png" width="440" /> 
 </h2>
 
+
 <meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
@@ -30,22 +31,16 @@
 
 <h2 align="center">Build Windows Apps with Convinience</h2>
 
-<h3 align="center"><a href="https://windows10framework.github.io/">windows10framework.github.io</a></h3>
+
+<h3 align="center"><a href="https://windows10framework.netlify.app">windows10framework.netlify.app</a></h3>
 
 <p align="center">
 	Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
 </p>
 
 	
-
-<h2 align="center">
-  <a href="https://windows10framework.netlify.app/"><img src="kitchen-sink/_md_preview/app_preview_button_live_demo.png" width="180" /></a>
-
-  <img src="kitchen-sink/_md_preview/app_preview_button_store.png" width="180" />
-
-  <img src="kitchen-sink/_md_preview/app_preview_button_electron.png" width="180" />
-</h2>
-
+# Demo ⚡
+https://windows10framework.netlify.app/
 
 
 ## Stunning Set Of UI Elements
@@ -81,21 +76,21 @@ Create apps that run fluently on every device
 <h3>View <a href="templates/screen-main.html">App Boilerplate</a></h3> 
 
 ```htm
-framework/
-└── src/
-    └── core
-    	├── config/
-    	│   ├── css/
-	│   ├── └── appConfig.css
-    	│   ├── drawable/
-	│   ├── └── ic_launcher.png
-    	│   └── appConfig.js
-    	├── css/
-	│   └── windows10framework.css
-    	└── js/
-	    ├── windows10framework.js
-	    ├── windows10framework.api.js
-	    └── windows10framework.notifications.js
+
+./src
+ └─ core
+    ├─ config/
+    │  ├─ css/
+    │  ├─ └─ appConfig.css
+    │  ├─ drawable/
+    │  ├─ └─ ic_launcher.png
+    │  └─ appConfig.js
+    ├─ css/
+    │  └─ windows10framework.css
+    └─ js/
+       ├─ windows10framework.js
+       ├─ windows10framework.api.js
+       └─ windows10framework.notifications.js
 ```
 
 
@@ -113,7 +108,7 @@ let FollowSystemTheme = true;  	//'true' follow theme dark, light using system
 ```
 
 ### Configure App Color, Font Family or ScrollBars
-You can customize entire app `accent color`, `font family`, more using `appConfig.css` file <br>
+‣ `appConfig.css` file contains the app `PrimaryColor`, `Fontfamily` used by the app <br>
 <b>./src /core /config /css /<a href="src/core/config/css/appConfig.css">appConfig.css</a></b>
 
 
