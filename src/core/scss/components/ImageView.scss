@@ -49,7 +49,7 @@
 .app-image.error + .app-loader-busy > div,
 .app-image.loaded + .app-loader-busy,
 .app-image-wrapper .app-loader-busy {
-    display: none
+    display: none;
 }
 .app-image.error + .app-loader-busy::after {
     font-family: icons10;

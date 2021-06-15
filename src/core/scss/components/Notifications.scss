@@ -1,6 +1,5 @@
 .app-notification {
     @extend .background-color-primary;
-    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
     min-height: 56px;
     min-width: 230px;
     position: fixed;
@@ -8,10 +7,11 @@
     font-size: 15px;
     z-index: 1056;
     transition: bottom 0.2s;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.1);
 
     .app-notification__body {
+        min-height: 56px;
         align-items: center;
-        min-height:56px;
         padding: 15px 25px;
 
         .app-notification__title {
@@ -29,17 +29,17 @@
             }
         }
         .app-notification__image--custom {
-            background: none !important;
             height: auto;
             width: auto;
             top: 0;
+            background: none !important;
             &:after {
                 display: none;
             }
             img {
-                margin-right: 10px;
                 width: 40px;
                 height: 40px;
+                margin-right: 10px;
             }
         }
     }
@@ -50,12 +50,12 @@
 
         .app-notification__button {
             @extend .transition-background-400ms;
+            min-height: 39px;
+            min-width: 40%;
             align-items: center;
             display: flex;
             flex-grow: 1;
             justify-content: center;
-            min-height: 39px;
-            min-width: 40%;
             text-align: center;
             background: #eeeeee22;
             margin: 5px;

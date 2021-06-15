@@ -2,7 +2,6 @@
 
      section {
         @extend .display-none;
-
         width: 100%;
         height: 100%;
         margin: 0 auto;
@@ -20,7 +19,7 @@
         .app-section-container {
             padding-left: 280px;
             &.has-padding {
-                padding-left: 310px; 
+                padding-left: 310px;
             }
         }
         .app-section-sub-container {

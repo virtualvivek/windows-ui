@@ -78,9 +78,8 @@
         }
 
         ul {
-
             position: relative;
-            top:115px;
+            top: 115px;
             display: block;
             margin: 0 auto;
             padding: 0 0 40px 0;
@@ -105,7 +104,7 @@
                     background: var(--PrimaryColor);
                     content: '';
                     transition: transform 0.1s;
-                    transform: translate3d(-150%,0,0); 
+                    transform: translate3d(-150%, 0, 0);
                 }
                 a:before {
                     position: relative;
@@ -172,9 +171,6 @@
                 right: 0;
             }
         }
-
-        
-
     }
     
     nav > div:first-child,

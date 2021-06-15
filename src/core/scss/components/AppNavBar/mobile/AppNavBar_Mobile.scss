@@ -14,7 +14,7 @@
             z-index: 2;
 
             li {
-                display:inline-flex;
+                display: inline-flex;
                 a {
                     opacity: 0.6;
                     user-select: none;
@@ -75,7 +75,7 @@
             }
         } 
         &::-webkit-scrollbar { 
-            height: 0 !important 
+            height: 0 !important;
         }
         scrollbar-width: none; /* Mozilla ScrollBar */
     }
@@ -84,9 +84,8 @@
     #app-nav-wrap nav ul h1,
     #app-nav-wrap nav ul .app-hr,
     #app-nav-wrap nav ul:not(.app-mobile-has-icons) li a:before,
-    #app-nav-wrap nav ul.app-mobile-has-icons li a span ,
+    #app-nav-wrap nav ul.app-mobile-has-icons li a span,
     #app-nav-wrap nav .app-nav-user span {
         display: none !important;
     }
-
 }

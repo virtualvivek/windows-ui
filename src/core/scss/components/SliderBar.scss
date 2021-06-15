@@ -3,7 +3,7 @@
     display: block;
 
     input[type="range"] {
-        width: calc(100% - (73px));
+        width: calc(100% - 73px);
         height: 2px;
         appearance: none;
         background: #999999;
@@ -49,7 +49,6 @@
         
     }
     &.round {
-
         input[type="range"] {
 
             &::-webkit-slider-thumb {
@@ -63,7 +62,6 @@
         }        
     }
     &.round-border {
-
         input[type="range"] {
             &::-webkit-slider-thumb {
                 width: 20px !important;
