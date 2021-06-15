@@ -11,9 +11,9 @@ label.app-checkbox input[type="checkbox"] {
     &:before {
         @extend .transition-background-400ms;
         content: "";
-        display: flex;
         width: 16px;
         height: 16px;
+        display: flex;
         border: 2px solid var(--color_button_hover);
         border-radius: 0;
         background-color: var(--color_light_bg);
@@ -42,7 +42,7 @@ label.app-checkbox input[type="checkbox"] {
                 border: 2px solid var(--color_button_hover);
             }
             &::after {
-                border: solid var(--color_button_active_border);
+                border: solid var(--color_button_hover);
                 border-width: 0 2px 2px 0; 
             }
         }

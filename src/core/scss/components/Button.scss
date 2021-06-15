@@ -15,8 +15,7 @@
         filter: opacity(0.8);
     }
     &:active {
-        @extend .background-color-button-active;
-        border-color:var(--color_button_active_border);
+        filter: opacity(0.6);
         transition: 0.04s ease;
     }
 
