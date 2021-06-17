@@ -29,11 +29,8 @@
 
 <h2 align="center">Build Windows Apps with Convinience</h2>
 
-
-<h3 align="center"><a href="https://windows10framework.netlify.app">windows10framework.netlify.app</a></h3>
-
 <p align="center">
-	Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>. Comes with rich native like components, icon sets. Used as fast prototyping tool for Windows environment platforms. <br>	
+Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.
 </p>
 
 	
@@ -94,7 +91,7 @@ Create apps that run fluently on every device
 
 
 ## Configure App Preferences
-Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file <br>
+‣ Customize app `preferences` including `drop shadows`,`dark mode` etc.. using `appConfig.js` file <br>
 <b>./src/core/config/<a href="src/core/config/appConfig.js">appConfig.js </a></b>
 
 
