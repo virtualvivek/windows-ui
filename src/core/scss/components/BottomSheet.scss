@@ -17,7 +17,7 @@
 
       &.is-visible {
         visibility: visible;
-        transition-delay:0s;
+        transition-delay: 0s;
 
         > div:first-child {
             opacity: 1;
@@ -52,9 +52,9 @@
     }
 
     button {
-        margin: 0 15px;
         width: 55px;
         height: 55px;
+        margin: 0 15px;
         border-radius: 50px;
         border: 2.2px solid #fff;
         background: transparent;

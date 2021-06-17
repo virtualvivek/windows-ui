@@ -4,7 +4,7 @@
     position: relative;
     top: -2px;
 
-    &.medium{
+    &.medium {
       top: 2.5px;
 
       .w-ball-wrapper {
@@ -12,9 +12,9 @@
         height: 25px;
 
         .w-ball {
-            width: 4.4px;
-            height: 4.4px;
-          }
+          width: 4.4px;
+          height: 4.4px;
+        }
       }
     }
 
@@ -33,84 +33,84 @@
     }
 
     .w-ball-wrapper {
-        width: 34px;
-        height: 34px;
-        position: absolute;
-        opacity: 0;
-        transform: rotate(225deg);
-        animation: orbit 4.8s infinite;
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      opacity: 0;
+      transform: rotate(225deg);
+      animation: orbit 4.8s infinite;
 
-        .w-ball {
-          @extend .background-color-primary-light;
-          width: 4.8px;
-          height: 4.8px;
-          position: absolute;
-          left: 0;
-          top: 0;
-          border-radius: 50%;
-          box-shadow: none;
-        }
+      .w-ball {
+        @extend .background-color-primary-light;
+        width: 4.8px;
+        height: 4.8px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 50%;
+        box-shadow: none;
+      }
     }
 
-      &.light {
-        .w-ball-wrapper .w-ball {
-          background: #fff;
-        }
+    &.light {
+      .w-ball-wrapper .w-ball {
+        background: #fff;
       }
+    }
 
-      .ball-1{
-        animation-delay: 0.96s;
-      }
-      .ball-2{
-        animation-delay: 0.19s;
-      }
-      .ball-3{
-        animation-delay: 0.38s;
-      }
-      .ball-4{
-        animation-delay: 0.58s;
-      }
-      .ball-5{
-        animation-delay: 0.77s;
-      }
+    .ball-1 {
+      animation-delay: 0.96s;
+    }
+    .ball-2 {
+      animation-delay: 0.19s;
+    }
+    .ball-3 {
+      animation-delay: 0.38s;
+    }
+    .ball-4 {
+      animation-delay: 0.58s;
+    }
+    .ball-5 {
+      animation-delay: 0.77s;
+    }
 
-      @keyframes orbit {
-        0% {
-          transform: rotate(225deg);
-          opacity: 1;
-          animation-timing-function: ease-out;
-        }
-        7% {
-          transform: rotate(345deg);
-          animation-timing-function: linear;
-        }
-        35% {
-          transform: rotate(495deg);
-          animation-timing-function: ease-in-out;
-        }
-        42% {
-          transform: rotate(690deg);
-          animation-timing-function: linear;
-        }
-        70% {
-          transform: rotate(835deg);
-          opacity: 1;
-          animation-timing-function: linear;
-        }
-        76% {
-          opacity: 1;
-        }
-        77% {
-          transform: rotate(955deg);
-          animation-timing-function: ease-in;
-        }
-        78% {
-          transform: rotate(955deg);
-          opacity: 0;
-        }
-        100% {
-          transform: rotate(955deg);
-          opacity: 0;
-        }
+    @keyframes orbit {
+      0% {
+        transform: rotate(225deg);
+        opacity: 1;
+        animation-timing-function: ease-out;
       }
+      7% {
+        transform: rotate(345deg);
+        animation-timing-function: linear;
+      }
+      35% {
+        transform: rotate(495deg);
+        animation-timing-function: ease-in-out;
+      }
+      42% {
+        transform: rotate(690deg);
+        animation-timing-function: linear;
+      }
+      70% {
+        transform: rotate(835deg);
+        opacity: 1;
+        animation-timing-function: linear;
+      }
+      76% {
+        opacity: 1;
+      }
+      77% {
+        transform: rotate(955deg);
+        animation-timing-function: ease-in;
+      }
+      78% {
+        transform: rotate(955deg);
+        opacity: 0;
+      }
+      100% {
+        transform: rotate(955deg);
+        opacity: 0;
+      }
+    }
 }

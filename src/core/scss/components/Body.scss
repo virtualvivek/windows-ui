@@ -61,16 +61,16 @@ h1.fixed,h2.fixed,h3.fixed,h4.fixed,h5.fixed {
     display: flex;
     align-items: center;
 }
-.app-flex{
+.app-flex {
     display: flex;
 }
 .app-grid {
     display: grid;
 }
-.app-inline{
+.app-inline {
     display: inline;
 }
-.app-fit-content{
+.app-fit-content {
     width: fit-content !important;
 }
 
@@ -83,10 +83,10 @@ h1.fixed,h2.fixed,h3.fixed,h4.fixed,h5.fixed {
 .app-space-40 {width: 40px;}
 .app-space-45 {width: 45px;}
 
-.m-0{
+.m-0 {
     margin: 0;
 }
-.m-tb-10{
+.m-tb-10 {
     margin-top: 10px;
     margin-bottom: 10px;
 }
