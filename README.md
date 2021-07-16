@@ -9,7 +9,7 @@
 
 <p align="center">
 
-  <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=netlify&style=flat-square">
+  <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=netlify&logoColor=%23ffffff&style=flat-square">
 	
   <a href="https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE">
     <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
@@ -17,12 +17,12 @@
   </a>
 
   <a href="https://github.com/virtualvivek/Windows10-framework/releases/latest">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/Windows10-framework?label=Release&style=flat-square&color=darklime"
+    <img src="https://img.shields.io/github/v/release/virtualvivek/Windows10-framework?label=Release&style=flat-square&color=%2331b57e"
       alt="Release" />
   </a>
   
   <a href="https://windows10framework.netlify.app">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?style=flat-square&logo=github&color=%23c11adb"
+    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?style=flat-square&logo=PyTorchLightning&color=00C244"
       alt="Live Demo" />
   </a>
    
