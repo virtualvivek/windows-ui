@@ -1,11 +1,10 @@
 <p align="center"> 
-  <img src="kitchen-sink/_md_preview/md_img_header.png" width="440" /> 
+  <img src="kitchen-sink/_md_preview/md_img_header.png" width="400" /> 
 </p>
+<h1 align="center">windows-ui-web</h1>
 
 
-
-
-<meta name='keywords' content='Windows10,MetroUI,framework,html,css,js'>
+<meta name='keywords' content='Windows10, MetroUI, framework,html,css,js'>
 <meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
@@ -30,7 +29,7 @@
    
 </p>
 
-<h2 align="center">Build Windows Apps with Convinience</h2>
+
 
 <p align="center">
 Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.
