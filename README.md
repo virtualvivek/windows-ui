@@ -9,12 +9,12 @@
 <p align="center">
 	
   <a href="https://github.com/virtualvivek/windows-ui-web/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=%23C3002F"
+    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=%2300C7B7"
       alt="License: MIT" />
   </a>
 
   <a href="https://github.com/virtualvivek/windows-ui-web/releases/latest">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/windows-ui-web?label=Release&style=flat-square&color=%2331b57e"
+    <img src="https://img.shields.io/github/v/release/virtualvivek/windows-ui-web?label=Release&style=flat-square&color=%234BB749"
       alt="version" />
   </a>
   
