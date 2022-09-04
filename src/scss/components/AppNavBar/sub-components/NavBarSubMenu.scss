@@ -1,0 +1,33 @@
+.app-navbar-submenu {
+  .app-navbar-submenu-title {
+    @extend .transition-background-400ms;
+
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    padding: 14px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    user-select: none;
+    justify-content: space-between;
+  
+    &:hover { background-color: var(--color_link_bg_hover); }
+    
+    &:active {
+      @extend .transition-scale-active;
+      background-color: var(--color_button);
+    }
+  }
+  .app-navbar-submenu-content {
+    max-height: 0;
+    overflow: hidden;
+    backdrop-filter: brightness(0.97);
+    transition: max-height 0.2s ease-in-out;
+  
+    &.show {
+      max-height: 500px;
+      overflow-y: auto;
+      transition: max-height 0.25s ease-in;
+    }
+  }
+}

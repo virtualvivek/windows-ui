@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input type="checkbox" id="app-navbar-theme-switch" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="app-section-container has-padding transition-left"
+      id="app-section-container-id">
+      <h1>Checkboxes</h1>
+
+      <label class="app-checkbox">
+        <input type="checkbox" checked>
+        <span>Checkbox</span>
+      </label>
+
+      &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <label class="app-checkbox">
+        <input type="checkbox" checked disabled>
+        <span>Checkbox Disabled</span>
+      </label>
+      <br/><br/>
+
+
+      <pre><code id="code-switch"></code></pre>
+
+      <h2>Checkbox with no label</h2>
+      <p>Just remove the <span class="app-code">span</span> from the checkbox.</p>
+
+      <label class="app-checkbox">
+        <input type="checkbox" checked>
+      </label>
+
+      <pre><code id="code-switch-nolabel"></code></pre>
+
+      <br/><br/>
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("CheckBox","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code-switch").innerHTML =
+    hljs.highlightAuto(`
+    <label class="app-checkbox">
+      <input type="checkbox" checked>
+      <span>Checkbox</span>
+    </label>
+    `).value;
+  </script>
+  <script>
+    document.getElementById("code-switch-nolabel").innerHTML =
+    hljs.highlightAuto(`
+    <label class="app-checkbox">
+      <input type="checkbox" checked>
+    </label>
+    `).value;
+  </script>
+</html>

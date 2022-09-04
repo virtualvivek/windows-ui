@@ -1,0 +1,96 @@
+.app-input-text {
+  @extend .input-field-primary;
+  @extend .transition-background-400ms;
+
+  &:focus {
+    @extend .outline-none;
+    border-color: #666;
+  }
+
+  &::-webkit-calendar-picker-indicator {
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    padding-right: 5px;
+  }
+}
+
+
+.app-input-container {
+  width: min-content;
+  display: inline-flex;
+  position: relative;
+
+  .app-input-label {
+    @extend .transition-background-400ms;
+    width: max-content;
+    padding: 4px 5px;
+    border: 2px solid #999;
+    border-right: none;
+    background-color: var(--color_grey_light_alpha);
+  }
+  .app-input-status-container {
+    right: 10px;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    align-items: center;
+
+    .app-loader-busy {
+      display: none;
+    }
+  }
+
+  button.app-input-text-unmask {
+    padding: 0;
+    border: none;
+    background: transparent;
+
+    &::after {
+      @extend .font-icon-dark;
+      content: "\f189";
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+  
+  input[type="password"].app-input-text + div button.app-input-text-unmask::after {
+    content: "\f1db";
+  }
+  
+
+  &.input-success {
+    .app-input-text {
+      border-color: #2C8B2C;
+    }
+    .app-input-status-container {
+      i::before {
+        content: "\f12e";
+        color: #2C8B2C;
+      }
+    }
+  }
+  &.input-danger {
+    .app-input-text {
+      border-color: #C50500;
+    }
+    .app-input-status-container {
+      i::before {
+        content: "\f116";
+        color: #C50500;
+      }
+    }
+  }
+  &.input-loading {
+    .app-loader-busy {
+      display: inline-flex;
+    }
+  }
+}
+
+@mixin input-date-mobile() {
+  input[type="date"].app-input-text::before {
+    padding-right: 5px;
+    content: attr(placeholder);
+  }
+}

@@ -1,0 +1,43 @@
+.app-navbar-wrap {
+  .app-input-search-box {
+    width: 240px;
+    user-select: none;
+    filter: opacity(0.7);
+    margin: 10px 0 10px 20px;
+  }
+
+  .app-search-dialog {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: center;
+    background: var(--color_nav);
+    transform: translateY(-105%);
+    transition: 0.2s ease;
+
+    &.show { transform: translateY(0%); }
+
+    .app-input-text {
+      width: 50%;
+      padding-left: 45px;
+    }
+    button {
+      width: 40px;
+      border: none;
+      background-color: transparent;
+    }
+    &::before {
+      @extend .font-icon-dark;
+      z-index: 2;
+      content: "\f1b9";
+      margin-right: -35px;
+    }
+  }
+  .app-search-dialog-trigger {
+    display: none;
+  }
+}

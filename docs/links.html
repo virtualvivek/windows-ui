@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input type="checkbox" id="app-navbar-theme-switch" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="app-section-container has-padding transition-left" id="app-section-container-id">
+      <h1>Links</h1>
+      <p><span class="color-primary">Links</span> are accessible elements used primarily for navigation.<br>This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;.</p>
+
+      <a class="app-link" href="#">This is a Link</a>
+      <br/>
+      <a class="app-link" href="#"><b>This is a Bold Link</b></a>
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      <h2>LinkCompound</h2>
+
+      <a class="app-link-compound" href="#">
+        <div class="app-link-compound-container">
+          <i class="icons10-timeline color-primary"></i>
+          <div class="app-link-compound-subcontainer">
+            <span>System Settings and preferences</span>
+            <p>Customize system controls and more</p>
+          </div>
+        </div>
+      </a>
+
+
+      <pre><code id="code_view_2"></code></pre>
+
+      <a class="app-link-compound" href="#">
+        <div class="app-link-compound-container">
+          <img src="./assets/mountain.jpg">
+          <div class="app-link-compound-subcontainer">
+            <span>User preferences and uploads</span>
+            <p>Profile pictures and details</p>
+          </div>
+        </div>
+      </a>
+      <pre><code id="code_view_3"></code></pre>
+
+      <a class="app-link-compound link-border" href="#">
+        <div class="app-link-compound-container">
+          <img src="./assets/macos.jpg">
+          <div class="app-link-compound-subcontainer">
+            <span>Notification settings and DND</span>
+            <p>Control which app push notification</p>
+          </div>
+        </div>
+      </a>
+      <pre><code id="code_view_4"></code></pre>
+
+      <br/><br/>
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("Link","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <a class="app-link" href="#">This is a Link</a>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <a class="app-link-compound " href="#">
+      <div class="app-link-compound-container">
+        <i class="icons10-timeline color-primary"></i>
+        <div class="app-link-compound-subcontainer">
+          <span>System Settings and preferences</span>
+          <p>Customize system controls and more</p>
+        </div>
+      </div>
+    </a>
+    `).value;
+
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+    <a class="app-link-compound" href="#">
+      <div class="app-link-compound-container">
+        <img src="./assets/mountain.jpg">
+        <div class="app-link-compound-subcontainer">
+          <span>User preferences and uploads</span>
+          <p>Profile pictures and details</p>
+        </div>
+      </div>
+    </a>
+    `).value;
+
+    document.getElementById("code_view_4").innerHTML =
+    hljs.highlightAuto(`
+    <a class="app-link-compound link-border" href="#">
+      <div class="app-link-compound-container">
+        <img src="./assets/macos.jpg">
+        <div class="app-link-compound-subcontainer">
+          <span>Notification settings and DND</span>
+          <p>Control which app push notification</p>
+        </div>
+      </div>
+    </a>
+    `).value;
+  </script>
+</html>

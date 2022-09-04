@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input type="checkbox" id="app-navbar-theme-switch" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="app-section-container has-padding transition-left" id="app-section-container-id">
+      <h1>Buttons</h1>
+
+
+      <button class="app-btn animate" type="button">
+        <span>Default Button</span>
+      </button>
+
+      <button class="app-btn animate" type="button">
+        <span><i class="icons10-plus"></i></span>
+        <span>Primary Icon</span>
+      </button>
+
+      <pre><code id="code_view_1"></code></pre>
+
+
+      <button class="app-btn btn-primary animate" type="button">
+        <span>Button Primary</span>
+      </button>
+
+      <button class="app-btn btn-primary animate" type="button">
+        <span><i class="icons10-plus"></i></span>
+        <span>Primary Icon</span>
+      </button>
+
+      <pre><code id="code_view_2"></code></pre>
+
+
+      <button class="app-btn btn-primary-outline animate" type="button">
+        <span>Primary Outline</span>
+      </button>
+
+      <button class="app-btn btn-primary-outline animate" type="button">
+        <span><i class="icons10-plus"></i></span>
+        <span>Outline Icon</span>
+      </button>
+
+      <pre><code id="code_view_3"></code></pre>
+
+
+      <button class="app-btn btn-danger animate" type="button">
+        <span>Button Danger</span>
+      </button>
+
+      <button class="app-btn btn-danger-outline animate" type="button">
+        <span><i class="icons10-minus"></i></span>
+        <span>Danger Outline</span>
+      </button>
+
+      <pre><code id="code_view_4"></code></pre>
+
+    
+      <button class="app-btn btn-success animate" type="button">
+        <span>Button Success</span>
+      </button>
+
+      <button class="app-btn btn-success-outline animate" type="button">
+        <span><i class="icons10-checkmark"></i></span>
+        <span>Success Outline</span>
+      </button>
+
+      <pre><code id="code_view_5"></code></pre>
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("Buttons","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+  
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <button class="app-btn animate" type="button">
+      <span><i class="icons10-plus"></i></span>
+      <span>Primary Icon</span>
+    </button>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <button class="app-btn btn-primary animate" type="button">
+      <span><i class="icons10-plus"></i></span>
+      <span>Primary Icon</span>
+    </button>
+    `).value;
+
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+    <button class="app-btn btn-primary-outline animate" type="button">
+      <span><i class="icons10-plus"></i></span>
+      <span>Outline Icon</span>
+    </button>
+    `).value;
+
+    document.getElementById("code_view_4").innerHTML =
+    hljs.highlightAuto(`
+    <button class="app-btn btn-danger-outline animate" type="button">
+      <span><i class="icons10-minus"></i></span>
+      <span>Danger Outline</span>
+    </button>
+    `).value;
+
+    document.getElementById("code_view_5").innerHTML =
+    hljs.highlightAuto(`
+    <button class="app-btn btn-success animate" type="button">
+      <span>Button Success</span>
+    </button>
+    `).value;
+  </script>
+</html>

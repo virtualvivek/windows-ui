@@ -1,9 +1,9 @@
 {
-  "short_name": "WinUIWeb",
-  "name": "Windows UI Web",
+  "short_name": "WebApp",
+  "name": "My Web App",
   "icons": [
     {
-      "src": "docs/public/favicon.ico",
+      "src": "assets/favicon.ico",
       "sizes": "192x192",
       "type": "image/png"
     }

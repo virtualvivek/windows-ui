@@ -1,6 +1,0 @@
-@mixin setFontIcon($icon, $color, $font-size) {
-  font-family: icons10;
-  font-size: $font-size;
-  color: $color;
-  content: #{'"\\'+ $icon + '"'};
-}

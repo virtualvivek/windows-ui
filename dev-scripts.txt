@@ -1,0 +1,16 @@
+----------------------------------------------------------------------------
+[ Sass ] -------------
+Installing SASS
+npm install node-sass --save-dev
+
+-effects-
+package.json >
+	"scripts": {
+		"compile:sass": "node-sass src/core/scss/main.scss dist/windows-ui-web.css",
+		},
+
+--compile--
+
+npm run compile:sass
+
+----------------------------------------------------------------------------

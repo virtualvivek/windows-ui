@@ -1,0 +1,70 @@
+.app-input-search-bar {
+  button {
+    @extend .background-color-nav;
+    @extend .transition-background-400ms;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin-left: -32px;
+    
+    &:hover,
+    &:active {
+      @extend .background-color-primary;
+    }
+    &:active {
+      opacity: 0.65;
+    }
+    &::after {
+      @extend .font-icon-dark;
+      content: "\f1b9";
+      font-size: 18px;
+      font-weight: 600;
+    }
+    &:hover::after {
+      color: var(--color_bg_light) !important;
+    }
+  }
+}
+
+.app-input-search-box {
+  &::after {
+    @extend .font-icon-dark;
+    content: "\f1b9";
+    z-index: 1;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: -29px;
+    align-self: center;
+  }
+}
+
+.app-input-search-bar,
+.app-input-search-box,
+.app-search-dialog {
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    &:active,
+    &:focus {
+      border-color: var(--PrimaryColor);
+    }
+    &::-webkit-search-cancel-button{
+      position: relative;
+      right: 40px;    
+    }
+  }
+}
+
+@mixin input-search-mobile() {
+  .app-input-search-bar {
+    button:not(:active) {
+      &:hover {
+        background: var(--color_nav);
+        &::after {
+          color: var(--color_text_dark) !important;
+        }
+      }
+    }
+  }
+}

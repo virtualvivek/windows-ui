@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input type="checkbox" id="app-navbar-theme-switch" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="app-section-container has-padding transition-left"
+      id="app-section-container-id">
+      <h1>GettingStarted</h1>
+
+      <p>Accelerate development by using the boilerplate.</p>
+      <a href="#" class="app-link">See Online</a> •
+      <a href="#" class="app-link"> View Source</a>
+
+      <div class="app-hr"></div>
+
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("GettingStarted","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+  <script></script>
+</html>

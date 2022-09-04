@@ -1,0 +1,70 @@
+.app-navbar-wrap .app-navbar-list {
+  .app-navbar-list-item {
+    display: flex;
+
+    &:hover { @extend .background-color-link-bg-hover; }
+    &:active { @extend .background-color-link-bg-active; }
+
+    a {
+      width: 100%;
+      font-weight: 400;
+      background: none;
+      padding: 12px 25px;
+      position: relative;
+      align-items: center;
+      flex-direction: row;
+      display: inline-flex;
+      color: var(--color_text_dark);
+
+      &::after {
+        width: 5px;
+        height: 35px;
+        position: absolute;
+        left: 0;
+        background: var(--PrimaryColor);
+        content: "";
+        transform: translate3d(-200%, 0, 0);
+      }
+      &:focus {
+        @extend .outline-none;
+      }
+      &.active {
+        @extend .font-weight-500;
+        
+        &::after {
+          transition: transform 0.4s;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+      i::before {
+        font-size: 24px;
+        pointer-events: none;
+        text-overflow: unset;
+        vertical-align: middle;
+      }
+
+      > * {
+        pointer-events: none;
+      }
+    }
+    span {
+      margin: 0 10px;
+      font-size: 16px;
+      overflow: hidden;
+      user-select: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin: 2px;
+      border-radius: 4px;
+      background-color: var(--color_link_bg_hover);
+    }
+  }
+}
+
+body.dark-theme .app-navbar-wrap .app-navbar-list-item a::after {
+  background: var(--PrimaryColorLight);
+}

@@ -1,0 +1,69 @@
+.app-progress-container {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+
+  .app-progress-icon {
+    font-size: 30px;
+    color: var(--color_text_dark);
+  }
+
+  .app-progress-title,
+  .app-progress-subtitle {
+    @extend .font-weight-500;
+  }
+  .app-progress-title {
+    line-height: 2;
+  }
+  .app-progress-subtitle {
+    opacity: 0.8;
+    font-size: 14px;
+  }
+  
+  .app-progress-bar {
+    @extend .transition-background-400ms;
+
+    width: 400px;
+    height: 5px;
+    overflow: hidden;
+    position: relative;
+    background: var(--color_button);
+
+    span {
+      height: 100%;
+      position: absolute;
+      transition: width 1s ease-in-out;
+      background-color: var(--PrimaryColor);
+      &::after,
+      &::before {
+        display: none !important;
+      }
+    }
+
+    &.withIcon {
+      width: 355px;
+      overflow: visible;
+    }
+  }
+  // check if .app-progress-container has a sibling of same type
+  .app-progress-container:first-of-type:not(:only-of-type) {
+    margin-left: 15px;
+  }
+}
+
+// body.dark-theme .app-progress-container .app-progress span {
+//   background-color: var(--PrimaryColorLight);
+// }
+
+@mixin progress-bar-mobile() {
+  .app-progress-container {
+    .app-progress-bar {
+      width: 80vw;
+
+      &.withIcon {
+        width: calc(80vw - 45px);
+      }
+    }
+  }
+}

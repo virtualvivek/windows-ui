@@ -1,122 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-	
-<head>
+  <head>
+    <title>windows-ui-web</title>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1"> 
-    <title>Windows10 framework</title>
-    <link rel="shortcut icon" href="src/core/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="src/core/config/css/appConfig.css" />
-    <link rel="stylesheet" type="text/css" href="src/core/css/windows10framework.css" />
-    <link rel="stylesheet" href="src/core/icons/fonts/fonts.min.css">  
-    <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <link rel="manifest" href="manifest.json">
-</head>    
-	
-<body>			
-
-     <div class="index-box-header">
-         
-       
-         <img class="app-avatar medium" src="src/core/img/anim_avatar.jpeg"/>
-        
-         <div class="app-grid">
-            <h2 class="m-tb-10"><b>Windows 10 framework</b></h2>
-            <a href="https://github.com/virtualvivek/Windows10-framework" class="app-link bold">
-                github.com/virtualvivek/Windows10-framework
-             </a>
-            <br id="index-switch">
-         </div>
-      
-         
-          <a href="#" class="app-link-compound primary">
-            <div><i class="icons10-collection"></i>
-                <span>Gallery</span>
-                <p>Manage</p>
-            </div></a>
-         
-          <a href="#" class="app-link-compound primary">
-            <div><i class="icons10-settings"></i>
-                <span>Settings</span>
-                <p>Change Settings</p>
-            </div></a>
-         
-         
+    <link rel="shortcut icon" href="./docs/public/favicon.ico" />
+    <link rel="stylesheet" href="dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="./docs/css/neumorph.css"/>
+    <link rel="stylesheet" type="text/css" href="dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="dist/windows-ui-web.min.css" />  
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">React-windows-ui</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">React Windows UI</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input type="checkbox" id="app-navbar-theme-switch" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+      <div class="app-navbar-overlay"></div>
     </div>
-    
-    
-    <div class="index-search">     
-        <select class="app-search-box-auto" id="searchBarAutoNav" style="margin:auto">
-            <option value="framework.html">Framework</option>
-            <option value="templates/screen-loading-light.html">Splash Screen Light</option>
-            <option value="templates/screen-loading-dark.html">Splash Screen Dark</option>
-            <option value="templates/screen-loading-logo-light.html">Loading Screen Light</option>
-            <option value="templates/screen-loading.html">Loading Screen Dark</option>
-            <option value="kitchen-sink/Prototypes.html">App Prototypes</option>
-            <option value="templates/screen-404.html">404Page not found layout</option>
-        </select>
-    </div>
-    
-    <br>
-        
-   
-    <div class="index-box-grid">
-        
-        <a href="framework.html" class="app-link-compound primary">
-                <div><i class="icons10-home"></i>
-                    <span>App Framework</span>
-                    <p>Collection of all app components including forms,icons,notifications,bottomsheets ..</p>
-                </div></a>
-        
-        
-        <a href="templates/screen-loading.html" class="app-link-compound primary">
-                <i class="icons10-clock"></i>
-                    <span>App Loading Screen</span>
-                    <p>App Launching Screen including centered logo and app name .</p>
-                </a>
-        
-        
-        <a href="templates/screen-404.html" class="app-link-compound primary">
-                <i class="icons10-terminal"></i>
-                    <span>404 Error Page</span>
-                    <p>A "File not found" page when target child page not found</p>
-                </a>
-        
-        
-        <a href="kitchen-sink/prototypes.html" class="app-link-compound primary">
-                <i class="icons10-film"></i>
-                    <span>Prototypes</span>
-                    <p>Framework component examples and undercontruction modules exercise .</p>
-                </a>
-        
-        
-        <a href="templates/screen-loading-dark.html" class="app-link-compound primary">
-                <i class="icons10-insert-table"></i>
-                    <span>Splash Screen Primary</span>
-                    <p>App loading screen with centered default busy loader and app details .</p>
-                </a>
-        
-        
-        <a href="templates/screen-loading-light.html" class="app-link-compound primary">
-                <i class="icons10-grid-2"></i>
-                    <span>Splash Screen Light</span>
-                    <p>App loading screen with centered default busy loader light and app details .</p>
-                </a>
-        
-        
-        
-        
-            
-    </div>
- 
-</body>
 
-    <script src="src/core/js/require/jquery.js"></script> 
-    <script src="src/core/config/appConfig.js"></script>
-    <script src="src/core/js/windows10framework.js"></script>
-    <script src="src/core/js/init/index/searchBarSuggestions_index.js"></script>
-    <script></script>
+    <div class="app-section-container has-padding transition-left" id="app-section-container-id">
+      <h1><b>windows-ui-web</b></h1>
+      <p>
+        Build <span class="color-primary">Windows Fluent UI </span>apps using html, css & javascript.<br>
+      </p>
+      <button class="app-btn animate btn-primary" type="button">
+        <span>Getting Started</span>
+      </button>
+      &nbsp;
+      <button class="app-btn animate btn-primary-outline" type="button">
+        <span>Boilerplate</span>
+      </button>
 
+      <div class="container neumorphism">
+        <span class="circle small neumorphism">
+        </span>
+        <span class="circle neumorphism"></span>
+      </div>
+    </div>
+  </body>
+  <script src="./docs/_navbar.js"></script>
+  <script>init_navbar_ul("Home","root");</script>
+  <script src="src/js/windows-ui-web.js"></script>
+  <script></script>
 </html>

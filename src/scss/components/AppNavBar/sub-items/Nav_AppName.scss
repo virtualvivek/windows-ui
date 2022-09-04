@@ -1,0 +1,20 @@
+.app-navbar-name {
+  @extend .color-text-dark;
+  @extend .font-weight-500;
+  @extend .transition-background-400ms;
+
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: inline-block;
+  padding-inline-start: 10px;
+
+  &::-moz-selection {
+    background: transparent;
+    color: var(--color_text_dark);
+  }
+  &::selection {
+    background: transparent;
+    color: var(--color_text_dark);
+  }
+}

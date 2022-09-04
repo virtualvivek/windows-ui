@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div
+      class="app-section-container has-padding transition-left"
+      id="app-section-container-id">
+      <h1>InputSearch</h1>
+
+      <p><span class="color-primary">InputSearch</span>  defines a text field for entering a search string.</p>
+
+
+      <h3>InputSearchBar</h3>
+      
+
+      <div class="app-input-search-bar">
+        <input class="app-input-text" type="search" placeholder="Search here">
+        <button type="submit"></button>
+      </div>
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      <h3>InputSearchBox</h3>
+      <div class="app-input-search-box">
+        <input class="app-input-text" type="search" placeholder="Enter to Search">
+      </div>
+      <br/><pre><code id="code_view_2"></code></pre>
+
+      <br/><br/>
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("InputSearch","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-search-bar">
+      <input class="app-input-text" type="search" placeholder="Search here">
+      <button type="submit"></button>
+    </div>
+    `).value;
+  </script>
+  <script>
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-search-box">
+      <input class="app-input-text" type="search" placeholder="Enter to Search">
+    </div>
+    `).value;
+  </script>
+</html>

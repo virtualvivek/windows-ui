@@ -1,0 +1,41 @@
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.circle {
+  min-width: 50vw;
+  min-height: 50vw;
+  display: flex;
+  border-radius: 100%;
+  position: absolute;
+  right: 5%;
+  bottom: -25vw;
+}
+
+.circle.small {
+  min-width: 15vw;
+  min-height: 15vw;
+  margin-top: -20vh;
+  position: relative;
+  bottom: unset;
+}
+
+/* For Neumorphism Effect */
+.neumorphism {
+  background: #e0e5ec;
+  box-shadow:  20px 20px 60px var(--color_link_bg_active), 
+               -20px -20px 60px var(--color_bg_light);
+}
+
+body.dark-theme .neumorphism {
+  background: #282828;
+}

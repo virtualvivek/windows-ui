@@ -1,0 +1,136 @@
+button,
+.app-btn {
+  @extend .user-select-none;
+  @extend .tap-highlight-none;
+  
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:focus,
+  &:active,
+  &:focus:active {
+    outline: none !important;
+  }
+}
+.app-btn {
+  @extend .user-select-none;
+  @extend .color-text-dark;
+  @extend .vertical-align-middle;
+  @extend .background-color-button;
+
+  height: 35px;
+  font-size: 15px;
+  padding: 5px 15px;
+  transition: 0.2s ease;
+  border: 2px solid transparent;
+
+  &:hover {
+    filter: opacity(0.8);
+    border-color: var(--color_button_hover);
+  }
+  &:active {
+    filter: contrast(0.4);
+    transition: 0.02s ease;
+    border: 2px solid transparent;
+  }
+  &.isLoading {
+    pointer-events: none;
+
+    span {
+      opacity: 0;
+    }
+  }
+
+  &.btn-primary {
+    @extend .background-color-primary;
+  }
+  &.btn-primary-outline {
+    color: var(--color_primary_light);
+    border: 2px solid var(--PrimaryColor);
+    &:active {
+      background-color: var(--PrimaryColor);
+    }
+  }
+  &.btn-danger {
+    background: #C50500;
+  }
+  &.btn-danger-outline {
+    border: 2px solid #C50500;
+    color: #C50500;
+    &:active {
+      background-color: #C50500;
+    }
+  }
+  &.btn-success {
+    background: #2C8B2C;
+  }
+  &.btn-success-outline {
+    border: 2px solid #2C8B2C;
+    color: #2C8B2C;
+    &:active {
+      background-color: #2C8B2C;
+    }
+  }
+  &.btn-primary,
+  &.btn-danger,
+  &.btn-success {
+    color: #fff;
+  }
+  &.btn-primary-outline,
+  &.btn-success-outline,
+  &.btn-danger-outline {
+    background-color: transparent;
+
+    &:active {
+      color: #fff;
+      filter: unset;
+    }
+    &[disabled] {
+      backdrop-filter: grayscale(1);
+    }
+  }
+  &.animate:active {
+    transform: scale(0.98, 0.98);
+  }
+  &[disabled] {
+    @extend .input-field-primary-disabled;
+    
+    span {
+      pointer-events: none;
+    }
+    &:active,
+    &:hover {
+      @extend .input-field-primary-disabled;
+    }
+  }
+
+  .app-loader-busy {
+    width: 0px;
+    left: 40%;
+    display: inline; 
+  }
+  span {
+    transition: opacity ease 0.2s;
+  }
+  i.color-primary {
+    color: var(--PrimaryColor);
+  }
+  // check if button child span has a sibling of same type
+  span:first-of-type:not(:only-of-type) {
+    padding-right: 5px;
+  }
+}
+
+@mixin button-mobile() {
+  .app-btn:not(.primary-outline):not(.danger-outline):not(.success-outline) {
+    &:hover {
+      filter: none;
+      border-color: transparent;
+    }
+    &:active {
+      filter: contrast(0.4);
+    }
+  }
+}

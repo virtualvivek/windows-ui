@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>
+  <body>
+    <div class="app-navbar-wrap" id="app-navbar-wrap-id">
+      <div class="app-navbar-topbar-mobile">
+        <span class="app-navbar-toggle-button"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
+      </div>
+      <nav class="animate">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggle-button"></span>
+          <span class="app-navbar-name">Windows UI Web</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-view"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="app-section-container has-padding">
+      <h1>Alert</h1>
+
+      <p><span class="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.</p>
+
+      <button class="app-btn animate" type="button" data-toggle="modal" data-target="MyModal">
+        <span>Open Alert Default</span>
+      </button>
+
+      <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+        <div class="app-alert-modal">
+          <h1>Alert</h1>
+          <div class="app-alert-message">This is alert Box.</div>
+          <div class="app-alert-btn-container">
+            <button data-toggle="modal" data-target="MyModal">OK</button>
+          </div>
+        </div>
+      </div>
+
+      <pre><code id="code_view_1"></code></pre>
+
+      <span>Toggle Alert visibility.</span>
+      <pre><code id="code_view_2"></code></pre>
+
+    </div>
+  </body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("Alerts","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-alert" data-toggle="modal" id="MyModal" data-target="MyModal">
+      <div class="app-alert-modal">
+        <h1>Alert</h1>
+        <div class="app-alert-message">This is alert Box.</div>
+        <div class="app-alert-btn-container">
+          <button data-toggle="modal" data-target="MyModal">OK</button>
+        </div>
+      </div>
+    </div>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <button type="button" data-toggle="modal" data-target="MyModal">
+      <span>Open Alert Default</span>
+    </button>
+    `).value;
+  </script>
+</html>

@@ -1,0 +1,12 @@
+.app-navbar-wrap {
+  .app-navbar-header {
+    @extend .background-color-nav;
+    width: inherit;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+    transition: inherit;
+  }
+}

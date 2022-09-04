@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>windows-ui-web</title>
+    <meta charset="UTF-8" />
+    <meta name="theme-color" content="#EEE" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="stylesheet" href="./css/code-style.css" />
+    <link rel="stylesheet" href="./css/code-block.css" />
+    <link rel="shortcut icon" href="./public/favicon.ico" />
+    <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+    <link rel="stylesheet" type="text/css" href="../dist/windows-ui-web.min.css" />
+  </head>    
+	
+<body>
+  <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+    <div class="app-navbar-topbar-mobile">
+      <span class="app-navbar-toggle-button"></span>
+      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+        <span class="app-navbar-name">Windows UI Web</span>
+        <span class="app-navbar-name">Home</span>
+      </div>
+    </div>
+    <nav class="animate">
+      <div class="app-navbar-header">
+        <span class="app-navbar-toggle-button"></span>
+        <span class="app-navbar-name">Windows UI Web</span>
+      </div>
+      <ul class="app-navbar-list" id="app-navbar-list">
+        <label class="app-navbar-theme-switch">
+          <input type="checkbox" id="app-navbar-theme-switch" checked>
+          <div class="app-navbar-theme-switch-view"></div>
+          <span id="app-navbar-theme-switch-text">Day Mode</span>
+        </label>
+      </ul>
+    </nav>
+  </div>
+
+  <div
+    class="app-section-container has-padding transition-left"
+    id="app-section-container-id">
+    <h1>RadioButtons</h1>
+
+
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="2" checked>
+      <span> Hellow</span>
+    </label>
+    &nbsp;&nbsp;
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="2">
+      <span> World</span>
+    </label>
+    <br/><pre><code id="code_view_1"></code></pre>
+
+    <h2>RadioButton no label</h2>
+    <p>Just remove the <span class="app-code">span</span> from the radio button.</p>
+
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="4" checked>
+    </label>
+    &nbsp;&nbsp;
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="4">
+    </label>
+    <pre><code id="code_view_2"></code></pre>
+
+    <br/><br/>
+
+  </div>
+</body>
+  <script src="./_navbar.js"></script>
+  <script>init_navbar_ul("RadioButton","subdir");</script>
+  <script src="../src/js/windows-ui-web.js"></script>
+
+  <script src="./js/highlight.min.js"></script>
+  <script>hljs.highlightAll();</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="2" checked>
+      <span> Hellow</span>
+    </label>
+    `).value;
+  </script>
+  <script>
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <label class="app-radio-button">
+      <input type="radio" class="app-radio" name="4">
+    </label>
+    `).value;
+  </script>
+</html>
