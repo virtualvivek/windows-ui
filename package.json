@@ -1,6 +1,6 @@
 {
   "name": "windows_ui_web",
-  "version": "1.0.0",
+  "version": "4.0.0",
   "description": "build native like windows apps or web apps using html, css and javascript",
   "main": "index.js",
   "scripts": {
