@@ -1,8 +1,10 @@
 <p align="center"> 
-  <img src="docs/public/static/logo.png" width="250" /> 
+  <img src="docs/public/static/logo.png" width="250" />
 </p>
 
-<meta name='keywords' content='Windows10, FluentUI, framework, html, css, js'>
+<p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
+
+<meta name='keywords' content='Windows10, FluentUI, html, css, js'>
 <meta name='description' content='Build Windows Fluent UI apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
@@ -18,6 +20,7 @@
       alt="version" />
   </a>
   
+  <br/>
   
   <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.css">
     <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
@@ -30,8 +33,7 @@
 </p>
 
 
-<p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
-
+<p align="center"><img src="docs/public/static/preview.jpg" width="480" /></p>
 	
 # Demo ⚡
 https://windows10framework.netlify.app/
