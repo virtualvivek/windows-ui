@@ -1,69 +1,41 @@
 <p align="center"> 
-  <img src="kitchen-sink/_md_preview/md_img_header.png" width="400" /> 
+  <img src="docs/public/static/logo.png" width="250" /> 
 </p>
-<h1 align="center">windows-ui-web</h1>
 
-<meta name='keywords' content='Windows10, MetroUI, framework,html,css,js'>
-<meta name='description' content='Build Windows 10 look and feel web apps or electron apps using html,css & js'>
+<meta name='keywords' content='Windows10, FluentUI, framework, html, css, js'>
+<meta name='description' content='Build Windows Fluent UI apps or electron apps using html,css & js'>
 <meta name='author' content='Vivek Verma'>
 
 <p align="center">
-
-  <img alt="Netlify" src="https://img.shields.io/netlify/4a7e4c36-524a-4cd6-b1bf-e535ec5c7d07?label=build&logo=netlify&logoColor=%23ffffff&style=flat-square">
 	
-  <a href="https://github.com/virtualvivek/Windows10-framework/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=blue"
+  <a href="https://github.com/virtualvivek/windows-ui-web/blob/master/LICENSE">
+    <img src="https://img.shields.io/badge/License-MIT-darklime.svg?style=flat-square&color=%2300C7B7"
       alt="License: MIT" />
   </a>
 
-  <a href="https://github.com/virtualvivek/Windows10-framework/releases/latest">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/Windows10-framework?label=Release&style=flat-square&color=%2331b57e"
-      alt="Release" />
+  <a href="https://github.com/virtualvivek/windows-ui-web/releases/latest">
+    <img src="https://img.shields.io/github/v/release/virtualvivek/windows-ui-web?label=Release&style=flat-square&color=%234BB749"
+      alt="version" />
   </a>
   
-  <a href="https://windows10framework.netlify.app">
-    <img src="https://img.shields.io/badge/Live Demo-Here-green.svg?style=flat-square&logo=PyTorchLightning&color=00C244"
-      alt="Live Demo" />
+  
+  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.css">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
+  </a>
+  
+  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.js">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui-web.min.js" alt="windows-ui-web.min.js" />
   </a>
    
 </p>
 
 
-
-<p align="center">
-Build full featured Windows 10 Native apps or Web apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.
-</p>
+<p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
 
 	
 # Demo ⚡
 https://windows10framework.netlify.app/
 
-
-## Stunning Set Of UI Elements
-
-<p align="center">
-  <img src="kitchen-sink/_md_preview/md_glance_forms.png" width="400" />
-  <img src="kitchen-sink/_md_preview/md_glance_advance.png" width="400" />
-</p>
-<p>
-Provides you with the rich UI Components that to completely matches the latest Windows environment that accelerates your productivity to build your hybrid windows app.
-</p>
-
-## Build Universal Windows or Web Apps
-Create apps that run fluently on every device
-
-<h1 align="center">
-	<img src="kitchen-sink/_md_preview/app_responsive.png" width="800" />
-</h1>
-
-# Documentation
-
-  * [Form Elements](src/core/_docs/forms/README.md)
-  * [Progress Controls](src/core/_docs/progressControls/README.md)
-  * [Icons](src/core/_docs/icons/README.md)
-  * [Bottom Sheet](src/core/_docs/bottomSheet/README.md)
-  * [Alerts](src/core/_docs/alerts/README.md)
-  * [Notifications](src/core/_docs/notifications/README.md)
 
 
 <h1>Getting Started</h1>
