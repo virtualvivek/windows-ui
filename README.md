@@ -49,6 +49,7 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS minified -->
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css" rel="stylesheet" crossorigin="anonymous">
 ```
 ```html
@@ -61,10 +62,6 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 **app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app.<br/>
 Make sure to add this file before **windows-ui-web.min.css**.<br/><br/>
 By `default` project uses <a href="dist/config/app-config.css">app-config.css</a>.<br>
-```html
-<!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
-```
 
 Customize by `creating` your own **app-config.css** file with any PrimaryColor/Fontfamily like this below:
 
