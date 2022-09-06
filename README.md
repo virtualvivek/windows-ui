@@ -48,11 +48,11 @@ When you need to include project's compiled `CSS` or `JS` files,
 you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
-<!-- CSS only -->
+<!-- CSS minified -->
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css" rel="stylesheet" crossorigin="anonymous">
 ```
 ```html
-<!-- JavaScript Bundle with Popper -->
+<!-- JavaScript minified -->
 <script src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js" crossorigin="anonymous"></script>
 ```
 
@@ -62,7 +62,7 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 Make sure to add this file before **windows-ui-web.min.css**.<br/><br/>
 By `default` project uses <a href="dist/config/app-config.css">app-config.css</a>.<br>
 ```html
-<!-- CSS only -->
+<!-- CSS -->
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
 ```
 
