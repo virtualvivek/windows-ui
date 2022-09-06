@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="docs/public/static/logo.png" width="250" />
+  <img src="markdown/logo.png" width="250" />
 </p>
 
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
@@ -33,7 +33,7 @@
 </p>
 
 
-<p align="center"><img src="docs/public/static/preview.jpg" width="480" /></p>
+<p align="center"><img src="markdown/preview.jpg" width="480" /></p>
 	
 # Demo & Docs
 https://windows-ui.github.io/
@@ -51,6 +51,7 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 <!-- CSS minified -->
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
 ```
 ```html
 <!-- JavaScript minified -->
