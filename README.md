@@ -85,6 +85,10 @@ body {
 # Find this framework useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui-web/stargazers) for this repository. :star:
 
+# Branches
+
+[windows-ui-web](https://github.com/virtualvivek/windows-ui-web)  ‣ Current. <br/>
+[Windows10-framework](https://github.com/virtualvivek/windows-ui-web/tree/Windows10-framework) Legacy.
 
 # License
 
