@@ -49,13 +49,25 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS minified -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css" rel="stylesheet" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
 ```
 ```html
 <!-- JavaScript minified -->
-<script src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js"
+  crossorigin="anonymous">
+</script>
 ```
 
 # Configuration
