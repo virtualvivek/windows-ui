@@ -9,18 +9,6 @@
 <meta name='author' content='Vivek Verma'>
 
 <p align="center">
-	
-  <a href="https://github.com/virtualvivek/windows-ui-web/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-darklime.svg?style=flat-square&color=%2300C7B7"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://github.com/virtualvivek/windows-ui-web/releases/latest">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/windows-ui-web?label=version&style=flat-square&color=%234BB749"
-      alt="version" />
-  </a>
-  
-  <br/>
   
   <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.css">
     <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
@@ -94,7 +82,7 @@ body {
 ```
 
 
-# Find this framework useful? :heart:
+# Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui-web/stargazers) for this repository. :star:
 
 # Branches
