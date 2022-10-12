@@ -23,7 +23,7 @@
 
 <p align="center"><img src="markdown/preview.jpg" width="480" /></p>
 
-# 🚧 Work in progress
+# 🚧 Work in progress.
 
 # Demo & Docs
 https://windows-ui.github.io/
