@@ -2,6 +2,14 @@
   <img src="markdown/logo.png" width="250" />
 </p>
 
+
+
+
+
+
+
+
+
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
 
 <meta name='keywords' content='Windows10, FluentUI, html, css, js'>
@@ -9,18 +17,6 @@
 <meta name='author' content='Vivek Verma'>
 
 <p align="center">
-	
-  <a href="https://github.com/virtualvivek/windows-ui-web/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-darklime.svg?style=flat-square&color=%2300C7B7"
-      alt="License: MIT" />
-  </a>
-
-  <a href="https://github.com/virtualvivek/windows-ui-web/releases/latest">
-    <img src="https://img.shields.io/github/v/release/virtualvivek/windows-ui-web?label=version&style=flat-square&color=%234BB749"
-      alt="version" />
-  </a>
-  
-  <br/>
   
   <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.css">
     <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
@@ -34,7 +30,9 @@
 
 
 <p align="center"><img src="markdown/preview.jpg" width="480" /></p>
-	
+
+# 🚧 Work in progress.
+
 # Demo & Docs
 https://windows-ui.github.io/
 
@@ -49,13 +47,25 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS minified -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css" rel="stylesheet" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
+<link
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css"
+  rel="stylesheet"
+  crossorigin="anonymous">
 ```
 ```html
 <!-- JavaScript minified -->
-<script src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js"
+  crossorigin="anonymous">
+</script>
 ```
 
 # Configuration
@@ -82,9 +92,13 @@ body {
 ```
 
 
-# Find this framework useful? :heart:
+# Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui-web/stargazers) for this repository. :star:
 
+# Branches
+
+[windows-ui-web](https://github.com/virtualvivek/windows-ui-web)  ‣ Current. <br/>
+[Windows10-framework](https://github.com/virtualvivek/windows-ui-web/tree/Windows10-framework) Legacy.
 
 # License
 
