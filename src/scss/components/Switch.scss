@@ -3,7 +3,6 @@
   user-select: none;
   align-items: center;
   display: inline-flex;
-  vertical-align: middle;
 
   >.app-switch-view {
     width: 42px;
@@ -12,7 +11,7 @@
     position: relative;
     border-radius: 50px;
     transition: 200ms ease-out;
-    border: 2px solid var(--color_text_dark);
+    border: 2px solid var(--color-text-default);
 
     &:hover { opacity: 0.7; }
     &:active { filter: contrast(0.5); }
@@ -28,7 +27,7 @@
       border-radius: 50%;
       transition: 200ms;
       will-change: translate;
-      background: var(--color_text_dark);
+      background: var(--color-text-default);
     }
   }
 
@@ -38,24 +37,23 @@
   .app-switch-label {
     padding-right: 10px;
   }
-
   .app-switch-label:last-child  {
-    padding-left: 10px;
     padding-right: 0;
+    padding-left: 10px;
   }
 
   input {
-    @extend .app-display-none;
+    display: none;
     
     &:checked {
       ~.app-switch-view {
-        @extend .background-color-primary;
         border-color: var(--PrimaryColor);
+        background-color: var(--PrimaryColor);
 
         &::before {
+          background: #fff;
           color: var(--PrimaryColor);
           transform: translateX(280%);
-          background: #fff;
           transform: translateX(calc(2 * 100% - 3px));
         }
       }
@@ -67,27 +65,32 @@
    
     &:disabled {
       ~.app-switch-view {
-        @extend .background-color-link-bg-hover;
-        @extend .cursor-not-allowed;
-        border-color: var(--color_link_bg_hover);
+        cursor: not-allowed;
+        border-color: var(--color-link-bg-hover);
+        background-color: var(--color-link-bg-hover);
 
         &::before {
           filter: contrast(0);
-          background: var(--color_text_dark) !important;
+          background: var(--color-text-default) !important;
         }
       }
     }
   }
 }
 
-// body.dark-theme {
-//   .app-switch>.app-switch-view {
-//     filter: brightness(1.5);
-//     &:active {
-//       filter: contrast(0.6);
-//     }
-//   }
-// }
+@if $platform == "windows11" {
+  body.dark-theme {
+    .app-switch {
+      input:checked~.app-switch-view {
+        border-color: var(--PrimaryColorLight);
+        background-color: var(--PrimaryColorLight);
+        &::before {
+          background: var(--color-background-default);
+        }
+      }
+    }
+  }
+}
 
 @mixin switch-mobile() {
   .app-switch {

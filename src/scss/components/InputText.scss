@@ -1,10 +1,10 @@
 .app-input-text {
-  @extend .input-field-primary;
+  @extend .input-field-default;
   @extend .transition-background-400ms;
 
   &:focus {
-    @extend .outline-none;
-    border-color: #666;
+    outline: none;
+    @if $platform == "windows10" { border-color: #666; }
   }
 
   &::-webkit-calendar-picker-indicator {
@@ -21,13 +21,52 @@
   display: inline-flex;
   position: relative;
 
+  @if $platform == "windows11" {
+    .app-input-label:has(+ .app-input-text:focus) {
+      margin-bottom: 0;
+      border-bottom: 2px solid var(--color-primary-adaptive);
+    }
+    .app-input-label + .app-input-text {
+      border-start-start-radius: 0;
+      border-end-start-radius: 0;
+      border-left-width: 0;
+    }
+  }
+  @if $platform == "windows10" {
+    .app-input-label:has(+ .app-input-text:hover) {
+      border-color: #777;
+    }
+    .app-input-label:has(+ .app-input-text:focus) {
+      border-color: #666;
+    }
+    .app-input-label + .app-input-text {
+      border-left-width: 0;
+    }
+  }
+
   .app-input-label {
-    @extend .transition-background-400ms;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+    place-content: center;
     width: max-content;
-    padding: 4px 5px;
-    border: 2px solid #999;
-    border-right: none;
-    background-color: var(--color_grey_light_alpha);
+    padding: 0 10px;
+    border-right-width: 0 !important;
+    background: var(--color-background-default);
+    @extend .transition-background-400ms;
+
+    @if $platform == "windows10" {
+      border: 2px solid #999;
+      background-color: var(--color-grey-light-alpha);
+    }
+    @if $platform == "windows11" {
+      margin-bottom: 1px;
+      border-radius: 4px;
+      border-end-end-radius: 0;
+      border-start-end-radius: 0;
+      border: 1px solid #55555555;
+      border-bottom: 1px solid #777;
+    }
   }
   .app-input-status-container {
     right: 10px;
@@ -48,14 +87,14 @@
 
     &::after {
       @extend .font-icon-dark;
-      content: "\f189";
+      content: "\f1db";
       font-size: 24px;
       cursor: pointer;
     }
   }
   
   input[type="password"].app-input-text + div button.app-input-text-unmask::after {
-    content: "\f1db";
+    content: "\f189";
   }
   
 

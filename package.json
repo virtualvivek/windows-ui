@@ -1,15 +1,19 @@
 {
-  "name": "windows_ui_web",
+  "name": "windows_ui",
   "version": "4.0.0",
-  "description": "build native like windows apps or web apps using html, css and javascript",
+  "description": "Build native like windows apps or web apps using html, css and javascript.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/scss/main.scss dist/windows-ui-web.min.css --output-style compressed"
+    "compile:sass": "node-sass src/scss/main-win10.scss dist/windows-ui.min.css --output-style compressed",
+    "compile:sass-sunvalley": "node-sass src/scss/main-win11.scss dist/windows-ui-11.min.css --output-style compressed"
   },
   "keywords": [
+    "fluentui",
+    "windows",
+    "user-interface",
+    "responsive",
     "uwp",
-    "framework",
-    "windowsUI"
+    "electronJS"
   ],
   "author": "Vivek Verma",
   "license": "MIT",

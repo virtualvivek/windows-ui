@@ -1,3 +1,6 @@
+@import "./variables/repository";
+@import "./variables/platforms/platform-win10";
+
 @import "./components/_base/colors";
 @import "./components/_base/parents";
 
@@ -11,14 +14,10 @@
 @import "./components/Alerts.scss";
 @import "./components/Button.scss";
 @import "./components/ButtonIcon.scss";
-@import "./components/Card.scss";
 @import "./components/Checkbox.scss";
 @import "./components/CommandBar.scss";
-@import "./components/CommandBarButton.scss";
 @import "./components/ColorPicker.scss";
-@import "./components/Gauge.scss";
 @import "./components/Dialog.scss";
-@import "./components/HeaderFixedContainer.scss";
 @import "./components/ImageView.scss";
 @import "./components/InputText.scss";
 @import "./components/InputSearch.scss";
@@ -33,14 +32,12 @@
 @import "./components/ProgressBarIndeterminate.scss";
 @import "./components/RadioButton.scss";
 @import "./components/Select.scss";
-@import "./components/SelectStyled.scss";
-@import "./components/StickyHeader.scss";
+@import "./components/SelectHeader.scss";
 @import "./components/Switch.scss";
-@import "./components/SliderBar.scss";
+@import "./components/SliderBar/SliderBar.scss";
 @import "./components/SplashScreen.scss";
 @import "./components/TableView.scss";
 @import "./components/TextArea.scss";
-@import "./components/View.scss";
 
 @import "./components/_browsers/webkit.scss";
 @import "./components/_browsers/mozilla.scss";

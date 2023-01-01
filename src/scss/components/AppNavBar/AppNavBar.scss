@@ -4,48 +4,39 @@
 @import "./sub-items/Nav_ToggleButton.scss";
 @import "./sub-items/Nav_Badge.scss";
 @import "./sub-items/Nav_Hr.scss";
-
 @import "./sub-components/NavBarSubMenu.scss";
 @import "./sub-components/NavHeader.scss";
-@import "./sub-components/NavSearchBox.scss";
-@import "./sub-components/NavSearchUL.scss";
-@import "./sub-components/NavThemeSwitcher.scss";
-
+@import "./sub-components/NavBarSearchBox.scss";
+@import "./sub-components/NavBarThemeSwitch.scss";
 @import "./navbar-mobile/NavBarMobile.scss";
 
 @import "./AppNavToggled.scss";
 
 .app-navbar-wrap {
-  height: 100%;
-  width: 290px;
   z-index: 9;
+  width: 280px;
+  height: 100%;
   overflow-y: overlay;
   transition: 0.2s ease;
 
   nav {
-    // @extend .transition-background-400ms;
-    @extend .background-color-nav;
+    @if $repository == "react-windows-ui" {
+      @extend .transition-background-400ms;
+    }
+    
     height: inherit;
     width: inherit;
     position: fixed;
-    left: 0;
     top: 0;
+    left: 0;
     padding: 0;
     display: block;
     z-index: inherit;
     overflow: scroll;
     overflow-x: hidden;
     overflow-y: overlay;
-
-    &.animate {
-      .app-navbar-list-item {
-        & :active {
-          @extend .transition-scale-active;
-          transform: scale(0.98, 0.98);
-        }
-        a { @extend .transition-all-400ms; }
-      }
-    }
+    background-color: var(--color-navbar-bg-default);
+    @if $platform == "windows11" { box-shadow: 1px 8px 4px -4px var(--color-text-default); }
   }
 
   .app-navbar-topbar-mobile {
@@ -56,8 +47,8 @@
     position: fixed;
     padding: 0 10px;
     align-items: center;
-    background-color: var(--color_nav);
-    border-bottom: 1px solid var(--color_link_bg_hover);
+    background-color: var(--color-navbar-bg-default);
+    border-bottom: 1px solid var(--color-link-bg-hover);
 
     .app-navbar-toggle-button {
       padding: 5px;

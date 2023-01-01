@@ -18,8 +18,8 @@
 
 <p align="center">
   
-  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.css">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
+  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-11.min.css">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
   </a>
   
   <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.js">
@@ -52,7 +52,7 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
   rel="stylesheet"
   crossorigin="anonymous">
 <link
-  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.min.css"
+  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-11.min.css"
   rel="stylesheet"
   crossorigin="anonymous">
 <link

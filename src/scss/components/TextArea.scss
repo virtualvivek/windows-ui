@@ -1,19 +1,27 @@
 .app-textarea {
-  @extend .input-field-primary;
+  @extend .input-field-default;
   @extend .transition-background-400ms;
 
   width: auto;
   height: auto;
-  padding: 10px;
   cursor: auto;
+  padding: 10px;
   font-family: inherit;
   line-height: normal;
 
-  &:hover {
-    border-color: #777;
+  @if $platform == "windows10" {
+    &:hover {
+      border-color: #777;
+    }
+    &:focus {
+      outline: none;
+      border-color: #666;
+    }
   }
-  &:focus {
-    @extend .outline-none;
-    border-color: #666;
+  @if $platform == "windows11" {
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid var(--color-primary-adaptive);
+    }
   }
 }

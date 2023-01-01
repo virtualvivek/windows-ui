@@ -5,12 +5,12 @@
   padding-top: 15px;
 
   .app-ldr-bar {
-    @extend .background-color-primary-light;
     width: 6px;
     height: 6px;
+    left: -10px;
     border-radius: 50%;
     position: relative;
-    left: -10px;
+    background-color: var(--color-day-primary-night-white);
   }
 
   &.light {

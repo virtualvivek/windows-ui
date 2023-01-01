@@ -1,57 +1,74 @@
 .app-input-search-bar {
   button {
-    @extend .background-color-nav;
-    @extend .transition-background-400ms;
-    width: 30px;
-    height: 30px;
-    border: none;
-    margin-left: -32px;
+    @if $platform == "windows10" {
+      width: 30px;
+      height: 30px;
+      border: none;
+      margin-left: -32px;
+    }
+    @if $platform == "windows11" {
+      border: none;
+      padding: 4px 6px;
+      margin-left: -34px;
+    }
     
-    &:hover,
-    &:active {
-      @extend .background-color-primary;
+    background-color: var(--color-navbar-bg-default);
+    @extend .transition-background-400ms;
+    
+    &:hover, &:active {
+      @if $platform == "windows10" { background-color: var(--PrimaryColor); }
+      @if $platform == "windows11" { background-color: var(--color-link-bg-active); }
     }
     &:active {
       opacity: 0.65;
     }
     &::after {
-      @extend .font-icon-dark;
       content: "\f1b9";
-      font-size: 18px;
-      font-weight: 600;
+      @extend .font-icon-dark;
+      @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
+      @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
     }
-    &:hover::after {
-      color: var(--color_bg_light) !important;
+    @if $platform == "windows10" {
+      &:hover::after {
+        color: #fff;
+      }
     }
   }
 }
 
 .app-input-search-box {
   &::after {
-    @extend .font-icon-dark;
-    content: "\f1b9";
     z-index: 1;
-    font-weight: 600;
-    font-size: 18px;
+    content: "\f1b9";
     margin-left: -29px;
     align-self: center;
+    @extend .font-icon-dark;
+    @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
+    @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
   }
 }
 
 .app-input-search-bar,
 .app-input-search-box,
 .app-search-dialog {
-  display: inline-flex;
+  width: inherit;
   align-items: center;
+  display: inline-flex;
 
   input {
-    &:active,
-    &:focus {
-      border-color: var(--PrimaryColor);
+    @if $platform == "windows10" {
+      &:active, &:focus {
+        border-color: var(--PrimaryColor);
+      }
     }
-    &::-webkit-search-cancel-button{
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
       position: relative;
-      right: 40px;    
+      cursor: pointer;
+      right: 40px;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23777'><path d='M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z'/></svg>");
     }
   }
 }
@@ -60,9 +77,9 @@
   .app-input-search-bar {
     button:not(:active) {
       &:hover {
-        background: var(--color_nav);
+        background: var(--color-navbar-bg-default);
         &::after {
-          color: var(--color_text_dark) !important;
+          color: var(--color-text-default) !important;
         }
       }
     }

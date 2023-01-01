@@ -12,5 +12,6 @@ package.json >
 --compile--
 
 npm run compile:sass
+npm run compile:sass-sunvalley
 
 ----------------------------------------------------------------------------

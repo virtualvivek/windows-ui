@@ -4,16 +4,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  @extend .color-text-dark;
-  @extend .background-color-bg-light;
-  // @extend .transition-background-400ms;
+  @if $repository == "react-windows-ui" {
+    @extend .transition-background-400ms;
+  }
+  
   margin: 0;
   padding: 0;
-}
-body.dark-theme {
-  .color-primary {
-    color: var(--PrimaryColorLight);
-  }
+  color: var(--color-text-default);
+  background-color: var(--color-background-default);  
 }
 .app-code {
   @extend .transition-background-400ms;
@@ -22,16 +20,9 @@ body.dark-theme {
   line-height: 1;
   border-radius: 6px;
   display: inline-block;
-  background-color: var(--color_nav);
+  background-color: var(--color-navbar-bg-default);
 }
 
-.app-container-screen {
-  @extend .background-color-bg-light;
-  height: 100vh;
-  &.primary {
-    @extend .background-color-primary-dark;
-  }
-}
 h1 { font-size: 2em; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.17em; }
@@ -39,9 +30,17 @@ h4 { font-size: 1.12em; }
 h5 { font-size: 0.83em; }
 h6 { font-size: 0.75em; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 400;
+@if $platform == "windows10" {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+  }
 }
+@if $platform == "windows11" {
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+  }
+}
+
 h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
   opacity: 0.58;
 }
@@ -55,6 +54,9 @@ a {
   &:hover {
     background-color: #DDD;
   }
+  &:focus-visible {
+    outline: 2px solid var(--color-button-hover);
+  }
 }
 
 .app-hr {
@@ -62,46 +64,41 @@ a {
   width: 95%;
   height: 1px;
   margin: 10px 10px 10px 0;
-  background: var(--color_button);
+  background: var(--color-button-default);
 }
 
-.app-space-10 { width: 10px; }
-.app-space-15 { width: 15px; }
-.app-space-20 { width: 20px; }
-.app-space-25 { width: 25px; }
-.app-space-30 { width: 30px; }
-.app-space-35 { width: 35px; }
-.app-space-40 { width: 40px; }
-.app-space-45 { width: 45px; }
+.app-ul-content li {
+  margin-bottom: 0.25rem;
+}
 
-.m-0 {
+.app-m-0 {
   margin: 0;
 }
-.m-tb-10 {
+.app-mt-0 {
+  margin-top: 0;
+}
+.app-mb-0 {
+  margin-bottom: 0;
+}
+.app-mt-10 {
   margin-top: 10px;
+}
+.app-mb-10 {
   margin-bottom: 10px;
 }
-.m-tb-15 {
+.app-mt-15 {
   margin-top: 15px;
+}
+.app-mb-15 {
   margin-bottom: 15px;
 }
-.m-tb-20 {
+.app-mt-20 {
   margin-top: 20px;
-  margin-bottom: 20px;
 }
-.m-b-5 {
-  margin-bottom: 5px;
-}
-.m-b-10 {
-  margin-bottom: 10px;
-}
-.m-b-15 {
-  margin-bottom: 15px;
-}
-.m-b-20 {
+.app-mb-20 {
   margin-bottom: 20px;
 }
 
-p.light {
+p.app-para-light {
   font-weight: 100;
 }

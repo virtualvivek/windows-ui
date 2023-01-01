@@ -1,7 +1,7 @@
 @media only screen and (min-width: 760px) {
   .app-navbar-wrap.toggled {
+    width: 72px;
     height: 100%;
-    width: 74px;
     position: fixed;
     top: 0;
     overflow-x: hidden;
@@ -28,13 +28,13 @@
     .app-search-dialog-trigger {
       height: 55px;
       display: flex;
-      font-size: 24px;
+      font-size: 22px;
       cursor: pointer;
       align-items: center;
       justify-content: center;
 
         &:hover { background-color: var(--color_link_bg_hover); }
-        &:active { background-color: var(--color_link_bg_active); }
+        &:active { background-color: var(--color-link-bg-active); }
     }
 
     .app-navbar-submenu-title { 
@@ -58,7 +58,7 @@
       transition: transform 0.2s ease-in-out;
     }
   }
-  .app-navbar-wrap.toggled {
+  .app-navbar-wrap.toggled-float {
     nav {
       transform-origin: 100% 50%;
       transform: translateX(0);

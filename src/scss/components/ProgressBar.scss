@@ -1,17 +1,17 @@
 .app-progress-container {
   display: inline-flex;
   align-items: center;
-  flex-direction: column;
-  align-items: flex-start;
+  flex-direction: row;
 
   .app-progress-icon {
     font-size: 30px;
-    color: var(--color_text_dark);
+    margin-right: 10px;
+    color: var(--color-text-default);
   }
 
   .app-progress-title,
   .app-progress-subtitle {
-    @extend .font-weight-500;
+    font-weight: 500;
   }
   .app-progress-title {
     line-height: 2;
@@ -22,26 +22,25 @@
   }
   
   .app-progress-bar {
-    @extend .transition-background-400ms;
-
     width: 400px;
     height: 5px;
     overflow: hidden;
     position: relative;
-    background: var(--color_button);
+    background: var(--color-button-default);
+    @extend .transition-background-400ms;
+    @if $platform == "windows11" { border-radius: 4px; }
 
     span {
       height: 100%;
       position: absolute;
       transition: width 1s ease-in-out;
       background-color: var(--PrimaryColor);
-      &::after,
-      &::before {
-        display: none !important;
-      }
+      @if $platform == "windows11" { border-radius: 4px; }
+
+      &::after, &::before { display: none !important; }
     }
 
-    &.withIcon {
+    &.with-icon {
       width: 355px;
       overflow: visible;
     }
@@ -52,16 +51,19 @@
   }
 }
 
-// body.dark-theme .app-progress-container .app-progress span {
-//   background-color: var(--PrimaryColorLight);
-// }
+@if $platform == "windows11" {
+  body.dark-theme .app-progress-container .app-progress-bar span {
+    background-color: var(--PrimaryColorLight);
+  }
+}
+
 
 @mixin progress-bar-mobile() {
   .app-progress-container {
     .app-progress-bar {
       width: 80vw;
 
-      &.withIcon {
+      &.with-icon {
         width: calc(80vw - 45px);
       }
     }

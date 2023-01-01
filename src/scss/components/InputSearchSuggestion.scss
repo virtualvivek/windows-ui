@@ -1,9 +1,9 @@
-.app-search-suggestion {
+.app-input-search-suggestion {
   width: 285px;
   position: relative;
   display: inline-block;
   
   ul {
-    @extend .app-custom-dropdown-ul;
+    @extend .app-dropdown-ul-default;
   }
 }

@@ -3,18 +3,38 @@
 
   .app-dialog-modal {
     width: 440px;
-    max-height: 54vh;
     z-index: 11;
     position: fixed;
-    overflow-y: auto;
-    border: 1px solid var(--color_button);
-    background-color: var(--color_grey_light);
+    overflow: hidden;
+    background-color: var(--color-grey-light);
     box-shadow: 0 0 7vh rgba(0, 0, 0, 0.25);
+    border: 1px solid var(--color-button-default);
 
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s;
-    transform: translateY(50px);
+    transition: all 0.28s;
+    transform: translateY(25px);
+
+    @if $platform == "windows11" {
+      border-radius: 8px;
+    }
+
+    .app-dialog-footer {
+      @extend .app-dialog-footer-default;
+    }
+    .app-dialog-body {
+      max-height: 40vh;
+      overflow: overlay;
+      background-color: var(--color-background-default);
+    }
+    @-moz-document url-prefix() {
+      .app-dialog-body {
+        overflow: auto;
+      }
+    }
+    .app-dialog-header {
+      padding: 0 15px;
+    }
   }
 
   &.show .app-dialog-modal {
@@ -26,7 +46,7 @@
 
 body.dark-theme {
   .app-dialog .app-dialog-modal {
-    background-color: var(--color_link_bg_active);
+    background-color: var(--color-link-bg-active);
   }
 }
 
@@ -40,7 +60,9 @@ body.dark-theme {
     top: initial;
     border-left: none;
     border-right: none;
-    border-top: 1px solid var(--color_button);
+    border-top: 1px solid var(--color-button-default);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
     transform: translateY(100%); //adding full 100% to animate like bottomsheet
   }
 }
