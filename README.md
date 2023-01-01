@@ -18,12 +18,12 @@
 
 <p align="center">
   
-  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-11.min.css">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui-web.min.css" alt="windows-ui-web.min.css" />
+  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui-11.min.css">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
   </a>
   
-  <a href="https://github.com/virtualvivek/windows-ui-web/tree/main/dist/windows-ui-web.min.js">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-web/dist/windows-ui-web.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui-web.min.js" alt="windows-ui-web.min.js" />
+  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui.min.js">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
   </a>
    
 </p>
@@ -39,7 +39,7 @@ https://windows-ui.github.io/
 
 <h1>Getting Started</h1>
 
-Start a new project with the [boilerplate](https://github.com/virtualvivek/windows-ui-web/tree/master/boilerplate).
+Start a new project with the [boilerplate](https://github.com/virtualvivek/windows-ui/tree/master/boilerplate).
 
 # Imports
 When you need to include project's compiled `CSS` or `JS` files,
@@ -48,22 +48,22 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 ```html
 <!-- CSS minified -->
 <link
-  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/config/app-config.css.css"
+  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css"
   rel="stylesheet"
   crossorigin="anonymous">
 <link
-  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-11.min.css"
+  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui-11.min.css"
   rel="stylesheet"
   crossorigin="anonymous">
 <link
-  href="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/icons/fonts/fonts.min.css"
+  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/fonts/fonts.min.css"
   rel="stylesheet"
   crossorigin="anonymous">
 ```
 ```html
 <!-- JavaScript minified -->
 <script
-  src="https://cdn.jsdelivr.net/npm/windows-ui-web@4.0.0/dist/windows-ui-web.bundle.min.js"
+  src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.bundle.min.js"
   crossorigin="anonymous">
 </script>
 ```
@@ -71,7 +71,7 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 # Configuration
 
 **app-config.css** file contains the **`PrimaryColor`**, **`Fontfamily`** used by the app.<br/>
-Make sure to add this file before **windows-ui-web.min.css**.<br/><br/>
+Make sure to add this file before **windows-ui.min.css**.<br/><br/>
 By `default` project uses <a href="dist/config/app-config.css">app-config.css</a>.<br>
 
 Customize by `creating` your own **app-config.css** file with any PrimaryColor/Fontfamily like this below:
@@ -93,14 +93,14 @@ body {
 
 
 # Find this project useful? :heart:
-Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui-web/stargazers) for this repository. :star:
+Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui/stargazers) for this repository. :star:
 
 # Branches
 
-[windows-ui-web](https://github.com/virtualvivek/windows-ui-web)  ‣ Current. <br/>
-[Windows10-framework](https://github.com/virtualvivek/windows-ui-web/tree/Windows10-framework) Legacy.
+[windows-ui](https://github.com/virtualvivek/windows-ui)  ‣ Current. <br/>
+[Windows10-framework](https://github.com/virtualvivek/windows-ui/tree/Windows10-framework) Legacy.
 
 # License
 
-`Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/windows-ui-web/blob/master/LICENSE).<br>
+`Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/windows-ui/blob/master/LICENSE).<br>
 Copyright (c) 2020-21 [**Vivek Verma**](https://github.com/virtualvivek)
