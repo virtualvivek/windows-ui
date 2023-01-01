@@ -1,14 +1,6 @@
 <p align="center"> 
-  <img src="markdown/logo.png" width="250" />
+  <img src="src/assets/logo.png" width="250" />
 </p>
-
-
-
-
-
-
-
-
 
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
 
@@ -29,7 +21,7 @@
 </p>
 
 
-<p align="center"><img src="markdown/preview.jpg" width="480" /></p>
+<p align="center"><img src="src/assets/preview.jpg" width="480" /></p>
 
 # 🚧 Work in progress.
 
@@ -103,4 +95,4 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-u
 # License
 
 `Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/windows-ui/blob/master/LICENSE).<br>
-Copyright (c) 2020-21 [**Vivek Verma**](https://github.com/virtualvivek)
+Copyright (c) 2020-23 [**virtualvivek**](https://github.com/virtualvivek)
