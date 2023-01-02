@@ -2,9 +2,9 @@ const { src, dest } = require("gulp");
 const minifyJs = require("gulp-uglify");
 const concat = require("gulp-concat");
 // const sourceMaps = require("gulp-sourcemaps");
-
+const jsFiles = ["./src/js/api/**/*.js", "./src/js/components/**/*.js"]
 const bundleJs = () => {
-  return src("./src/js/**/*.js")
+  return src(jsFiles)
   // .pipe(sourceMaps.init())
   .pipe(minifyJs())
   .pipe(concat("windows-ui.min.js"))
