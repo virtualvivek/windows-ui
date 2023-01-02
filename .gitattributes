@@ -1,2 +1,2 @@
 # treat as docs dir
-docs/** linguist-documentation
+docs/** linguist-detectable=false
