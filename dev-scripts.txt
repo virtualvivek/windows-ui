@@ -23,11 +23,20 @@ Then -
 
 npm install gulp
 npm install gulp-uglify
-npm install gulp-sourcemaps
 npm install gulp-concat
 
 --compile--
 
 gulp bundleJs
+
+----------------------------------------------------------------------------
+
+[ Gulp Docs Template Builder ] --------------
+Installing Gulp Pug
+npm install gulp-pug
+
+--compile--
+
+gulp compilePug
 
 -----------------------------------------------------------------------------

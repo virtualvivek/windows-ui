@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>windows-ui-web</title>
+    <title>Windows UI</title>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#EEE" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -21,14 +21,14 @@
       <div class="app-navbar-topbar-mobile">
         <span class="app-navbar-toggle-button"></span>
         <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Windows UI</span>
           <span class="app-navbar-name">Home</span>
         </div>
       </div>
       <nav class="animate">
         <div class="app-navbar-header">
           <span class="app-navbar-toggle-button"></span>
-          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Windows UI</span>
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
@@ -40,19 +40,20 @@
       </nav>
     </div>
 
-    <div
-      class="app-section-container has-padding transition-left"
-      id="app-section-container-id">
+    <div class="app-section-container has-padding">
       <h1>InputTexts</h1>
 
       <p class="font-size-18px">The <span class="color-primary">Input</span> element is used to create interactive controls for forms in order to accept data from the user.</p>
 
-
+      <!-- ------------------------------------------------------- -->
 
       <div class="app-input-container">
         <input class="app-input-text" type="text" placeholder="Enter a text" value="">
       </div>
+
       <br/><pre><code id="code_view_1"></code></pre>
+
+      <!-- ------------------------------------------------------- -->
 
       <h2>Input Status :</h2>
 
@@ -60,6 +61,8 @@
         <input class="app-input-text" type="text" placeholder="Enter a text success">
       </div>
       <br/><pre><code id="code_view_2"></code></pre>
+
+      <!-- ------------------------------------------------------- -->
       
       <div class="app-input-container input-success">
         <input class="app-input-text" type="text" placeholder="Enter a text success">
@@ -69,6 +72,7 @@
       </div>
       <br/><pre><code id="code_view_3"></code></pre>
 
+      <!-- ------------------------------------------------------- -->
 
       <div class="app-input-container input-danger">
         <input class="app-input-text danger" type="text" placeholder="Enter a text danger">
@@ -78,6 +82,7 @@
       </div>
       <br/><pre><code id="code_view_4"></code></pre>
 
+      <!-- ------------------------------------------------------- -->
 
       <h2>Input Loading</h2>
 
@@ -89,6 +94,7 @@
       </div>
       <br/><pre><code id="code_view_5"></code></pre>
 
+      <!-- ------------------------------------------------------- -->
 
       <h2>Input <p class="app-code">Password</p> :</h2>
 
@@ -100,12 +106,31 @@
       </div>
       <br/><pre><code id="code_view_6"></code></pre>
 
-      <br/><br/>
+      <!-- ------------------------------------------------------- -->
+
+      <h2>Input <p class="app-code">with Label</p> :</h2>
+
+      <div class="app-input-container">
+        <span class="app-input-label">label</span>
+        <input class="app-input-text" type="text" placeholder="Enter a text" value="">
+      </div>
+      <pre><code id="code_view_7"></code></pre>
+
+      <!-- ------------------------------------------------------- -->
+
+      <h2>TextArea</h2>
+
+      <textarea class="app-textarea" placeholder="Input Text Area"></textarea>
+      <pre><code id="code_view_8"></code></pre>
+
+      <!-- ------------------------------------------------------- -->
+
+      <br/><br/><br/><br/>
 
     </div>
   </body>
   <script src="./_navbar.js"></script>
-  <script>init_navbar_ul("InputText","subdir");</script>
+  <script>init_navbar_ul("Inputs","subdir");</script>
   <script src="../dist/windows-ui.min.js"></script>
 
   <script src="./js/highlight.min.js"></script>
@@ -163,6 +188,19 @@
         <button class="app-input-text-unmask" type="button"></button>
       </div>
     </div>
+    `).value;
+
+    document.getElementById("code_view_7").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-container">
+      <span class="app-input-label">label</span>
+      <input class="app-input-text" type="text" placeholder="Enter a text" value="">
+    </div>
+    `).value;
+
+    document.getElementById("code_view_8").innerHTML =
+    hljs.highlightAuto(`
+    <textarea class="app-textarea" placeholder="Input Text Area"></textarea>
     `).value;
   </script>
 </html>

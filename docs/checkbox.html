@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>windows-ui-web</title>
+    <title>Windows UI</title>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#EEE" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -21,14 +21,14 @@
       <div class="app-navbar-topbar-mobile">
         <span class="app-navbar-toggle-button"></span>
         <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Windows UI</span>
           <span class="app-navbar-name">Home</span>
         </div>
       </div>
       <nav class="animate">
         <div class="app-navbar-header">
           <span class="app-navbar-toggle-button"></span>
-          <span class="app-navbar-name">Windows UI Web</span>
+          <span class="app-navbar-name">Windows UI</span>
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
@@ -43,7 +43,7 @@
     <div
       class="app-section-container has-padding transition-left"
       id="app-section-container-id">
-      <h1>Checkboxes</h1>
+      <h1>Checkbox</h1>
 
       <label class="app-checkbox">
         <input type="checkbox" checked>
@@ -56,13 +56,15 @@
         <input type="checkbox" checked disabled>
         <span>Checkbox Disabled</span>
       </label>
-      <br/><br/>
+      <br/>
 
-
+      <h2>Usage</h2>
       <pre><code id="code-switch"></code></pre>
 
-      <h2>Checkbox with no label</h2>
-      <p>Just remove the <span class="app-code">span</span> from the checkbox.</p>
+      <h2>Checkbox Inline</h2>
+      <p>• Just remove the <span class="app-code">span</span> from the checkbox.</p>
+
+      <p>Lorem ipsum dolor sit amet <label class="app-checkbox"><input type="checkbox" checked></label> sed do eiusmod tempor incididunt ut labore.</p>
 
       <label class="app-checkbox">
         <input type="checkbox" checked>
@@ -92,6 +94,8 @@
   <script>
     document.getElementById("code-switch-nolabel").innerHTML =
     hljs.highlightAuto(`
+    <p>Lorem ipsum dolor sit amet <label class="app-checkbox"><input type="checkbox" checked></label> sed do eiusmod tempor incididunt ut labore.</p>
+
     <label class="app-checkbox">
       <input type="checkbox" checked>
     </label>

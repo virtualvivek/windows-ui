@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>windows-ui-web</title>
+    <title>Windows UI</title>
     <meta charset="UTF-8" />
     <meta name="theme-color" content="#EEE" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -17,61 +17,30 @@
     <link rel="stylesheet" type="text/css" href="../dist/windows-ui-11.min.css" />
   </head>
   <body>
-    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
-      <div class="app-navbar-topbar-mobile">
-        <span class="app-navbar-toggle-button"></span>
-        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-          <span class="app-navbar-name">Windows UI Web</span>
-          <span class="app-navbar-name">Home</span>
-        </div>
-      </div>
-      <nav class="animate">
-        <div class="app-navbar-header">
-          <span class="app-navbar-toggle-button"></span>
-          <span class="app-navbar-name">Windows UI Web</span>
-        </div>
-        <ul class="app-navbar-list" id="app-navbar-list">
-          <!-- <div class="app-nav-search" title="Search Docs">
-            <div class="app-input-search-box">
-              <input class="app-input-text" type="search" placeholder="Search Docs v4.0.x" value="">
-            </div>
-            <div class="app-search-dialog-trigger">
-              <i class="icons10-search"></i>
-            </div>
-            <div class="app-search-dialog">
-              <input class="app-input-text" type="search" placeholder="Search Docs v4.0.x" value="">
-              <button class="font-size-16px"><i class="icons10-cross"></i></button>
-            </div>
-          </div> -->
-          <label class="app-navbar-theme-switch">
-            <input id="app-navbar-theme-switch" type="checkbox" checked>
-            <div class="app-navbar-theme-switch-view"></div>
-            <span id="app-navbar-theme-switch-text">Day Mode</span>
-          </label>
-        </ul>
-      </nav>
-      <div class="app-navbar-overlay"></div>
-    </div>
+    <script src="js/Navigator.js"></script>
 
     <div class="app-section-container has-padding">
       <h1>Accordion</h1>
-      <p><span class="color-primary">Accordion</span> component used to show (and hide) content, it collapsed on hide and expand on show state.</p>
-
-      <div class="app-accordion-item" style="width: 280px;">
-        <div class="app-accordion-title focused">
-          <div>Some Title</div>
-          <i class="icons10-angle-down"></i>
+      <p>
+        <span class="color-primary">Accordion</span> component used to show (and hide) content, it collapsed on hide and expand on show state.
+      </p>
+      
+      <div class="app-accordion" style="width: 280px;">
+        <div class="app-accordion-header">
+          <div class="app-accordion-title">
+            <span>Some Title</span><i class="icons10-angle-down"></i>
+          </div>
         </div>
-        <div class="app-accordion-content">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="app-accordion-panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
 
-      <pre><code id="code_view_1"></code></pre>
+      <h2>Usage</h2>
 
+      <pre><code id="code_view_1"></code></pre>
     </div>
   </body>
   <script src="./_navbar.js"></script>
@@ -83,15 +52,18 @@
   <script>
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    <div class="app-accordion-item" style="width: 280px;">
-      <div class="app-accordion-title focused">
-        <div>Some Title</div>
-        <i class="icons10-angle-down"></i>
+    <div class="app-accordion" style="width: 280px;">
+      <div class="app-accordion-header">
+        <div class="app-accordion-title">
+          <span>Some Title</span><i class="icons10-angle-down"></i>
+        </div>
       </div>
-      <div class="app-accordion-content">
+      <div class="app-accordion-panel">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco.
         </p>
       </div>
     </div>

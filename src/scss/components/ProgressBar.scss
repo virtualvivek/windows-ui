@@ -1,19 +1,15 @@
 .app-progress-container {
   display: inline-flex;
-  align-items: center;
-  flex-direction: row;
+  flex-direction: column;
 
   .app-progress-icon {
     font-size: 30px;
-    margin-right: 10px;
     color: var(--color-text-default);
   }
 
   .app-progress-title,
   .app-progress-subtitle {
     font-weight: 500;
-  }
-  .app-progress-title {
     line-height: 2;
   }
   .app-progress-subtitle {
