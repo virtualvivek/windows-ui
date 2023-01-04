@@ -1,0 +1,8 @@
+mixin importing(current_active)
+  script(src='./_navbar.js')
+  script.
+    init_navbar_ul("#{current_active}", "subdir")
+  script(src='../dist/windows-ui.min.js')
+  script(src='./js/highlight.min.js')
+  script.
+    hljs.highlightAll()
