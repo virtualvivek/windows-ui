@@ -68,8 +68,10 @@
 
       <h1>ProgressBarIndeterminate</h1>
 
-      <div class="app-progress-indeterminate animate">
-        <div class="progress-bar"></div>
+      <div class="app-progress-container">
+        <div class="app-progress-bar indeterminate">
+          <span role="progressbar"></span>
+        </div>
       </div>
       <pre><code id="code_view_4"></code></pre>
 
@@ -114,8 +116,10 @@
 
     document.getElementById("code_view_4").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-progress-indeterminate animate">
-        <div class="progress-bar"></div>
+      <div class="app-progress-container">
+        <div class="app-progress-bar indeterminate">
+          <span role="progressbar"></span>
+        </div>
       </div>
     `).value;
 
