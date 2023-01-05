@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>Alert</h1>
+
+      <p>
+        <span class="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
+      </p>
+
+      <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+        <span>Open Alert Default</span>
+      </button>
+
+      <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+        <div class="app-alert-modal" aria-modal="true" role="dialog">
+          <div class="app-alert-header">
+            <h1>Alert</h1>
+            <div class="app-alert-message">This is alert Box.</div>
+          </div>
+          <div class="app-alert-footer">
+            <button class="app-btn app-btn-primary" type="button" data-toggle="modal" data-target="MyModal">
+              <span>OK to Close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+
+      <h2>Toggle alert visibility.</h2>
+      <pre><code id="code_view_2"></code></pre>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('Alerts')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+        <div class="app-alert-modal" aria-modal="true" role="dialog">
+          <div class="app-alert-header">
+            <h1>Alert</h1>
+            <div class="app-alert-message">This is alert Box.</div>
+          </div>
+          <div class="app-alert-footer">
+            <button class="app-btn app-btn-primary" type="button"
+              data-toggle="modal" data-target="MyModal">
+              <span>OK to Close</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    `).value;
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+        <span>Open Alert Default</span>
+      </button>
+    `).value;
+</html>

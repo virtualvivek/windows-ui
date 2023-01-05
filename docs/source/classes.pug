@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>Accordion</h1>
+      <p>
+        <span class="color-primary">Accordion</span> component used to show (and hide) content, it collapsed on hide and expand on show state.
+      </p>
+      
+      <div class="app-accordion" style="width: 280px;">
+        <div class="app-accordion-header">
+          <div class="app-accordion-title">
+            <span>Some Title</span><i class="icons10-angle-down"></i>
+          </div>
+        </div>
+        <div class="app-accordion-panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+      </div>
+
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('Accordion')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-accordion" style="width: 280px;">
+        <div class="app-accordion-header">
+          <div class="app-accordion-title">
+            <span>Some Title</span><i class="icons10-angle-down"></i>
+          </div>
+        </div>
+        <div class="app-accordion-panel">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco.
+          </p>
+        </div>
+      </div>
+    `).value;
+</html>

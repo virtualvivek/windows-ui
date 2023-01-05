@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>RadioButtons</h1>
+
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="2" checked>
+        <span> Hellow</span>
+      </label> &nbsp;&nbsp;
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="2">
+        <span> World</span>
+      </label>
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      <h2>RadioButton no label</h2>
+      <p>Just remove the <span class="app-code">span</span> from the radio button.</p>
+
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="4" checked>
+      </label> &nbsp;&nbsp;
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="4">
+      </label>
+      <pre><code id="code_view_2"></code></pre>
+
+      <br/><br/>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('RadioButton')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="2" checked>
+        <span> Hellow</span>
+      </label>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      <label class="app-radio-button">
+        <input type="radio" class="app-radio" name="4">
+      </label>
+    `).value;
+</html>

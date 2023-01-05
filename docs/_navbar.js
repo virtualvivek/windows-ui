@@ -74,7 +74,7 @@ const navbar_items = [
   },
   {
     "title": "SliderBar",
-    "href": "sliderbar.html",
+    "href": "sliderBar.html",
     "icon": "<i class='icons10-arrow-right'></i>"
   },
   {

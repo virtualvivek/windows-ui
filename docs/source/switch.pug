@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>Switch</h1>
+
+      <p>A <span class="color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
+
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+        <span class="app-switch-label" data-on="On" data-off="Off"></span>
+      </label> &nbsp;&nbsp;&nbsp;&nbsp;
+
+      <label class="app-switch">
+        <input type="checkbox" checked disabled/>
+        <div class="app-switch-view"></div>
+        <span class="app-switch-label" data-on="On" data-off="Off"></span>
+      </label>
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      <h2>Switch with label position "start"</h2>
+
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
+        <div class="app-switch-view"></div>
+      </label>
+      <pre><code id="code_view_2"></code></pre>
+
+      <h2>Switch no label</h2>
+      <p>Just remove the <span class="app-code">span</span> from the switch.</p>
+
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+      </label>
+      <pre><code id="code_view_3"></code></pre>
+
+      <br/><br/>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('Switch')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+        <span class="app-switch-label" data-on="On" data-off="Off"></span>
+      </label>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
+        <div class="app-switch-view"></div>
+      </label>
+      
+      // Adding extra width to label so it won't resize on change value
+    `).value;
+
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+      </label>
+    `).value;
+</html>

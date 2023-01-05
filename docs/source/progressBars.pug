@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>ProgressBar</h1>
+      <p>A <span class="color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
+     
+      <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
+      <div class="app-progress-container">
+        <div class="app-progress-content">
+          <div class="app-progress-bar">
+            <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
+          </div>
+        </div>
+      </div>
+
+      <br/><br/>
+      <button class="app-btn animate" type="button" onclick="setProgressDemo1(2);">
+        <span>set 2%</span>
+      </button>
+      <button class="app-btn animate" type="button" onclick="setProgressDemo1(50);">
+        <span>set 50%</span>
+      </button>
+      <button class="app-btn animate" type="button" onclick="setProgressDemo1(99);">
+        <span>set 99%</span>
+      </button>
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+
+      <h2>Usage</h2>
+
+      <div class="app-progress-container">
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 46%;"></span>
+        </div>
+      </div>
+      <pre><code id="code_view_5"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+
+      <h2>ProgressBar with <span class="app-code">title</span> :</h2>
+
+      <div class="app-progress-container">
+        <span class="app-progress-title">Title</span>
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 80%;"></span>
+        </div>
+      </div>
+      <br/><pre><code id="code_view_2"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+
+      <h2>ProgressBar with title & subtitle :</h2>
+      <div class="app-progress-container">
+        <span class="app-progress-title">Title</span>
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 26%;"></span>
+        </div>
+        <span class="app-progress-subtitle">Subtitle</span>
+      </div>
+      <br/><pre><code id="code_view_3"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+
+      <h1>ProgressBarIndeterminate</h1>
+
+      <div class="app-progress-indeterminate animate">
+        <div class="progress-bar"></div>
+      </div>
+      <pre><code id="code_view_4"></code></pre>
+
+      <br/><br/>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('ProgressBar')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
+      <div class="app-progress-container">
+        <div class="app-progress-content">
+          <div class="app-progress-bar">
+            <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
+          </div>
+        </div>
+      </div>
+    `).value;
+
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-progress-container">
+        <span class="app-progress-title">title</span>
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 75%;"></span>
+        </div>
+      </div>
+    `).value;
+
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-progress-container">
+        <span class="app-progress-title">Title</span>
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 26%;"></span>
+        </div>
+        <span class="app-progress-subtitle">Subtitle</span>
+      </div>
+    `).value;
+
+    document.getElementById("code_view_4").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-progress-indeterminate animate">
+        <div class="progress-bar"></div>
+      </div>
+    `).value;
+
+    document.getElementById("code_view_5").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-progress-container">
+        <div class="app-progress-bar">
+          <span role="progressbar" style="width: 46%;"></span>
+        </div>
+      </div>
+    `).value;
+  script(src='./js/progressBars.js')
+</html>
