@@ -9,9 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="./docs/css/code-styles.css" />
     <link rel="shortcut icon" href="./docs/public/favicon.ico" />
     <link rel="stylesheet" href="dist/icons/fonts/fonts.min.css" />
-    <link rel="stylesheet" type="text/css" href="./docs/css/neumorph.css"/>
+    <link rel="stylesheet" type="text/css" href="./docs/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="dist/config/app-config.css" />
     <link rel="stylesheet" type="text/css" href="dist/windows-ui-11.min.css" />
   </head>
@@ -20,7 +21,7 @@
       <div class="app-navbar-topbar-mobile">
         <span class="app-navbar-toggle-button"></span>
         <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-          <span class="app-navbar-name">React-windows</span>
+          <span class="app-navbar-name">Windows UI</span>
           <span class="app-navbar-name">Home</span>
         </div>
       </div>
@@ -40,18 +41,43 @@
       <div class="app-navbar-overlay"></div>
     </div>
 
-    <div class="app-section-container has-padding transition-left" id="app-section-container-id">
-      <h1><b>windows-ui</b></h1>
-      <p>
-        Build <span class="color-primary">Windows Fluent UI </span>apps using html, css & javascript.<br>
-      </p>
-      <button class="app-btn animate btn-primary" type="button">
-        <span>Getting Started</span>
-      </button>
-      &nbsp;
-      <button class="app-btn animate btn-primary-outline" type="button">
-        <span>Boilerplate</span>
-      </button>
+    <div class="app-section-container has-padding">
+      <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
+        <h1 style="font-size: 55px;" class="app-mb-10">windows-ui</h1>
+        <p>
+          Build Windows Fluent UI apps using Html, CSS & Javascript.<br>
+        </p>
+        <div style="display: flex;">
+          <a href="https://github.com/virtualvivek/windows-ui" style="all: unset;">
+            <button class="app-btn app-btn-primary" type="button">
+              <span>Repository</span>
+            </button>
+          </a>
+          &nbsp;&nbsp;
+          <a href="https://github.com/virtualvivek/windows-ui/releases" style="all: unset;">
+            <button class="app-btn" type="button" id="current-version">
+              <span>Release&nbsp;</span>
+            </button>
+          </a>
+        </div>
+      </div>
+      <br/><br/><br/><br/>
+      <div style="display: flex;
+      justify-content: space-evenly;flex-flow: wrap;">
+        <div style="max-width: 40%;">
+          <h3>Install via package manager</h3>
+          <div>
+            <pre><code id="code_view_1" style="width: auto;"></code></pre>
+            
+          </div>
+        </div>
+        <div style="max-width: 40%;">
+          <h3>Include CSS via CDN</h3>
+          <div>
+            <pre><code id="code_view_3" style="width: auto;"></code></pre>
+          </div>
+        </div>
+      </div>
 
       <div class="container neumorphism">
         <span class="circle small neumorphism">
@@ -61,7 +87,28 @@
     </div>
   </body>
   <script src="./docs/js/navbarItems.js"></script>
-  <script>init_navbar_ul("Home","root");</script>
+  <script>
+    init_navbar_ul("Home","root");
+    fetch('https://raw.githubusercontent.com/virtualvivek/windows-ui/master/package.json')
+    .then(response => response.json())
+    .then(data => document.getElementById("current-version").innerHTML += data.version);
+  </script>
   <script src="./dist/windows-ui.min.js"></script>
-  <script></script>
+  <script src="./docs/js/highlight.min.js"></script>
+  <script>hljs.highlightAll()</script>
+  <script>
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    $ npm install windows-ui
+
+    <script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js" crossorigin="anonymous"><\/script>
+    `).value;
+    
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+    `).value;
+  </script>
 </html>

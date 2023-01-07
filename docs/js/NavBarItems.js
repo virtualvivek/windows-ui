@@ -38,6 +38,11 @@ const navbar_items = [
     "icon": "<i class='icons10-checked-2'></i>"
   },
   {
+    "title": "Dialogs",
+    "href": "dialogs.html",
+    "icon": "<i class='icons10-notification-image'></i>"
+  },
+  {
     "title": "Inputs",
     "href": "inputText.html",
     "icon": "<i class='icons10-keyboard'></i>"
@@ -79,7 +84,7 @@ const navbar_items = [
   }
 ];
 
-function init_navbar_ul(active_item="Home", path="root") {
+async function init_navbar_ul (active_item="Home", path="root") {
 
   for (const navbar_item of navbar_items) {
     const is_active = navbar_item.title === active_item ? 'active' : init_navbar_top_ul(active_item);
@@ -88,17 +93,18 @@ function init_navbar_ul(active_item="Home", path="root") {
 
     let item;
     if(navbar_item.href == "#") {
-      item = `<h1>${navbar_item.title}</h1><div class="app-hr"></div>`;
+      item = document.createElement('div');
+      item.innerHTML = `<h1>${navbar_item.title}</h1><div class="app-hr"></div>`;
     }
     else {
-      item = `<li class="app-navbar-list-item">
-                <a href=${is_path}${navbar_item.href} class="${is_active}">
-                  ${navbar_item.icon}
-                  <span>${navbar_item.title}</span>
-                </a>
-              </li>`;
+      item = document.createElement('li');
+      item.className = "app-navbar-list-item";
+      item.innerHTML = `<a href=${is_path}${navbar_item.href} class="${is_active}">
+                          ${navbar_item.icon}
+                          <span>${navbar_item.title}</span>
+                        </a>`;
     }
-    document.getElementById("app-navbar-list").innerHTML += item;
+    document.getElementById("app-navbar-list").appendChild(item);
   };
 }
 

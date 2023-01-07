@@ -9,8 +9,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="manifest" href="../manifest.json" />
-  <link rel="stylesheet" href="./css/code-style.css" />
-  <link rel="stylesheet" href="./css/code-block.css" />
+  <link rel="stylesheet" href="./css/code-styles.css" />
   <link rel="shortcut icon" href="./public/favicon.ico" />
   <link rel="stylesheet" href="../dist/icons/fonts/fonts.min.css" />
   <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
@@ -83,23 +82,10 @@
     <p>
       <span class="color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
     </p>
-    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyDialog">
       <span>Open Dialog</span>
     </button>
-    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
-      <div class="app-alert-modal" aria-modal="true" role="dialog">
-        <div class="app-alert-header">
-          <h1>Alert</h1>
-          <div class="app-alert-message">This is alert Box.</div>
-        </div>
-        <div class="app-alert-footer">
-          <button class="app-btn app-btn-primary" type="button" data-toggle="modal" data-target="MyModal">
-            <span>OK to Close</span>
-          </button>
-        </div>
-      </div>
-    </div>
-    <div class="app-dialog show">
+    <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="MyDialog">
       <div class="app-dialog-modal">
         <div class="app-dialog-header">
           <h3>Header</h3>
@@ -147,7 +133,7 @@
           </li>
         </div>
         <div class="app-dialog-footer">
-          <button class="app-btn animate btn-no-loading" type="button">
+          <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyDialog">
             <span>Close</span>
           </button>
         </div>
@@ -155,28 +141,29 @@
     </div>
     <h2>Usage</h2>
     <pre><code id="code_view_1"></code></pre>
-    <h2>Toggle alert visibility.</h2>
+    <h2>Open Dialog</h2>
     <pre><code id="code_view_2"></code></pre>
   </div>
 </body>
-<script src="./js/navbarItems.js"></script>
-<script>init_navbar_ul("Alerts", "subdir")</script>
 <script src="../dist/windows-ui.min.js"></script>
+<script src="./js/navbarItems.js"></script>
+<script>init_navbar_ul("Dialogs", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
 <script>
   document.getElementById("code_view_1").innerHTML =
   hljs.highlightAuto(`
-    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
-      <div class="app-alert-modal" aria-modal="true" role="dialog">
-        <div class="app-alert-header">
-          <h1>Alert</h1>
-          <div class="app-alert-message">This is alert Box.</div>
+    <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="MyDialog">
+      <div class="app-dialog-modal">
+        <div class="app-dialog-header">
+          <h3>Header</h3>
         </div>
-        <div class="app-alert-footer">
-          <button class="app-btn app-btn-primary" type="button"
-            data-toggle="modal" data-target="MyModal">
-            <span>OK to Close</span>
+        <div class="app-dialog-body">
+          <>Dialog Content</>
+        </div>
+        <div class="app-dialog-footer">
+          <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyDialog">
+            <span>Close</span>
           </button>
         </div>
       </div>
@@ -184,8 +171,8 @@
   `).value;
   document.getElementById("code_view_2").innerHTML =
   hljs.highlightAuto(`
-    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
-      <span>Open Alert Default</span>
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyDialog">
+      <span>Open Dialog</span>
     </button>
   `).value;
 </script>
