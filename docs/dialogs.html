@@ -79,123 +79,115 @@
     </nav>
   </div>
   <div class="app-section-container has-padding">
-    <h1>ProgressBar</h1>
-    <p>A <span class="color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
-    <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
-    <div class="app-progress-container">
-      <div class="app-progress-content">
-        <div class="app-progress-bar">
-          <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
+    <h1>Dialogs</h1>
+    <p>
+      <span class="color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
+    </p>
+    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+      <span>Open Dialog</span>
+    </button>
+    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+      <div class="app-alert-modal" aria-modal="true" role="dialog">
+        <div class="app-alert-header">
+          <h1>Alert</h1>
+          <div class="app-alert-message">This is alert Box.</div>
+        </div>
+        <div class="app-alert-footer">
+          <button class="app-btn app-btn-primary" type="button" data-toggle="modal" data-target="MyModal">
+            <span>OK to Close</span>
+          </button>
         </div>
       </div>
     </div>
-    <br />
-    <br />
-    <button class="app-btn animate" type="button" onclick="setProgressDemo1(2);">
-      <span>set 2%</span>
-    </button>
-    <button class="app-btn animate" type="button" onclick="setProgressDemo1(50);">
-      <span>set 50%</span>
-    </button>
-    <button class="app-btn animate" type="button" onclick="setProgressDemo1(99);">
-      <span>set 99%</span>
-    </button>
-    <br />
-    <pre><code id="code_view_1"></code></pre>
+    <div class="app-dialog show">
+      <div class="app-dialog-modal">
+        <div class="app-dialog-header">
+          <h3>Header</h3>
+        </div>
+        <div class="app-dialog-body">
+          <li class="app-list-item">
+            <a href="#/v4.2.1/dialogs">
+              <img alt="image" style="display: none;">
+              <div class="app-list-item-container">
+                <span class="app-list-title">Magenta Riddim</span>
+                <p class="app-list-subtitle">5.6 MB</p>
+              </div>
+            </a>
+            <div style="flex: 0.2 1 0%;"></div>
+          </li>
+          <li class="app-list-item">
+            <a href="#/v4.2.1/dialogs">
+              <img alt="image" style="display: none;">
+              <div class="app-list-item-container">
+                <span class="app-list-title">Different World</span>
+                <p class="app-list-subtitle">12.0 MB</p>
+              </div>
+            </a>
+            <div style="flex: 0.2 1 0%;"></div>
+          </li>
+          <li class="app-list-item">
+            <a href="#/v4.2.1/dialogs">
+              <img alt="image" style="display: none;">
+              <div class="app-list-item-container">
+                <span class="app-list-title">La Familia</span>
+                <p class="app-list-subtitle">24 MB</p>
+              </div>
+            </a>
+            <div style="flex: 0.2 1 0%;"></div>
+          </li>
+          <li class="app-list-item">
+            <a href="#/v4.2.1/dialogs">
+              <img alt="image" style="display: none;">
+              <div class="app-list-item-container">
+                <span class="app-list-title">La Familia</span>
+                <p class="app-list-subtitle">24 MB</p>
+              </div>
+            </a>
+            <div style="flex: 0.2 1 0%;"></div>
+          </li>
+        </div>
+        <div class="app-dialog-footer">
+          <button class="app-btn animate btn-no-loading" type="button">
+            <span>Close</span>
+          </button>
+        </div>
+      </div>
+    </div>
     <h2>Usage</h2>
-    <div class="app-progress-container">
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 46%;"></span>
-      </div>
-    </div>
-    <pre><code id="code_view_5"></code></pre>
-    <h2>ProgressBar with <span class="app-code">title</span> :</h2>
-    <div class="app-progress-container">
-      <span class="app-progress-title">Title</span>
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 80%;"></span>
-      </div>
-    </div>
-    <br />
+    <pre><code id="code_view_1"></code></pre>
+    <h2>Toggle alert visibility.</h2>
     <pre><code id="code_view_2"></code></pre>
-    <h2>ProgressBar with title & subtitle :</h2>
-    <div class="app-progress-container">
-      <span class="app-progress-title">Title</span>
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 26%;"></span>
-      </div>
-      <span class="app-progress-subtitle">Subtitle</span>
-    </div>
-    <br />
-    <pre><code id="code_view_3"></code></pre>
-    <h1>ProgressBar Indeterminate</h1>
-    <div class="app-progress-container">
-      <div class="app-progress-bar indeterminate">
-        <span role="progressbar"></span>
-      </div>
-    </div>
-    <pre><code id="code_view_4"></code></pre>
-    <br />
-    <br />
   </div>
 </body>
 <script src="./js/navbarItems.js"></script>
-<script>init_navbar_ul("ProgressBar", "subdir")</script>
+<script>init_navbar_ul("Alerts", "subdir")</script>
 <script src="../dist/windows-ui.min.js"></script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
 <script>
   document.getElementById("code_view_1").innerHTML =
   hljs.highlightAuto(`
-    <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
-    <div class="app-progress-container">
-      <div class="app-progress-content">
-        <div class="app-progress-bar">
-          <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
+    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+      <div class="app-alert-modal" aria-modal="true" role="dialog">
+        <div class="app-alert-header">
+          <h1>Alert</h1>
+          <div class="app-alert-message">This is alert Box.</div>
+        </div>
+        <div class="app-alert-footer">
+          <button class="app-btn app-btn-primary" type="button"
+            data-toggle="modal" data-target="MyModal">
+            <span>OK to Close</span>
+          </button>
         </div>
       </div>
     </div>
   `).value;
-  
   document.getElementById("code_view_2").innerHTML =
   hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <span class="app-progress-title">title</span>
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 75%;"></span>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <span class="app-progress-title">Title</span>
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 26%;"></span>
-      </div>
-      <span class="app-progress-subtitle">Subtitle</span>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_4").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <div class="app-progress-bar indeterminate">
-        <span role="progressbar"></span>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_5").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 46%;"></span>
-      </div>
-    </div>
+    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+      <span>Open Alert Default</span>
+    </button>
   `).value;
 </script>
-<script src="./js/progressBars.js"></script>
 
 </html>

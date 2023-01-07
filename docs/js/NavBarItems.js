@@ -1,10 +1,5 @@
 const navbar_items = [
   {
-    "title": "Home",
-    "href": "../index.html",
-    "icon": "<img src='./assets/mountain.jpg'>"
-  },
-  {
     "title": "Getting Started",
     "href": "gettingStarted.html",
     "icon": "<i class='icons10-terminal'></i>"
@@ -74,7 +69,7 @@ const navbar_items = [
   },
   {
     "title": "SliderBar",
-    "href": "sliderbar.html",
+    "href": "sliderBar.html",
     "icon": "<i class='icons10-arrow-right'></i>"
   },
   {
@@ -87,7 +82,7 @@ const navbar_items = [
 function init_navbar_ul(active_item="Home", path="root") {
 
   for (const navbar_item of navbar_items) {
-    const is_active = navbar_item.title === active_item ? 'active' : '';
+    const is_active = navbar_item.title === active_item ? 'active' : init_navbar_top_ul(active_item);
     const is_path = path === "root" ? "./docs/" : "./";
     navbar_item.icon = navbar_item.icon?.replace('./', is_path);
 
@@ -105,4 +100,13 @@ function init_navbar_ul(active_item="Home", path="root") {
     }
     document.getElementById("app-navbar-list").innerHTML += item;
   };
+}
+
+function init_navbar_top_ul(active_itm) {
+  let navbar_items = document.getElementsByClassName("app-navbar-list-item");
+  Array.from(navbar_items).forEach((el) => {
+    if(el.innerText == active_itm) {
+      el.querySelector("a").classList.add("active");
+    }
+  });
 }

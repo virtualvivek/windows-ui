@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+  <div class="app-navbar-wrap">
     <div class="app-navbar-topbar-mobile">
       <span class="app-navbar-toggle-button"></span>
       <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
@@ -26,10 +26,10 @@
         <span class="app-navbar-name">Home</span>
       </div>
     </div>
-    <nav class="animate">
+    <nav class="app-navbar">
       <div class="app-navbar-header">
         <span class="app-navbar-toggle-button"></span>
-        <span class="app-navbar-name">Windows UI Web</span>
+        <span class="app-navbar-name">Windows UI</span>
       </div>
       <ul class="app-navbar-list" id="app-navbar-list">
         <label class="app-navbar-theme-switch">
@@ -37,9 +37,46 @@
           <div class="app-navbar-theme-switch-view"></div>
           <span id="app-navbar-theme-switch-text">Day Mode</span>
         </label>
+        <li class="app-navbar-list-item">
+          <a href="./../index.html" class="">
+            <img src="./assets/mountain.jpg">
+            <span>Home</span>
+          </a>
+        </li>
+        <div class="app-navbar-submenu">
+          <div class="app-navbar-submenu-title">
+            <div>Navigation</div>
+            <i class="icons10-angle-down"></i>
+          </div>
+          <div class="app-navbar-submenu-content">
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navbar.html">
+                <i class="icons10-map"></i>
+                <span>NavBar</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navbarlink">
+                <i class="icons10-link"></i>
+                <span>NavBarLink</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navbarsubmenu">
+                <i class="icons10-angle-down"></i>
+                <span>NavBarSubMenu</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navpagecontainer">
+                <i class="icons10-columns"></i>
+                <span>NavPageContainer</span>
+              </a>
+            </li>
+          </div>
+        </div>
       </ul>
     </nav>
-    <div class="app-navbar-overlay"></div>
   </div>
   <div class="app-section-container has-padding">
     <h1>Buttons</h1>
@@ -58,23 +95,7 @@
     <pre><code id="code_view_1"></code></pre>
     <h2>Button state loading</h2>
     <button class="app-btn animate btn-is-loading" type="button">
-      <div class="app-loader-busy loader-sm animate">
-        <div class="app-ldr-busy ball-1">
-          <div class="ldr-busy-ball"></div>
-        </div>
-        <div class="app-ldr-busy ball-2">
-          <div class="ldr-busy-ball"></div>
-        </div>
-        <div class="app-ldr-busy ball-3">
-          <div class="ldr-busy-ball"></div>
-        </div>
-        <div class="app-ldr-busy ball-4">
-          <div class="ldr-busy-ball"></div>
-        </div>
-        <div class="app-ldr-busy ball-5">
-          <div class="ldr-busy-ball"></div>
-        </div>
-      </div>
+      <div class="app-loader-busy loader-sm animate"></div>
       <span>Loading Button</span>
     </button>
     <pre><code id="code_view_2"></code></pre>
@@ -134,7 +155,7 @@
     <br />
   </div>
 </body>
-<script src="./_navbar.js"></script>
+<script src="./js/navbarItems.js"></script>
 <script>init_navbar_ul("Buttons", "subdir")</script>
 <script src="../dist/windows-ui.min.js"></script>
 <script src="./js/highlight.min.js"></script>
@@ -155,13 +176,7 @@
   document.getElementById("code_view_2").innerHTML =
   hljs.highlightAuto(`
     <button class="app-btn animate btn-is-loading" type="button">
-      <div class="app-loader-busy loader-sm animate">
-        <div class="app-ldr-busy ball-1"><div class="ldr-busy-ball"></div></div>
-        <div class="app-ldr-busy ball-2"><div class="ldr-busy-ball"></div></div>
-        <div class="app-ldr-busy ball-3"><div class="ldr-busy-ball"></div></div>
-        <div class="app-ldr-busy ball-4"><div class="ldr-busy-ball"></div></div>
-        <div class="app-ldr-busy ball-5"><div class="ldr-busy-ball"></div></div>
-      </div>
+      <div class="app-loader-busy loader-sm animate"></div>
       <span>Loading Button</span>
     </button>
   `).value;

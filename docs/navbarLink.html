@@ -79,81 +79,43 @@
     </nav>
   </div>
   <div class="app-section-container has-padding">
-    <h1>Heading1</h1>
-    <h2>Heading2</h2>
-    <h3>Heading3</h3>
-    <h4>Heading4</h4>
+    <h1>NavBarLink</h1>
+    <div class="app-navbar-wrap">
+      <nav class="animate custom" style="position: relative;">
+        <ul class="app-navbar-list" style="padding: 0px; margin: 0px;">
+          <li class="app-navbar-list-item">
+            <a rel="noopener noreferrer" href="#" class="active">
+              <i class="icons10-add"></i>
+              <span>NavItem1</span>
+            </a>
+          </li>
+          <li class="app-navbar-list-item">
+            <a rel="noopener noreferrer" href="#">
+              <i class="icons10-user"></i>
+              <span>NavItem2</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <h2>Usage</h2>
     <pre><code id="code_view_1"></code></pre>
-    <div class="app-hr"></div>
-    <h2>Margin Notation</h2>
-    <ul class="app-ul-content">
-      <li>
-        <span class="app-code">.app-m-0</span> - class that set margin=0
-      </li>
-      <li>
-        <span class="app-code">.app-mt-0</span> - class that set margin-top=0
-      </li>
-      <li>
-        <span class="app-code">.app-mb-0</span> - class that set margin-bottom=0
-      </li>
-      <li>
-        <span class="app-code">.app-mt-10</span> - class that set margin-top=10
-      </li>
-      <li>
-        <span class="app-code">.app-mb-10</span> - class that set margin-bottom=10
-      </li>
-      <li>
-        <span class="app-code">.app-mt-15</span> - class that set margin-top=15
-      </li>
-      <li>
-        <span class="app-code">.app-mb-15</span> - class that set margin-bottom=15
-      </li>
-      <li>
-        <span class="app-code">.app-mt-20</span> - class that set margin-top=20
-      </li>
-      <li>
-        <span class="app-code">.app-mb-20</span> - class that set margin-bottom=20
-      </li>
-    </ul>
-    <h3 class="app-m-0">Example Heading with no margin bottom.</h3>
-    <h2 class="app-mb-0">Heading Text</h2>
-    <pre><code id="code_view_2"></code></pre>
-    <h2>Paragraph varients</h2>
-    <p>This is paragraph used to display long text.</p>
-    <p class="color-success">This is success paragraph used to display success text.</p>
-    <p class="color-danger">This is danger paragraph used to display danger text.</p>
-    <pre><code id="code_view_3"></code></pre>
-    <h3>Text Light</h3>
-    <p class="app-para-light">This is light paragraph used to display long text.</p>
-    <pre><code id="code_view_4"></code></pre>
   </div>
 </body>
 <script src="./js/navbarItems.js"></script>
-<script>init_navbar_ul("Classes", "subdir")</script>
+<script>init_navbar_ul("NavbarLink", "subdir")</script>
 <script src="../dist/windows-ui.min.js"></script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
 <script>
   document.getElementById("code_view_1").innerHTML =
   hljs.highlightAuto(`
-    <h1>Heading1</h1>
-    <h2>Heading2</h2>
-    ....
-    <h3>Heading5</h3>
-  `).value;
-  document.getElementById("code_view_2").innerHTML =
-  hljs.highlightAuto(`
-    <h2 className="app-mb-0">Heading Text</h2>
-  `).value;
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <p>This is paragraph used to display long text.</p>
-    <p className="color-success">This is success paragraph used to display success text.</p>
-    <p className="color-danger">This is danger paragraph used to display danger text.</p>
-  `).value;
-  document.getElementById("code_view_4").innerHTML =
-  hljs.highlightAuto(`
-    <p className="app-para-light">This is light paragraph used to display long text.</p>
+    <li class="app-navbar-list-item">
+      <a href="#" class="active">
+        <i class="icons10-user"></i>
+        <span>NavItem2</span>
+      </a>
+    </li>
   `).value;
 </script>
 

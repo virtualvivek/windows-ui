@@ -18,7 +18,7 @@
 </head>
 
 <body>
-  <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+  <div class="app-navbar-wrap">
     <div class="app-navbar-topbar-mobile">
       <span class="app-navbar-toggle-button"></span>
       <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
@@ -26,10 +26,10 @@
         <span class="app-navbar-name">Home</span>
       </div>
     </div>
-    <nav class="animate">
+    <nav class="app-navbar">
       <div class="app-navbar-header">
         <span class="app-navbar-toggle-button"></span>
-        <span class="app-navbar-name">Windows UI Web</span>
+        <span class="app-navbar-name">Windows UI</span>
       </div>
       <ul class="app-navbar-list" id="app-navbar-list">
         <label class="app-navbar-theme-switch">
@@ -37,26 +37,63 @@
           <div class="app-navbar-theme-switch-view"></div>
           <span id="app-navbar-theme-switch-text">Day Mode</span>
         </label>
+        <li class="app-navbar-list-item">
+          <a href="./../index.html" class="">
+            <img src="./assets/mountain.jpg">
+            <span>Home</span>
+          </a>
+        </li>
+        <div class="app-navbar-submenu">
+          <div class="app-navbar-submenu-title">
+            <div>Navigation</div>
+            <i class="icons10-angle-down"></i>
+          </div>
+          <div class="app-navbar-submenu-content">
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navbar.html">
+                <i class="icons10-map"></i>
+                <span>NavBar</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navbarlink">
+                <i class="icons10-link"></i>
+                <span>NavBarLink</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navbarsubmenu">
+                <i class="icons10-angle-down"></i>
+                <span>NavBarSubMenu</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="#/v4.2.1/navpagecontainer">
+                <i class="icons10-columns"></i>
+                <span>NavPageContainer</span>
+              </a>
+            </li>
+          </div>
+        </div>
       </ul>
     </nav>
-    <div class="app-navbar-overlay"></div>
   </div>
   <div class="app-section-container has-padding">
     <h1>Alert</h1>
     <p>
       <span class="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
     </p>
-    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyModal">
       <span>Open Alert Default</span>
     </button>
-    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+    <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="MyModal">
       <div class="app-alert-modal" aria-modal="true" role="dialog">
         <div class="app-alert-header">
           <h1>Alert</h1>
           <div class="app-alert-message">This is alert Box.</div>
         </div>
         <div class="app-alert-footer">
-          <button class="app-btn app-btn-primary" type="button" data-toggle="modal" data-target="MyModal">
+          <button class="app-btn app-btn-primary" type="button" data-win-toggle="modal" data-win-target="MyModal">
             <span>OK to Close</span>
           </button>
         </div>
@@ -68,7 +105,7 @@
     <pre><code id="code_view_2"></code></pre>
   </div>
 </body>
-<script src="./_navbar.js"></script>
+<script src="./js/navbarItems.js"></script>
 <script>init_navbar_ul("Alerts", "subdir")</script>
 <script src="../dist/windows-ui.min.js"></script>
 <script src="./js/highlight.min.js"></script>
@@ -76,7 +113,7 @@
 <script>
   document.getElementById("code_view_1").innerHTML =
   hljs.highlightAuto(`
-    <div class="app-alert" id="MyModal" data-toggle="modal" data-target="MyModal">
+    <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="MyModal">
       <div class="app-alert-modal" aria-modal="true" role="dialog">
         <div class="app-alert-header">
           <h1>Alert</h1>
@@ -84,7 +121,7 @@
         </div>
         <div class="app-alert-footer">
           <button class="app-btn app-btn-primary" type="button"
-            data-toggle="modal" data-target="MyModal">
+            data-win-toggle="modal" data-win-target="MyModal">
             <span>OK to Close</span>
           </button>
         </div>
@@ -93,7 +130,7 @@
   `).value;
   document.getElementById("code_view_2").innerHTML =
   hljs.highlightAuto(`
-    <button class="app-btn" type="button" data-toggle="modal" data-target="MyModal">
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="MyModal">
       <span>Open Alert Default</span>
     </button>
   `).value;
