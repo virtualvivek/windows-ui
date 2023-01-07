@@ -1,2 +1,5 @@
-# treat as docs dir
-docs/** linguist-documentation
+*.pug linguist-language=Pug
+**/*.pug linguist-vendored=false
+**/*.pug linguist-generated=false
+**/*.pug linguist-documentation=false
+**/*.pug linguist-detectable=true
