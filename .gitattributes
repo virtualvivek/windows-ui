@@ -1,4 +1,4 @@
-*.pug linguist-language=Pug
+*.pug linguist-language=JavaScript
 **/*.pug linguist-vendored=false
 **/*.pug linguist-generated=false
 **/*.pug linguist-documentation=false
