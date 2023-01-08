@@ -8,7 +8,7 @@ function setDarkScheme() {
   }
 }
 
-if(localStorage.getItem("isNight") == "true") {
+if(localStorage.getItem("WinAppThemeisNight") == "true") {
   setDarkScheme();
 }
 
@@ -31,16 +31,16 @@ function addThemeChangeTransition(callback) {
 // [ThemeSwitch Toggle] -------------------------------------------
 
 function toggleDayNight() {
-  if(localStorage.getItem("isNight") == "true") {
+  if(localStorage.getItem("WinAppThemeisNight") == "true") {
     addThemeChangeTransition(() => {
       setLightScheme();
-      localStorage.setItem("isNight", false);
+      localStorage.setItem("WinAppThemeisNight", false);
     });
   }
   else {
     addThemeChangeTransition(() => {
       setDarkScheme();
-      localStorage.setItem("isNight", true);
+      localStorage.setItem("WinAppThemeisNight", true);
     });
   }
 }

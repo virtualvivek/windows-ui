@@ -1,10 +1,5 @@
 const navbar_items = [
   {
-    "title": "Getting Started",
-    "href": "gettingStarted.html",
-    "icon": "<i class='icons10-terminal'></i>"
-  },
-  {
     "title": "Utilities",
     "href": "#"
   },
