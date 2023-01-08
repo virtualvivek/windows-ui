@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>Select</h1>
+      <p>A 
+        <span class="color-primary">Select</span> component is used to create a drop-down list to choose one value from multiple..
+      </p>
+
+      <div class="app-select-menu">
+        <select name="Some Name">
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+          <option value="pink">pink</option>
+        </select>
+      </div>
+    
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+
+      <h2>Select Dropdown</h2>
+
+      <div class="app-dropdown-menu app-select-text">
+        <span class="app-dropdown-title">pink</span>
+        <ul class="app-dropdown-list">
+          <li class="app-dropdown-list-item"><span>blue</span></li>
+          <li class="app-dropdown-list-item"><span>red</span></li>
+          <li class="app-dropdown-list-item"><span>orange</span></li>
+          <li class="app-dropdown-list-item selected"><span>pink</span></li>
+          <li class="app-dropdown-list-item"><span>green</span></li>
+        </ul>
+      </div>
+      <pre><code id="code_view_2"></code></pre>
+      <br/><br/>
+
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('Select')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-select-menu">
+        <select name="Some Name">
+          <option value="red">red</option>
+          <option value="blue">blue</option>
+          <option value="green">green</option>
+          <option value="pink">pink</option>
+        </select>
+      </div>
+    `).value;
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      <div class="app-dropdown-menu app-select-text">
+        <span class="app-dropdown-title">pink</span>
+        <ul class="app-dropdown-list">
+          <li class="app-dropdown-list-item"><span>blue</span></li>
+          <li class="app-dropdown-list-item"><span>red</span></li>
+          <li class="app-dropdown-list-item"><span>orange</span></li>
+          <li class="app-dropdown-list-item selected"><span>pink</span></li>
+          <li class="app-dropdown-list-item"><span>green</span></li>
+        </ul>
+      </div>
+    `).value;
+</html>

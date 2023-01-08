@@ -79,6 +79,7 @@
   }
 }
 .transition_dropdown_show {
+  display: initial;
   visibility: visible;
   animation-fill-mode: both;
   animation-duration: 0.367s;
@@ -176,6 +177,7 @@
   padding: 0;
   cursor: auto;
   z-index: 999;
+  display: none;
   margin: 5px 0;
   width: inherit;
   list-style: none;

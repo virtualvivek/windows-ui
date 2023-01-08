@@ -63,6 +63,11 @@ const navbar_items = [
     "icon": "<i class='icons10-tasks'></i>"
   },
   {
+    "title": "MenuBar",
+    "href": "menuBar.html",
+    "icon": "<i class='icons10-align-left'></i>"
+  },
+  {
     "title": "ProgressBar",
     "href": "progressBars.html",
     "icon": "<i class='icons10-bar-chart'></i>"
@@ -71,6 +76,11 @@ const navbar_items = [
     "title": "RadioButton",
     "href": "radioButton.html",
     "icon": "<i class='icons10-checked'></i>"
+  },
+  {
+    "title": "Select",
+    "href": "select.html",
+    "icon": "<i class='icons10-database'></i>"
   },
   {
     "title": "SliderBar",
