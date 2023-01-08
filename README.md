@@ -1,32 +1,28 @@
 <p align="center"> 
   <img src="src/assets/logo.png" width="250" />
 </p>
+<h1 align="center">windows-ui</h1>
 
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
+<p align="center"><a href="https://windows-ui.github.io/" target="_blank">Explore Project Docs »</a></p>
 
-<meta name='keywords' content='Windows10, FluentUI, html, css, js'>
-<meta name='description' content='Build Windows Fluent UI apps or electron apps using html,css & js'>
+<meta name='keywords' content='Windows 10,Windows 11, FluentUI, html, css, js'>
+<meta name='description' content='Build Windows Fluent UI apps using html, css & js'>
 <meta name='author' content='Vivek Verma'>
 
-<p align="center">
-  
-  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui-11.min.css">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
-  </a>
-  
-  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui.min.js">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
-  </a>
-   
-</p>
-
-
-<p align="center"><img src="src/assets/preview.jpg" width="480" /></p>
+<p align="center"><img src="src/assets/preview_header_dark.png" width="480" /></p>
 
 # 🚧 Work in progress.
 
-# Demo & Docs
-https://windows-ui.github.io/
+# Status
+<p>
+  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui-11.min.css">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
+  </a>
+  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui.min.js">
+    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
+  </a>
+</p>
 
 
 <h1>Getting Started</h1>
@@ -39,18 +35,9 @@ you can either use a local copies or use [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS minified -->
-<link
-  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css"
-  rel="stylesheet"
-  crossorigin="anonymous">
-<link
-  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui-11.min.css"
-  rel="stylesheet"
-  crossorigin="anonymous">
-<link
-  href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/fonts/fonts.min.css"
-  rel="stylesheet"
-  crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui-11.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
 ```
 ```html
 <!-- JavaScript minified -->
@@ -94,5 +81,5 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-u
 
 # License
 
-`Windows10-framework` is licensed under `MIT license`. View [license](https://github.com/virtualvivek/windows-ui/blob/master/LICENSE).<br>
-Copyright (c) 2020-23 [**virtualvivek**](https://github.com/virtualvivek)
+`Windows-ui` is licensed under [MIT License](https://github.com/virtualvivek/windows-ui/blob/master/LICENSE) ‣ 
+Copyright (c) [**virtualvivek**](https://github.com/virtualvivek).
