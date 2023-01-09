@@ -4,7 +4,11 @@ const concat = require("gulp-concat");
 const pug = require("gulp-pug");
 const formatHtml = require("gulp-format-html");
 
-const jsFiles = ["./src/js/api/**/*.js", "./src/js/components/**/*.js"]
+const jsFiles = [
+  "./src/js/variables/**/*.js",
+  "./src/js/api/**/*.js",
+  "./src/js/components/**/*.js"
+]
 
 const bundleJs = () => {
   return src(jsFiles)

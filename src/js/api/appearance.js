@@ -1,4 +1,4 @@
-function setDarkScheme() {
+function setDarkScheme(save_changes = false) {
   document.documentElement.setAttribute("data-theme", "dark");
   document.body.classList.add("dark-theme");
   
@@ -6,13 +6,14 @@ function setDarkScheme() {
     document.getElementById("app-navbar-theme-switch").checked = false;
     document.getElementById("app-navbar-theme-switch-text").innerHTML="Night Mode";
   }
+  if(save_changes) { localStorage.setItem(local_storage_current_theme_key, "dark"); }
 }
 
-if(localStorage.getItem("WinAppThemeisNight") == "true") {
-  setDarkScheme();
+if(localStorage.getItem(local_storage_current_theme_key) == "dark") {
+  setDarkScheme(false);
 }
 
-function setLightScheme() {
+function setLightScheme(save_changes = false) {
   document.documentElement.setAttribute("data-theme", "light");
   document.body.classList.remove("dark-theme");
 
@@ -20,6 +21,12 @@ function setLightScheme() {
     document.getElementById("app-navbar-theme-switch").checked = true;
     document.getElementById("app-navbar-theme-switch-text").innerHTML="Day Mode";
   }
+  if(save_changes) { localStorage.setItem(local_storage_current_theme_key, "light"); }
+}
+
+const getColorScheme = () => {
+  let color = window.getComputedStyle(document.documentElement).getPropertyValue("color-scheme");
+  return color.toString();
 }
 
 function addThemeChangeTransition(callback) {
@@ -31,18 +38,17 @@ function addThemeChangeTransition(callback) {
 // [ThemeSwitch Toggle] -------------------------------------------
 
 function toggleDayNight() {
-  if(localStorage.getItem("WinAppThemeisNight") == "true") {
-    addThemeChangeTransition(() => {
-      setLightScheme();
-      localStorage.setItem("WinAppThemeisNight", false);
-    });
-  }
-  else {
-    addThemeChangeTransition(() => {
-      setDarkScheme();
-      localStorage.setItem("WinAppThemeisNight", true);
-    });
-  }
+  addThemeChangeTransition(() => {
+    getColorScheme() === "dark" ? setLightScheme(true) : setDarkScheme(true);
+  });
 }
+
 const DayNightSwitch = document.querySelectorAll("#app-navbar-theme-switch");
 DayNightSwitch.forEach(el => el.addEventListener("click", toggleDayNight));
+
+
+const Appearance = {
+  setDarkScheme,
+  setLightScheme,
+  getColorScheme
+}
