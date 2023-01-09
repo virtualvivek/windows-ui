@@ -1,5 +1,5 @@
 <p align="center"> 
-  <img src="src/assets/logo.png" width="250" />
+  <img src="src/assets/logo.png" width="224" />
 </p>
 <h1 align="center">windows-ui</h1>
 
@@ -10,7 +10,7 @@
 <meta name='description' content='Build Windows Fluent UI apps using html, css & js'>
 <meta name='author' content='Vivek Verma'>
 
-<p align="center"><img src="src/assets/preview_header_dark.png" width="480" /></p>
+<p align="center"><img src="src/assets/preview_header_dark.png" width="512" /></p>
 
 # 🚧 Work in progress.
 
