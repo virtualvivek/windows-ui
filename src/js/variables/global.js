@@ -1,1 +1,1 @@
-const local_storage_current_theme_key = "WinAppLocalTheme";
+const local_storage_theme_key = "WinAppLocalTheme";

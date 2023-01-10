@@ -6,6 +6,6 @@ for (const ModalTrigger of ModalTriggers) {
   ModalTrigger.onclick = function(e) {
     if (e.target !== this && (ModalTrigger.classList.contains("app-alert") || ModalTrigger.classList.contains("app-dialog")))
     return;
-    document.getElementById(getAlertID).classList.toggle("show");
+    document.querySelector(getAlertID).classList.toggle("show");
   };
 };

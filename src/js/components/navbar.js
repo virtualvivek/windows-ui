@@ -25,7 +25,7 @@ function toggleNavBar() {
   }
 }
 
-const NavBar_ToggleButton = document.querySelectorAll('.app-navbar-toggle-button');
+const NavBar_ToggleButton = document.querySelectorAll('.app-navbar-toggler');
 NavBar_ToggleButton.forEach(el => el.addEventListener("click", toggleNavBar));
 
 

@@ -19,7 +19,7 @@
 <body>
   <div class="app-navbar-wrap">
     <div class="app-navbar-topbar-mobile">
-      <span class="app-navbar-toggle-button"></span>
+      <span class="app-navbar-toggler"></span>
       <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
         <span class="app-navbar-name">Windows UI</span>
         <span class="app-navbar-name">Home</span>
@@ -27,7 +27,7 @@
     </div>
     <nav class="app-navbar">
       <div class="app-navbar-header">
-        <span class="app-navbar-toggle-button"></span>
+        <span class="app-navbar-toggler"></span>
         <span class="app-navbar-name">Windows UI</span>
       </div>
       <ul class="app-navbar-list" id="app-navbar-list">
@@ -103,7 +103,7 @@
 <script src="./js/navbarItems.js"></script>
 <script>init_navbar_ul("Accordion", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
-<script>hljs.highlightAll();</script>
+<script>hljs.highlightAll()</script>
 <script>
   document.getElementById("code_view_1").innerHTML =
   hljs.highlightAuto(`

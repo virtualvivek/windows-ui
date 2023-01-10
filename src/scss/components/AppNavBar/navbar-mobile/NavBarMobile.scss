@@ -1,6 +1,6 @@
 @mixin app-navbar-mobile() {
   .app-navbar-wrap nav {
-    .app-navbar-toggle-button {
+    .app-navbar-toggler {
       padding: 12.5px 20px;
       @if $platform=="windows11" { margin: 0; }
     }
@@ -8,13 +8,13 @@
       margin: 55px 0 0 0;
     }
     :hover > li,
-    :hover > .app-navbar-toggle-button,
+    :hover > .app-navbar-toggler,
     :hover > .app-navbar-submenu-title {
       background-color: transparent !important;
     }
   }
   @if $platform=="windows11" {
-    .app-navbar-wrap .app-navbar-toggle-button {
+    .app-navbar-wrap .app-navbar-toggler {
       margin: 0;
     }
   }

@@ -4,9 +4,14 @@ const navbar_items = [
     "href": "#"
   },
   {
+    "title": "Appearance",
+    "href": "appearance.html",
+    "icon": "<i class='icons10-sun'></i>"
+  },
+  {
     "title": "Classes",
     "href": "classes.html",
-    "icon": "<i class='icons10-down-squared'></i>"
+    "icon": "<i class='icons10-puzzle'></i>"
   },
   {
     "title": "Components",

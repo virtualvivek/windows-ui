@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>Appearance</h1>
+      <p>The <span class="color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br> such as their preferred color scheme (light or dark).</p>
+
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+      <div class="app-hr"></div>
+
+      <h2><b>Methods</b></h2>
+
+      <h2><p class="app-code">getColorScheme()</p></h2>
+      <p>Indicates the current either system or user preferred color scheme.</p>
+      <pre><code id="code_view_2"></code></pre>
+
+      <h2><p class="app-code">setDarkScheme()</p></h2>
+      <p>Set's app to <i>dark</i> color scheme.</p>
+      <pre><code id="code_view_3"></code></pre>
+
+      <h2><p class="app-code">setLightScheme()</p></h2>
+      <p>Set's app to <i>light</i> color scheme.</p>
+      <pre><code id="code_view_4"></code></pre>
+
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('Appearance')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+      const colorScheme = Appearance.getColorScheme();
+        if (colorScheme === "dark") {
+          Appearance.setLightScheme()
+          // Do action on dark color scheme
+        }
+    `).value;
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+      Appearance.getColorScheme();
+    `).value;
+    document.getElementById("code_view_3").innerHTML =
+    hljs.highlightAuto(`
+      Appearance.setDarkScheme();
+    `).value;
+    document.getElementById("code_view_4").innerHTML =
+    hljs.highlightAuto(`
+      Appearance.setLightScheme();
+    `).value;
+</html>
