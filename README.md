@@ -10,7 +10,7 @@
 <meta name='description' content='Build Windows Fluent UI apps using html, css & js'>
 <meta name='author' content='Vivek Verma'>
 
-<p align="center"><img src="src/assets/preview_header_dark.png" width="512" /></p>
+<p align="center"><img src="src/assets/preview_header_dark.png" width="500" /></p>
 
 # 🚧 Work in progress.
 
