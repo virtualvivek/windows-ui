@@ -10,7 +10,7 @@
 <meta name='description' content='Build Windows Fluent UI apps using html, css & js'>
 <meta name='author' content='Vivek Verma'>
 
-<p align="center"><img src="src/assets/preview_header_dark.png" width="512" /></p>
+<p align="center"><img src="src/assets/preview_header_dark.png" width="500" /></p>
 
 # 🚧 Work in progress.
 
@@ -23,6 +23,7 @@
     <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
   </a>
 </p>
+
 
 
 <h1>Getting Started</h1>
