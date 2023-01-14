@@ -43,11 +43,11 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#collapseNavSub">
             <div>Navigation</div>
             <i class="icons10-angle-down"></i>
           </div>
-          <div class="app-navbar-submenu-content">
+          <div class="app-navbar-submenu-content" id="collapseNavSub">
             <li class="app-navbar-list-item">
               <a exact="false" class="" href="./navbar.html">
                 <i class="icons10-map"></i>
@@ -107,30 +107,26 @@
 <script>init_navbar_ul("SliderBar", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
-<script>
-  document.getElementById("code_view_1").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-range-slider">
-      <input type="range" min="0" max="500" step="1" value="256">
-      <span>256</span>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_2").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-range-slider slider-round">
-      <input type="range" min="0" max="500" step="1" value="200">
-      <span>200</span>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-range-slider slider-round-border">
-      <input type="range" min="0" max="500" step="1" value="86">
-      <span>86</span>
-    </div>
-  `).value;
-</script>
+<script>document.getElementById("code_view_1").innerHTML =
+hljs.highlightAuto(`
+<div class="app-range-slider">
+  <input type="range" min="0" max="500" step="1" value="256">
+  <span>256</span>
+</div>
+`).value;
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+<div class="app-range-slider slider-round">
+  <input type="range" min="0" max="500" step="1" value="200">
+  <span>200</span>
+</div>
+`).value;
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+<div class="app-range-slider slider-round-border">
+  <input type="range" min="0" max="500" step="1" value="86">
+  <span>86</span>
+</div>
+`).value;</script>
 
 </html>

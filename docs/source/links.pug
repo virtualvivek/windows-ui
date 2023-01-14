@@ -6,7 +6,7 @@
 
     <div class="app-section-container has-padding">
       <h1>Links</h1>
-      <p><span class="color-primary">Links</span> are accessible elements used primarily for navigation.<br>This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;.</p>
+      <p><span class="app-color-primary">Links</span> are accessible elements used primarily for navigation.<br>This component is styled to resemble a hyperlink and semantically renders an &lt;a&gt;.</p>
 
       <a class="app-link" href="#">This is a Link</a>
       <br/>
@@ -57,45 +57,42 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <a class="app-link" href="#">This is a Link</a>
+    <a class="app-link" href="#">This is a Link</a>
     `).value;
-
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      <a class="app-link-compound " href="#">
-        <div class="app-link-compound-container">
-          <i class="icons10-timeline color-primary"></i>
-          <div class="app-link-compound-subcontainer">
-            <span>System Settings and preferences</span>
-            <p>Customize system controls and more</p>
-          </div>
+    <a class="app-link-compound " href="#">
+      <div class="app-link-compound-container">
+        <i class="icons10-timeline color-primary"></i>
+        <div class="app-link-compound-subcontainer">
+          <span>System Settings and preferences</span>
+          <p>Customize system controls and more</p>
         </div>
-      </a>
+      </div>
+    </a>
     `).value;
-
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
-      <a class="app-link-compound" href="#">
-        <div class="app-link-compound-container">
-          <img src="./assets/mountain.jpg">
-          <div class="app-link-compound-subcontainer">
-            <span>User preferences and uploads</span>
-            <p>Profile pictures and details</p>
-          </div>
+    <a class="app-link-compound" href="#">
+      <div class="app-link-compound-container">
+        <img src="./assets/mountain.jpg">
+        <div class="app-link-compound-subcontainer">
+          <span>User preferences and uploads</span>
+          <p>Profile pictures and details</p>
         </div>
-      </a>
+      </div>
+    </a>
     `).value;
-
     document.getElementById("code_view_4").innerHTML =
     hljs.highlightAuto(`
-      <a class="app-link-compound link-border" href="#">
-        <div class="app-link-compound-container">
-          <img src="./assets/macos.jpg">
-          <div class="app-link-compound-subcontainer">
-            <span>Notification settings and DND</span>
-            <p>Control which app push notification</p>
-          </div>
+    <a class="app-link-compound link-border" href="#">
+      <div class="app-link-compound-container">
+        <img src="./assets/macos.jpg">
+        <div class="app-link-compound-subcontainer">
+          <span>Notification settings and DND</span>
+          <p>Control which app push notification</p>
         </div>
-      </a>
+      </div>
+    </a>
     `).value;
 </html>

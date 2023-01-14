@@ -7,18 +7,17 @@
     <div class="app-section-container has-padding">
       <h1>Accordion</h1>
       <p>
-        <span class="color-primary">Accordion</span> component used to show (and hide) content, it collapsed on hide and expand on show state.
+        <span class="app-color-primary">Accordion</span> component used to show (and hide) content, it collapsed on hide and expand on show state.
       </p>
       
       <div class="app-accordion" style="width: 280px;">
-        <div class="app-accordion-header">
+        <div class="app-accordion-header" data-win-toggle="collapse" data-win-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
           <div class="app-accordion-title">
-            <span>Some Title</span><i class="icons10-angle-down"></i>
+            <span>Accordion Item</span><i class="icons10-angle-down"></i>
           </div>
         </div>
-        <div class="app-accordion-panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        <div class="app-accordion-panel" id="collapseOne">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
@@ -32,20 +31,18 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-accordion" style="width: 280px;">
-        <div class="app-accordion-header">
-          <div class="app-accordion-title">
-            <span>Some Title</span><i class="icons10-angle-down"></i>
-          </div>
-        </div>
-        <div class="app-accordion-panel">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-            Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco.
-          </p>
+    <div class="app-accordion" style="width: 280px;">
+      <div class="app-accordion-header" data-win-toggle="collapse" data-win-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+        <div class="app-accordion-title">
+          <span>Accordion Item</span><i class="icons10-angle-down"></i>
         </div>
       </div>
+      <div class="app-accordion-panel" id="collapseOne">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore.
+        </p>
+      </div>
+    </div>
     `).value;
 </html>

@@ -7,15 +7,15 @@
     <div class="app-section-container has-padding">
       <h1>Dialogs</h1>
       <p>
-        <span class="color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
+        <span class="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
       </p>
 
       <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
         <span>Open Dialog</span>
       </button>
 
-      <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog">
-        <div class="app-dialog-modal">
+      <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
+        <div class="app-dialog-modal" aria-modal="true" role="dialog">
           <div class="app-dialog-header">
             <h3>Header</h3>
           </div>
@@ -61,26 +61,26 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog">
-        <div class="app-dialog-modal">
-          <div class="app-dialog-header">
-            <h3>Header</h3>
-          </div>
-          <div class="app-dialog-body">
-            <>Dialog Content</>
-          </div>
-          <div class="app-dialog-footer">
-            <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-              <span>Close</span>
-            </button>
-          </div>
+    <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
+      <div class="app-dialog-modal" aria-modal="true" role="dialog">
+        <div class="app-dialog-header">
+          <h3>Header</h3>
+        </div>
+        <div class="app-dialog-body">
+          <>Dialog Content</>
+        </div>
+        <div class="app-dialog-footer">
+          <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
+            <span>Close</span>
+          </button>
         </div>
       </div>
+    </div>
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-        <span>Open Dialog</span>
-      </button>
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
+      <span>Open Dialog</span>
+    </button>
     `).value;
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>CommandBar</h1>
+      <p><span class="app-color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.<br></p>
+
+      <div class="app-cmd-bar">
+        <button class="app-cmdbar-button">
+          <i class="icons10-plus app-color-primary"></i>
+          <span>New</span>
+        </button>
+        <hr/>
+        <div class="app-cmdbar-menu">
+          <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
+            <button class="app-cmdbar-button">
+              <i class="icons10-angle-down"></i>
+            </button>
+          </div>
+          <ul class="app-cmdbar-menu-list left-justify" id="MyMenu">
+            <li class="cmdbar-menu-list-item"><a href="#"><i class="icons10-file"></i>File</a></li>
+            <li class="cmdbar-menu-list-item"><a href="#">Folder</a></li>
+            <li class="cmdbar-menu-list-item"><a href="#">Document</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Usage</h2>
+
+      <br/><pre><code id="code_view_1"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+
+      <h2>InputSearchBox</h2>
+
+      <div class="app-input-search-box">
+        <input class="app-input-text" type="search" placeholder="Enter to Search">
+      </div>
+
+      <br/><pre><code id="code_view_2"></code></pre>
+
+      //- <!-- ------------------------------------------------------- -->
+      <br/><br/>
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('CommandBar')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-cmd-bar">
+      <button class="app-cmdbar-button">
+        <i class="icons10-plus app-color-primary"></i>
+        <span>New</span>
+      </button>
+      <hr/>
+      <div class="app-cmdbar-menu">
+        <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
+          <button class="app-cmdbar-button">
+            <i class="icons10-angle-down"></i>
+          </button>
+        </div>
+        <ul class="app-cmdbar-menu-list left-justify" id="MyMenu">
+          <li class="cmdbar-menu-list-item"><a href="#"><i class="icons10-file"></i>File</a></li>
+          <li class="cmdbar-menu-list-item"><a href="#">Folder</a></li>
+          <li class="cmdbar-menu-list-item"><a href="#">Document</a></li>
+        </ul>
+      </div>
+    </div>
+    `).value;
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-search-box">
+      <input class="app-input-text" type="search" placeholder="Enter to Search">
+    </div>
+    `).value;
+</html>

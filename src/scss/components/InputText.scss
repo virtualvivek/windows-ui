@@ -18,8 +18,8 @@
 
 .app-input-container {
   width: min-content;
-  display: inline-flex;
   position: relative;
+  display: inline-flex;
 
   @if $platform == "windows11" {
     .app-input-label:has(+ .app-input-text:focus) {
@@ -75,9 +75,8 @@
     position: absolute;
     align-items: center;
 
-    .app-loader-busy {
-      display: none;
-    }
+    .app-loader-busy { display: none; }
+    i::before { font-size: 18px; }
   }
 
   button.app-input-text-unmask {
@@ -88,7 +87,7 @@
     &::after {
       @extend .font-icon-dark;
       content: "\f1db";
-      font-size: 24px;
+      font-size: 20px;
       cursor: pointer;
     }
   }
@@ -96,27 +95,28 @@
   input[type="password"].app-input-text + div button.app-input-text-unmask::after {
     content: "\f189";
   }
-  
 
   &.input-success {
     .app-input-text {
-      border-color: #2C8B2C;
+      @if $platform == "windows10" { border-color: var(--color-success-default); }
+      @if $platform == "windows11" { border-bottom-color: var(--color-success-default); }
     }
     .app-input-status-container {
       i::before {
         content: "\f12e";
-        color: #2C8B2C;
+        color: var(--color-success-default);
       }
     }
   }
   &.input-danger {
     .app-input-text {
-      border-color: #C50500;
+      @if $platform == "windows10" { border-color: var(--color-danger-default); }
+      @if $platform == "windows11" { border-bottom-color: var(--color-danger-default); }
     }
     .app-input-status-container {
       i::before {
         content: "\f116";
-        color: #C50500;
+        color: var(--color-danger-default);
       }
     }
   }

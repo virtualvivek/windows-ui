@@ -61,8 +61,10 @@ button,
   }
 
   &.app-btn-primary {
-    background-color: var(--PrimaryColor);
+    @if $platform == "windows10" { background-color: var(--PrimaryColor); }
+    
     @if $platform == "windows11" {
+      background-color: var(--color-primary-adaptive);
       border-color: rgba(255, 255, 255, 0.08);
       border-bottom-color: rgba(0, 0, 0, 0.8);
     }
@@ -70,39 +72,41 @@ button,
 
   &.app-btn-primary-outline {
     color: var(--color-day-primary-night-white);
-    @if $platform == "windows10" { border: 2px solid var(--PrimaryColor); }
-    @if $platform == "windows11" { border: 1px solid var(--PrimaryColor); }
-
-    &:active {
-      background-color: var(--PrimaryColor);
+    @if $platform == "windows10" {
+      border: 2px solid var(--PrimaryColor);
+      &:active { background-color: var(--PrimaryColor); }
+    }
+    @if $platform == "windows11" {
+      border: 1px solid var(--color-primary-adaptive);
+      &:active { background-color: var(--color-primary-adaptive); }
     }
   }
 
   &.app-btn-danger {
-    background: #C50500;
+    background: var(--color-danger-default);
   }
   &.app-btn-danger-outline {
-    color: #C50500;
-    border-color: #C50500;
-    &:active { background-color: #C50500; }
+    color: var(--color-danger-default);
+    border-color: var(--color-danger-default);
+    &:active { background-color: var(--color-danger-default); }
   }
 
   &.app-btn-success {
-    background: #2C8B2C;
+    background: var(--color-success-default);
   }
   &.app-btn-success-outline {
-    color: #2C8B2C;
-    border-color: #2C8B2C;
-    &:active { background-color: #2C8B2C; }
+    color: var(--color-success-default);
+    border-color: var(--color-success-default);
+    &:active { background-color: var(--color-success-default); }
   }
 
   &.app-btn-primary, &.app-btn-danger, &.app-btn-success {
-    color: #fff;
+    color: var(--color-scheme-absolute);
   }
   &[class*="outline"] {
     background-color: transparent;
     &:active {
-      color: #fff;
+      color: var(--color-scheme-absolute);
       filter: unset;
     }
     &[disabled] {
@@ -161,13 +165,8 @@ button,
 
 @if $platform == "windows11" {
   body.dark-theme {
-    .app-btn-primary {
-      color: #000;
+    .app-btn-primary, .app-btn-danger, .app-btn-success {
       border-bottom-color: rgba(200,200,200,0.5);
-      background-color: var(--PrimaryColorLight);
-    }
-    .app-btn-primary-outline {
-      border-color: var(--PrimaryColorLight);
     }
   }
 }

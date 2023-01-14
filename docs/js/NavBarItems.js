@@ -38,6 +38,11 @@ const navbar_items = [
     "icon": "<i class='icons10-checked-2'></i>"
   },
   {
+    "title": "CommandBar",
+    "href": "commandBar.html",
+    "icon": "<i class='icons10-terminal'></i>"
+  },
+  {
     "title": "Dialogs",
     "href": "dialogs.html",
     "icon": "<i class='icons10-notification-image'></i>"

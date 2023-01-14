@@ -38,17 +38,17 @@
   script.
     document.getElementById("code-switch").innerHTML =
     hljs.highlightAuto(`
-      <label class="app-checkbox">
-        <input type="checkbox" checked>
-        <span>Checkbox</span>
-      </label>
+    <label class="app-checkbox">
+      <input type="checkbox" checked>
+      <span>Checkbox</span>
+    </label>
     `).value;
     document.getElementById("code-switch-nolabel").innerHTML =
     hljs.highlightAuto(`
-      <p>Lorem ipsum dolor sit amet <label class="app-checkbox"><input type="checkbox" checked></label> sed do eiusmod tempor incididunt ut labore.</p>
+    <p>Lorem ipsum dolor sit amet <label class="app-checkbox"><input type="checkbox" checked></label> sed do eiusmod tempor incididunt ut labore.</p>
 
-      <label class="app-checkbox">
-        <input type="checkbox" checked>
-      </label>
+    <label class="app-checkbox">
+      <input type="checkbox" checked>
+    </label>
     `).value;
 </html>

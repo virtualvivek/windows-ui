@@ -8,10 +8,10 @@ const LoaderBusys = document.querySelectorAll(".app-loader-busy");
 for (const Loaderbusy of LoaderBusys) { Loaderbusy.innerHTML = LoaderBusy; };
 
 
-const LoaderBar ='<div class="app-ldr-bar first"></div>'
-                +'<div class="app-ldr-bar second"></div>'
-                +'<div class="app-ldr-bar third"></div>'
-                +'<div class="app-ldr-bar fourth"></div>';
+const LoaderBar ='<div class="app-ldr-bar ball-1"></div>'
+                +'<div class="app-ldr-bar ball-2"></div>'
+                +'<div class="app-ldr-bar ball-3"></div>'
+                +'<div class="app-ldr-bar ball-4"></div>';
 
 const LoaderBars = document.querySelectorAll(".app-loader-bar");
 for (const loaderbars of LoaderBars) { loaderbars.innerHTML = LoaderBar; };

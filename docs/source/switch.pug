@@ -7,7 +7,7 @@
     <div class="app-section-container has-padding">
       <h1>Switch</h1>
 
-      <p>A <span class="color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
+      <p>A <span class="app-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
 
       <label class="app-switch">
         <input type="checkbox" checked />
@@ -48,29 +48,27 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <label class="app-switch">
-        <input type="checkbox" checked />
-        <div class="app-switch-view"></div>
-        <span class="app-switch-label" data-on="On" data-off="Off"></span>
-      </label>
+    <label class="app-switch">
+      <input type="checkbox" checked />
+      <div class="app-switch-view"></div>
+      <span class="app-switch-label" data-on="On" data-off="Off"></span>
+    </label>
     `).value;
-
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      <label class="app-switch">
-        <input type="checkbox" checked />
-        <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
-        <div class="app-switch-view"></div>
-      </label>
+    <label class="app-switch">
+      <input type="checkbox" checked />
+      <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
+      <div class="app-switch-view"></div>
+    </label>
       
-      // Adding extra width to label so it won't resize on change value
+    // Adding extra width to label so it won't resize on change value
     `).value;
-
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
-      <label class="app-switch">
-        <input type="checkbox" checked />
-        <div class="app-switch-view"></div>
-      </label>
+    <label class="app-switch">
+      <input type="checkbox" checked />
+      <div class="app-switch-view"></div>
+    </label>
     `).value;
 </html>

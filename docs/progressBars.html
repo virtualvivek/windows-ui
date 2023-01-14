@@ -43,11 +43,11 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#collapseNavSub">
             <div>Navigation</div>
             <i class="icons10-angle-down"></i>
           </div>
-          <div class="app-navbar-submenu-content">
+          <div class="app-navbar-submenu-content" id="collapseNavSub">
             <li class="app-navbar-list-item">
               <a exact="false" class="" href="./navbar.html">
                 <i class="icons10-map"></i>
@@ -79,7 +79,7 @@
   </div>
   <div class="app-section-container has-padding">
     <h1>ProgressBar</h1>
-    <p>A <span class="color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
+    <p>A <span class="app-color-primary">ProgressBar</span> can be used to show a user how far along he/she is in a process</p>
     <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
     <div class="app-progress-container">
       <div class="app-progress-content">
@@ -143,58 +143,56 @@
 <script>init_navbar_ul("ProgressBar", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
-<script>
-  document.getElementById("code_view_1").innerHTML =
-  hljs.highlightAuto(`
-    <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
-    <div class="app-progress-container">
-      <div class="app-progress-content">
-        <div class="app-progress-bar">
-          <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
-        </div>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_2").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <span class="app-progress-title">title</span>
+<script>document.getElementById("code_view_1").innerHTML =
+hljs.highlightAuto(`
+  <h1 class="app-m-0" id="app-progress-demo-1_text" style="font-size: 56px;">46%</h1>
+  <div class="app-progress-container">
+    <div class="app-progress-content">
       <div class="app-progress-bar">
-        <span role="progressbar" style="width: 75%;"></span>
+        <span role="progressbar" id="app-progress-demo-1" style="width: 46%;"></span>
       </div>
     </div>
-  `).value;
-  
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <span class="app-progress-title">Title</span>
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 26%;"></span>
-      </div>
-      <span class="app-progress-subtitle">Subtitle</span>
+  </div>
+`).value;
+
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+  <div class="app-progress-container">
+    <span class="app-progress-title">title</span>
+    <div class="app-progress-bar">
+      <span role="progressbar" style="width: 75%;"></span>
     </div>
-  `).value;
-  
-  document.getElementById("code_view_4").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <div class="app-progress-bar indeterminate">
-        <span role="progressbar"></span>
-      </div>
+  </div>
+`).value;
+
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+  <div class="app-progress-container">
+    <span class="app-progress-title">Title</span>
+    <div class="app-progress-bar">
+      <span role="progressbar" style="width: 26%;"></span>
     </div>
-  `).value;
-  
-  document.getElementById("code_view_5").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-progress-container">
-      <div class="app-progress-bar">
-        <span role="progressbar" style="width: 46%;"></span>
-      </div>
+    <span class="app-progress-subtitle">Subtitle</span>
+  </div>
+`).value;
+
+document.getElementById("code_view_4").innerHTML =
+hljs.highlightAuto(`
+  <div class="app-progress-container">
+    <div class="app-progress-bar indeterminate">
+      <span role="progressbar"></span>
     </div>
-  `).value;
-</script>
+  </div>
+`).value;
+
+document.getElementById("code_view_5").innerHTML =
+hljs.highlightAuto(`
+  <div class="app-progress-container">
+    <div class="app-progress-bar">
+      <span role="progressbar" style="width: 46%;"></span>
+    </div>
+  </div>
+`).value;</script>
 <script src="./js/progressBars.js"></script>
 
 </html>

@@ -7,23 +7,16 @@
     <div class="app-section-container has-padding">
       <h1>MenuBar</h1>
       <p>A 
-        <span class="color-primary">MenuBar</span> is a graphical control element which contains drop-down menus.
+        <span class="app-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus.
       </p>
 
       <div class="app-dropdown-menu app-menubar">
-        <span>Select a fruit</span>
-        <ul class="app-dropdown-list">
-          <li class="app-dropdown-list-item">
-            <a href="#"><i class="icons10-camera"></i>apple</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">orange</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">banana</a>
-          </li><li class="app-dropdown-list-item">
-            <a href="#">peach</a>
-          </li>
+        <span data-win-toggle="dropdown" data-win-target="#MyMenuBar">Select a fruit</span>
+        <ul class="app-dropdown-list" id="MyMenuBar">
+          <li class="app-dropdown-list-item"><a href="#"><i class="icons10-camera"></i>apple</a></li>
+          <li class="app-dropdown-list-item"><a href="#">orange</a></li>
+          <li class="app-dropdown-list-item"><a href="#">banana</a>
+          </li><li class="app-dropdown-list-item"><a href="#">peach</a></li>
         </ul>
       </div>
     
@@ -33,22 +26,15 @@
       <h2>MenuBar with search</h2>
 
       <div class="app-dropdown-menu app-menubar">
-        <span>Select a fruit</span>
-        <ul class="app-dropdown-list">
+        <span data-win-toggle="dropdown" data-win-target="#MyMenuBar2">Select a fruit</span>
+        <ul class="app-dropdown-list" id="MyMenuBar2">
           <div class="app-input-search-box">
             <input class="app-input-text app-input-search" type="search" placeholder="search here..">
           </div>
-          <li class="app-dropdown-list-item">
-            <a href="#"><i class="icons10-camera"></i>apple</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">orange</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">banana</a>
-          </li><li class="app-dropdown-list-item">
-            <a href="#">peach</a>
-          </li>
+          <li class="app-dropdown-list-item"><a href="#"><i class="icons10-camera"></i>apple</a></li>
+          <li class="app-dropdown-list-item"><a href="#">orange</a></li>
+          <li class="app-dropdown-list-item"><a href="#">banana</a></li>
+          <li class="app-dropdown-list-item"><a href="#">peach</a></li>
         </ul>
       </div>
 
@@ -59,21 +45,21 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-dropdown-menu app-menubar">
-        <span>Select a fruit</span>
-        <ul class="app-dropdown-list">
-          <li class="app-dropdown-list-item">
-            <a href="#"><i class="icons10-camera"></i>apple</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">orange</a>
-          </li>
-          <li class="app-dropdown-list-item">
-            <a href="#">banana</a>
-          </li><li class="app-dropdown-list-item">
-            <a href="#">peach</a>
-          </li>
-        </ul>
-      </div>
+    <div class="app-dropdown-menu app-menubar">
+      <span>Select a fruit</span>
+      <ul class="app-dropdown-list">
+        <li class="app-dropdown-list-item">
+          <a href="#"><i class="icons10-camera"></i>apple</a>
+        </li>
+        <li class="app-dropdown-list-item">
+          <a href="#">orange</a>
+        </li>
+        <li class="app-dropdown-list-item">
+          <a href="#">banana</a>
+        </li><li class="app-dropdown-list-item">
+          <a href="#">peach</a>
+        </li>
+      </ul>
+    </div>
     `).value;
 </html>

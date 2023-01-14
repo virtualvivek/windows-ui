@@ -4,6 +4,9 @@
     color-scheme: light;
     --platform: "windows10";
     --color-primary-adaptive: var(--PrimaryColor);
+    --color-danger-default: #C50500;
+    --color-success-default: #2C8B2C;
+    --color-scheme-absolute: #fff;
 
     --color-background-default: #FFFFFF;
     --color-button-default: #CDCDCD;
@@ -24,6 +27,9 @@
     color-scheme: dark;
     --platform: "windows10";
     --color-primary-adaptive: var(--PrimaryColorLight);
+    --color-danger-default: #C50500;
+    --color-success-default: #2C8B2C;
+    --color-scheme-absolute: #000;
 
     --color-background-default: #111111;
     --color-button-default: #555555;
@@ -47,6 +53,9 @@
     color-scheme: light;
     --platform: "windows11";
     --color-primary-adaptive: var(--PrimaryColor);
+    --color-danger-default: #C50500;
+    --color-success-default: #2C8B2C;
+    --color-scheme-absolute: #fff;
 
     --color-background-default: #ffffff;
     --color-button-default: #e9e9e9;
@@ -67,6 +76,9 @@
     color-scheme: dark;
     --platform: "windows11";
     --color-primary-adaptive: var(--PrimaryColorLight);
+    --color-danger-default: #FF99A3;
+    --color-success-default: #6ACB5D;
+    --color-scheme-absolute: #000;
 
     --color-background-default: #111111;
     --color-button-default: #484848;
@@ -84,20 +96,22 @@
   }
 }
 
-
-.color-danger {
-  color: #C50500;
+.app-color-primary {
+  color: var(--color-primary-adaptive);
 }
-.color-success {
-  color: #2C8B2C;
+.app-color-danger {
+  color: var(--color-danger-default);
 }
-.bg-danger {
-  background: #C50500 !important;
+.app-color-success {
+  color: var(--color-success-default);
 }
-.bg-success {
-  background: #2C8B2C !important;
+.app-bg-danger {
+  background: var(--color-danger-default) !important;
 }
-.bg-danger,
-.bg-success {
+.app-bg-success {
+  background: var(--color-success-default) !important;
+}
+.app-bg-danger,
+.app-bg-success {
   color: #fff !important;
 }

@@ -43,11 +43,11 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#collapseNavSub">
             <div>Navigation</div>
             <i class="icons10-angle-down"></i>
           </div>
-          <div class="app-navbar-submenu-content">
+          <div class="app-navbar-submenu-content" id="collapseNavSub">
             <li class="app-navbar-list-item">
               <a exact="false" class="" href="./navbar.html">
                 <i class="icons10-map"></i>
@@ -79,7 +79,7 @@
   </div>
   <div class="app-section-container has-padding">
     <h1>Switch</h1>
-    <p>A <span class="color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
+    <p>A <span class="app-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
     <label class="app-switch">
       <input type="checkbox" checked />
       <div class="app-switch-view"></div>
@@ -115,34 +115,30 @@
 <script>init_navbar_ul("Switch", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
-<script>
-  document.getElementById("code_view_1").innerHTML =
-  hljs.highlightAuto(`
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <div class="app-switch-view"></div>
-      <span class="app-switch-label" data-on="On" data-off="Off"></span>
-    </label>
-  `).value;
+<script>document.getElementById("code_view_1").innerHTML =
+hljs.highlightAuto(`
+<label class="app-switch">
+  <input type="checkbox" checked />
+  <div class="app-switch-view"></div>
+  <span class="app-switch-label" data-on="On" data-off="Off"></span>
+</label>
+`).value;
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+<label class="app-switch">
+  <input type="checkbox" checked />
+  <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
+  <div class="app-switch-view"></div>
+</label>
   
-  document.getElementById("code_view_2").innerHTML =
-  hljs.highlightAuto(`
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
-      <div class="app-switch-view"></div>
-    </label>
-    
-    // Adding extra width to label so it won't resize on change value
-  `).value;
-  
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <div class="app-switch-view"></div>
-    </label>
-  `).value;
-</script>
+// Adding extra width to label so it won't resize on change value
+`).value;
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+<label class="app-switch">
+  <input type="checkbox" checked />
+  <div class="app-switch-view"></div>
+</label>
+`).value;</script>
 
 </html>

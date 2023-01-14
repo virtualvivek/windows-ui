@@ -6,7 +6,7 @@
 
     <div class="app-section-container has-padding">
       <h1>Appearance</h1>
-      <p>The <span class="color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br> such as their preferred color scheme (light or dark).</p>
+      <p>The <span class="app-color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br> such as their preferred color scheme (light or dark).</p>
 
       <h2>Usage</h2>
       <pre><code id="code_view_1"></code></pre>
@@ -33,22 +33,22 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      const colorScheme = Appearance.getColorScheme();
-        if (colorScheme === "dark") {
-          Appearance.setLightScheme()
-          // Do action on dark color scheme
-        }
+    const colorScheme = Appearance.getColorScheme();
+      if (colorScheme === "dark") {
+        Appearance.setLightScheme()
+        // Do action on dark color scheme
+      }
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      Appearance.getColorScheme();
+    Appearance.getColorScheme();
     `).value;
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
-      Appearance.setDarkScheme();
+    Appearance.setDarkScheme();
     `).value;
     document.getElementById("code_view_4").innerHTML =
     hljs.highlightAuto(`
-      Appearance.setLightScheme();
+    Appearance.setLightScheme();
     `).value;
 </html>

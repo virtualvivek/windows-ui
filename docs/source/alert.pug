@@ -8,14 +8,14 @@
       <h1>Alert</h1>
 
       <p>
-        <span class="color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
+        <span class="app-color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
       </p>
 
       <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
         <span>Open Alert Default</span>
       </button>
 
-      <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal">
+      <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal" aria-labelledby="exampleModalLabel" tabindex="-1">
         <div class="app-alert-modal" aria-modal="true" role="dialog">
           <div class="app-alert-header">
             <h1>Alert</h1>
@@ -41,25 +41,25 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal">
-        <div class="app-alert-modal" aria-modal="true" role="dialog">
-          <div class="app-alert-header">
-            <h1>Alert</h1>
-            <div class="app-alert-message">This is alert Box.</div>
-          </div>
-          <div class="app-alert-footer">
-            <button class="app-btn app-btn-primary" type="button"
-              data-win-toggle="modal" data-win-target="#MyModal">
-              <span>OK to Close</span>
-            </button>
-          </div>
+    <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal" tabindex="-1">
+      <div class="app-alert-modal" aria-modal="true" role="dialog">
+        <div class="app-alert-header">
+          <h1>Alert</h1>
+          <div class="app-alert-message">This is alert Box.</div>
+        </div>
+        <div class="app-alert-footer">
+          <button class="app-btn app-btn-primary" type="button"
+            data-win-toggle="modal" data-win-target="#MyModal">
+            <span>OK to Close</span>
+          </button>
         </div>
       </div>
+    </div>
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
-        <span>Open Alert Default</span>
-      </button>
+    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
+      <span>Open Alert Default</span>
+    </button>
     `).value;
 </html>

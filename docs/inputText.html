@@ -43,11 +43,11 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#collapseNavSub">
             <div>Navigation</div>
             <i class="icons10-angle-down"></i>
           </div>
-          <div class="app-navbar-submenu-content">
+          <div class="app-navbar-submenu-content" id="collapseNavSub">
             <li class="app-navbar-list-item">
               <a exact="false" class="" href="./navbar.html">
                 <i class="icons10-map"></i>
@@ -79,7 +79,7 @@
   </div>
   <div class="app-section-container has-padding">
     <h1>InputTexts</h1>
-    <p class="font-size-18px">The <span class="color-primary">Input</span> element is used to create interactive controls for forms in order to accept data from the user.</p>
+    <p class="font-size-18px">The <span class="app-color-primary">Input</span> element is used to create interactive controls for forms in order to accept data from the user.</p>
     <div class="app-input-container">
       <input class="app-input-text" type="text" placeholder="Enter a text" value="">
     </div>
@@ -94,15 +94,15 @@
     <div class="app-input-container input-success">
       <input class="app-input-text" type="text" placeholder="Enter a text success">
       <div class="app-input-status-container">
-        <i class="icons10-keyboard font-size-18px"></i>
+        <i class="icons10-keyboard"></i>
       </div>
     </div>
     <br />
     <pre><code id="code_view_3"></code></pre>
     <div class="app-input-container input-danger">
-      <input class="app-input-text danger" type="text" placeholder="Enter a text danger">
+      <input class="app-input-text" type="text" placeholder="Enter a text danger">
       <div class="app-input-status-container">
-        <i class="icons10-keyboard font-size-18px"></i>
+        <i class="icons10-keyboard"></i>
       </div>
     </div>
     <br />
@@ -145,73 +145,64 @@
 <script>init_navbar_ul("Inputs", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
-<script>
-  document.getElementById("code_view_1").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container">
-      <input class="app-input-text" type="text" placeholder="Enter a text">
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_2").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container input-success">
-      <input class="app-input-text" type="text" placeholder="Enter a text success">
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_3").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container input-success">
-      <input class="app-input-text" type="text" placeholder="Enter a text success">
-      <div class="app-input-status-container">
-        <i class="icons10-keyboard font-size-18px"></i>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_4").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container input-danger">
-      <input class="app-input-text danger" type="text" placeholder="Enter a text danger">
-      <div class="app-input-status-container">
-        <i class="icons10-keyboard font-size-18px"></i>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_5").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container input-loading">
-      <input class="app-input-text" type="text" placeholder="Enter a text loading">
-      <div class="app-input-status-container">
-        <div class="app-loader-busy loader-sm animate"></div>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_6").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container">
-      <input class="app-input-text" type="password" placeholder="Enter a password">
-      <div class="app-input-status-container">
-        <button class="app-input-text-unmask" type="button"></button>
-      </div>
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_7").innerHTML =
-  hljs.highlightAuto(`
-    <div class="app-input-container">
-      <span class="app-input-label">label</span>
-      <input class="app-input-text" type="text" placeholder="Enter a text" value="">
-    </div>
-  `).value;
-  
-  document.getElementById("code_view_8").innerHTML =
-  hljs.highlightAuto(`
-    <textarea class="app-textarea" placeholder="Input Text Area"></textarea>
-  `).value;
-</script>
+<script>document.getElementById("code_view_1").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container">
+  <input class="app-input-text" type="text" placeholder="Enter a text">
+</div>
+`).value;
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container input-success">
+  <input class="app-input-text" type="text" placeholder="Enter a text success">
+</div>
+`).value;
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container input-success">
+  <input class="app-input-text" type="text" placeholder="Enter a text success">
+  <div class="app-input-status-container">
+    <i class="icons10-keyboard"></i>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_4").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container input-danger">
+  <input class="app-input-text" type="text" placeholder="Enter a text danger">
+  <div class="app-input-status-container">
+    <i class="icons10-keyboard"></i>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_5").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container input-loading">
+  <input class="app-input-text" type="text" placeholder="Enter a text loading">
+  <div class="app-input-status-container">
+    <div class="app-loader-busy loader-sm animate"></div>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_6").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container">
+  <input class="app-input-text" type="password" placeholder="Enter a password">
+  <div class="app-input-status-container">
+    <button class="app-input-text-unmask" type="button"></button>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_7").innerHTML =
+hljs.highlightAuto(`
+<div class="app-input-container">
+  <span class="app-input-label">label</span>
+  <input class="app-input-text" type="text" placeholder="Enter a text" value="">
+</div>
+`).value;
+document.getElementById("code_view_8").innerHTML =
+hljs.highlightAuto(`
+<textarea class="app-textarea" placeholder="Input Text Area"></textarea>
+`).value;</script>
 
 </html>

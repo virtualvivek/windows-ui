@@ -19,7 +19,8 @@ const bundleJs = () => {
 
 const compilePug = () => {
   return src(['./docs/source/**/*.pug', '!./docs/source/common/**/*.pug'])
-    .pipe(pug({pretty: true}))
+    .pipe(pug())
+    // .pipe(pug({pretty: true}))
     .pipe(formatHtml())
     .pipe(dest("./docs"));
 }
