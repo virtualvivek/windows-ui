@@ -42,7 +42,7 @@ for (const DropdownTrigger of DropdownTriggers) {
         DropdownListItem.classList.add("selected");
         DropdownTrigger.textContent = DropdownListItem.textContent;
       }
-      if(DropdownListItem.getElementsByTagName("a")[0].getAttribute("data-win-target")) {
+      if(DropdownListItem.getElementsByTagName("a")[0]?.getAttribute("data-win-target")) {
         // If it's for a SubMenu Click Don't Close the Whole Menu.
       }
       else {

@@ -1,4 +1,4 @@
-const SliderSettings = { fill: "var(--PrimaryColor)", background: "#999999" }
+const SliderSettings = { fill: "var(--color-primary-adaptive)", background: "#999999" }
 const Sliders = document.querySelectorAll(".app-range-slider");
 
 for (const Slider of Sliders) {

@@ -25,8 +25,8 @@
       <h2>Select Dropdown</h2>
 
       <div class="app-dropdown-menu app-select-text">
-        <span class="app-dropdown-title">pink</span>
-        <ul class="app-dropdown-list">
+        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">pink</span>
+        <ul class="app-dropdown-list" id="MySelectMenu">
           <li class="app-dropdown-list-item"><span>blue</span></li>
           <li class="app-dropdown-list-item"><span>red</span></li>
           <li class="app-dropdown-list-item"><span>orange</span></li>
@@ -44,26 +44,26 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-select-menu">
-        <select name="Some Name">
-          <option value="red">red</option>
-          <option value="blue">blue</option>
-          <option value="green">green</option>
-          <option value="pink">pink</option>
-        </select>
-      </div>
+    <div class="app-select-menu">
+      <select name="Some Name">
+        <option value="red">red</option>
+        <option value="blue">blue</option>
+        <option value="green">green</option>
+        <option value="pink">pink</option>
+      </select>
+    </div>
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-      <div class="app-dropdown-menu app-select-text">
-        <span class="app-dropdown-title">pink</span>
-        <ul class="app-dropdown-list">
-          <li class="app-dropdown-list-item"><span>blue</span></li>
-          <li class="app-dropdown-list-item"><span>red</span></li>
-          <li class="app-dropdown-list-item"><span>orange</span></li>
-          <li class="app-dropdown-list-item selected"><span>pink</span></li>
-          <li class="app-dropdown-list-item"><span>green</span></li>
-        </ul>
-      </div>
+    <div class="app-dropdown-menu app-select-text">
+      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">pink</span>
+      <ul class="app-dropdown-list" id="MySelectMenu">
+        <li class="app-dropdown-list-item"><span>blue</span></li>
+        <li class="app-dropdown-list-item"><span>red</span></li>
+        <li class="app-dropdown-list-item"><span>orange</span></li>
+        <li class="app-dropdown-list-item selected"><span>pink</span></li>
+        <li class="app-dropdown-list-item"><span>green</span></li>
+      </ul>
+    </div>
     `).value;
 </html>

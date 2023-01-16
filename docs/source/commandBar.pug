@@ -13,6 +13,7 @@
           <i class="icons10-plus app-color-primary"></i>
           <span>New</span>
         </button>
+        <!-- Adding <hr/> tag to make a split UI -->
         <hr/>
         <div class="app-cmdbar-menu">
           <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
@@ -29,18 +30,31 @@
       </div>
 
       <h2>Usage</h2>
-
-      <br/><pre><code id="code_view_1"></code></pre>
+      <pre><code id="code_view_1"></code></pre>
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h2>InputSearchBox</h2>
+      <h2>CommandBar as <p class="app-code">Nested Menu</p> :</h2>
 
-      <div class="app-input-search-box">
-        <input class="app-input-text" type="search" placeholder="Enter to Search">
+      <div class="app-cmdbar-menu">
+        <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu2">
+          <button class="app-cmdbar-button">
+            <i class="icons10-angle-down color-primary"></i>
+            <span>Share</span>
+          </button>
+        </div>
+        <ul class="app-cmdbar-menu-list" id="MyMenu2">
+          <li class="cmdbar-menu-list-item">
+            <a href="javascript:;" data-win-toggle="dropdown" data-win-target="#MyMenu4">Whatsapp<i class="icons10-angle-right"></i></a>
+              <ul class="app-cmdbar-menu-list cmdbar-submenu" id="MyMenu4">
+                <li class="cmdbar-menu-list-item"><a href="#">HyperLink</a></li>
+              </ul>
+          </li>
+          <li class="cmdbar-menu-list-item"><a href="#">Facebook</a></li>
+        </ul>
       </div>
 
-      <br/><pre><code id="code_view_2"></code></pre>
+      <pre><code id="code_view_2"></code></pre>
 
       //- <!-- ------------------------------------------------------- -->
       <br/><br/>
@@ -56,6 +70,7 @@
         <i class="icons10-plus app-color-primary"></i>
         <span>New</span>
       </button>
+      <!-- Adding <hr/> tag to make a split UI -->
       <hr/>
       <div class="app-cmdbar-menu">
         <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
@@ -73,8 +88,22 @@
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-    <div class="app-input-search-box">
-      <input class="app-input-text" type="search" placeholder="Enter to Search">
+    <div class="app-cmdbar-menu">
+      <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu2">
+        <button class="app-cmdbar-button">
+          <i class="icons10-angle-down color-primary"></i>
+          <span>Share</span>
+        </button>
+      </div>
+      <ul class="app-cmdbar-menu-list" id="MyMenu2">
+        <li class="cmdbar-menu-list-item">
+          <a href="javascript:;" data-win-toggle="dropdown" data-win-target="#MyMenu4">Whatsapp<i class="icons10-angle-right"></i></a>
+            <ul class="app-cmdbar-menu-list cmdbar-submenu" id="MyMenu4">
+              <li class="cmdbar-menu-list-item"><a href="#">HyperLink</a></li>
+            </ul>
+        </li>
+        <li class="cmdbar-menu-list-item"><a href="#">Facebook</a></li>
+      </ul>
     </div>
     `).value;
 </html>

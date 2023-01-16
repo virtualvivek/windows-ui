@@ -7,7 +7,7 @@
     <div class="app-section-container has-padding">
       <h1>SliderBar</h1>
 
-      <h1 class="app-m-0 app-color-primary" style="font-size:46px;" for="RangeSlider1">311%</h1>
+      <h1 class="app-m-0 app-color-primary" style="font-size:46px;" for="RangeSlider1">311</h1>
       <div class="app-range-slider">
         <input type="range" min="0" max="500" step="1" value="256" id="RangeSlider1">
       </div>
@@ -17,8 +17,8 @@
       <p>Add <span class="app-code">round</span> class to sliderbar.</p>
 
       <div class="app-range-slider slider-round">
-        <input type="range" min="0" max="500" step="1" value="200">
-        <span>200</span>
+        <input type="range" min="0" max="500" step="1" value="200" id="RangeSlider2">
+        <span for="RangeSlider2">200</span>
       </div>
       <pre><code id="code_view_2"></code></pre>
 
@@ -27,8 +27,8 @@
       <p>Add <span class="app-code">round-border</span> class to sliderbar.</p>
 
       <div class="app-range-slider slider-round-border">
-        <input type="range" min="0" max="500" step="1" value="86">
-        <span>86</span>
+        <input type="range" min="0" max="500" step="1" value="86" id="RangeSlider3">
+        <span for="RangeSlider3">86</span>
       </div>
       <pre><code id="code_view_3"></code></pre>
 
@@ -48,15 +48,15 @@
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
     <div class="app-range-slider slider-round">
-      <input type="range" min="0" max="500" step="1" value="200">
-      <span>200</span>
+      <input type="range" min="0" max="500" step="1" value="200" id="RangeSlider2">
+      <span for="RangeSlider2">200</span>
     </div>
     `).value;
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
     <div class="app-range-slider slider-round-border">
-      <input type="range" min="0" max="500" step="1" value="86">
-      <span>86</span>
+      <input type="range" min="0" max="500" step="1" value="86" id="RangeSlider3">
+      <span for="RangeSlider3">86</span>
     </div>
     `).value;
 </html>

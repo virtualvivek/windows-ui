@@ -126,6 +126,7 @@
         </li>
       </ul>
     </div>
+    <pre><code id="code_view_2"></code></pre>
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>
@@ -136,19 +137,27 @@
 <script>document.getElementById("code_view_1").innerHTML =
 hljs.highlightAuto(`
 <div class="app-dropdown-menu app-menubar">
-  <span>Select a fruit</span>
-  <ul class="app-dropdown-list">
-    <li class="app-dropdown-list-item">
-      <a href="#"><i class="icons10-camera"></i>apple</a>
-    </li>
-    <li class="app-dropdown-list-item">
-      <a href="#">orange</a>
-    </li>
-    <li class="app-dropdown-list-item">
-      <a href="#">banana</a>
-    </li><li class="app-dropdown-list-item">
-      <a href="#">peach</a>
-    </li>
+  <span data-win-toggle="dropdown" data-win-target="#MyMenuBar">Select a fruit</span>
+  <ul class="app-dropdown-list" id="MyMenuBar">
+    <li class="app-dropdown-list-item"><a href="#"><i class="icons10-camera"></i>apple</a></li>
+    <li class="app-dropdown-list-item"><a href="#">orange</a></li>
+    <li class="app-dropdown-list-item"><a href="#">banana</a>
+    </li><li class="app-dropdown-list-item"><a href="#">peach</a></li>
+  </ul>
+</div>
+`).value;
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+<div class="app-dropdown-menu app-menubar">
+  <span data-win-toggle="dropdown" data-win-target="#MyMenuBar2">Select a fruit</span>
+  <ul class="app-dropdown-list" id="MyMenuBar2">
+    <div class="app-input-search-box">
+      <input class="app-input-text app-input-search" type="search" placeholder="search here..">
+    </div>
+    <li class="app-dropdown-list-item"><a href="#"><i class="icons10-camera"></i>apple</a></li>
+    <li class="app-dropdown-list-item"><a href="#">orange</a></li>
+    <li class="app-dropdown-list-item"><a href="#">banana</a></li>
+    <li class="app-dropdown-list-item"><a href="#">peach</a></li>
   </ul>
 </div>
 `).value;</script>

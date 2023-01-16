@@ -6,7 +6,7 @@ for (const CollapseTrigger of CollapseTriggers) {
  let DownIcon = CollapseTrigger.getElementsByClassName("icons10-angle-down")[0]
             || CollapseTrigger.getElementsByClassName("icons10-angle-up")[0];
 
-  CollapseTrigger.addEventListener("click", (event) => {
+  CollapseTrigger.addEventListener("click", () => {
     if(CollapsePanel.classList.contains("show")) {
       CollapsePanel.classList.remove("show");
       CollapsePanel.style.height = "";
