@@ -7,10 +7,6 @@
   width: -moz-available;
   width: -webkit-fill-available;
 
-  // @if $platform == "windows11" {
-  //   background-color: var(--color-navbar-bg-default);
-  // }
-
   &.has-padding {
     padding-left: 315px;
     padding-right: 20px;
@@ -30,18 +26,9 @@
   }
 }
 
-
 // check if .app-section-container-inner has a sibling of same type
 .app-section-container-inner:first-of-type:not(:only-of-type) {
   width: 70%;
-}
-
-.app-navbar-wrap.toggled + .app-section-container {
-  padding-left: 72px;
-
-  &.has-padding {
-    padding-left: 105px;
-  }
 }
 
 @media screen and (max-width: 70em) {

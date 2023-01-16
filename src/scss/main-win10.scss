@@ -5,9 +5,9 @@
 @import "./components/_base/parents";
 
 @import "./components/Body.scss";
-@import "./components/AppNavBar/AppNavBar.scss";
+@import "./components/AppNavBar/NavBar.scss";
 @import "./components/AppNavBar/Transition/TransitionToLeft.scss";
-@import "./components/AppContentWrap.scss";
+@import "./components/AppNavBar/SectionContent.scss";
 
 @import "./components/Accordion.scss";
 @import "./components/AvatarView.scss";

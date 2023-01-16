@@ -1,16 +1,16 @@
 @media only screen and (min-width: 760px) {
-  .app-navbar-wrap.toggled {
+  .app-navbar-wrap.collapsed {
     width: 72px;
     height: 100%;
-    position: fixed;
-    top: 0;
     overflow-x: hidden;
     display: inline-block;
+    position: fixed;
+    top: 0;
       
     nav ul h1,
     nav a span,
-    .app-input-search-box,
     .app-navbar-name,
+    .app-input-search-box,
     .app-navbar-theme-switch span {
       display: none;
     }
@@ -42,6 +42,19 @@
       
       > :first-child { display: none; }
     }
+
+    .app-nav-search ul {
+      width: 50%;
+      position: fixed;
+      left: 22.5vw;
+      top: 80px;
+    }
+    + .app-section-container {
+      padding-left: 72px;
+      &.has-padding {
+        padding-left: 105px;
+      }
+    }
   }
 }
 
@@ -58,7 +71,7 @@
       transition: transform 0.2s ease-in-out;
     }
   }
-  .app-navbar-wrap.toggled-float {
+  .app-navbar-wrap.collapsed-float {
     nav {
       transform-origin: 100% 50%;
       transform: translateX(0);

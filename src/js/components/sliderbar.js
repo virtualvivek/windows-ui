@@ -2,13 +2,15 @@ const SliderSettings = { fill: "var(--PrimaryColor)", background: "#999999" }
 const Sliders = document.querySelectorAll(".app-range-slider");
 
 for (const Slider of Sliders) {
-  Slider.querySelector("input").addEventListener("input", (event) => {
-    if(Slider.querySelector("span")) {
-      Slider.querySelector("span").innerHTML = event.target.value;
+  const SliderInput = Slider.querySelector("input");
+  SliderInput.addEventListener("input", (event) => {
+    if(!(SliderInput.id === "" || SliderInput.id === undefined)) {
+      const SliderText = document.querySelector(`[for="${SliderInput.id}"]`);
+            SliderText.innerHTML = event.target.value;
     }
     applyFill(event.target);
   });
-  applyFill(Slider.querySelector("input"));
+  applyFill(SliderInput);
 };
 
 // This function applies the fill to our sliders by using a linear gradient background

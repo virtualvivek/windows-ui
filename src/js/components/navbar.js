@@ -1,59 +1,55 @@
-const NavBar = document.getElementsByClassName("app-navbar-wrap")[0];
+const NavBarTogglers = document.querySelectorAll('[data-win-toggle="navbar-left"]');
 
-function toggleNavBarMobile() {
-  if(document.querySelector(".app-navbar-overlay") === null) {
-    var _overlay = document.createElement("div");
-    _overlay.className = "app-navbar-overlay";
-    NavBar.appendChild(_overlay);
-  }
-  NavBar.classList.toggle("toggled-float");
-}
+for (const NavBarToggler of NavBarTogglers) {
+  const NavBar = document.querySelector(NavBarToggler.getAttribute("data-win-target"));
 
-function toggleNavBar() {
-  var device_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-  if(device_width < 760) {
-    toggleNavBarMobile();
-    let _overlay = document.querySelector(".app-navbar-overlay");
-    NavBar.classList.contains("toggled-float")
-      ? _overlay.classList.add("show")
-      : _overlay.classList.remove("show");
-  
-    _overlay.addEventListener("click", toggleNavBar);
+  let _overlay = null;
+  function toggleNavBarMobile() {
+    if(document.querySelector(".app-navbar-overlay") === null) {
+      _overlay = document.createElement("div");
+      _overlay.className = "app-navbar-overlay";
+      NavBar.appendChild(_overlay);
+    }
+    NavBar.classList.toggle("collapsed-float");
   }
-  else {
-    NavBar.classList.toggle("toggled");
+  function toggleNavBar() {
+    var device_width = window.innerWidth
+                    || document.documentElement.clientWidth
+                    || document.body.clientWidth;
+    if(device_width < 760) {
+      toggleNavBarMobile();
+      NavBar.classList.contains("collapsed-float")
+        ? _overlay.classList.add("show")
+        : _overlay.classList.remove("show");
+      _overlay.addEventListener("click", toggleNavBar);
+    }
+    else {
+      NavBar.classList.toggle("collapsed");
+    }
   }
-}
-
-const NavBar_ToggleButton = document.querySelectorAll('.app-navbar-toggler');
-NavBar_ToggleButton.forEach(el => el.addEventListener("click", toggleNavBar));
+  NavBarToggler.addEventListener("click", toggleNavBar);
+};
 
 
 // Scrolling Shadow ------------------------------------
+const NavBarWrap = document.querySelector(".app-navbar-wrap");
+const NavBarWrap_Nav = NavBarWrap.querySelector("nav");
+const Navbar_Header = NavBarWrap.querySelector(".app-navbar-header");
 
-const Navbar_Inner = NavBar.querySelector("nav");
-const Navbar_Header = NavBar.querySelector(".app-navbar-header");
-
-Navbar_Inner.addEventListener("scroll", (e) => {
-  if(e.target.scrollTop < 50) {
-    Navbar_Header.style.boxShadow = "none";
-  }
-  else {
-    Navbar_Header.style.boxShadow = "0 6px 8px -8px var(--color-link-bg-active)";
-  }
+NavBarWrap_Nav.addEventListener("scroll", (e) => {
+  e.target.scrollTop < 50
+    ? Navbar_Header.style.boxShadow = "none"
+    : Navbar_Header.style.boxShadow = "0 6px 8px -8px var(--color-link-bg-active)";
 });
-
 // Resize Animation suppressor -----------------------
-
 function ResizedWin() {
-  document.querySelector(".app-navbar-wrap").style.transition = "";
-  document.querySelector(".app-navbar-wrap nav").style.transition = "";
+  NavBarWrap.style.transition = "";
+  NavBarWrap_Nav.style.transition = "";
 }
-
 var on_resizew;
 window.onresize = function() {
   clearTimeout(on_resizew);
-  document.querySelector(".app-navbar-wrap").style.transition = "unset";
-  document.querySelector(".app-navbar-wrap nav").style.transition = "unset";
+  NavBarWrap.style.transition = "unset";
+  NavBarWrap_Nav.style.transition = "unset";
   on_resizew = setTimeout(ResizedWin, 100);
 };

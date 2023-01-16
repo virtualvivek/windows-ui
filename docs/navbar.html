@@ -18,9 +18,9 @@
 
 <body>
   <link rel="stylesheet" href="./css/navbar.css" />
-  <div class="app-navbar-wrap">
+  <div class="app-navbar-wrap" id="NavBarMain">
     <div class="app-navbar-topbar-mobile">
-      <span class="app-navbar-toggler"></span>
+      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
       <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
         <span class="app-navbar-name">Windows UI</span>
         <span class="app-navbar-name">Home</span>
@@ -28,7 +28,7 @@
     </div>
     <nav class="app-navbar">
       <div class="app-navbar-header">
-        <span class="app-navbar-toggler"></span>
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
         <span class="app-navbar-name">Windows UI</span>
       </div>
       <ul class="app-navbar-list" id="app-navbar-list">
@@ -44,11 +44,11 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#collapseNavSub">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu">
             <div>Navigation</div>
             <i class="icons10-angle-down"></i>
           </div>
-          <div class="app-navbar-submenu-content" id="collapseNavSub">
+          <div class="app-navbar-submenu-content" id="NavSubMenu">
             <li class="app-navbar-list-item">
               <a exact="false" class="" href="./navbar.html">
                 <i class="icons10-map"></i>

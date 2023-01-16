@@ -24,14 +24,14 @@ for (const DropdownTrigger of DropdownTriggers) {
   }
 
   DropdownTrigger.addEventListener("click", (event) => {
-    // getScreenOffset() from "../api/getScreenOffset.js"
+ // getScreenOffset() from "../api/getScreenOffset.js"
     getScreenOffset(DropdownTrigger)
       ? DropdownList.classList.add("reverse")
       : DropdownList.classList.remove("reverse");
     DropdownList.classList.contains("show") ? removeClickListener() : addClickListener(); 
   });
 
-  // On items click
+  // On Each Item Click
   for (const DropdownListItem of DropdownListItems) {
     DropdownListItem.addEventListener("click", () => {
       // Checking if dropdown is a [✓] checkable list --
@@ -42,12 +42,16 @@ for (const DropdownTrigger of DropdownTriggers) {
         DropdownListItem.classList.add("selected");
         DropdownTrigger.textContent = DropdownListItem.textContent;
       }
-
-      removeClickListener();
+      if(DropdownListItem.getElementsByTagName("a")[0].getAttribute("data-win-target")) {
+        // If it's for a SubMenu Click Don't Close the Whole Menu.
+      }
+      else {
+        removeClickListener();
+      }
     });
   }
 
-  // On Search list items
+  // On Search List Items
   if(DropdownListSearch) {
     DropdownListSearch.addEventListener("keyup", () => {
       var filter, a, i, txtValue;
