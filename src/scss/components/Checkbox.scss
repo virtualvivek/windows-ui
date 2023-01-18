@@ -49,9 +49,10 @@ label.app-checkbox {
         top: 0;
         left: 4px;
         transform: rotate(45deg);
-        @if $platform == "windows10" { border: dashed white; }
-        @if $platform == "windows11" { border: dashed var(--color-background-default); }
+        @if $platform == "windows10" { border: solid white; }
+        @if $platform == "windows11" { border: solid var(--color-background-default); }
         border-width: 0 2px 2px 0;
+        border-radius: 1px;
       }
 
       &:disabled {

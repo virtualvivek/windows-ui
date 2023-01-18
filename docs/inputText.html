@@ -33,7 +33,7 @@
       <ul class="app-navbar-list" id="app-navbar-list">
         <label class="app-navbar-theme-switch">
           <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-view"></div>
+          <div class="app-navbar-theme-switch-icon"></div>
           <span id="app-navbar-theme-switch-text">Day Mode</span>
         </label>
         <li class="app-navbar-list-item">
@@ -67,9 +67,9 @@
               </a>
             </li>
             <li class="app-navbar-list-item">
-              <a exact="false" class="" href="#/v4.2.1/navpagecontainer">
+              <a exact="false" class="" href="./navpagecontainer.html">
                 <i class="icons10-columns"></i>
-                <span>NavPageContainer</span>
+                <span>SectionContainer</span>
               </a>
             </li>
           </div>
@@ -93,7 +93,7 @@
     <pre><code id="code_view_2"></code></pre>
     <div class="app-input-container input-success">
       <input class="app-input-text" type="text" placeholder="Enter a text success">
-      <div class="app-input-status-container">
+      <div class="app-input-end-content">
         <i class="icons10-keyboard"></i>
       </div>
     </div>
@@ -101,7 +101,7 @@
     <pre><code id="code_view_3"></code></pre>
     <div class="app-input-container input-danger">
       <input class="app-input-text" type="text" placeholder="Enter a text danger">
-      <div class="app-input-status-container">
+      <div class="app-input-end-content">
         <i class="icons10-keyboard"></i>
       </div>
     </div>
@@ -110,7 +110,7 @@
     <h2>Input Loading</h2>
     <div class="app-input-container input-loading">
       <input class="app-input-text" type="text" placeholder="Enter a text loading">
-      <div class="app-input-status-container">
+      <div class="app-input-end-content">
         <div class="app-loader-busy loader-sm animate"></div>
       </div>
     </div>
@@ -119,8 +119,8 @@
     <h2>Input <p class="app-code">Password</p> :</h2>
     <div class="app-input-container">
       <input class="app-input-text" type="password" placeholder="Enter a password">
-      <div class="app-input-status-container">
-        <button class="app-input-text-unmask" type="button"></button>
+      <div class="app-input-end-content">
+        <button class="app-input-pass-toggler" type="button"></button>
       </div>
     </div>
     <br />
@@ -161,7 +161,7 @@ document.getElementById("code_view_3").innerHTML =
 hljs.highlightAuto(`
 <div class="app-input-container input-success">
   <input class="app-input-text" type="text" placeholder="Enter a text success">
-  <div class="app-input-status-container">
+  <div class="app-input-end-content">
     <i class="icons10-keyboard"></i>
   </div>
 </div>
@@ -170,7 +170,7 @@ document.getElementById("code_view_4").innerHTML =
 hljs.highlightAuto(`
 <div class="app-input-container input-danger">
   <input class="app-input-text" type="text" placeholder="Enter a text danger">
-  <div class="app-input-status-container">
+  <div class="app-input-end-content">
     <i class="icons10-keyboard"></i>
   </div>
 </div>
@@ -179,7 +179,7 @@ document.getElementById("code_view_5").innerHTML =
 hljs.highlightAuto(`
 <div class="app-input-container input-loading">
   <input class="app-input-text" type="text" placeholder="Enter a text loading">
-  <div class="app-input-status-container">
+  <div class="app-input-end-content">
     <div class="app-loader-busy loader-sm animate"></div>
   </div>
 </div>
@@ -188,8 +188,8 @@ document.getElementById("code_view_6").innerHTML =
 hljs.highlightAuto(`
 <div class="app-input-container">
   <input class="app-input-text" type="password" placeholder="Enter a password">
-  <div class="app-input-status-container">
-    <button class="app-input-text-unmask" type="button"></button>
+  <div class="app-input-end-content">
+    <button class="app-input-pass-toggler" type="button"></button>
   </div>
 </div>
 `).value;

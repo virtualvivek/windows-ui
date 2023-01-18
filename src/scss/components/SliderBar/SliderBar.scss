@@ -1,6 +1,10 @@
 @import "./SliderBarWin10.scss";
 @import "./SliderBarWin11.scss";
 
+@if $platform == "windows11" {
+  @include slider-bar-colors();
+}
+
 .app-range-slider {
   @extend .tap-highlight-none;
 
@@ -23,8 +27,8 @@
     color: var(--color-text-default);
   }
   .app-range-slider-popup {
-    padding: 12px 5px;
     opacity: 0;
+    padding: 12px 5px;
     visibility: hidden;
     display: inline-block;
     position: absolute;

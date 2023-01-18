@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  include common/head.pug
+  <body>
+    link(rel='stylesheet', href='./css/navpagecontainer.css')
+    include common/navbar.pug
+
+    <div class="app-section-container has-padding">
+      <h1>SectionContainer</h1>
+
+      <div class="demo-navpagecontainer-view">
+      <div class="demo-navpagecontainer-navbar"><div class="demo-navpagecontainer-rows-header"><div class="demo-navpage-item"></div></div>
+      </div><div class="demo-navpagecontainer-page-column">
+      <div class="demo-navpagecontainer-page"><p>SectionContainer <span class="app-color-primary">withPadding</span></p></div>
+      </div>
+      </div>
+
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+
+    </div>
+  </body>
+  include common/footer.pug
+  +importing('NavPageContainer')
+  script.
+    document.getElementById("code_view_1").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-section-container has-padding">
+      <!-- Page Content -->
+    </div>
+    `).value;
+</html>

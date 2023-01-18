@@ -1,7 +1,7 @@
 .app-navbar-theme-switch {
   display: grid;
   cursor: pointer;
-  padding: 12px 18px;
+  padding: 10px 15px;
   margin: 5px 10px;
   border-radius: 6px;
   position: relative;
@@ -11,19 +11,15 @@
   justify-content: flex-start;
   -webkit-tap-highlight-color: transparent;
 
-  &:hover {
-    background: var(--color-link-bg-hover);
-  }
-  &:active {
-    background: var(--color-link-bg-active);
-  }
+  &:hover { background: var(--color-link-bg-hover); }
+  &:active { background: var(--color-link-bg-active); }
 
   span {
     width: 100px;
     line-height: 1;
     font-size: 15px;
     user-select: none;
-    padding-left: 12px;
+    padding-left: 10px;
     position: relative;
   }
 }
@@ -31,51 +27,38 @@
   display: none;
 }
 
-
-// Un-Checked Moon State
-.app-navbar-theme-switch input + .app-navbar-theme-switch-view {
-  width: 15px;
-  height: 15px;
+.app-navbar-theme-switch input + .app-navbar-theme-switch-icon {
   position: relative;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  transform: scale(1) rotate(-2deg);
-  box-shadow: inset 7px -7px 0 0.09px #fff;
-  transition: box-shadow 0.5s ease 0s, transform 0.4s ease 0.1s;
+  height: 22px;
+  width: 22px;
 }
-.app-navbar-theme-switch input + .app-navbar-theme-switch-view:before {
-  content: "";
-  width: inherit;
-  height: inherit;
-  border-radius: inherit;
+
+
+// 🌙 Moon Icon Shown
+.app-navbar-theme-switch input + .app-navbar-theme-switch-icon:before {
+  font-size: 22px;
+  content: "\f18e";
   position: absolute;
-  left: 0;
-  transition: background 0.3s ease;
-}
-.app-navbar-theme-switch input + .app-navbar-theme-switch-view:after {
-  content: "\f120";
   font-family: icons10;
-  font-size: 40px;
-  border-radius: 50%;
-  margin: 0 0 0 -12px;
+  transform: scale(1);
+  transition: transform 0.4s ease 0.12s;
+}
+// 🌙 Moon Icon Hidden
+.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:before {
+  transform: scale(0);
+}
+
+// ☀️ Sun Icon Shown
+.app-navbar-theme-switch input + .app-navbar-theme-switch-icon:after {
+  font-size: 22px;
+  content: "\f120";
   position: absolute;
   transform: scale(0);
-  transition: all 0.3s ease;
+  font-family: icons10;
+  transition: all 0.2s ease;
 }
-
-
-// Checked Sun State
-.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view {
-  box-shadow: inset 14px -14px 0 0 transparent;
-  transform: scale(0.5) rotate(0deg);
-  transition: transform 0.3s ease 0.1s, box-shadow 0.2s ease 0s;
-}
-.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:before {
-  background: var(--color-text-default);
-  transition: background 0.3s ease 0.1s;
-}
-.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-view:after {
+// ☀️ Sun Icon Hidden
+.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:after {
   transform: scale(1);
-  transition: transform 0.5s ease 0.15s;
+  transition: transform 0.4s ease 0.12s;
 }

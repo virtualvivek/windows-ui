@@ -17,6 +17,7 @@
 </head>
 
 <body>
+  <link rel="stylesheet" href="./css/navpagecontainer.css" />
   <div class="app-navbar-wrap" id="NavBarMain">
     <div class="app-navbar-topbar-mobile">
       <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
@@ -78,32 +79,17 @@
     </nav>
   </div>
   <div class="app-section-container has-padding">
-    <h1>NavBarSubMenu</h1>
-    <div style="width: 290px; background-color: var(--color-navbar-bg-default);">
-      <div class="app-navbar-submenu">
-        <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
-          <div>Title</div>
-          <i class="icons10-angle-down"></i>
+    <h1>SectionContainer</h1>
+    <div class="demo-navpagecontainer-view">
+      <div class="demo-navpagecontainer-navbar">
+        <div class="demo-navpagecontainer-rows-header">
+          <div class="demo-navpage-item"></div>
         </div>
-        <div class="app-navbar-submenu-content" style="height: 0px;" id="NavSubMenuID">
-          <div class="app-navbar-wrap" style="height: 100px;">
-            <nav class="animate custom" style="position: relative;">
-              <ul class="app-navbar-list" style="padding: 0px; margin: 0px;">
-                <li class="app-navbar-list-item">
-                  <a href="#/navbar" aria-current="page" class="active">
-                    <i class="icons10-add"></i>
-                    <span>NavItem1</span>
-                  </a>
-                </li>
-                <li class="app-navbar-list-item">
-                  <a href="#/navbar">
-                    <i class="icons10-user"></i>
-                    <span>NavItem2</span>
-                  </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+      </div>
+      <div class="demo-navpagecontainer-page-column">
+        <div class="demo-navpagecontainer-page">
+          <p>SectionContainer <span class="app-color-primary">withPadding</span>
+          </p>
         </div>
       </div>
     </div>
@@ -113,25 +99,13 @@
 </body>
 <script src="../dist/windows-ui.min.js"></script>
 <script src="./js/navbarItems.js"></script>
-<script>init_navbar_ul("NavBarSubMenu", "subdir")</script>
+<script>init_navbar_ul("NavPageContainer", "subdir")</script>
 <script src="./js/highlight.min.js"></script>
 <script>hljs.highlightAll()</script>
 <script>document.getElementById("code_view_1").innerHTML =
 hljs.highlightAuto(`
-<div class="app-navbar-submenu">
-  <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
-    <div>Title</div>
-    <i class="icons10-angle-down"></i>
-  </div>
-  <div class="app-navbar-submenu-content" id="NavSubMenuID">
-    <li class="app-navbar-list-item">
-      <a exact="false" class="unactive" href="./page.html">
-        <i class="icons10-angle-down"></i>
-        <span>NavItem</span>
-      </a>
-    </li>
-    <!-- More Content -->
-  </div>
+<div class="app-section-container has-padding">
+  <!-- Page Content -->
 </div>
 `).value;</script>
 
