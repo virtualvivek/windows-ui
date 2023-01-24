@@ -21,7 +21,7 @@
       width: 40%;
       max-width: 400px;
       border-radius: 8px;
-      transform: translate3d(0,-1%,0) scale(1.04);
+      transform: translate3d(0,-1%,0) scale(1.034);
       background: var(--color-foreground-default);
     }
   }
@@ -52,7 +52,7 @@
   }
   
   .app-alert-footer {
-    @extend .app-dialog-footer-default;
+    @extend .app-modal-footer-default;
   }
   @if $platform == "windows10" {
     button {

@@ -78,12 +78,12 @@
     </nav>
   </div>
   <div class="app-section-container has-padding">
-    <h1>Alert</h1>
+    <h1>Alerts</h1>
     <p>
       <span class="app-color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
     </p>
     <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
-      <span>Open Alert Default</span>
+      <span>Open Alert Dialog</span>
     </button>
     <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal" aria-labelledby="exampleModalLabel" tabindex="-1">
       <div class="app-alert-modal" aria-modal="true" role="dialog">
@@ -100,8 +100,44 @@
     </div>
     <h2>Usage</h2>
     <pre><code id="code_view_1"></code></pre>
-    <h2>Open Alert</h2>
+    <h2>Open an Alert Dialog</h2>
     <pre><code id="code_view_2"></code></pre>
+    <h1>AlertBars</h1>
+    <div class="app-alert-bar alert-bar-secondary" role="alert" style="max-width: 500px">
+      <i class="icons10-exclamation-mark app-color-primary"></i>
+      <strong class="app-color-primary">Title</strong>
+      <span>This is a text</span>
+      <div class="app-alert-bar-end-content">
+        <button class="app-btn app-btn-primary" type="button">Button Regular</button>
+        <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+    <pre><code id="code_view_3"></code></pre>
+    <br />
+    <div class="app-alert-bar alert-bar-success" role="alert" style="max-width: 500px">
+      <i class="icons10-checkmark app-color-success"></i>
+      <strong class="app-color-success">Title Success</strong>
+      <span>This is a text</span>
+      <div class="app-alert-bar-end-content">
+        <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+    <pre><code id="code_view_4"></code></pre>
+    <br />
+    <div class="app-alert-bar alert-bar-danger" role="alert" style="max-width: 500px">
+      <i class="icons10-cross app-color-danger"></i>
+      <strong class="app-color-danger">Title Danger</strong>
+      <span>This is a text</span>
+      <div class="app-alert-bar-end-content">
+        <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+      </div>
+    </div>
+    <pre><code id="code_view_5"></code></pre>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>
@@ -131,6 +167,37 @@ hljs.highlightAuto(`
 <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
   <span>Open Alert Default</span>
 </button>
+`).value;
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+<div class="app-alert-bar alert-bar-secondary" role="alert">
+  <i class="icons10-exclamation-mark app-color-primary"></i>
+  <strong class="app-color-primary">Title</strong><span>This is a text</span>
+  <div class="app-alert-bar-end-content">
+    <button class="app-btn app-btn-primary" type="button">Button Regular</button>
+    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_4").innerHTML =
+hljs.highlightAuto(`
+<div class="app-alert-bar alert-bar-success" role="alert">
+  <i class="icons10-checkmark app-color-success"></i>
+  <strong class="app-color-success">Title Success</strong><span>This is a text</span>
+  <div class="app-alert-bar-end-content">
+    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
+`).value;
+document.getElementById("code_view_5").innerHTML =
+hljs.highlightAuto(`
+<div class="app-alert-bar alert-bar-danger" role="alert">
+  <i class="icons10-cross app-color-danger"></i>
+  <strong class="app-color-danger">Title Danger</strong><span>This is a text</span>
+  <div class="app-alert-bar-end-content">
+    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+  </div>
+</div>
 `).value;</script>
 
 </html>

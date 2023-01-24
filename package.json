@@ -8,12 +8,14 @@
     "compile:sass-sunvalley": "node-sass src/scss/main-win11.scss dist/windows-ui-11.min.css --output-style compressed"
   },
   "keywords": [
-    "fluentui",
     "windows",
-    "user-interface",
+    "css-framework",
+    "html",
+    "css",
+    "javascript",
     "responsive",
     "uwp",
-    "electronJS"
+    "fluent-ui"
   ],
   "author": "Vivek Verma",
   "license": "MIT",

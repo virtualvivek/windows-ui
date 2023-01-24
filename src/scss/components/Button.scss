@@ -74,11 +74,17 @@ button,
     color: var(--color-day-primary-night-white);
     @if $platform == "windows10" {
       border: 2px solid var(--PrimaryColor);
-      &:active { background-color: var(--PrimaryColor); }
+
+      &:active {
+        background-color: var(--PrimaryColor);
+      }
     }
     @if $platform == "windows11" {
       border: 1px solid var(--color-primary-adaptive);
-      &:active { background-color: var(--color-primary-adaptive); }
+
+      &:active {
+        background-color: var(--color-primary-adaptive);
+      }
     }
   }
 
@@ -100,14 +106,16 @@ button,
     &:active { background-color: var(--color-success-default); }
   }
 
-  &.app-btn-primary, &.app-btn-danger, &.app-btn-success {
+  &.app-btn-primary,
+  &.app-btn-danger,
+  &.app-btn-success {
     color: var(--color-scheme-absolute);
   }
   &[class*="outline"] {
     background-color: transparent;
     &:active {
-      color: var(--color-scheme-absolute);
       filter: unset;
+      color: var(--color-scheme-absolute);
     }
     &[disabled] {
       backdrop-filter: grayscale(1);

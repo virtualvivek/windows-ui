@@ -1,36 +1,3 @@
-.font-size-16px {
-  font-size: 16px !important;
-}
-.font-size-18px {
-  font-size: 18px !important;
-}
-.font-size-20px {
-  font-size: 20px;
-}
-.font-icon-dark {
-  font-family: icons10;
-  color: var(--color-text-default);
-}
-.font-icon-light {
-  @extend .font-icon-dark;
-  color: var(--color-background-default);
-}
-
-.app-align-center {
-  align-items: center;
-}
-.app-flex {
-  display: flex;
-}
-.app-flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.app-inline-flex {
-  display: inline-flex;
-}
-
 .tap-highlight-none {
   -webkit-tap-highlight-color: transparent;
 }
@@ -49,7 +16,6 @@
   transition-timing-function: ease;
   transition-property: background, transform;
 }
-
 
 @keyframes transition_dropdown {
   0% {
@@ -108,7 +74,7 @@
 
 
 .input-field-default {
-  width: 270px;  
+  width: inherit;
   line-height: 1;
   font-size: 15px;
   box-shadow: none;
@@ -128,7 +94,7 @@
     height: 32px;
     border-radius: 4px;
     margin-bottom: 1px;
-    border: 1px solid #55555555;
+    border: 1px solid #55555544;
     border-bottom: 1px solid #777;
     &:focus {
       filter: none;
@@ -145,6 +111,14 @@
   cursor: not-allowed !important;
   filter: contrast(0.6) !important;
 }
+.app-textarea,
+.app-input-text {
+  &:hover:not(:focus-within) {
+    filter: contrast(0.97);
+  }
+}
+
+
 .app-overlay {
   width: 100%;
   height: 100vh;
@@ -168,6 +142,7 @@
     visibility: visible;
   }
 }
+
 
 .app-dropdown-ul-default {
   top: 100%;
@@ -225,7 +200,8 @@
   }
 }
 
-.app-dialog-footer-default {
+
+.app-modal-footer-default {
   padding: 15px;
   display: block;
   text-align: right;

@@ -118,9 +118,9 @@
     <pre><code id="code_view_5"></code></pre>
     <h2>Input <p class="app-code">Password</p> :</h2>
     <div class="app-input-container">
-      <input class="app-input-text" type="password" placeholder="Enter a password">
+      <input class="app-input-text" type="password" placeholder="Enter a password" id="MyInputPass">
       <div class="app-input-end-content">
-        <button class="app-input-pass-toggler" type="button"></button>
+        <button class="app-input-pass-toggler" type="button" data-win-toggle="password" data-win-target="#MyInputPass"></button>
       </div>
     </div>
     <br />
@@ -187,9 +187,9 @@ hljs.highlightAuto(`
 document.getElementById("code_view_6").innerHTML =
 hljs.highlightAuto(`
 <div class="app-input-container">
-  <input class="app-input-text" type="password" placeholder="Enter a password">
+  <input class="app-input-text" type="password" placeholder="Enter a password" id="MyInputPass">
   <div class="app-input-end-content">
-    <button class="app-input-pass-toggler" type="button"></button>
+    <button class="app-input-pass-toggler" type="button" data-win-toggle="password" data-win-target="#MyInputPass"></button>
   </div>
 </div>
 `).value;

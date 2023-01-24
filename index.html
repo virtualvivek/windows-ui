@@ -17,31 +17,69 @@
     <link rel="stylesheet" type="text/css" href="dist/windows-ui-11.min.css" />
   </head>
   <body>
-    <div id="app-navbar-wrap-id" class="app-navbar-wrap">
+    <div class="app-navbar-wrap" id="NavBarMain">
       <div class="app-navbar-topbar-mobile">
-        <span class="app-navbar-toggler"></span>
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
         <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
           <span class="app-navbar-name">Windows UI</span>
           <span class="app-navbar-name">Home</span>
         </div>
       </div>
-      <nav class="animate">
+      <nav class="app-navbar">
         <div class="app-navbar-header">
-          <span class="app-navbar-toggler"></span>
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
           <span class="app-navbar-name">Windows UI</span>
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
-            <input type="checkbox" id="app-navbar-theme-switch" checked>
-            <div class="app-navbar-theme-switch-view"></div>
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
             <span id="app-navbar-theme-switch-text">Day Mode</span>
           </label>
+          <li class="app-navbar-list-item">
+            <a href="#" class="">
+              <img src="./docs/assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu">
+              <div>Navigation</div>
+              <i class="icons10-angle-down"></i>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>SectionContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
         </ul>
       </nav>
-      <div class="app-navbar-overlay"></div>
     </div>
 
-    <div class="app-section-container has-padding">
+    <div class="app-section-container has-padding" style="background-image: radial-gradient(ellipse at top, #57aeff40, transparent), radial-gradient(ellipse at bottom, #f16ec91c, transparent);">
+      <br/><br/>
       <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
         <h1 style="font-size: 55px;" class="app-mb-10">windows-ui</h1>
         <p>
@@ -61,23 +99,42 @@
           </a>
         </div>
       </div>
-      <br/><br/><br/><br/>
-      <div style="display: flex;
-      justify-content: space-evenly;flex-flow: wrap;">
-        <div style="max-width: 40%;">
-          <h3>Install via package manager</h3>
-          <div>
-            <pre><code id="code_view_1" style="width: auto;"></code></pre>
-            
+      <br/><br/><br/><br/><br/><br/>
+      
+      <div style="display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
+      gap: 45px;max-width: 580px;margin-inline: auto;">
+
+        <div class="app-section-container-fg" style="display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: fit-content;padding: 10px;justify-self: center;box-shadow: 0px 4px 8px hsl(0deg 0% 0% / 10%);">
+          <span>npm</span>
+          <div class="app-input-container">
+            <input class="app-input-text" type="text" placeholder="Enter a text" value="npm install windows-ui" readonly style="width: 16rem;">
+          </div>
+          <span>javascript</span>
+          <div class="app-input-container">
+            <input class="app-input-text" type="text" placeholder="Enter a text" value='<script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js"></script>' readonly style="width: 16rem;">
           </div>
         </div>
-        <div style="max-width: 40%;">
-          <h3>Include CSS via CDN</h3>
-          <div>
-            <pre><code id="code_view_3" style="width: auto;"></code></pre>
+        <!-- Space -->
+        <div class="app-section-container-fg" style="display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: fit-content;padding: 10px;justify-self: center;box-shadow: 0px 4px 8px hsl(0deg 0% 0% / 10%);">
+          <span>config</span>
+          <div class="app-input-container">
+            <input class="app-input-text" type="text" placeholder="Enter a text" value="npm install windows-ui" readonly style="width: 16rem;">
+          </div>
+          <span>css</span>
+          <div class="app-input-container">
+            <input class="app-input-text" type="text" placeholder="Enter a text" value='<script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js"></script>' readonly style="width: 16rem;">
           </div>
         </div>
+
       </div>
+      
 
       <div class="container neumorphism">
         <span class="circle small neumorphism">

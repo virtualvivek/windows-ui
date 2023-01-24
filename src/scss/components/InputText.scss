@@ -17,7 +17,6 @@
 
 
 .app-input-container {
-  width: min-content;
   position: relative;
   display: inline-flex;
 
@@ -86,7 +85,7 @@
     .app-input-end-content {
       i::before {
         content: "\f12e";
-        padding-right: 10px;
+        padding-right: 5px;
         color: var(--color-success-default);
       }
     }
@@ -99,7 +98,7 @@
     .app-input-end-content {
       i::before {
         content: "\f116";
-        padding-right: 10px;
+        padding-right: 5px;
         color: var(--color-danger-default);
       }
     }
@@ -107,13 +106,13 @@
   &.input-loading {
     .app-loader-busy {
       display: inline-flex;
-      margin-right: 10px;
     }
   }
 }
 
 .app-input-end-content {
-  right: 0;
+  gap: 5px;
+  right: 5px;
   height: 100%;
   display: flex;
   position: absolute;
@@ -124,9 +123,8 @@
   }
   button {
     border: none;
-    margin-top: -1.5px;
-    margin-right: 5px;
-    padding: 2.5px 5px;
+    padding: 2px 5px;
+    margin-top: -1px;
     background: transparent;
     &:hover {
       background-color: var(--color-navbar-bg-default);

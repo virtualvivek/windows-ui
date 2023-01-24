@@ -20,7 +20,7 @@
     }
 
     .app-dialog-footer {
-      @extend .app-dialog-footer-default;
+      @extend .app-modal-footer-default;
     }
     .app-dialog-body {
       max-height: 40vh;
