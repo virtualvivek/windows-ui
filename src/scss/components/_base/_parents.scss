@@ -148,8 +148,8 @@
     @extend .transition_dropdown_show;
     &.reverse {
       @extend .transition_dropdown_show_reverse;
-      top: unset;
       bottom: 100%;
+      top: unset;
     }
   }
 

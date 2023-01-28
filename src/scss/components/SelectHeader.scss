@@ -1,7 +1,7 @@
 .app-select-menu,
 .app-dropdown-menu {
   padding: 0;
-  width: 280px;
+  width: fit-content;
   cursor: pointer;
   user-select: none;
   position: relative;
@@ -26,6 +26,7 @@
     appearance: none;
     border-radius: 4px;
     padding-left: 10px;
+    padding-right: 35px;
 
     &:focus {
       outline: none;
@@ -37,8 +38,12 @@
       @extend .input-field-default-disabled;
     }
   }
-  &:not(.app-select-text)::after {
+  .app-dropdown-title {
+    padding-right: 35px;
+  }
+  &::after {
     @extend .font-icon-dark;
+    pointer-events: none;
     position: absolute;
     content: "\f10c";
     font-size: 15px;

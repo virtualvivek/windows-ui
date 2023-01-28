@@ -35,15 +35,10 @@
 
   &.app-select-text {
     border: none;
-    width: fit-content;
     .app-dropdown-title {
       font-weight: 500;
-      &::after {
-        content: "\f10c";
-        padding-left: 8px;
-        @extend .font-icon-dark;
-      }
     }
+    // Show Checkbox on select-text
     .app-dropdown-list-item.selected span::before {
       width: 20px;
       height: auto;
