@@ -18,6 +18,7 @@
       @if $platform == "windows10" { @extend .transition-scale-active; }
     }
     .app-link-compound-container {
+      font-weight: 500;
       align-items: center;
       display: inline-flex;
     }

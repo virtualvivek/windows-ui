@@ -46,17 +46,8 @@ h1.light, h2.light, h3.light, h4.light, h5.light, h6.light {
 }
 
 a {
-  color: #444;
 	outline: none;
-	font-weight: 500;
   text-decoration: none;
-
-  &:hover {
-    background-color: #DDD;
-  }
-  &:focus-visible {
-    outline: 2px solid var(--color-button-hover);
-  }
 }
 
 .app-hr {

@@ -31,14 +31,13 @@ for (const DropdownTrigger of DropdownTriggers) {
     DropdownList.classList.contains("show") ? removeClickListener() : addClickListener(); 
   });
 
-  // On Each Item Click
+  // On Li Items Click
   for (const DropdownListItem of DropdownListItems) {
     DropdownListItem.addEventListener("click", () => {
       // Checking if dropdown is a [✓] checkable list --
-      if(DropdownList.parentNode.classList.contains("app-select-text")) {
-        [].forEach.call(DropdownListItems, function(el) {
-          el.classList.remove("selected");
-        });
+      let parentClassList = DropdownList.parentNode.classList;
+      if(parentClassList.contains("app-select-text") || parentClassList.contains("app-select-menu")) {
+        [].forEach.call(DropdownListItems, (el) => el.classList.remove("selected"));
         DropdownListItem.classList.add("selected");
         DropdownTrigger.textContent = DropdownListItem.textContent;
       }

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Windows UI</title>
+  <meta charset="UTF-8" />
+  <meta name="theme-color" content="#EEE" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="manifest" href="../manifest.json" />
+  <link rel="stylesheet" href="./css/code-styles.css" />
+  <link rel="shortcut icon" href="./public/favicon.ico" />
+  <link rel="stylesheet" href="../dist/icons/winui-icons.min.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/config/app-config.css" />
+  <link rel="stylesheet" type="text/css" href="../dist/windows-ui-11.min.css" />
+</head>
+
+<body>
+  <link rel="stylesheet" href="./css/icons.css" />
+  <div class="app-navbar-wrap" id="NavBarMain">
+    <div class="app-navbar-topbar-mobile">
+      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+        <span class="app-navbar-name">Windows UI</span>
+        <span class="app-navbar-name">Home</span>
+      </div>
+    </div>
+    <nav class="app-navbar">
+      <div class="app-navbar-header">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+        <span class="app-navbar-name">Windows UI</span>
+      </div>
+      <ul class="app-navbar-list" id="app-navbar-list">
+        <label class="app-navbar-theme-switch">
+          <input id="app-navbar-theme-switch" type="checkbox" checked>
+          <div class="app-navbar-theme-switch-icon"></div>
+          <span id="app-navbar-theme-switch-text">Day Mode</span>
+        </label>
+        <li class="app-navbar-list-item">
+          <a href="./../index.html" class="">
+            <img src="./assets/mountain.jpg">
+            <span>Home</span>
+          </a>
+        </li>
+        <div class="app-navbar-submenu">
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu">
+            <div>Navigation</div>
+            <i class="icons10-angle-down"></i>
+          </div>
+          <div class="app-navbar-submenu-content" id="NavSubMenu">
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navbar.html">
+                <i class="icons10-map"></i>
+                <span>NavBar</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navbarLink.html">
+                <i class="icons10-link"></i>
+                <span>NavBarLink</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navbarSubmenu.html">
+                <i class="icons10-angle-down"></i>
+                <span>NavBarSubMenu</span>
+              </a>
+            </li>
+            <li class="app-navbar-list-item">
+              <a exact="false" class="" href="./navpagecontainer.html">
+                <i class="icons10-columns"></i>
+                <span>SectionContainer</span>
+              </a>
+            </li>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </div>
+  <div class="app-section-container has-padding">
+    <h1>Icons</h1>
+    <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
+      <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
+    </a>
+    <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
+      <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
+    </a>
+    <a href="https://github.com/windows-ui/icons" target="_blank">
+      <img src="https://img.shields.io/badge/icons-repo-darklime.svg?style=flat&color=181717&logo=github" alt="repository" />
+    </a>
+    <p>
+      <b>Windows-ui</b> comes with the free <b>font</b> set of icons.
+      <br />Feel free to use them or any other icon set in your project.
+    </p>
+    <h2>Import</h2>
+    <pre><code id="code_view_1"></code></pre>
+    <div class="app-hr"></div>
+    <h2>Usage</h2>
+    <div class="preview-flex-icons">
+      <i class="icons10-home" style="font-size: 28px; margin-right: 15px;"></i>
+      <pre style="width: 90%;"><code id="code_view_2"></code></pre>
+    </div>
+    <div class="preview-flex-icons">
+      <i class="icons10-car app-color-primary" style="font-size: 28px; margin-right: 15px;"></i>
+      <pre style="width: 90%;"><code id="code_view_3"></code></pre>
+    </div>
+    <div class="preview-flex-icons">
+      <i class="icons10-checked app-color-success" style="font-size: 28px; margin-right: 15px;"></i>
+      <pre style="width: 90%;"><code id="code_view_4"></code></pre>
+    </div>
+    <div class="preview-flex-icons">
+      <i class="icons10-bell-disabled app-color-danger" style="font-size: 28px; margin-right: 15px;"></i>
+      <pre style="width: 90%;"><code id="code_view_5"></code></pre>
+    </div>
+    <br />
+    <div class="preview-glyph">
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-advertising"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-advertising</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-airport"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-airport</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-align-center"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-align-center</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-align-justify"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-align-justify</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-align-left"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-align-left</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-align-right"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-align-right</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-alphabet-sorting"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-alphabet-sorting</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-alphabet-sorting-2"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-alphabet-sorting-2</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-angle-down"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-angle-down</pre>
+      </div>
+      <div class="preview-glyphs">
+        <span class="size-60">
+          <i class="icons10-angle-left"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-angle-left</pre>
+      </div>
+      <div class="preview-glyphs" style="opacity: 0.8">
+        <span class="size-60">
+          <i class="icons10-archive"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-archive</pre>
+      </div>
+      <div class="preview-glyphs" style="opacity: 0.6">
+        <span class="size-60">
+          <i class="icons10-area-chart"></i>
+        </span>
+        <pre class="preview-icon-pre">icons10-area-chart</pre>
+      </div>
+    </div>
+    <a href="https://github.com/windows-ui/icons" target="_blank" class="app-btn" style="width: 85%">
+      <b>View full set of icons</b>
+    </a>
+    <h1>Alternatives</h1>
+    <p>If you have decided to go with another set of icons please make sure to include <b>winui-icons.slim.css</b> into your project,
+      <br />that's probably small in size & requires internally by the project.
+    </p>
+    <ul>
+      <li>
+        <a href="https://github.com/microsoft/fluentui-system-icons" target="_blank">Fluent UI Icons</a>
+      </li>
+      <li>
+        <a href="https://fontawesome.com/" target="_blank">Font Awesome</a>
+      </li>
+      <li>
+        <a href="https://feathericons.com/" target="_blank">Feather</a>
+      </li>
+      <li>
+        <a href="https://primer.style/octicons/" target="_blank">Octicons</a>
+      </li>
+    </ul>
+    <br />
+    <br />
+  </div>
+</body>
+<script src="../dist/windows-ui.min.js"></script>
+<script src="./js/navbarItems.js"></script>
+<script>init_navbar_ul("Icons", "subdir")</script>
+<script src="./js/highlight.min.js"></script>
+<script>hljs.highlightAll()</script>
+<script>document.getElementById("code_view_1").innerHTML =
+hljs.highlightAuto(`
+<link rel="stylesheet" href="windows-ui/dist/icons/winui-icons.min.css"/>
+`).value;
+document.getElementById("code_view_2").innerHTML =
+hljs.highlightAuto(`
+<i class="icons10-home"></i>
+`).value;
+document.getElementById("code_view_3").innerHTML =
+hljs.highlightAuto(`
+<i class="icons10-car app-color-primary"></i>
+`).value;
+document.getElementById("code_view_4").innerHTML =
+hljs.highlightAuto(`
+<i class="icons10-checked app-color-success"></i>
+`).value;
+document.getElementById("code_view_5").innerHTML =
+hljs.highlightAuto(`
+<i class="icons10-bell-disabled app-color-danger"></i>
+`).value;</script>
+
+</html>
