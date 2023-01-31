@@ -16,14 +16,18 @@
 # 🚧 Work in progress.
 
 # Status
-<p>
-  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui-11.min.css">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui-11.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
-  </a>
-  <a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui.min.js">
-    <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
-  </a>
-</p>
+<a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui-11.min.css">
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.css?style=flat&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
+</a>
+<a href="https://github.com/virtualvivek/windows-ui/tree/main/dist/windows-ui.min.js">
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
+</a>
+<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
+  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
+</a>
+<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
+  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
+</a>
 
 
 
@@ -78,8 +82,17 @@ Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-u
 
 # Branches
 
-[windows-ui](https://github.com/virtualvivek/windows-ui)  ‣ Current. <br/>
-[Windows10-framework](https://github.com/virtualvivek/windows-ui/tree/Windows10-framework) Legacy.
+<table>
+  <tr align="left">
+    <th><a href="https://github.com/virtualvivek/windows-ui">windows-ui<a/></th>
+    <th>‣ Current</th>
+  </tr>
+  <tr>
+    <th><a href="https://github.com/virtualvivek/windows-ui/tree/Windows10-framework">Windows10-framework<a/></th>
+    <th>Legacy</th>
+  </tr>
+</table>
+
 
 # License
 
