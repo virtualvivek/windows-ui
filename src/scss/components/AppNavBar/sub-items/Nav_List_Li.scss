@@ -10,12 +10,9 @@
     }
 
     &:hover {
-      transition: 0.15s ease;
       background-color: var(--color-link-bg-hover);
     }
     &:active {
-      transition: 0s ease;
-
       @if $platform == "windows10" { background-color: var(--color-link-bg-active); }
       @if $platform == "windows11" { opacity: 0.7; }
 

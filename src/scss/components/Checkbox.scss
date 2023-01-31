@@ -13,6 +13,8 @@ label.app-checkbox {
     position: relative;
     transition: 0.2s ease;
     -moz-appearance: none;
+    -webkit-appearance: none;
+    vertical-align: middle;
 
     &::before {
       width: 16px;
@@ -22,10 +24,19 @@ label.app-checkbox {
       margin-top: -3px;
       margin-left: -3px;
       border-radius: 0;
-      border: 2px solid var(--color-button-hover);
-      background-color: var(--color-background-default);
       @extend .transition-background-400ms;
-      @if $platform == "windows11" { border-radius: 4px; }
+
+      @if $platform == "windows10" {
+        border: 2px solid var(--color-button-hover);
+        background-color: var(--color-background-default);
+      }
+
+      @if $platform == "windows11" {
+        padding: 1px;
+        border-radius: 4px;
+        border: 1px solid var(--color-button-hover);
+        background-color: var(--color-grey-light-alpha);
+      }
     }
     &:checked {
       @if $platform == "windows10" {
@@ -36,6 +47,7 @@ label.app-checkbox {
       }
       @if $platform == "windows11" {
         &::before {
+          padding: 0;
           background: var(--color-primary-adaptive);
           border: 2px solid var(--color-primary-adaptive);
         }
@@ -45,6 +57,7 @@ label.app-checkbox {
         width: 4px;
         height: 9px;
         content: "";
+        pointer-events: none;
         position: absolute;
         top: 0;
         left: 4px;
@@ -56,13 +69,7 @@ label.app-checkbox {
       }
 
       &:disabled {
-        &::before {
-          background: var(--color-link-bg-hover);
-          border: 2px solid var(--color-button-hover);
-        }
-        &::after {
-          border-color: var(--color-button-hover);
-        }
+        opacity: 0.8;
       }
     }
     

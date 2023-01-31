@@ -12,7 +12,7 @@ package.json >
 --compile--
 
 npm run compile:sass
-npm run compile:sass-sunvalley
+npm run compile:sass-win10
 
 ----------------------------------------------------------------------------
 [ Gulp ] --------------

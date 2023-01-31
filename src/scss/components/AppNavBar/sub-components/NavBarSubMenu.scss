@@ -1,7 +1,5 @@
 .app-navbar-submenu {
   .app-navbar-submenu-title {
-    @extend .transition-background-400ms;
-
     display: flex;
     flex-direction: row;
     cursor: pointer;
@@ -18,17 +16,21 @@
       padding: 10px 20px;
     }
   
-    &:hover { background-color: var(--color-link-bg-hover); }
+    &:hover {
+      background-color: var(--color-link-bg-hover);
+    }
 
     @if $platform == "windows10" {
       &:active {
         @extend .transition-scale-active;
+        transition: 0s ease;
         background-color: var(--color-button-default);
       }
     }
     @if $platform == "windows11" {
       &:active {
         opacity: 0.7;
+        transition: 0s ease;
       }
     }
     

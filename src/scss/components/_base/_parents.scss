@@ -62,6 +62,7 @@
   padding: 0 0 0 10px;
   box-sizing: content-box;
   color: var(--color-text-default);
+  -webkit-tap-highlight-color: transparent;
   background: var(--color-background-default);
 
   @if $platform == "windows10" {
@@ -93,7 +94,8 @@
   filter: contrast(0.6) !important;
 }
 .app-textarea,
-.app-input-text {
+.app-input-text,
+.app-dropdown-title {
   &:hover:not(:focus-within) {
     filter: contrast(0.97);
   }
@@ -140,9 +142,18 @@
   overflow-x: hidden;
   visibility: hidden;
   position: absolute;
+  -webkit-tap-highlight-color: transparent;
   background: var(--color-navbar-bg-default);
-  @if $platform == "windows10" { border-color: var(--color-button-default); box-shadow: 0 1px 1px #55555544; }
-  @if $platform == "windows11" { border-color: var(--color-grey-light); border-radius: 6px; box-shadow: 0 2px 5px #22222244; }
+
+  @if $platform == "windows10" {
+    box-shadow: 0 1px 1px #55555544;
+    border-color: var(--color-button-default);
+    }
+  @if $platform == "windows11" {
+    border-radius: 6px;
+    box-shadow: 0 2px 5px #22222244;
+    border-color: var(--color-grey-light);
+  }
 
   &.show {
     @extend .transition_dropdown_show;

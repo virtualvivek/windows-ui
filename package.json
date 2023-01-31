@@ -4,8 +4,8 @@
   "description": "Build native like windows apps or web apps using html, css and javascript.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass src/scss/main-win10.scss dist/windows-ui.min.css --output-style compressed",
-    "compile:sass-sunvalley": "node-sass src/scss/main-win11.scss dist/windows-ui-11.min.css --output-style compressed"
+    "compile:sass": "node-sass src/scss/main-win11.scss dist/windows-ui.min.css --output-style compressed",
+    "compile:sass-win10": "node-sass src/scss/main-win10.scss dist/windows-ui-10.min.css --output-style compressed"
   },
   "keywords": [
     "windows",

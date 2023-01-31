@@ -5,13 +5,13 @@
   display: inline-flex;
 
   >.app-switch-view {
-    width: 42px;
     height: 19px;
     cursor: pointer;
     position: relative;
     border-radius: 50px;
     transition: 200ms ease-out;
-    border: 2px solid var(--color-text-default);
+    @if $platform == "windows10" { width: 42px; border: 2px solid var(--color-text-default); }
+    @if $platform == "windows11" { width: 40px; border: 1px solid var(--color-text-default); }
 
     &:hover { opacity: 0.7; }
     &:active { filter: contrast(0.5); }
@@ -54,7 +54,8 @@
           background: #fff;
           color: var(--PrimaryColor);
           transform: translateX(280%);
-          transform: translateX(calc(2 * 100% - 3px));
+          @if $platform == "windows10" { transform: translateX(calc(2 * 100% - 3px)); }
+          @if $platform == "windows11" { transform: translateX(calc(2 * 100% - 5.5px)); }
         }
       }
       ~span::before {
