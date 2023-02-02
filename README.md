@@ -32,7 +32,10 @@
   <img src="https://img.shields.io/badge/Icons-Docs-darklime.svg?style=flat&color=0078F0&logo=Snowpack" alt="Icons" />
 </a>
 <a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
-  <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat&color=512BD4" alt="Colors" />
+  <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat&color=512BD4&logo=LaravelHorizon&logoColor=ffffff" alt="Colors" />
+</a>
+<a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/Boilerplate-Template-darklime.svg?style=flat&color=006C66&logo=HeadlessUI&logoColor=ffffff" alt="Colors" />
 </a>
 
 
