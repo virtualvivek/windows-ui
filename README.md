@@ -28,6 +28,12 @@
 <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
   <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
 </a>
+<a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/Icons-Docs-darklime.svg?style=flat&color=0078F0&logo=Snowpack" alt="Icons" />
+</a>
+<a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
+  <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat&color=512BD4" alt="Colors" />
+</a>
 
 
 
