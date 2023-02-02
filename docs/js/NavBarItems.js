@@ -14,6 +14,11 @@ const navbar_items = [
     "icon": "<i class='icons10-puzzle'></i>"
   },
   {
+    "title": "Colors",
+    "href": "colors.html",
+    "icon": "<i class='icons10-color-palette'></i>"
+  },
+  {
     "title": "Icons",
     "href": "icons.html",
     "icon": "<i class='icons10-deathly-hallows'></i>"

@@ -5,7 +5,7 @@
     link(rel='stylesheet', href='./css/icons.css')
     include common/navbar.pug
 
-    <div class="app-section-container has-padding">
+    <div class="app-page-container has-padding">
       <h1>Icons</h1>
       <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
       <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css"/>
@@ -97,7 +97,7 @@
         <li><a href="https://feathericons.com/" target="_blank">Feather</a></li>
         <li><a href="https://primer.style/octicons/" target="_blank">Octicons</a></li>
       </ul>
-      <br/><br/>
+      <br/><br/><br/><br/><br/><br/>
 
     </div>
   </body>
@@ -106,7 +106,7 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    <link rel="stylesheet" href="windows-ui/dist/icons/winui-icons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/winui-icons.min.css" rel="stylesheet"/>
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`

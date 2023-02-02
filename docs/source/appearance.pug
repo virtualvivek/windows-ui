@@ -4,7 +4,7 @@
   <body>
     include common/navbar.pug
 
-    <div class="app-section-container has-padding">
+    <div class="app-page-container has-padding">
       <h1>Appearance</h1>
       <p>The <span class="app-color-primary">Appearance</span> module exposes information about the user's appearance preferences,<br> such as their preferred color scheme (light or dark).</p>
 
@@ -26,6 +26,8 @@
       <p>Set's app to <i>light</i> color scheme.</p>
       <pre><code id="code_view_4"></code></pre>
 
+      <br/><br/>
+
     </div>
   </body>
   include common/footer.pug
@@ -41,7 +43,7 @@
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-    Appearance.getColorScheme();
+    Appearance.getColorScheme(); // 'light'/'dark'
     `).value;
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`

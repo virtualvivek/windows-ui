@@ -6,11 +6,20 @@ function setDarkScheme(save_changes = false) {
     document.getElementById("app-navbar-theme-switch").checked = false;
     document.getElementById("app-navbar-theme-switch-text").innerHTML="Night Mode";
   }
-  if(save_changes) { localStorage.setItem(local_storage_theme_key, "dark"); }
+  if(save_changes) { localStorage.setItem(lc_storage_theme_key, "dark"); }
 }
 
-if(localStorage.getItem(local_storage_theme_key) == "dark") {
+if(localStorage.getItem(lc_storage_theme_key) == "dark") {
   setDarkScheme(false);
+}
+// Fetching saved navbar scroll position on load --
+let MainNavbar = null;
+MainNavbar = document.querySelector('.app-navbar');
+if(MainNavbar.hasAttribute('data-win-save')) {
+  setTimeout(() => {
+    let navScrollPos = localStorage.getItem(lc_storage_nav_scroll);
+    MainNavbar.scrollTop = navScrollPos;
+  }, 2);
 }
 
 function setLightScheme(save_changes = false) {
@@ -21,7 +30,7 @@ function setLightScheme(save_changes = false) {
     document.getElementById("app-navbar-theme-switch").checked = true;
     document.getElementById("app-navbar-theme-switch-text").innerHTML="Day Mode";
   }
-  if(save_changes) { localStorage.setItem(local_storage_theme_key, "light"); }
+  if(save_changes) { localStorage.setItem(lc_storage_theme_key, "light"); }
 }
 
 const getColorScheme = () => {

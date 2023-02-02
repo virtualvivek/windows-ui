@@ -25,7 +25,7 @@
         <span class="app-navbar-name">Home</span>
       </div>
     </div>
-    <nav class="app-navbar">
+    <nav class="app-navbar" data-win-save="scroll">
       <div class="app-navbar-header">
         <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
         <span class="app-navbar-name">Windows UI</span>
@@ -77,7 +77,7 @@
       </ul>
     </nav>
   </div>
-  <div class="app-section-container has-padding">
+  <div class="app-page-container has-padding">
     <h1>Appearance</h1>
     <p>The <span class="app-color-primary">Appearance</span> module exposes information about the user's appearance preferences,
       <br> such as their preferred color scheme (light or dark).
@@ -103,6 +103,8 @@
     </h2>
     <p>Set's app to <i>light</i> color scheme.</p>
     <pre><code id="code_view_4"></code></pre>
+    <br />
+    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>
@@ -120,7 +122,7 @@ const colorScheme = Appearance.getColorScheme();
 `).value;
 document.getElementById("code_view_2").innerHTML =
 hljs.highlightAuto(`
-Appearance.getColorScheme();
+Appearance.getColorScheme(); // 'light'/'dark'
 `).value;
 document.getElementById("code_view_3").innerHTML =
 hljs.highlightAuto(`

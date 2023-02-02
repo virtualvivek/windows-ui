@@ -21,7 +21,6 @@ for (const NavBarToggler of NavBarTogglers) {
       NavBar.classList.toggle("collapsed");
     }
   }
-
   NavBarToggler.addEventListener("click", toggleNavBar);
 };
 
@@ -32,12 +31,19 @@ NavBarOverlay.addEventListener("click", toggleNavBar);
 const NavBarWrap = document.querySelector(".app-navbar-wrap");
 const NavBarWrap_Nav = NavBarWrap.querySelector("nav");
 const Navbar_Header = NavBarWrap.querySelector(".app-navbar-header");
+let NavBarWrap_Nav_Scroll = NavBarWrap_Nav.hasAttribute('data-win-save') ? true : false;
 
 NavBarWrap_Nav.addEventListener("scroll", (e) => {
-  e.target.scrollTop < 50
+  let _scrolTop_ = e.target.scrollTop;
+  if(NavBarWrap_Nav_Scroll) {
+    setTimeout(() => localStorage.setItem(lc_storage_nav_scroll, _scrolTop_), 150);
+  }
+  _scrolTop_ < 50
     ? Navbar_Header.style.boxShadow = "none"
     : Navbar_Header.style.boxShadow = "0 6px 8px -8px var(--color-link-bg-active)";
 });
+
+
 // Resize Animation suppressor -----------------------
 function ResizedWin() {
   NavBarWrap.style.transition = "";

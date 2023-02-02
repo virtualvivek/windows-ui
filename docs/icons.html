@@ -26,7 +26,7 @@
         <span class="app-navbar-name">Home</span>
       </div>
     </div>
-    <nav class="app-navbar">
+    <nav class="app-navbar" data-win-save="scroll">
       <div class="app-navbar-header">
         <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
         <span class="app-navbar-name">Windows UI</span>
@@ -78,7 +78,7 @@
       </ul>
     </nav>
   </div>
-  <div class="app-section-container has-padding">
+  <div class="app-page-container has-padding">
     <h1>Icons</h1>
     <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
       <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
@@ -211,6 +211,10 @@
     </ul>
     <br />
     <br />
+    <br />
+    <br />
+    <br />
+    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>
@@ -220,7 +224,7 @@
 <script>hljs.highlightAll()</script>
 <script>document.getElementById("code_view_1").innerHTML =
 hljs.highlightAuto(`
-<link rel="stylesheet" href="windows-ui/dist/icons/winui-icons.min.css"/>
+<link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/winui-icons.min.css" rel="stylesheet"/>
 `).value;
 document.getElementById("code_view_2").innerHTML =
 hljs.highlightAuto(`
