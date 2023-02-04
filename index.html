@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="./docs/css/code-styles.css" />
     <link rel="shortcut icon" href="./docs/public/favicon.ico" />
     <link rel="stylesheet" href="dist/icons/winui-icons.min.css" />
-    <link rel="stylesheet" type="text/css" href="./docs/css/index.css"/>
     <link rel="stylesheet" type="text/css" href="dist/config/app-config.css" />
     <link rel="stylesheet" type="text/css" href="dist/windows-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="docs/css/home.css" />
   </head>
   <body>
     <div class="app-navbar-wrap" id="NavBarMain">
@@ -78,7 +78,7 @@
       </nav>
     </div>
 
-    <div class="app-page-container has-padding" style="background-image: radial-gradient(ellipse at top, #57aeff40, transparent), radial-gradient(ellipse at bottom, #f16ec91c, transparent);">
+    <div class="app-page-container has-padding home">
       <br/><br/>
       <div style="display: flex; align-items: center;justify-content: center; flex-direction: column;">
         <h1 style="font-size: 55px;" class="app-mb-10">windows-ui</h1>
@@ -99,44 +99,27 @@
           </a>
         </div>
       </div>
-      <br/><br/><br/><br/><br/><br/>
-      
-      <div style="display: grid;
-      grid-template-columns: repeat(auto-fill,minmax(220px,1fr));
-      gap: 45px;max-width: 580px;margin-inline: auto;">
+      <br/><br/><br/><br/>
 
-        <div class="app-page-container-fg" style="display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: fit-content;padding: 10px;justify-self: center;box-shadow: 0px 4px 8px hsl(0deg 0% 0% / 10%);">
-          <span>npm</span>
-          <div class="app-input-container">
-            <input class="app-input-text" type="text" placeholder="Enter a text" value="npm install windows-ui" readonly style="width: 16rem;">
-          </div>
-          <span>javascript</span>
-          <div class="app-input-container">
-            <input class="app-input-text" type="text" placeholder="Enter a text" value='<script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js"></script>' readonly style="width: 16rem;">
-          </div>
+      <div class="home_code_container">
+        <div class="home_code_subcontainer">
+          <span style="color: #fff">Usage</span>
+          <label class="home_switch">
+            <input type="checkbox" id="home_toggle_code">
+            <div class="home_slider round">
+           <span class="home_slider_text"><span class="off">jsDelivr</span><span class="on">npm</span></span> 
+            </div>  
+        </label>
         </div>
-        <!-- Space -->
-        <div class="app-page-container-fg" style="display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: fit-content;padding: 10px;justify-self: center;box-shadow: 0px 4px 8px hsl(0deg 0% 0% / 10%);">
-          <span>config</span>
-          <div class="app-input-container">
-            <input class="app-input-text" type="text" placeholder="Enter a text" value="npm install windows-ui" readonly style="width: 16rem;">
-          </div>
-          <span>css</span>
-          <div class="app-input-container">
-            <input class="app-input-text" type="text" placeholder="Enter a text" value='<script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js"></script>' readonly style="width: 16rem;">
-          </div>
-        </div>
+        <pre style="margin: 0; display: flex;" id="code_content_1">
+          <code id="code_view_1" style="width: auto;padding-left: 0 !important;padding-top: 0;"></code>
+        </pre>
+        <pre style="margin: 0; display: none;" id="code_content_2">
+          <code id="code_view_2" style="width: auto;padding-left: 0 !important;padding-top: 0;"></code>
+        </pre>
+      </div>      
 
-      </div>
-      
-
-      <div class="container neumorphism">
+      <div class="home_container neumorphism">
         <span class="circle small neumorphism">
         </span>
         <span class="circle neumorphism"></span>
@@ -144,6 +127,7 @@
     </div>
   </body>
   <script src="./docs/js/navbarItems.js"></script>
+  <script src="./docs/js/home.js"></script>
   <script>
     init_navbar_ul("Home","root");
     fetch('https://raw.githubusercontent.com/virtualvivek/windows-ui/master/package.json')
@@ -156,16 +140,24 @@
   <script>
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    $ npm install windows-ui
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/icons/winui-icons.css" rel="stylesheet" crossorigin="anonymous">
 
+    <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/windows-ui.min.js" crossorigin="anonymous"><\/script>
     `).value;
     
-    document.getElementById("code_view_3").innerHTML =
+    document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui@4.0.0/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous">
+    $ npm install windows-ui
+    
+    @import "windows-ui/dist/windows-ui.min.css";
+    @import "windows-ui/dist/config/app-config.css";
+    @import "windows-ui/dist/icons/winui-icons.css";
+    
     `).value;
   </script>
 </html>
