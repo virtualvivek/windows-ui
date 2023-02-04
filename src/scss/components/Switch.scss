@@ -55,7 +55,7 @@
           color: var(--PrimaryColor);
           transform: translateX(280%);
           @if $platform == "windows10" { transform: translateX(calc(2 * 100% - 3px)); }
-          @if $platform == "windows11" { transform: translateX(calc(2 * 100% - 5.5px)); }
+          @if $platform == "windows11" { transform: translateX(calc(2 * 100% - 5px)); }
         }
       }
       ~span::before {
