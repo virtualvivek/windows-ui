@@ -1,29 +1,23 @@
 .app-link {
-  @extend .font-size-16px;
   font-weight: 400;
-  line-height: 1.5;
   display: inline-flex;
   line-break: anywhere;
-  color: var(--PrimaryColor);
+  color: var(--color-primary-adaptive);
 
-  &:hover,
-  &:active {
-    color: #888;
-    background: none !important;
+  &:hover {
+    filter: contrast(0.4);
   }
   &:active {
-    color: var(--color-text-default);
+    opacity: 0.6;
+    filter: unset;
   }
-}
-
-body.dark-theme .app-link:not(:active):not(:hover) {
-  color: var(--PrimaryColorLight);
 }
 
 @mixin links-mobile() {
   .app-link {
-    &:hover {
-      color: var(--PrimaryColor);
+    &:hover:not(:active) {
+      filter: unset;
+      opacity: 1;
     }
   }
 }
