@@ -44,3 +44,11 @@
     transition: height 243ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   }
 }
+
+@mixin accordion-mobile() {
+  .app-accordion-title {
+    &:hover:not(:active) {
+      opacity: 1;
+    }
+  }
+}

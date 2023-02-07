@@ -11,6 +11,7 @@
       padding: 14px 25px;
     }
     @if $platform == "windows11" {
+      overflow: hidden;
       margin: 5px 10px;
       border-radius: 6px;
       padding: 10px 20px;

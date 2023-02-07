@@ -5,6 +5,7 @@
   @include app-content-wrap-mobile();
   @include app-navbar-mobile();
   
+  @include accordion-mobile();
   @include alert-mobile();
   @include button-mobile();
   @include button-icon-mobile();
