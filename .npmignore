@@ -1,0 +1,9 @@
+node_modules/
+docs/
+src/
+CODE_OF_CONDUCT.md
+dev-scripts.txt
+gulpfile.js
+index.html
+manifest.json
+package-lock.json

@@ -1,7 +1,7 @@
 {
-  "name": "windows_ui",
+  "name": "windows-ui",
   "version": "4.0.0",
-  "description": "Build native like windows apps or web apps using html, css and javascript.",
+  "description": "Build Windows Fluent UI apps using Html, CSS & JavaScript. Comes with Rich Native Like Components.",
   "main": "index.js",
   "scripts": {
     "compile:sass": "node-sass src/scss/main-win11.scss dist/windows-ui.min.css --output-style compressed",
