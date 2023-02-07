@@ -14,15 +14,15 @@
 
 
 # Status
-<a href="https://www.npmjs.com/package/windows-ui">
+<a href="https://www.npmjs.com/package/windows-ui-fabric">
   <img src="https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
     alt="npm" />
 </a>
 <a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
-  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-fabric/dist/windows-ui.min.css?style=flat&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.css?style=flat&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
 </a>
 <a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
-  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui-fabric/dist/windows-ui.min.js?style=flat&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
 </a>
 <a href="https://github.com/windows-ui/icons/tree/master/dist/" target="_blank">
   <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
@@ -50,12 +50,12 @@ You can use a local copies or import via [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.0/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.0/dist/windows-ui.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/windows-ui.min.css" rel="stylesheet" crossorigin="anonymous">
 <!-- Icons -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.0/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
 <!-- JS -->
-<script src="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.0/dist/windows-ui.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/windows-ui.min.js" crossorigin="anonymous"></script>
 ```
 
 
