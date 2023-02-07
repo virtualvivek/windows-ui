@@ -60,7 +60,7 @@ You can use a local copies or import via [jsDelivr](https://www.jsdelivr.com/).
 
 
 # npm
-You can either install via [npm](https://www.npmjs.com/package/windows-ui).
+You can either install via [npm](https://www.npmjs.com/package/windows-ui-fabric).
 
 ```sh
 $ npm install windows-ui
