@@ -43,7 +43,7 @@
 
 <h1>Getting Started</h1>
 
-You can start a new project with a [boilerplate](https://github.com/virtualvivek/windows-ui/tree/master/boilerplate).
+You can start a new project with a [boilerplate](https://github.com/windows-ui/boilerplate).
 
 # Imports
 You can use a local copies or import via [jsDelivr](https://www.jsdelivr.com/).
