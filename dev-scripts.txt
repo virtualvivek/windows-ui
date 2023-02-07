@@ -30,7 +30,6 @@ npm install gulp-concat
 gulp bundleJs
 
 ----------------------------------------------------------------------------
-
 [ Gulp Docs Template Builder ] --------------
 Installing Gulp Pug
 npm install gulp-pug
