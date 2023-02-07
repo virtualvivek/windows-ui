@@ -14,7 +14,7 @@
 
 
 # Status
-<a href="https://virtualvivek.github.io/react-windows-ui/">
+<a href="https://www.npmjs.com/package/windows-ui">
   <img src="https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
     alt="npm" />
 </a>
@@ -60,7 +60,7 @@ You can use a local copies or import via [jsDelivr](https://www.jsdelivr.com/).
 
 
 # npm
-You can either install via npm.
+You can either install via [npm](https://www.npmjs.com/package/windows-ui).
 
 ```sh
 $ npm install windows-ui
