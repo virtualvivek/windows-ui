@@ -20,7 +20,7 @@
   "author": "Vivek Verma",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^7.0.1"
+    "node-sass": "^7.0.3"
   },
   "dependencies": {
     "gulp": "^4.0.2",
