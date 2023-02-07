@@ -38,7 +38,7 @@
 <a href="https://github.com/windows-ui/colors">
   <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat&color=512BD4&logo=LaravelHorizon&logoColor=ffffff" alt="Colors" />
 </a>
-<a href="https://github.com/virtualvivek/react-windows-ui/blob/main/LICENSE">
+<a href="https://github.com/windows-ui/boilerplate">
   <img src="https://img.shields.io/badge/Boilerplate-Template-darklime.svg?style=flat&color=006C66&logo=HeadlessUI&logoColor=ffffff" alt="Boilerplate" />
 </a>
 
