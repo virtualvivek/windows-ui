@@ -1,6 +1,6 @@
 {
   "name": "windows-ui-fabric",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "description": "Build Windows Fluent UI apps using Html, CSS & JavaScript. Comes with Rich Native Like Components.",
   "main": "index.js",
   "scripts": {

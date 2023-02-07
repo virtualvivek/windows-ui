@@ -24,10 +24,10 @@
 <a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
   <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
 </a>
-<a href="https://github.com/windows-ui/icons/tree/master/dist/" target="_blank">
+<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
   <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
 </a>
-<a href="https://github.com/windows-ui/icons/tree/master/dist/" target="_blank">
+<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
   <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
 </a>
 <a href="https://github.com/windows-ui/icons">
