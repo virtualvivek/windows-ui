@@ -1,5 +1,5 @@
 {
-  "name": "windows-ui",
+  "name": "windows-ui-fabric",
   "version": "4.0.0",
   "description": "Build Windows Fluent UI apps using Html, CSS & JavaScript. Comes with Rich Native Like Components.",
   "main": "index.js",
@@ -20,9 +20,7 @@
   "author": "Vivek Verma",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^7.0.1"
-  },
-  "dependencies": {
+    "node-sass": "^7.0.1",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-format-html": "^1.4.1",
