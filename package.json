@@ -17,6 +17,14 @@
     "uwp",
     "fluent-ui"
   ],
+  "homepage": "https://virtualvivek.github.io/windows-ui/",
+  "bugs": {
+    "url": "https://github.com/virtualvivek/windows-ui/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/virtualvivek/windows-ui.git"
+  },
   "author": "Vivek Verma",
   "license": "MIT",
   "devDependencies": {
