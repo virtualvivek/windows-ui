@@ -12,7 +12,6 @@
 
 <p align="center"><img src="https://github.com/virtualvivek/windows-ui/blob/master/src/assets/preview_header_dark.png" width="500" /></p>
 
-
 # Status
 <a href="https://www.npmjs.com/package/windows-ui-fabric">
   <img src="https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
