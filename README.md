@@ -3,6 +3,14 @@
 </p>
 <h1 align="center">windows-ui</h1>
 
+
+
+
+
+
+
+
+
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
 <p align="center"><a href="https://windows-ui.github.io/" target="_blank">Explore Project Docs »</a></p>
 
@@ -11,7 +19,6 @@
 <meta name='author' content='Vivek Verma'>
 
 <p align="center"><img src="https://github.com/virtualvivek/windows-ui/blob/master/src/assets/preview_header_dark.png" width="500" /></p>
-
 
 # Status
 <a href="https://www.npmjs.com/package/windows-ui-fabric">
