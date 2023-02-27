@@ -12,9 +12,9 @@
 }
 ::-webkit-scrollbar-thumb:horizontal {
   border-top-width: 6px;
+  border-right-width: 2px;
   border-bottom-width: 6px;
   border-left-width: 2px;
-  border-right-width: 2px;
 }
 ::-webkit-scrollbar-thumb:hover {
   border: 2px solid transparent;
@@ -40,11 +40,13 @@
     background-color: #99999955;
   }
 
-  //Setting margin-top for laying scrollbar between navigation li items.
+  //Setting Margin-Top in ScrollBar for Navigation list.
   &::-webkit-scrollbar-track {
-    margin-top: 105px;
+    margin-top: 60px;
   }
 }
+
+// NavBar State Toggled - ScrollBar
 .app-navbar-wrap.toggled nav {
   &::-webkit-scrollbar {
     width: 7px;
