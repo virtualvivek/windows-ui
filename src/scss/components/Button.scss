@@ -26,13 +26,13 @@ button,
   height: 35px;
   font-size: 15px;
   user-select: none;
-  transition: 0.2s ease;
   vertical-align: middle;
   color: var(--color-text-default);
   background-color: var(--color-button-default);
 
   @if $platform == "windows10" {
     padding: 5px 15px;
+    transition: 0.2s ease;
     border: 2px solid transparent;
     &:hover {
       filter: opacity(0.8);
@@ -48,7 +48,6 @@ button,
     padding: 6px 11px;
     &:hover {
       opacity: 0.8;
-      transition: 0s ease;
     }
     &:active {
       filter: brightness(0.85);
