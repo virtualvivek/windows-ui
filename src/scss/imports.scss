@@ -3,9 +3,9 @@
 @import "./components/_base/utils";
 
 @import "./components/Body.scss";
-@import "./components/AppNavBar/NavBar.scss";
-@import "./components/AppNavBar/Transition/TransitionToLeft.scss";
-@import "./components/AppNavBar/SectionContent.scss";
+@import "./components/NavBar/NavBar.scss";
+@import "./components/NavBar/transitions/TransitionToLeft.scss";
+@import "./components/NavBar/SectionContent.scss";
 
 @import "./components/Accordion.scss";
 @import "./components/AvatarView.scss";
@@ -37,6 +37,6 @@
 @import "./components/TableView.scss";
 @import "./components/TextArea.scss";
 
-@import "./components/_browsers/webkit.scss";
-@import "./components/_browsers/mozilla.scss";
-@import "./components/_browsers/mobile.scss";
+@import "./browsers/webkit/main.scss";
+@import "./browsers/mozilla/main.scss";
+@import "./browsers/mobile/main.scss";
