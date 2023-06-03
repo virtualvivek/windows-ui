@@ -11,7 +11,7 @@
     @if $platform == "windows11" { border-radius: 4px; }
     
     &:hover, &.focused {
-      background-color: var(--color-grey-light-alpha);
+      background-color: var(--color-foreground-alpha);
     }
     &:active {
       filter: contrast(0.8);
@@ -78,7 +78,7 @@
         }
         &:active {
           border: 2px solid var(--color-link-bg-active);
-          background: var(--color-grey-light) !important;
+          background: var(--color-foreground-light) !important;
         }
       }
     }

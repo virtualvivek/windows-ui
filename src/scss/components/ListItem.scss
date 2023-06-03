@@ -3,10 +3,10 @@
 
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid var(--color-grey-light);
+  border-bottom: 1px solid var(--color-foreground-light);
 
   &:hover:not(.pointer-none) {
-    background-color: var(--color-grey-light-alpha);
+    background-color: var(--color-foreground-alpha);
   }
   &:active:not(.pointer-none) {
     filter: contrast(0.8);

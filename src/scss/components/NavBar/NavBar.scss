@@ -9,7 +9,7 @@
 @import "./sub-components/NavBarHeader.scss";
 @import "./sub-components/NavBarSearchBox.scss";
 @import "./sub-components/NavBarThemeSwitch.scss";
-@import "./NavBarToggled.scss";
+@import "./NavBarCollapsed.scss";
 
 .app-navbar-wrap {
   z-index: 9;
@@ -30,7 +30,6 @@
     flex-direction: column;
     background-color: var(--color-navbar-bg-default);
     @if $repository == "react-windows-ui" { @extend .transition-background-400ms; }
-    @if $platform == "windows11" { box-shadow: 1px 8px 4px -4px var(--color-text-default); }
   }
 
   .app-navbar-topbar-mobile {

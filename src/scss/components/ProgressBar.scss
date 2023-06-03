@@ -23,7 +23,7 @@
     height: 5px;
     overflow: hidden;
     position: relative;
-    background: var(--color-button-default);
+    background: var(--color-progress-bg);
     @extend .transition-background-400ms;
     @if $platform == "windows11" { border-radius: 4px; }
 

@@ -32,15 +32,14 @@
       cursor: pointer;
       align-items: center;
       justify-content: center;
-
         &:hover { background-color: var(--color_link_bg_hover); }
         &:active { background-color: var(--color-link-bg-active); }
     }
 
-    .app-navbar-submenu-title { 
+    .app-navbar-submenu-title {
       justify-content: center;
-      
-      > :first-child { display: none; }
+        &::after { font-size: 18px; }
+        > :first-child { display: none; }
     }
 
     .app-nav-search ul {
@@ -58,8 +57,8 @@
   }
 }
 
-// For Mobile device show Sliding NavBar
 
+// For Mobile device show Sliding NavBar
 @media only screen and (max-width: 760px) {
   .app-navbar-wrap {
     .app-navbar-topbar-mobile {

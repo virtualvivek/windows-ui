@@ -15,14 +15,12 @@
   }
 }
 
-
 .app-input-container {
   position: relative;
   display: inline-flex;
 
   @if $platform == "windows11" {
     .app-input-label:has(+ .app-input-text:focus) {
-      margin-bottom: 0;
       border-bottom: 2px solid var(--color-primary-adaptive);
     }
     .app-input-label + .app-input-text {
@@ -56,22 +54,28 @@
 
     @if $platform == "windows10" {
       border: 2px solid #999;
-      background-color: var(--color-grey-light-alpha);
+      background-color: var(--color-foreground-alpha);
     }
     @if $platform == "windows11" {
-      margin-bottom: 1px;
       border-radius: 4px;
       border-end-end-radius: 0;
       border-start-end-radius: 0;
-      border: 1px solid #55555555;
+      border: 1px solid var(--color-input-border-default);
       border-bottom: 1px solid #777;
     }
   }
 
   &.input-success {
     .app-input-text {
-      @if $platform == "windows10" { border-color: var(--color-success-default); }
-      @if $platform == "windows11" { border-bottom-color: var(--color-success-default); }
+      @if $platform == "windows10" {
+        border-color: var(--color-success-default);
+      }
+      @if $platform == "windows11" {
+        border-bottom-color: var(--color-success-default);
+        &:focus {
+          background-image: radial-gradient(var(--color-success-default) 100%, transparent 100%);
+        }
+      }
     }
     .app-input-end-content {
       i::before {
@@ -83,8 +87,15 @@
   }
   &.input-danger {
     .app-input-text {
-      @if $platform == "windows10" { border-color: var(--color-danger-default); }
-      @if $platform == "windows11" { border-bottom-color: var(--color-danger-default); }
+      @if $platform == "windows10" {
+        border-color: var(--color-danger-default);
+      }
+      @if $platform == "windows11" {
+        border-bottom-color: var(--color-danger-default);
+        &:focus {
+          background-image: radial-gradient(var(--color-danger-default) 100%, transparent 100%);
+        }
+      }
     }
     .app-input-end-content {
       i::before {
@@ -115,7 +126,6 @@
   button {
     border: none;
     padding: 2px 5px;
-    margin-top: -1px;
     background: transparent;
     &:hover {
       background-color: var(--color-navbar-bg-default);
@@ -124,7 +134,9 @@
       opacity: 0.7;
     }
   }
-  .app-loader-busy { display: none; }
+  .app-loader-busy {
+    display: none;
+  }
 }
 
 @mixin input-date-mobile() {

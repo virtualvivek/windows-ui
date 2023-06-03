@@ -43,9 +43,8 @@
           </a>
         </li>
         <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu">
-            <div>Navigation</div>
-            <i class="icons10-angle-down"></i>
+          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+            <span>Navigation</span>
           </div>
           <div class="app-navbar-submenu-content" id="NavSubMenu">
             <li class="app-navbar-list-item">
@@ -116,7 +115,7 @@ hljs.highlightAuto(`
 --color-background-default: #ffffff;
 --color-button-default: #e9e9e9;
 --color-button-hover: #666666;
---color-grey-light: #EEEEEE;
+--color-foreground-light: #EEEEEE;
 ....
 --color-navbar-bg-default: #F3F3F3;
 --color-text-default: #000000;
@@ -140,7 +139,6 @@ body {
 }
 
 [data-theme="dark"] ::selection {
-  color: #ffffff;
   background-color: #2E517E;
 }
 `).value;

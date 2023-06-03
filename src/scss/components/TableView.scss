@@ -4,7 +4,7 @@
   max-width: fit-content;
   overflow: overlay;
   overflow-x: auto;
-  border: 1px solid var(--color-link-bg-hover);
+  border: 1px solid var(--color-ui-border-default);
   background-color: var(--color-background-default);
   @if $platform == "windows11" { border-radius: 4px; }
 }
@@ -19,7 +19,7 @@
     &.sortable {
       &:hover {
         cursor: pointer;
-        background-color: var(--color-grey-light-alpha);
+        background-color: var(--color-foreground-alpha);
       }
       &:active {
         user-select: none;
@@ -37,6 +37,6 @@
     padding: 6px 12px;
   }
   td, thead {
-    border-bottom: 1px solid var(--color-link-bg-hover);
+    border-bottom: 1px solid var(--color-ui-border-default);
   }
 }

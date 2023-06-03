@@ -3,17 +3,17 @@ const CollapseTriggers = document.querySelectorAll('[data-win-toggle="collapse"]
 for (const CollapseTrigger of CollapseTriggers) {
  let getCllpsePanelID = CollapseTrigger.getAttribute("data-win-target");
  let CollapsePanel = document.querySelector(getCllpsePanelID);
- let DownIcon = CollapseTrigger.getElementsByClassName("icons10-angle-down")[0]
-            || CollapseTrigger.getElementsByClassName("icons10-angle-up")[0];
 
   CollapseTrigger.addEventListener("click", () => {
     if(CollapsePanel.classList.contains("show")) {
       CollapsePanel.classList.remove("show");
       CollapsePanel.style.height = "";
-      DownIcon?.classList.replace("icons10-angle-up", "icons10-angle-down");
+      CollapseTrigger.setAttribute("aria-expanded", false);
     }
     else {
       CollapsePanel.classList.add("show");
+      CollapseTrigger.setAttribute("aria-expanded", true);
+
       let total_height = 0;
       CollapsePanel.childNodes.forEach((node) => {
         if(node.clientHeight !== undefined) {
@@ -22,7 +22,6 @@ for (const CollapseTrigger of CollapseTriggers) {
         }
       });
       CollapsePanel.style.height = `${total_height}px`;
-      DownIcon?.classList.replace("icons10-angle-down", "icons10-angle-up");
     }
   });
 };

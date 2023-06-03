@@ -14,7 +14,6 @@
   justify-content: space-between;
   @if $platform == "windows10" {
     background-color: var(--color-navbar-bg-default);
-
     &:active {
       background-color: var(--color-button-default);
       @extend .transition-scale-active;
@@ -22,18 +21,27 @@
   }
   @if $platform == "windows11" {
     border-radius: 4px;
-    border: 1.5px solid rgba(0,0,0,0.06);
+    border: 1px solid var(--color-ui-border-default);
     background-color: var(--color-button-default);
-
-    &:hover {
-      opacity: 0.8;
-    }
-    &:active {
-      filter: brightness(0.85);
-    }
+      &:hover { opacity: 0.8; }
+      &:active { filter: brightness(0.85); }
   }
-  
+
+  &::after {
+    content: "\f10c";
+    align-self: center;
+    font-family: icons10;
+    transform-origin: center;
+    transition: transform 167ms cubic-bezier(0, 0, 0, 1);
+  }  
 }
+
+.app-accordion-header[aria-expanded=true] {
+  .app-accordion-title::after {
+    transform: rotate(180deg);
+  }
+}
+
 .app-accordion-panel {
   height: 0;
   overflow: hidden;

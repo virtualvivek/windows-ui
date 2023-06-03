@@ -2,23 +2,29 @@
   [data-theme="dark"] {
     color-scheme: dark;
     --platform: "windows11";
-    --color-primary-adaptive: var(--PrimaryColorLight);
+    
     --color-danger-default: #FF99A3;
     --color-success-default: #6ACB5D;
     --color-scheme-absolute: #000;
 
     --color-background-default: #111111;
     --color-button-default: #484848;
-    --color-button-hover: #999999;
     --color-day-primary-night-grey: #403E41;
     --color-day-primary-night-white: #FFFFFF;
+    --color-dropdown-menu-bg: #202020;
     --color-foreground-default: #2B2B2B;
-    --color-grey-light: #444444;
-    --color-grey-light-alpha: #44444477;
+    --color-foreground-light: #444444;
+    --color-foreground-alpha: #44444477;
+    --color-input-border-default: #303030;
+    --color-input-border-strong: #9A9A9A;
     --color-link-bg-active: #262626;
     --color-link-bg-hover: #2D2D2D;
     --color-navbar-bg-default: #202020;
+    --color-primary-adaptive: var(--PrimaryColorLight);
     --color-primary-alpha: #EEEEEE9C;
+    --color-progress-bg: #484848;
+    --color-slider-thumb-bg: #454545;
     --color-text-default: #FFFFFF;
+    --color-ui-border-default: #282828;
   }
 }

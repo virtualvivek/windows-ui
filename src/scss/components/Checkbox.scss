@@ -34,8 +34,8 @@ label.app-checkbox {
       @if $platform == "windows11" {
         padding: 1px;
         border-radius: 4px;
-        border: 1px solid var(--color-button-hover);
-        background-color: var(--color-grey-light-alpha);
+        border: 1px solid var(--color-input-border-strong);
+        background-color: var(--color-foreground-alpha);
       }
     }
     &:checked {

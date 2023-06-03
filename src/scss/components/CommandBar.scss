@@ -42,7 +42,7 @@ ul.app-cmdbar-menu-list .cmdbar-submenu {
   color: var(--color-text-default);
 
   &:hover {
-    background: var(--color-grey-light-alpha);
+    background: var(--color-foreground-alpha);
   }
   @if $platform == "windows10" { &:active { background: var(--color-button-default); } }
   @if $platform == "windows11" { &:active { opacity: 0.7; } }

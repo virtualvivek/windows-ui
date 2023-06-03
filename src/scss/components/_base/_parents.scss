@@ -75,8 +75,7 @@
   @if $platform == "windows11" {
     height: 32px;
     border-radius: 4px;
-    // margin-bottom: 1px;
-    border: 1px solid #55555544;
+    border: 1px solid var(--color-input-border-default);
     border-bottom: 1px solid #777;
     &:focus {
       filter: none;
@@ -147,7 +146,7 @@
   visibility: hidden;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  background: var(--color-navbar-bg-default);
+  background: var(--color-dropdown-menu-bg);
 
   @if $platform == "windows10" {
     box-shadow: 0 1px 1px #55555544;
@@ -156,7 +155,7 @@
   @if $platform == "windows11" {
     border-radius: 6px;
     box-shadow: 0 2px 5px #22222244;
-    border-color: var(--color-grey-light);
+    border-color: var(--color-ui-border-default);
   }
 
   &.show {
@@ -177,15 +176,21 @@
       align-items: center;
       color: var(--color-text-default);
       @extend .tap-highlight-none;
-      @if $platform == "windows10" { padding: 10px 12px; }
-      @if $platform == "windows11" { margin: 5px; border-radius: 4px; padding: 10px; }
+      @if $platform == "windows10" {
+        padding: 10px 12px;
+        &:active { background-color: var(--color-link-bg-active); }
+      }
+      @if $platform == "windows11" {
+        margin: 5px;
+        padding: 10px;
+        border-radius: 4px;
+        &:active { opacity: 0.7; }
+      }
 
       &:hover {
         background-color: var(--color-link-bg-hover);
       }
-      &:active {
-        background-color: var(--color-link-bg-active);
-      }
+      
       i {
         height: 15px;
         line-height: 0;
