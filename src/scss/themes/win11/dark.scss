@@ -14,11 +14,9 @@
     --color-dropdown-menu-bg: #202020;
     --color-foreground-default: #2B2B2B;
     --color-foreground-light: #444444;
-    --color-foreground-alpha: #44444477;
     --color-input-border-default: #303030;
     --color-input-border-strong: #9A9A9A;
-    --color-link-bg-active: #262626;
-    --color-link-bg-hover: #2D2D2D;
+    --color-ui-active-default: #262626;
     --color-navbar-bg-default: #202020;
     --color-primary-adaptive: var(--PrimaryColorLight);
     --color-primary-alpha: #EEEEEE9C;
@@ -26,5 +24,7 @@
     --color-slider-thumb-bg: #454545;
     --color-text-default: #FFFFFF;
     --color-ui-border-default: #282828;
+    --color-ui-hover-default: #44444477;
+    --color-ui-hover-strong: #2D2D2D;
   }
 }

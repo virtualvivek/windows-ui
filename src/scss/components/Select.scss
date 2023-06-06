@@ -16,7 +16,7 @@
         }
       }
       @if $platform == "windows11" {
-        background-color: var(--color-link-bg-hover);
+        background-color: var(--color-ui-hover-strong);
         &::before {
           width: 3px;
           height: 18px;

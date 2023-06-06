@@ -10,10 +10,10 @@
     }
 
     &:hover {
-      background-color: var(--color-link-bg-hover);
+      background-color: var(--color-ui-hover-strong);
     }
     &:active {
-      @if $platform == "windows10" { background-color: var(--color-link-bg-active); }
+      @if $platform == "windows10" { background-color: var(--color-ui-active-default); }
       @if $platform == "windows11" { opacity: 0.7; }
 
       span {
@@ -51,7 +51,8 @@
         @if $platform=="windows11" {
           width: 3px;
           height: 10px;
-          border-radius: 40px;
+          transition: all 0.4s;
+          border-radius: 8px;
         }
       }
       &.active {
@@ -64,7 +65,7 @@
           }
         }
         @if $platform=="windows11" {
-          background-color: var(--color-link-bg-hover);
+          background-color: var(--color-ui-hover-strong);
 
           &::after {
           height: 20px;
@@ -99,7 +100,7 @@
       margin: 2px;
       user-select: none;
       border-radius: 4px;
-      background-color: var(--color-link-bg-hover);
+      background-color: var(--color-ui-hover-strong);
     }
   }
 }

@@ -17,8 +17,8 @@
 </head>
 
 <body>
-  <div class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-topbar-mobile">
+  <aside class="app-navbar-wrap" id="NavBarMain">
+    <div class="app-navbar-header-mobile">
       <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
       <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
         <span class="app-navbar-name">Windows UI</span>
@@ -75,12 +75,13 @@
         </div>
       </ul>
     </nav>
-  </div>
+  </aside>
   <div class="app-page-container has-padding">
     <h1>SliderBar</h1>
     <h1 class="app-m-0 app-color-primary" style="font-size:46px;" for="RangeSlider1">311</h1>
     <div class="app-range-slider">
       <input type="range" min="0" max="500" step="1" value="256" id="RangeSlider1">
+      <span class="app-range-slider-popup" style="left: 37.728%; visibility: hidden; opacity: 0;">262</span>
     </div>
     <pre><code id="code_view_1"></code></pre>
     <h2>SliderBar <p class="app-code">Round</p> varient :</h2>

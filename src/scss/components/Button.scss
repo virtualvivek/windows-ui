@@ -47,7 +47,8 @@ button,
   @if $platform == "windows11" {
     padding: 6px 11px;
     &:hover {
-      opacity: 0.8;
+      opacity: 0.85;
+      filter: brightness(0.95);
     }
     &:active {
       filter: brightness(0.85);

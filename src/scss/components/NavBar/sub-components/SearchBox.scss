@@ -60,7 +60,7 @@
       @if $platform == "windows10" {
         li a {
           &:hover { background: var(--color-foreground-light); }
-          &:active { background: var(--color-link-bg-hover) !important; }
+          &:active { background: var(--color-ui-hover-strong) !important; }
         }
       }
     }

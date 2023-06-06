@@ -6,7 +6,7 @@
   border-bottom: 1px solid var(--color-foreground-light);
 
   &:hover:not(.pointer-none) {
-    background-color: var(--color-foreground-alpha);
+    background-color: var(--color-ui-hover-default);
   }
   &:active:not(.pointer-none) {
     filter: contrast(0.8);
@@ -37,7 +37,7 @@
     text-align: center;
     margin-right: 20px;
     border-radius: 50px;
-    background: var(--color-link-bg-hover);
+    background: var(--color-ui-hover-strong);
   }
   p {
     &.app-list-subtitle {

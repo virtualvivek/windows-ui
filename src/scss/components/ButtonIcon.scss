@@ -8,14 +8,15 @@
   
 
   &:hover {
-    background-color: var(--color-foreground-alpha);
+    background-color: var(--color-ui-hover-default);
   }
   &:active {
-    background-color: var(--color-link-bg-active);
     @if $platform == "windows10" {
       transition: 0.02s ease;
       transform: scale(0.965, 0.965);
+      background-color: var(--color-ui-active-default);
     }
+    @if $platform == "windows11" { opacity: 0.7; }
   }
   i {
     line-height: 0;

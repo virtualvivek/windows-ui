@@ -19,7 +19,7 @@
     &.sortable {
       &:hover {
         cursor: pointer;
-        background-color: var(--color-foreground-alpha);
+        background-color: var(--color-ui-hover-default);
       }
       &:active {
         user-select: none;

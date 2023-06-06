@@ -39,7 +39,7 @@
     @if $platform == "windows11" {
       border-radius: 4px;
       background: var(--color-background-default);
-      border: 1px solid var(--color-link-bg-active);
+      border: 1px solid var(--color-ui-border-default);
       box-shadow: 0 2px 2px #22222288;
     }
   }

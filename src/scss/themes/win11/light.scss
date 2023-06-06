@@ -14,11 +14,9 @@
     --color-dropdown-menu-bg: #F8F8F8;
     --color-foreground-default: #fff;
     --color-foreground-light: #EEEEEE;
-    --color-foreground-alpha: #EEEEEED1;
     --color-input-border-default: #55555544;
     --color-input-border-strong: #8A8A8A;
-    --color-link-bg-active: #D8D8D8;
-    --color-link-bg-hover: #E8E8E8;
+    --color-ui-active-default: #D8D8D8;
     --color-navbar-bg-default: #F3F3F3;
     --color-primary-adaptive: var(--PrimaryColor);
     --color-primary-alpha: #EEEEEE9C;
@@ -26,5 +24,7 @@
     --color-slider-thumb-bg: #fff;
     --color-text-default: #000000;
     --color-ui-border-default: #E3E3E3;
+    --color-ui-hover-default: #EEEEEED1;
+    --color-ui-hover-strong: #E8E8E8;
   }
 }

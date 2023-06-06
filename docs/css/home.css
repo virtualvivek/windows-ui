@@ -36,7 +36,7 @@
 /* For Neumorphism Effect */
 .neumorphism {
   background: #e0e5ec;
-  box-shadow:  20px 20px 60px var(--color-link-bg-active), 
+  box-shadow:  20px 20px 60px #77777777, 
                -20px -20px 60px var(--color-background-default);
 }
 body.dark-theme .neumorphism {

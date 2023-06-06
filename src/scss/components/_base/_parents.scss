@@ -178,7 +178,7 @@
       @extend .tap-highlight-none;
       @if $platform == "windows10" {
         padding: 10px 12px;
-        &:active { background-color: var(--color-link-bg-active); }
+        &:active { background-color: var(--color-ui-active-default); }
       }
       @if $platform == "windows11" {
         margin: 5px;
@@ -188,7 +188,7 @@
       }
 
       &:hover {
-        background-color: var(--color-link-bg-hover);
+        background-color: var(--color-ui-hover-strong);
       }
       
       i {
@@ -207,7 +207,7 @@
   display: block;
   text-align: right;
   @if $platform == "windows11" {
-    border-top: 1px solid var(--color-link-bg-hover);
+    border-top: 1px solid var(--color-ui-hover-strong);
     background-color: var(--color-navbar-bg-default);
   }
 }

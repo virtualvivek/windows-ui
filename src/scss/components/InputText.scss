@@ -54,7 +54,7 @@
 
     @if $platform == "windows10" {
       border: 2px solid #999;
-      background-color: var(--color-foreground-alpha);
+      background-color: var(--color-ui-hover-default);
     }
     @if $platform == "windows11" {
       border-radius: 4px;

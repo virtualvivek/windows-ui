@@ -1,56 +1,44 @@
-@import "./sub-items//AppName.scss";
-@import "./sub-components/NavBarListItem.scss";
-@import "./sub-components/NavBarList.scss";
-@import "./sub-items/ToggleButton.scss";
-@import "./sub-items/Badge.scss";
-@import "./sub-items/Hr_line.scss";
-@import "./sub-items/Overlay.scss";
-@import "./sub-components/NavBarSubMenu.scss";
-@import "./sub-components/NavBarHeader.scss";
-@import "./sub-components/NavBarSearchBox.scss";
-@import "./sub-components/NavBarThemeSwitch.scss";
+@import "./sub-components/AppName.scss";
+@import "./sub-components/ListItem.scss";
+@import "./sub-components/List.scss";
+@import "./sub-components/ToggleButton.scss";
+@import "./sub-components/Badge.scss";
+@import "./sub-components/Hr_line.scss";
+@import "./sub-components/Overlay.scss";
+@import "./sub-components/SubMenu.scss";
+@import "./sub-components/Header.scss";
+@import "./sub-components/HeaderMobile.scss";
+@import "./sub-components/SearchBox.scss";
+@import "./sub-components/ThemeSwitch.scss";
 @import "./NavBarCollapsed.scss";
 
+.container-flex-row {
+  display: flex;
+  flex-direction: row;
+}
 .app-navbar-wrap {
-  z-index: 9;
-  width: 280px;
-  height: 100%;
-  overflow-y: overlay;
-  transition: 0.2s ease;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  position: sticky;
 
   nav {
     height: inherit;
-    width: inherit;
-    position: fixed;
-    top: 0;
-    left: 0;
+    width: 280px;
     padding: 0;
     display: flex;
-    z-index: inherit;
     flex-direction: column;
+    transition: 0.2s ease;
     background-color: var(--color-navbar-bg-default);
     @if $repository == "react-windows-ui" { @extend .transition-background-400ms; }
-  }
-
-  .app-navbar-topbar-mobile {
-    z-index: 4;
-    width: 100%;
-    height: 50px;
-    display: none;
-    position: fixed;
-    padding: 0 10px;
-    align-items: center;
-    background-color: var(--color-navbar-bg-default);
-    border-bottom: 1px solid var(--color-link-bg-hover);
-    .app-navbar-toggler {
-      padding: 5px;
-      border-radius: 4px;
-    }
   }
 }
 
 @mixin app-navbar-mobile() {
   .app-navbar-wrap nav {
+    z-index: 9;
+    position: fixed;
+    
     .app-navbar-toggler {
       @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
       @if $platform=="windows11" { padding: 7.5px 20px; margin: 5px; }

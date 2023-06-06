@@ -24,8 +24,8 @@
 .demo-navpagecontainer-rows-header .demo-navpage-item {
     height: 2px;
     width: 10px;
-    border-top: 2px solid var(--color-link-bg-active);
-    border-bottom: 2px solid var(--color-link-bg-active);
+    border-top: 2px solid var(--color-ui-border-default);
+    border-bottom: 2px solid var(--color-ui-border-default);
 }
 
 .demo-navpagecontainer-page-column {

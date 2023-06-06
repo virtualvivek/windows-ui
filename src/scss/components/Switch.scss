@@ -4,6 +4,7 @@
   align-items: center;
   display: inline-flex;
 
+  // State UnChecked
   >.app-switch-view {
     height: 19px;
     cursor: pointer;
@@ -13,8 +14,10 @@
     @if $platform == "windows10" { width: 42px; border: 2px solid var(--color-text-default); }
     @if $platform == "windows11" { width: 40px; border: 1px solid var(--color-text-default); }
 
-    &:hover { opacity: 0.7; }
-    &:active { filter: contrast(0.5); }
+    &:hover {
+      opacity: 0.8;
+    }
+    &:active { filter: contrast(0.8); }
 
     &::before {
       width: 13px;
@@ -24,7 +27,7 @@
       left: 3px;
       display: block;
       content: '';
-      border-radius: 50%;
+      border-radius: 18px;
       transition: 200ms;
       will-change: translate;
       background: var(--color-text-default);
@@ -44,18 +47,24 @@
 
   input {
     display: none;
-    
+    // State UnChecked
     &:checked {
       ~.app-switch-view {
-        border-color: var(--PrimaryColor);
-        background-color: var(--PrimaryColor);
-
-        &::before {
-          background: #fff;
-          color: var(--PrimaryColor);
-          transform: translateX(280%);
-          @if $platform == "windows10" { transform: translateX(calc(2 * 100% - 3px)); }
-          @if $platform == "windows11" { transform: translateX(calc(2 * 100% - 5px)); }
+        @if $platform == "windows10" {
+          border-color: var(--PrimaryColor);
+          background-color: var(--PrimaryColor);
+          &::before {
+            background: #fff;
+            transform: translateX(calc(2 * 100% - 3px));
+          }
+        }
+        @if $platform == "windows11" {
+          border-color: var(--color-primary-adaptive);
+          background-color: var(--color-primary-adaptive);
+          &::before {
+            background: var(--color-background-default);
+            transform: translateX(calc(2 * 100% - 5px));
+          }
         }
       }
       ~span::before {
@@ -68,20 +77,6 @@
       ~.app-switch-view {
         opacity: 0.7;
         cursor: not-allowed;
-      }
-    }
-  }
-}
-
-@if $platform == "windows11" {
-  body.dark-theme {
-    .app-switch {
-      input:checked~.app-switch-view {
-        border-color: var(--PrimaryColorLight);
-        background-color: var(--PrimaryColorLight);
-        &::before {
-          background: var(--color-background-default);
-        }
       }
     }
   }

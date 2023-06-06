@@ -22,7 +22,7 @@
     }
   }
   @if $platform == "windows11" {
-    background: var(--color-foreground-alpha);
+    background: var(--color-ui-hover-default);
     border: 1px solid var(--color-input-border-strong);
 
     &:checked {
