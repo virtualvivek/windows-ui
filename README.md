@@ -56,29 +56,29 @@
 
 # Status
 <a href="https://www.npmjs.com/package/windows-ui-fabric">
-  <img src="https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
+  <img src="https://img.shields.io/github/package-json/v/virtualvivek/windows-ui?style=flat-square&color=CB3837&logo=npm&logoColor=ffffff&label=npm"
     alt="npm" />
+</a><br/>
+<a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.css?style=flat-square&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
 </a>
 <a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
-  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.css?style=flat&logo=css3&color=1572B6&label=windows-ui.min.css" alt="windows-ui.min.css" />
-</a>
-<a href="https://github.com/virtualvivek/windows-ui/tree/master/dist/">
-  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
+  <img src="https://img.shields.io/github/size/virtualvivek/windows-ui/dist/windows-ui.min.js?style=flat-square&logo=JavaScript&color=F7DF1E&label=windows-ui.min.js" alt="windows-ui.min.js" />
+</a><br/>
+<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
+  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat-square&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
 </a>
 <a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
-  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.min.css?style=flat&color=EF2D5E&logo=MaterialDesignIcons&logoColor=ffffff&label=winui-icons.min.css" />
-</a>
-<a href="https://github.com/windows-ui/icons/tree/main/dist/" target="_blank">
-  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
-</a>
+  <img src="https://img.shields.io/github/size/windows-ui/icons/dist/winui-icons.slim.css?style=flat-square&color=00A98F&logo=FontAwesome&logoColor=ffffff&label=winui-icons.slim.css" />
+</a><br/>
 <a href="https://github.com/windows-ui/icons">
-  <img src="https://img.shields.io/badge/Icons-Docs-darklime.svg?style=flat&color=0078F0&logo=Snowpack" alt="Icons" />
+  <img src="https://img.shields.io/badge/Icons-Docs-darklime.svg?style=flat-square&color=0078F0&logo=Snowpack" alt="Icons" />
 </a>
 <a href="https://github.com/windows-ui/colors">
-  <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat&color=512BD4&logo=LaravelHorizon&logoColor=ffffff" alt="Colors" />
-</a>
+  <img src="https://img.shields.io/badge/Colors-Docs-darklime.svg?style=flat-square&color=512BD4&logo=LaravelHorizon&logoColor=ffffff" alt="Colors" />
+</a><br/>
 <a href="https://github.com/windows-ui/boilerplate">
-  <img src="https://img.shields.io/badge/Boilerplate-Template-darklime.svg?style=flat&color=006C66&logo=HeadlessUI&logoColor=ffffff" alt="Boilerplate" />
+  <img src="https://img.shields.io/badge/Boilerplate-Template-darklime.svg?style=flat-square&color=006C66&logo=HeadlessUI&logoColor=ffffff" alt="Boilerplate" />
 </a>
 
 
