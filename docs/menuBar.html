@@ -17,115 +17,117 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
-      </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
-          </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
-              </a>
-            </li>
-          </div>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
         </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>MenuBar</h1>
-    <p>A
-      <span class="app-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus.
-    </p>
-    <div class="app-dropdown-menu app-menubar">
-      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MyMenuBar">Select a fruit</span>
-      <ul class="app-dropdown-list" id="MyMenuBar">
-        <li class="app-dropdown-list-item">
-          <a href="#">
-            <i class="icons10-camera"></i>apple
-          </a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">orange</a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">banana</a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">peach</a>
-        </li>
-      </ul>
-    </div>
-    <h2>Usage</h2>
-    <pre><code id="code_view_1"></code></pre>
-    <h2>MenuBar with search</h2>
-    <div class="app-dropdown-menu app-menubar">
-      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MyMenuBar2">Select a fruit</span>
-      <ul class="app-dropdown-list" id="MyMenuBar2">
-        <div class="app-input-search-box">
-          <input class="app-input-text app-input-search" type="search" placeholder="search here..">
+      </div>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
         </div>
-        <li class="app-dropdown-list-item">
-          <a href="#">
-            <i class="icons10-camera"></i>apple
-          </a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">orange</a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">banana</a>
-        </li>
-        <li class="app-dropdown-list-item">
-          <a href="#">peach</a>
-        </li>
-      </ul>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>MenuBar</h1>
+      <p>A
+        <span class="app-color-primary">MenuBar</span> is a graphical control element which contains drop-down menus.
+      </p>
+      <div class="app-dropdown-menu app-menubar">
+        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MyMenuBar">Select a fruit</span>
+        <ul class="app-dropdown-list" id="MyMenuBar">
+          <li class="app-dropdown-list-item">
+            <a href="#">
+              <i class="icons10-camera"></i>apple
+            </a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">orange</a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">banana</a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">peach</a>
+          </li>
+        </ul>
+      </div>
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+      <h2>MenuBar with search</h2>
+      <div class="app-dropdown-menu app-menubar">
+        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MyMenuBar2">Select a fruit</span>
+        <ul class="app-dropdown-list" id="MyMenuBar2">
+          <div class="app-input-search-box">
+            <input class="app-input-text app-input-search" type="search" placeholder="search here..">
+          </div>
+          <li class="app-dropdown-list-item">
+            <a href="#">
+              <i class="icons10-camera"></i>apple
+            </a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">orange</a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">banana</a>
+          </li>
+          <li class="app-dropdown-list-item">
+            <a href="#">peach</a>
+          </li>
+        </ul>
+      </div>
+      <pre><code id="code_view_2"></code></pre>
     </div>
-    <pre><code id="code_view_2"></code></pre>
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

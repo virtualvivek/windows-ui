@@ -1,20 +1,13 @@
 @-moz-document url-prefix() {
-  ::-moz-selection {
-    background-color: var(--PrimaryColor);
-    color: #ffffff;
-  }
-  .app-content-wrap section {
-    scrollbar-color: #999 transparent;
-  }
-  .app-navbar-wrap nav {
+  .app-navbar-wrap * {
     scrollbar-width: thin;
   }
-  .app-navbar-wrap.collapsed nav {
+  .app-navbar-wrap.collapsed * {
     scrollbar-width: none;
   }
 }
 @mixin browser-mozilla-mobile() {
-  .app-navbar-wrap nav {
+  .app-navbar-wrap * {
     scrollbar-width: none;
   }
 }

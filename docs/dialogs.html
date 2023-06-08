@@ -17,131 +17,133 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
+        </div>
       </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
           </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>Dialogs</h1>
+      <p>
+        <span class="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
+      </p>
+      <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
+        <span>Open Dialog</span>
+      </button>
+      <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
+        <div class="app-dialog-modal" aria-modal="true" role="dialog">
+          <div class="app-dialog-header">
+            <h3>Header</h3>
+          </div>
+          <div class="app-dialog-body">
+            <li class="app-list-item">
+              <a href="#/v4.2.1/dialogs">
+                <img alt="image" style="display: none;">
+                <div class="app-list-item-container">
+                  <span class="app-list-title">Magenta Riddim</span>
+                  <p class="app-list-subtitle">5.6 MB</p>
+                </div>
               </a>
+              <div style="flex: 0.2 1 0%;"></div>
             </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
+            <li class="app-list-item">
+              <a href="#/v4.2.1/dialogs">
+                <img alt="image" style="display: none;">
+                <div class="app-list-item-container">
+                  <span class="app-list-title">Different World</span>
+                  <p class="app-list-subtitle">12.0 MB</p>
+                </div>
               </a>
+              <div style="flex: 0.2 1 0%;"></div>
             </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
+            <li class="app-list-item">
+              <a href="#/v4.2.1/dialogs">
+                <img alt="image" style="display: none;">
+                <div class="app-list-item-container">
+                  <span class="app-list-title">La Familia</span>
+                  <p class="app-list-subtitle">24 MB</p>
+                </div>
               </a>
+              <div style="flex: 0.2 1 0%;"></div>
             </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
+            <li class="app-list-item">
+              <a href="#/v4.2.1/dialogs">
+                <img alt="image" style="display: none;">
+                <div class="app-list-item-container">
+                  <span class="app-list-title">La Familia</span>
+                  <p class="app-list-subtitle">24 MB</p>
+                </div>
               </a>
+              <div style="flex: 0.2 1 0%;"></div>
             </li>
           </div>
-        </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>Dialogs</h1>
-    <p>
-      <span class="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
-    </p>
-    <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-      <span>Open Dialog</span>
-    </button>
-    <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
-      <div class="app-dialog-modal" aria-modal="true" role="dialog">
-        <div class="app-dialog-header">
-          <h3>Header</h3>
-        </div>
-        <div class="app-dialog-body">
-          <li class="app-list-item">
-            <a href="#/v4.2.1/dialogs">
-              <img alt="image" style="display: none;">
-              <div class="app-list-item-container">
-                <span class="app-list-title">Magenta Riddim</span>
-                <p class="app-list-subtitle">5.6 MB</p>
-              </div>
-            </a>
-            <div style="flex: 0.2 1 0%;"></div>
-          </li>
-          <li class="app-list-item">
-            <a href="#/v4.2.1/dialogs">
-              <img alt="image" style="display: none;">
-              <div class="app-list-item-container">
-                <span class="app-list-title">Different World</span>
-                <p class="app-list-subtitle">12.0 MB</p>
-              </div>
-            </a>
-            <div style="flex: 0.2 1 0%;"></div>
-          </li>
-          <li class="app-list-item">
-            <a href="#/v4.2.1/dialogs">
-              <img alt="image" style="display: none;">
-              <div class="app-list-item-container">
-                <span class="app-list-title">La Familia</span>
-                <p class="app-list-subtitle">24 MB</p>
-              </div>
-            </a>
-            <div style="flex: 0.2 1 0%;"></div>
-          </li>
-          <li class="app-list-item">
-            <a href="#/v4.2.1/dialogs">
-              <img alt="image" style="display: none;">
-              <div class="app-list-item-container">
-                <span class="app-list-title">La Familia</span>
-                <p class="app-list-subtitle">24 MB</p>
-              </div>
-            </a>
-            <div style="flex: 0.2 1 0%;"></div>
-          </li>
-        </div>
-        <div class="app-dialog-footer">
-          <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-            <span>Close</span>
-          </button>
+          <div class="app-dialog-footer">
+            <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
+              <span>Close</span>
+            </button>
+          </div>
         </div>
       </div>
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+      <h2>Open Dialog</h2>
+      <pre><code id="code_view_2"></code></pre>
     </div>
-    <h2>Usage</h2>
-    <pre><code id="code_view_1"></code></pre>
-    <h2>Open Dialog</h2>
-    <pre><code id="code_view_2"></code></pre>
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

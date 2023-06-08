@@ -17,89 +17,91 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
-      </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
-          </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
-              </a>
-            </li>
-          </div>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
         </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>SliderBar</h1>
-    <h1 class="app-m-0 app-color-primary" style="font-size:46px;" for="RangeSlider1">311</h1>
-    <div class="app-range-slider">
-      <input type="range" min="0" max="500" step="1" value="256" id="RangeSlider1">
-      <span class="app-range-slider-popup" style="left: 37.728%; visibility: hidden; opacity: 0;">262</span>
+      </div>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>SliderBar</h1>
+      <h1 class="app-m-0 app-color-primary" style="font-size:46px;" for="RangeSlider1">311</h1>
+      <div class="app-range-slider">
+        <input type="range" min="0" max="500" step="1" value="256" id="RangeSlider1">
+        <span class="app-range-slider-popup" style="left: 37.728%; visibility: hidden; opacity: 0;">262</span>
+      </div>
+      <pre><code id="code_view_1"></code></pre>
+      <h2>SliderBar <p class="app-code">Round</p> varient :</h2>
+      <p>Add <span class="app-code">round</span> class to sliderbar.</p>
+      <div class="app-range-slider slider-round">
+        <input type="range" min="0" max="500" step="1" value="200" id="RangeSlider2">
+        <span for="RangeSlider2">200</span>
+      </div>
+      <pre><code id="code_view_2"></code></pre>
+      <h2>SliderBar <p class="app-code">Round Border</p> varient :</h2>
+      <p>Add <span class="app-code">round-border</span> class to sliderbar.</p>
+      <div class="app-range-slider slider-round-border">
+        <input type="range" min="0" max="500" step="1" value="86" id="RangeSlider3">
+        <span for="RangeSlider3">86</span>
+      </div>
+      <pre><code id="code_view_3"></code></pre>
+      <br />
+      <br />
     </div>
-    <pre><code id="code_view_1"></code></pre>
-    <h2>SliderBar <p class="app-code">Round</p> varient :</h2>
-    <p>Add <span class="app-code">round</span> class to sliderbar.</p>
-    <div class="app-range-slider slider-round">
-      <input type="range" min="0" max="500" step="1" value="200" id="RangeSlider2">
-      <span for="RangeSlider2">200</span>
-    </div>
-    <pre><code id="code_view_2"></code></pre>
-    <h2>SliderBar <p class="app-code">Round Border</p> varient :</h2>
-    <p>Add <span class="app-code">round-border</span> class to sliderbar.</p>
-    <div class="app-range-slider slider-round-border">
-      <input type="range" min="0" max="500" step="1" value="86" id="RangeSlider3">
-      <span for="RangeSlider3">86</span>
-    </div>
-    <pre><code id="code_view_3"></code></pre>
-    <br />
-    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

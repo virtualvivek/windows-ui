@@ -1,5 +1,6 @@
+var root_ = document.documentElement;
 function setDarkScheme(save_changes = false) {
-  document.documentElement.setAttribute("data-theme", "dark");
+  root_.setAttribute("data-theme", "dark");
   document.body.classList.add("dark-theme");
   
   if(document.getElementById("app-navbar-theme-switch")) {
@@ -9,12 +10,19 @@ function setDarkScheme(save_changes = false) {
   if(save_changes) { localStorage.setItem(lc_storage_theme_key, "dark"); }
 }
 
+const getColorScheme = () => {
+  let color = window.getComputedStyle(root_).getPropertyValue("color-scheme");
+  return color.toString();
+}
+
 if(localStorage.getItem(lc_storage_theme_key) == "dark") {
   setDarkScheme(false);
 }
 
+console.log(window.getComputedStyle(root_).getPropertyValue("--light"));
+
 function setLightScheme(save_changes = false) {
-  document.documentElement.setAttribute("data-theme", "light");
+  root_.setAttribute("data-theme", "light");
   document.body.classList.remove("dark-theme");
 
   if(document.getElementById("app-navbar-theme-switch")) {
@@ -24,10 +32,7 @@ function setLightScheme(save_changes = false) {
   if(save_changes) { localStorage.setItem(lc_storage_theme_key, "light"); }
 }
 
-const getColorScheme = () => {
-  let color = window.getComputedStyle(document.documentElement).getPropertyValue("color-scheme");
-  return color.toString();
-}
+
 
 function addThemeChangeTransition(callback) {
   document.body.classList.add("transition-background-400ms");

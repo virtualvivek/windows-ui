@@ -17,96 +17,98 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
-      </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
-          </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
-              </a>
-            </li>
-          </div>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
         </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>Switch</h1>
-    <p>A <span class="app-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <div class="app-switch-view"></div>
-      <span class="app-switch-label" data-on="On" data-off="Off"></span>
-    </label> &nbsp;&nbsp;&nbsp;&nbsp;
-    <label class="app-switch">
-      <input type="checkbox" checked disabled />
-      <div class="app-switch-view"></div>
-      <span class="app-switch-label" data-on="On" data-off="Off"></span>
-    </label>
-    <br />
-    <pre><code id="code_view_1"></code></pre>
-    <h2>Switch with label position "start"</h2>
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
-      <div class="app-switch-view"></div>
-    </label>
-    <pre><code id="code_view_2"></code></pre>
-    <h2>Switch no label</h2>
-    <p>Just remove the <span class="app-code">span</span> from the switch.</p>
-    <label class="app-switch">
-      <input type="checkbox" checked />
-      <div class="app-switch-view"></div>
-    </label>
-    <pre><code id="code_view_3"></code></pre>
-    <br />
-    <br />
+      </div>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>Switch</h1>
+      <p>A <span class="app-color-primary">Switch</span> is a simple component used for activating one of two predefined options. Commonly used as an on/off button.</p>
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+        <span class="app-switch-label" data-on="On" data-off="Off"></span>
+      </label> &nbsp;&nbsp;&nbsp;&nbsp;
+      <label class="app-switch">
+        <input type="checkbox" checked disabled />
+        <div class="app-switch-view"></div>
+        <span class="app-switch-label" data-on="On" data-off="Off"></span>
+      </label>
+      <br />
+      <pre><code id="code_view_1"></code></pre>
+      <h2>Switch with label position "start"</h2>
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <span class="app-switch-label" data-on="On" data-off="Off" style="width: 28px;"></span>
+        <div class="app-switch-view"></div>
+      </label>
+      <pre><code id="code_view_2"></code></pre>
+      <h2>Switch no label</h2>
+      <p>Just remove the <span class="app-code">span</span> from the switch.</p>
+      <label class="app-switch">
+        <input type="checkbox" checked />
+        <div class="app-switch-view"></div>
+      </label>
+      <pre><code id="code_view_3"></code></pre>
+      <br />
+      <br />
+    </div>
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

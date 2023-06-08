@@ -17,99 +17,101 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
-      </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
-          </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
-              </a>
-            </li>
-          </div>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
         </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>TableView</h1>
-    <div class="app-table-view-container">
-      <table class="app-table-view">
-        <thead>
-          <tr>
-            <th align="left">Fruits</th>
-            <th align="left">Energy (KCal)</th>
-            <th align="left">Color</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Papaya</td>
-            <td>11845</td>
-            <td>Orange</td>
-          </tr>
-          <tr>
-            <td>Grapes</td>
-            <td>12867</td>
-            <td>Green</td>
-          </tr>
-          <tr>
-            <td>Apple</td>
-            <td>10867</td>
-            <td>Red</td>
-          </tr>
-        </tbody>
-      </table>
+      </div>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
+        </div>
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
+            </a>
+          </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>TableView</h1>
+      <div class="app-table-view-container">
+        <table class="app-table-view">
+          <thead>
+            <tr>
+              <th align="left">Fruits</th>
+              <th align="left">Energy (KCal)</th>
+              <th align="left">Color</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Papaya</td>
+              <td>11845</td>
+              <td>Orange</td>
+            </tr>
+            <tr>
+              <td>Grapes</td>
+              <td>12867</td>
+              <td>Green</td>
+            </tr>
+            <tr>
+              <td>Apple</td>
+              <td>10867</td>
+              <td>Red</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+      <br />
+      <br />
     </div>
-    <h2>Usage</h2>
-    <pre><code id="code_view_1"></code></pre>
-    <br />
-    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

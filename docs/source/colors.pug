@@ -2,6 +2,7 @@
 <html lang="en">
   include common/head.pug
   <body>
+  <div class="container-flex-row">
     include common/navbar.pug
 
     <div class="app-page-container has-padding">
@@ -24,13 +25,18 @@
 
       <h2>Create your own color variables.</h2>
       <p>Define your own <span class="app-color-primary">color variables </span>at anywhere like below:</p>
+      <h3>Method 1</h3>
       <pre><code id="code_view_4"></code></pre>
+
+      <h3>Method 2</h3>
+      <pre><code id="code_view_4_b"></code></pre>
       
       <h2>Define a component style as per theme.</h2>
       <pre><code id="code_view_5"></code></pre>
 
       <br/><br/><br/><br/>
 
+    </div>
     </div>
   </body>
   include common/footer.pug
@@ -76,6 +82,10 @@
     body.dark-theme {
       --your-color-variable: #47aeff;
     }
+    `).value;
+    document.getElementById("code_view_4_b").innerHTML =
+    hljs.highlightAuto(`
+    --your-color-variable: var(--dark, #fff) var(--light, #000);
     `).value;
     document.getElementById("code_view_5").innerHTML =
     hljs.highlightAuto(`

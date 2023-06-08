@@ -17,127 +17,129 @@
 </head>
 
 <body>
-  <aside class="app-navbar-wrap" id="NavBarMain">
-    <div class="app-navbar-header-mobile">
-      <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-      <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
-        <span class="app-navbar-name">Windows UI</span>
-        <span class="app-navbar-name">Home</span>
-      </div>
-    </div>
-    <nav class="app-navbar">
-      <div class="app-navbar-header">
-        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
-        <span class="app-navbar-name">Windows UI</span>
-      </div>
-      <ul class="app-navbar-list" id="app-navbar-list">
-        <label class="app-navbar-theme-switch">
-          <input id="app-navbar-theme-switch" type="checkbox" checked>
-          <div class="app-navbar-theme-switch-icon"></div>
-          <span id="app-navbar-theme-switch-text">Day Mode</span>
-        </label>
-        <li class="app-navbar-list-item">
-          <a href="./../index.html" class="">
-            <img src="./assets/mountain.jpg">
-            <span>Home</span>
-          </a>
-        </li>
-        <div class="app-navbar-submenu">
-          <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
-            <span>Navigation</span>
-          </div>
-          <div class="app-navbar-submenu-content" id="NavSubMenu">
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbar.html">
-                <i class="icons10-map"></i>
-                <span>NavBar</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarLink.html">
-                <i class="icons10-link"></i>
-                <span>NavBarLink</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navbarSubmenu.html">
-                <i class="icons10-angle-down"></i>
-                <span>NavBarSubMenu</span>
-              </a>
-            </li>
-            <li class="app-navbar-list-item">
-              <a exact="false" class="" href="./navpagecontainer.html">
-                <i class="icons10-columns"></i>
-                <span>PageContainer</span>
-              </a>
-            </li>
-          </div>
+  <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
+      <div class="app-navbar-header-mobile">
+        <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
+        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+          <span class="app-navbar-name">Windows UI</span>
+          <span class="app-navbar-name">Home</span>
         </div>
-      </ul>
-    </nav>
-  </aside>
-  <div class="app-page-container has-padding">
-    <h1>CommandBar</h1>
-    <p>
-      <span class="app-color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.
-      <br>
-    </p>
-    <div class="app-cmd-bar">
-      <button class="app-cmdbar-button">
-        <i class="icons10-plus app-color-primary"></i>
-        <span>New</span>
-      </button>
-      <!-- Adding <hr/> tag to make a split UI -->
-      <hr />
-      <div class="app-cmdbar-menu">
-        <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
-          <button class="app-cmdbar-button">
-            <i class="icons10-angle-down"></i>
-          </button>
+      </div>
+      <nav class="app-navbar">
+        <div class="app-navbar-header">
+          <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain" aria-controls="NavBarMain" aria-label="Toggle navigation"></span>
+          <span class="app-navbar-name">Windows UI</span>
         </div>
-        <ul class="app-cmdbar-menu-list left-justify" id="MyMenu">
-          <li class="cmdbar-menu-list-item">
-            <a href="#">
-              <i class="icons10-file"></i>File
+        <ul class="app-navbar-list" id="app-navbar-list">
+          <label class="app-navbar-theme-switch">
+            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <div class="app-navbar-theme-switch-icon"></div>
+            <span id="app-navbar-theme-switch-text">Day Mode</span>
+          </label>
+          <li class="app-navbar-list-item">
+            <a href="./../index.html" class="">
+              <img src="./assets/mountain.jpg">
+              <span>Home</span>
             </a>
           </li>
+          <div class="app-navbar-submenu">
+            <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu" aria-expanded="false">
+              <span>Navigation</span>
+            </div>
+            <div class="app-navbar-submenu-content" id="NavSubMenu">
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbar.html">
+                  <i class="icons10-map"></i>
+                  <span>NavBar</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarLink.html">
+                  <i class="icons10-link"></i>
+                  <span>NavBarLink</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navbarSubmenu.html">
+                  <i class="icons10-angle-down"></i>
+                  <span>NavBarSubMenu</span>
+                </a>
+              </li>
+              <li class="app-navbar-list-item">
+                <a exact="false" class="" href="./navpagecontainer.html">
+                  <i class="icons10-columns"></i>
+                  <span>PageContainer</span>
+                </a>
+              </li>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </aside>
+    <div class="app-page-container has-padding">
+      <h1>CommandBar</h1>
+      <p>
+        <span class="app-color-primary">CommandBar</span> is a surface that houses commands that operate on the content of the window.
+        <br>
+      </p>
+      <div class="app-cmd-bar">
+        <button class="app-cmdbar-button">
+          <i class="icons10-plus app-color-primary"></i>
+          <span>New</span>
+        </button>
+        <!-- Adding <hr/> tag to make a split UI -->
+        <hr />
+        <div class="app-cmdbar-menu">
+          <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu">
+            <button class="app-cmdbar-button">
+              <i class="icons10-angle-down"></i>
+            </button>
+          </div>
+          <ul class="app-cmdbar-menu-list left-justify" id="MyMenu">
+            <li class="cmdbar-menu-list-item">
+              <a href="#">
+                <i class="icons10-file"></i>File
+              </a>
+            </li>
+            <li class="cmdbar-menu-list-item">
+              <a href="#">Folder</a>
+            </li>
+            <li class="cmdbar-menu-list-item">
+              <a href="#">Document</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+      <h2>CommandBar as <p class="app-code">Nested Menu</p> :</h2>
+      <div class="app-cmdbar-menu">
+        <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu2">
+          <button class="app-cmdbar-button">
+            <i class="icons10-angle-down app-color-primary"></i>
+            <span>Share</span>
+          </button>
+        </div>
+        <ul class="app-cmdbar-menu-list" id="MyMenu2">
           <li class="cmdbar-menu-list-item">
-            <a href="#">Folder</a>
+            <a href="javascript:;" data-win-toggle="dropdown" data-win-target="#MyMenu4">Whatsapp<i class="icons10-angle-right"></i>
+            </a>
+            <ul class="app-cmdbar-menu-list cmdbar-submenu" id="MyMenu4">
+              <li class="cmdbar-menu-list-item">
+                <a href="#">HyperLink</a>
+              </li>
+            </ul>
           </li>
           <li class="cmdbar-menu-list-item">
-            <a href="#">Document</a>
+            <a href="#">Facebook</a>
           </li>
         </ul>
       </div>
+      <pre><code id="code_view_2"></code></pre>
+      <br />
+      <br />
     </div>
-    <h2>Usage</h2>
-    <pre><code id="code_view_1"></code></pre>
-    <h2>CommandBar as <p class="app-code">Nested Menu</p> :</h2>
-    <div class="app-cmdbar-menu">
-      <div class="app-cmdbar-menu-trigger" data-win-toggle="dropdown" data-win-target="#MyMenu2">
-        <button class="app-cmdbar-button">
-          <i class="icons10-angle-down app-color-primary"></i>
-          <span>Share</span>
-        </button>
-      </div>
-      <ul class="app-cmdbar-menu-list" id="MyMenu2">
-        <li class="cmdbar-menu-list-item">
-          <a href="javascript:;" data-win-toggle="dropdown" data-win-target="#MyMenu4">Whatsapp<i class="icons10-angle-right"></i>
-          </a>
-          <ul class="app-cmdbar-menu-list cmdbar-submenu" id="MyMenu4">
-            <li class="cmdbar-menu-list-item">
-              <a href="#">HyperLink</a>
-            </li>
-          </ul>
-        </li>
-        <li class="cmdbar-menu-list-item">
-          <a href="#">Facebook</a>
-        </li>
-      </ul>
-    </div>
-    <pre><code id="code_view_2"></code></pre>
-    <br />
-    <br />
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

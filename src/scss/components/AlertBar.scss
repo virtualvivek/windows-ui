@@ -1,10 +1,12 @@
 .app-alert-bar {
   gap: 10px;
-  padding: 7px 10px;
   display: flex;
+  font-size: 15px;
+  padding: 7px 10px;
+  border-radius: 4px;
   align-items: center;
   flex-direction: row;
-  border-radius: 4px;
+  
   // box-shadow: 0 0 2px #{'rgb(0 0 0 / 15%)'};
   border: 1px solid #{'hsla(0, 0%, 0%, 8%)'};
 
@@ -18,7 +20,7 @@
   }
 
   &.alert-bar-secondary {
-    background: #dddddd11;
+    background: #dddddd22;
   }
   &.alert-bar-success {
     background: #57E84A22;

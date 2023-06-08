@@ -1,7 +1,5 @@
 @media only screen and (min-width: 760px) {
   .app-navbar-wrap.collapsed {
-    
-      
     nav ul h1,
     nav a span,
     .app-navbar-name,
@@ -11,7 +9,7 @@
     }
 
     nav {
-      width: 70px;
+      width: var(--width-navbar-collapsed);
       li a {
         text-overflow: clip;
       }

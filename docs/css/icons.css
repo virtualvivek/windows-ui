@@ -1,7 +1,6 @@
 .preview-glyph {
   padding: 0;
   margin-bottom: 20px;
-  height: 100%;
   flex-wrap: wrap;
   display: flex;
 }

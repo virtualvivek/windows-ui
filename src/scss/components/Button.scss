@@ -22,6 +22,7 @@ button,
     outline: 1px solid var(--color-text-default);
   }
 }
+
 .app-btn {
   height: 35px;
   font-size: 15px;
@@ -44,6 +45,7 @@ button,
       border: 2px solid transparent;
     }
   }
+
   @if $platform == "windows11" {
     padding: 6px 11px;
     &:hover {
@@ -62,43 +64,26 @@ button,
 
   &.app-btn-primary {
     @if $platform == "windows10" { background-color: var(--PrimaryColor); }
-    
-    @if $platform == "windows11" {
-      background-color: var(--color-primary-adaptive);
-      border-color: rgba(255, 255, 255, 0.08);
-      border-bottom-color: rgba(0, 0, 0, 0.8);
-    }
+    @if $platform == "windows11" { background-color: var(--color-primary-adaptive); }
   }
+  &.app-btn-success { background: var(--color-success-default); }
+  &.app-btn-danger { background: var(--color-danger-default); }
 
   &.app-btn-primary-outline {
     color: var(--color-day-primary-night-white);
     @if $platform == "windows10" {
       border: 2px solid var(--PrimaryColor);
-
-      &:active {
-        background-color: var(--PrimaryColor);
-      }
+      &:active { background-color: var(--PrimaryColor); }
     }
     @if $platform == "windows11" {
       border: 1px solid var(--color-primary-adaptive);
-
-      &:active {
-        background-color: var(--color-primary-adaptive);
-      }
+      &:active { background-color: var(--color-primary-adaptive); }
     }
-  }
-
-  &.app-btn-danger {
-    background: var(--color-danger-default);
   }
   &.app-btn-danger-outline {
     color: var(--color-danger-default);
     border-color: var(--color-danger-default);
     &:active { background-color: var(--color-danger-default); }
-  }
-
-  &.app-btn-success {
-    background: var(--color-success-default);
   }
   &.app-btn-success-outline {
     color: var(--color-success-default);
@@ -110,6 +95,8 @@ button,
   &.app-btn-danger,
   &.app-btn-success {
     color: var(--color-scheme-absolute);
+    border-color: rgba(255, 255, 255, 0.08);
+    border-bottom-color: rgba(0, 0, 0, 0.8);
   }
   &[class*="outline"] {
     background-color: transparent;
@@ -130,7 +117,6 @@ button,
   
   &[disabled] {
     @extend .input-field-default-disabled;
-    
     span { pointer-events: none; }
     &:active, &:hover {
       @extend .input-field-default-disabled;
@@ -173,8 +159,11 @@ button,
 
 @if $platform == "windows11" {
   body.dark-theme {
-    .app-btn-primary, .app-btn-danger, .app-btn-success {
-      border-bottom-color: rgba(200,200,200,0.5);
+    .app-btn-primary,
+    .app-btn-danger,
+    .app-btn-success {
+      border-color: #{"hsla(0, 0%, 100%, 8%)"};
+      border-bottom-color: #{"hsla(0, 0%, 0%, 14%)"};
     }
   }
 }

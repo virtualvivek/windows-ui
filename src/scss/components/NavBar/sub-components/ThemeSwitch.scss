@@ -60,7 +60,7 @@
   font-family: icons10;
   transition: all 0.2s ease;
 }
-// ☀️ Sun Icon Hidden
+// 🌙 Moon Icon Shown
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:after {
   transform: scale(1);
   transition: transform 0.4s ease 0.12s;
