@@ -8,16 +8,31 @@
     <div class="app-page-container has-padding">
       <h1>Buttons</h1>
 
-      <button class="app-btn" type="button">
+      <button class="app-btn">
         <span>Default Button</span>
       </button>
 
-      <button class="app-btn" type="button">
-        <span><i class="icons10-plus"></i></span>
+      <button class="app-btn app-btn-primary">
+        <span>Primary Button</span>
+      </button>
+
+      <button class="app-btn app-btn-secondary">
+        <span>Secondary Button</span>
+      </button>
+
+
+      <h2>Button Default</h2>
+
+      <button class="app-btn">
+        <span>Default Button</span>
+      </button>
+
+      <button class="app-btn">
+        <i class="icons10-plus"></i>
         <span>Button with icon</span>
       </button>
 
-      <button class="app-btn" type="button" disabled>
+      <button class="app-btn" disabled>
         <span>Button Disabled</span>
       </button>
 
@@ -27,7 +42,7 @@
 
       <h2>Button state loading</h2>
 
-      <button class="app-btn animate btn-is-loading" type="button">
+      <button class="app-btn animate btn-is-loading">
         <div class="app-loader-busy loader-sm animate"></div>
         <span>Loading Button</span>
       </button>
@@ -38,12 +53,12 @@
 
       <h2>Button Primary</h2>
 
-      <button class="app-btn app-btn-primary" type="button">
+      <button class="app-btn app-btn-primary">
         <span>Button Regular</span>
       </button>
 
-      <button class="app-btn app-btn-primary" type="button">
-        <span><i class="icons10-fantasy"></i></span>
+      <button class="app-btn app-btn-primary">
+        <i class="icons10-fantasy"></i>
         <span>Primary Button</span>
       </button>
 
@@ -53,12 +68,12 @@
 
       <h2>Button Primary Outline</h2>
 
-      <button class="app-btn app-btn-primary-outline" type="button" title="Button tooltip title">
+      <button class="app-btn app-btn-primary-outline" title="Button tooltip title">
         <span>Button Outline</span>
       </button>
 
-      <button class="app-btn app-btn-primary-outline" type="button">
-        <span><i class="icons10-fantasy"></i></span>
+      <button class="app-btn app-btn-primary-outline">
+        <i class="icons10-fantasy"></i>
         <span>Primary Button</span>
       </button>
 
@@ -68,12 +83,12 @@
 
       <h2>Button Success</h2>
 
-      <button class="app-btn app-btn-success" type="button">
+      <button class="app-btn app-btn-success">
         <span>Success Button</span>
       </button>
 
-      <button class="app-btn app-btn-success-outline" type="button">
-        <span><i class="icons10-checkmark"></i></span>
+      <button class="app-btn app-btn-success-outline">
+        <i class="icons10-checkmark"></i>
         <span>Success Button</span>
       </button>
 
@@ -83,12 +98,12 @@
 
       <h2>Button Danger</h2>
 
-      <button class="app-btn app-btn-danger" type="button">
+      <button class="app-btn app-btn-danger">
         <span>Danger Button</span>
       </button>
 
-      <button class="app-btn app-btn-danger-outline" type="button">
-        <span><i class="icons10-cross"></i></span>
+      <button class="app-btn app-btn-danger-outline">
+        <i class="icons10-cross"></i>
         <span>Danger Button</span>
       </button>
 
@@ -96,13 +111,13 @@
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h1>Button Icon</h1>
+      <h1>Button as Icon:</h1>
 
-      <button class="app-btn-icon">
+      <button class="app-btn app-btn-secondary">
         <i class="icons10-home"></i>
       </button>
 
-      <button class="app-btn-icon">
+      <button class="app-btn app-btn-secondary">
         <i class="icons10-share"></i>
       </button>
 
@@ -118,19 +133,19 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn" type="button">
+    <button class="app-btn">
       <span>Default Button</span>
     </button>
 
-    <button class="app-btn" type="button">
-      <span><i class="icons10-plus"></i></span>
+    <button class="app-btn">
+      <i class="icons10-plus"></i>
       <span>Button with icon</span>
     </button>
     `).value;
 
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn animate btn-is-loading" type="button">
+    <button class="app-btn animate btn-is-loading">
       <div class="app-loader-busy loader-sm animate"></div>
       <span>Loading Button</span>
     </button>
@@ -138,55 +153,55 @@
 
     document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn app-btn-primary" type="button">
+    <button class="app-btn app-btn-primary">
       <span>Button Regular</span>
     </button>
 
-    <button class="app-btn app-btn-primary" type="button">
-      <span><i class="icons10-fantasy"></i></span>
+    <button class="app-btn app-btn-primary">
+      <i class="icons10-fantasy"></i>
       <span>Primary Button</span>
     </button>
     `).value;
 
     document.getElementById("code_view_4").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn app-btn-primary-outline" type="button">
+    <button class="app-btn app-btn-primary-outline">
       <span>Button Outline</span>
     </button>
 
-    <button class="app-btn app-btn-primary-outline" type="button">
-      <span><i class="icons10-fantasy"></i></span>
+    <button class="app-btn app-btn-primary-outline">
+      <i class="icons10-fantasy"></i>
       <span>Primary Button</span>
     </button>
     `).value;
 
     document.getElementById("code_view_5").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn app-btn-success" type="button">
+    <button class="app-btn app-btn-success">
       <span>Success Button</span>
     </button>
 
-    <button class="app-btn app-btn-success-outline" type="button">
-      <span><i class="icons10-checkmark"></i></span>
+    <button class="app-btn app-btn-success-outline">
+      <i class="icons10-checkmark"></i>
       <span>Success Button</span>
     </button>
     `).value;
 
     document.getElementById("code_view_6").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn app-btn-danger" type="button">
+    <button class="app-btn app-btn-danger">
       <span>Danger Button</span>
     </button>
 
-    <button class="app-btn app-btn-danger-outline" type="button">
-      <span><i class="icons10-cross"></i></span>
+    <button class="app-btn app-btn-danger-outline">
+      <i class="icons10-cross"></i>
       <span>Danger Button</span>
     </button>
     `).value;
 
     document.getElementById("code_view_7").innerHTML =
     hljs.highlightAuto(`
-    <button class="app-btn-icon">
+    <button class="app-btn app-btn-secondary">
       <i class="icons10-home"></i>
     </button>
     `).value;

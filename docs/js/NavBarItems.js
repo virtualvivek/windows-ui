@@ -58,20 +58,15 @@ const navbar_items = [
     "icon": "<i class='icons10-notification-image'></i>"
   },
   {
-    "title": "Inputs",
+    "title": "InputText",
     "href": "inputtext.html",
     "icon": "<i class='icons10-keyboard'></i>"
   },
-  {
-    "title": "InputSearch",
-    "href": "inputsearch.html",
-    "icon": "<i class='icons10-search'></i>"
-  },
-  {
-    "title": "Link",
-    "href": "links.html",
-    "icon": "<i class='icons10-link'></i>"
-  },
+  // {
+  //   "title": "Link",
+  //   "href": "links.html",
+  //   "icon": "<i class='icons10-link'></i>"
+  // },
   {
     "title": "Loaders",
     "href": "loaders.html",

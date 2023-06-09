@@ -3,14 +3,32 @@ const Sliders = document.querySelectorAll(".app-range-slider");
 
 for (const Slider of Sliders) {
   const SliderInput = Slider.querySelector("input");
-  SliderInput.addEventListener("input", (event) => {
-    if(!(SliderInput.id === "" || SliderInput.id === undefined)) {
-      const SliderText = document.querySelector(`[for="${SliderInput.id}"]`);
-            SliderText.innerHTML = event.target.value;
-    }
-    applyFill(event.target);
-  });
+  const maxVal = SliderInput.getAttribute("max");
+  
+    SliderInput.addEventListener("input", (event) => {
+      var elVal = event.target.value;
+      
+      var SliderTexts = document.querySelectorAll(`[for="${SliderInput.id}"]`);
+      SliderTexts.forEach(el => {
+        el.innerHTML = elVal;
+        if(el.matches(".app-range-slider-popup")) {
+          el.style.left = (elVal/maxVal) *72+"%";
+          el.style.visibility = "visible";
+          el.style.opacity = 1;
+        }
+      });
+      
+      applyFill(event.target);
+    });
   applyFill(SliderInput);
+  
+  SliderInput.addEventListener("mouseleave", () => {
+    const popup_ = SliderInput.nextElementSibling;
+    if(popup_.className == "app-range-slider-popup") {
+      popup_.style.visibility = "hidden";
+      popup_.style.opacity = 0;
+    }
+  });
 };
 
 // This function applies the fill to our sliders by using a linear gradient background

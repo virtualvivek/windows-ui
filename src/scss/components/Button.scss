@@ -1,5 +1,6 @@
 button,
 .app-btn {
+  gap: 5px;
   cursor: pointer;
   user-select: none;
   display: inline-flex;
@@ -66,6 +67,11 @@ button,
     @if $platform == "windows10" { background-color: var(--PrimaryColor); }
     @if $platform == "windows11" { background-color: var(--color-primary-adaptive); }
   }
+  &.app-btn-secondary {
+    border-color: transparent;
+    background-color: transparent;
+    &:hover { background-color: var(--color-ui-hover-default); } 
+  }
   &.app-btn-success { background: var(--color-success-default); }
   &.app-btn-danger { background: var(--color-danger-default); }
 
@@ -129,9 +135,10 @@ button,
   span {
     transition: opacity ease 0.2s;
   }
-  // check if button child span has a sibling of same type
-  span:first-of-type:not(:only-of-type) {
-    padding-right: 5px;
+  // If Icon is the only child
+  i:only-child {
+    font-size: 24px;
+    
   }
 }
 

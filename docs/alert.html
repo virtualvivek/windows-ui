@@ -82,7 +82,7 @@
       <p>
         <span class="app-color-primary">Alert</span> component is used to interrupt the user with a mandatory confirmation or action.
       </p>
-      <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
+      <button class="app-btn" data-win-toggle="modal" data-win-target="#MyModal">
         <span>Open Alert Dialog</span>
       </button>
       <div class="app-alert" id="MyModal" data-win-toggle="modal" data-win-target="#MyModal" aria-labelledby="exampleModalLabel" tabindex="-1">
@@ -92,7 +92,7 @@
             <div class="app-alert-message">This is alert Box.</div>
           </div>
           <div class="app-alert-footer">
-            <button class="app-btn app-btn-primary" type="button" data-win-toggle="modal" data-win-target="#MyModal">
+            <button class="app-btn app-btn-primary" data-win-toggle="modal" data-win-target="#MyModal">
               <span>OK to Close</span>
             </button>
           </div>
@@ -108,8 +108,8 @@
         <strong class="app-color-primary">Title</strong>
         <span>This is a text</span>
         <div class="app-alert-bar-end-content">
-          <button class="app-btn app-btn-primary" type="button">Button Regular</button>
-          <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+          <button class="app-btn app-btn-primary">Button Regular</button>
+          <button data-win-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
       <pre><code id="code_view_3"></code></pre>
@@ -119,7 +119,7 @@
         <strong class="app-color-success">Title Success</strong>
         <span>This is a text</span>
         <div class="app-alert-bar-end-content">
-          <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+          <button data-win-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
       <pre><code id="code_view_4"></code></pre>
@@ -129,7 +129,7 @@
         <strong class="app-color-danger">Title Danger</strong>
         <span>This is a text</span>
         <div class="app-alert-bar-end-content">
-          <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+          <button data-win-dismiss="alert" aria-label="Close"></button>
         </div>
       </div>
       <pre><code id="code_view_5"></code></pre>
@@ -155,7 +155,7 @@ hljs.highlightAuto(`
       <div class="app-alert-message">This is alert Box.</div>
     </div>
     <div class="app-alert-footer">
-      <button class="app-btn app-btn-primary" type="button"
+      <button class="app-btn app-btn-primary"
         data-win-toggle="modal" data-win-target="#MyModal">
         <span>OK to Close</span>
       </button>
@@ -165,7 +165,7 @@ hljs.highlightAuto(`
 `).value;
 document.getElementById("code_view_2").innerHTML =
 hljs.highlightAuto(`
-<button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyModal">
+<button class="app-btn" data-win-toggle="modal" data-win-target="#MyModal">
   <span>Open Alert Default</span>
 </button>
 `).value;
@@ -175,8 +175,8 @@ hljs.highlightAuto(`
   <i class="icons10-exclamation-mark app-color-primary"></i>
   <strong class="app-color-primary">Title</strong><span>This is a text</span>
   <div class="app-alert-bar-end-content">
-    <button class="app-btn app-btn-primary" type="button">Button Regular</button>
-    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+    <button class="app-btn app-btn-primary">Button Regular</button>
+    <button data-win-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>
 `).value;
@@ -186,7 +186,7 @@ hljs.highlightAuto(`
   <i class="icons10-checkmark app-color-success"></i>
   <strong class="app-color-success">Title Success</strong><span>This is a text</span>
   <div class="app-alert-bar-end-content">
-    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+    <button data-win-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>
 `).value;
@@ -196,7 +196,7 @@ hljs.highlightAuto(`
   <i class="icons10-cross app-color-danger"></i>
   <strong class="app-color-danger">Title Danger</strong><span>This is a text</span>
   <div class="app-alert-bar-end-content">
-    <button type="button" data-win-dismiss="alert" aria-label="Close"></button>
+    <button data-win-dismiss="alert" aria-label="Close"></button>
   </div>
 </div>
 `).value;</script>

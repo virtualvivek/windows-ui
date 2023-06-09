@@ -16,7 +16,9 @@
         <input class="app-input-text" type="text" placeholder="Enter a text" value="">
       </div>
 
+      <br/><pre><code id="code_view_1"></code></pre>
 
+      <h2>InputText with <p class="app-code">Clear Button</p>:</h2>
       <div class="app-input-container">
         <input class="app-input-text" type="text" placeholder="Enter a text" value="" id="MyInputDemo">
         <div class="app-input-end-content">
@@ -24,11 +26,11 @@
         </div>
       </div>
 
-      <br/><pre><code id="code_view_1"></code></pre>
+      <br/><pre><code id="code_view_1_b"></code></pre>
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h2>Input Status :</h2>
+      <h2>Input with status:</h2>
 
       <div class="app-input-container input-success">
         <input class="app-input-text" type="text" placeholder="Enter a text success">
@@ -57,7 +59,7 @@
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h2>Input Loading</h2>
+      <h2>Input with loading:</h2>
 
       <div class="app-input-container input-loading">
         <input class="app-input-text" type="text" placeholder="Enter a text loading">
@@ -69,7 +71,7 @@
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h2>Input <p class="app-code">Password</p> :</h2>
+      <h2>Input <p class="app-code">Password</p>:</h2>
 
       <div class="app-input-container">
         <input class="app-input-text" type="password" placeholder="Enter a password" id="MyInputPass">
@@ -81,7 +83,7 @@
 
       //- <!-- ------------------------------------------------------- -->
 
-      <h2>Input <p class="app-code">with Label</p> :</h2>
+      <h2>Input <p class="app-code">with Label</p>:</h2>
 
       <div class="app-input-container">
         <span class="app-input-label">label</span>
@@ -96,18 +98,44 @@
       <textarea class="app-textarea" placeholder="Input Text Area"></textarea>
       <pre><code id="code_view_8"></code></pre>
 
+      <h2>InputSearchBar</h2>
+      <div class="app-input-search-bar">
+        <input class="app-input-text" type="search" placeholder="Search here" />
+        <div class="app-input-end-content">
+          <button type="submit"></button>
+        </div>
+      </div>
+      <pre><code id="code_view_9"></code></pre>
+
+      <h2>InputSearchBox</h2>
+
+      <div class="app-input-search-box">
+        <input class="app-input-text" type="search" placeholder="Enter to Search">
+      </div>
+      <pre><code id="code_view_10"></code></pre>
+
+
       //- <!-- ------------------------------------------------------- -->
       <br/><br/><br/><br/>
     </div>
     </div>
   </body>
   include common/footer.pug
-  +importing('Inputs')
+  +importing('InputText')
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
     <div class="app-input-container">
       <input class="app-input-text" type="text" placeholder="Enter a text">
+    </div>
+    `).value;
+    document.getElementById("code_view_1_b").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-container">
+      <input class="app-input-text" type="text" placeholder="Enter a text" value="" id="MyInputDemo">
+      <div class="app-input-end-content">
+        <button type="button" data-win-clear="text" data-win-target="#MyInputDemo"></button>
+      </div>
     </div>
     `).value;
     document.getElementById("code_view_2").innerHTML =
@@ -162,5 +190,20 @@
     document.getElementById("code_view_8").innerHTML =
     hljs.highlightAuto(`
     <textarea class="app-textarea" placeholder="Input Text Area"></textarea>
+    `).value;
+    document.getElementById("code_view_9").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-search-bar">
+      <input class="app-input-text" type="search" placeholder="Search here" />
+      <div class="app-input-end-content">
+        <button type="submit"></button>
+      </div>
+    </div>
+    `).value;
+    document.getElementById("code_view_10").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-search-box">
+      <input class="app-input-text" type="search" placeholder="Enter to Search">
+    </div>
     `).value;
 </html>
