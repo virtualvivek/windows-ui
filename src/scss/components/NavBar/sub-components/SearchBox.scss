@@ -33,10 +33,10 @@
       background-color: transparent;
     }
     &::before {
-      @extend .font-icon-dark;
       z-index: 2;
       content: "\f1b9";
       margin-right: -35px;
+      font-family: icons10;
     }
   }
   .app-search-dialog-trigger {

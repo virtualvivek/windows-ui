@@ -4,7 +4,6 @@
     content: "\f1b9";
     margin-left: -28px;
     align-self: center;
-    @extend .font-icon-dark;
     @if $platform == "windows10" { font-size: 18px; font-weight: 600; }
     @if $platform == "windows11" { font-size: 16px; font-weight: 500; }
   }

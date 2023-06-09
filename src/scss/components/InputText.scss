@@ -120,11 +120,9 @@
   position: absolute;
   align-items: center;
 
-  i::before {
-    font-size: 16px;
-  }
   button {
     border: none;
+    font-size: 17px;
     padding: 2px 5px;
     background: transparent;
     &:hover {
@@ -134,6 +132,14 @@
       opacity: 0.7;
     }
   }
+  [data-win-clear="text"] {
+    visibility: hidden;
+    &::after {
+      content: "\f116";
+      font-family: icons10;
+    }
+  }
+  
   .app-loader-busy {
     display: none;
   }

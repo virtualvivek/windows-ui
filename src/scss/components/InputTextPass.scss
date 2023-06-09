@@ -3,8 +3,7 @@
     // Password OFF
     button.app-input-pass-toggler::after {
       content: "\f1db";
-      font-size: 18.5px;
-      @extend .font-icon-dark;
+      font-family: icons10;
     }
     // Password ON
     input[type="password"] + div .app-input-pass-toggler::after {
@@ -15,8 +14,7 @@
     // Password OFF
     [data-win-toggle="password"]::after {
       content: "\f1db";
-      font-size: 18.5px;
-      @extend .font-icon-dark;
+      font-family: icons10;
     }
     // Password ON
     input[type="password"] + div [data-win-toggle="password"]::after {

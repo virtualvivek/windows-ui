@@ -42,11 +42,11 @@
     padding-right: 35px;
   }
   &::after {
-    @extend .font-icon-dark;
-    pointer-events: none;
-    position: absolute;
-    content: "\f10c";
-    font-size: 13px;
     right: 10px;
+    font-size: 13px;
+    content: "\f10c";
+    position: absolute;
+    pointer-events: none;
+    font-family: icons10;
   }
 }

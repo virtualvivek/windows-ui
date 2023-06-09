@@ -13,6 +13,6 @@
   &::after {
     font-size: 22px;
     content: "\f106";
-    @extend .font-icon-dark;
+    font-family: icons10;
   }
 }

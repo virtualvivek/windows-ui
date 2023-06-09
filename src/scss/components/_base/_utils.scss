@@ -27,14 +27,6 @@
 .font-size-20px {
   font-size: 20px;
 }
-.font-icon-dark {
-  font-family: icons10;
-  color: var(--color-text-default);
-}
-.font-icon-light {
-  @extend .font-icon-dark;
-  color: var(--color-background-default);
-}
 
 .app-align-center {
   align-items: center;
