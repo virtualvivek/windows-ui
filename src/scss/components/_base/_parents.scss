@@ -53,6 +53,16 @@
   animation-name: transition_dropdown_reverse;
 }
 
+.input-field-focused,
+.app-input-container .app-input-label:has(+.app-input-text:focus) {
+  filter: none;
+  border-bottom-color: var(--color-primary-adaptive);
+  background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% 1px;
+  transition: 0s;
+}
 
 .input-field-default {
   width: inherit;
@@ -60,7 +70,7 @@
   font-size: 15px;
   box-shadow: none;
   padding: 0 0 0 10px;
-  box-sizing: content-box;
+  box-sizing: border-box;
   color: var(--color-text-default);
   -webkit-tap-highlight-color: transparent;
   background: var(--color-background-default);
@@ -73,19 +83,11 @@
     }
   }
   @if $platform == "windows11" {
-    height: 32px;
+    height: 35px;
     border-radius: 4px;
     border: 1px solid var(--color-input-border-default);
     border-bottom: 1px solid #777;
-    &:focus {
-      filter: none;
-      border-bottom-color: var(--color-primary-adaptive);
-      background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
-      background-repeat: no-repeat;
-      background-position: bottom;
-      background-size: 100% 1px;
-      transition: 0s;
-    }
+    &:focus { @extend .input-field-focused; }
   }
   
   &[disabled] {

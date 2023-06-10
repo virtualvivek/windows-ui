@@ -8,7 +8,7 @@
   display: flex;
   font-size: 15px;
   cursor: pointer;
-  padding: 8px 15px;
+  padding: 7px 15px;
   user-select: none;
   flex-direction: row;
   justify-content: space-between;
@@ -28,7 +28,9 @@
   }
 
   &::after {
+    line-height: 0;
     content: "\f10c";
+    margin-left: 5px;
     align-self: center;
     font-family: icons10;
     transform-origin: center;

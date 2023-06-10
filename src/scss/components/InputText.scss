@@ -17,12 +17,10 @@
 
 .app-input-container {
   position: relative;
+  height: fit-content;
   display: inline-flex;
 
   @if $platform == "windows11" {
-    .app-input-label:has(+ .app-input-text:focus) {
-      border-bottom: 2px solid var(--color-primary-adaptive);
-    }
     .app-input-label + .app-input-text {
       border-start-start-radius: 0;
       border-end-start-radius: 0;
@@ -123,7 +121,7 @@
   button {
     border: none;
     font-size: 17px;
-    padding: 2px 5px;
+    padding: 2.5px 5px;
     background: transparent;
     &:hover {
       background-color: var(--color-navbar-bg-default);

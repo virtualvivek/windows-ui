@@ -17,7 +17,8 @@
     <link rel="stylesheet" type="text/css" href="docs/css/home.css" />
   </head>
   <body>
-    <div class="app-navbar-wrap" id="NavBarMain">
+    <div class="container-flex-row">
+    <aside class="app-navbar-wrap" id="NavBarMain">
       <div class="app-navbar-header-mobile">
         <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
         <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
@@ -44,8 +45,7 @@
           </li>
           <div class="app-navbar-submenu">
             <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenu">
-              <div>Navigation</div>
-              <i class="icons10-angle-down"></i>
+              <span>Navigation</span>
             </div>
             <div class="app-navbar-submenu-content" id="NavSubMenu">
               <li class="app-navbar-list-item">
@@ -76,13 +76,13 @@
           </div>
         </ul>
       </nav>
-    </div>
+    </aside>
 
-    <div class="app-page-container has-padding home">
+    <main class="app-page-container has-padding home">
       <br/><br/>
       <div style="display:flex;align-items:center;justify-content:center;flex-direction:column;">
-        <h1 style="font-size: 55px;" class="app-mb-10">windows-ui</h1>
-        <p>Build Windows Fluent UI apps using Html, CSS & Javascript.<br></p>
+        <h1 style="font-size: 55px;" class="app-m-0">windows-ui</h1>
+        <p style="font-size: 18px; font-weight: 500;">Build Windows Fluent UI apps using Html, CSS & Javascript.<br></p>
         <div style="display: flex;">
           <a href="https://github.com/virtualvivek/windows-ui" style="all: unset;">
             <button class="app-btn app-btn-primary" type="button">Repository</button>
@@ -93,32 +93,58 @@
           </a>
         </div>
       </div>
-      <br/><br/><br/><br/>
 
-      <div class="home_code_container">
-        <div class="home_code_subcontainer">
-          <span style="color: #fff">Usage</span>
-          <label class="home_switch">
-            <input type="checkbox" id="home_toggle_code">
-            <div class="home_slider round">
-           <span class="home_slider_text"><span class="off">jsDelivr</span><span class="on">npm</span></span> 
-            </div>  
-        </label>
+      <div style="border: 1px solid var(--color-ui-border-default);
+      display: flex;
+      margin: 8% auto 0 auto;
+      border-radius: 4px;
+      background-color: var(--color-foreground-light);
+      padding: 20px;
+      width: max-content;">
+        <div style="align-items: center; display: flex; gap: 15px;">
+          <div class="app-input-container">
+            <input class="app-input-text" type="password" placeholder="Enter a password" id="MyInputPass">
+            <div class="app-input-end-content">
+              <button type="button" data-win-toggle="password" data-win-target="#MyInputPass"></button>
+            </div>
+          </div>
+
+          <label class="app-switch">
+            <input type="checkbox" checked="">
+            <div class="app-switch-view"></div>
+            <span class="app-switch-label" data-on="On" data-off="Off"></span>
+          </label>
+
+          <label class="app-checkbox">
+            <input type="checkbox" checked="">
+          </label>
+
+          <label class="app-radio-button">
+            <input type="radio" class="app-radio" name="2" checked="">
+          </label>
+
+          <button class="app-btn app-btn-primary">
+            <span>  Button  </span>
+          </button>
+
         </div>
-        <pre style="margin: 0; display: flex;" id="code_content_1">
-          <code id="code_view_1" style="width: auto;padding-left: 0 !important;padding-top: 0;"></code>
-        </pre>
-        <pre style="margin: 0; display: none;" id="code_content_2">
-          <code id="code_view_2" style="width: auto;padding-left: 0 !important;padding-top: 0;"></code>
-        </pre>
-      </div>      
+
+        <div class="app-range-slider">
+          <input type="range" min="0" max="500" step="1" value="256" id="RangeSlider1">
+          <span class="app-range-slider-popup" for="RangeSlider1">262</span>
+        </div>
+
+      </div>
+      <br/><br/><br/><br/>
+   
 
       <div class="home_container neumorphism">
         <span class="circle small neumorphism">
         </span>
         <span class="circle neumorphism"></span>
       </div>
-    </div>
+    </main>
+  </div>
   </body>
   <script src="./docs/js/navbarItems.js"></script>
   <script src="./docs/js/home.js"></script>

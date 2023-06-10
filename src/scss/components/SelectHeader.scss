@@ -7,11 +7,12 @@
   position: relative;
   display: inline-flex;
   flex-direction: column;
+  box-sizing: border-box;
   justify-content: center;
   @extend .input-field-default;
   @extend .transition-background-400ms;
   @if $platform == "windows10" { height: 30px; }
-  @if $platform == "windows11" { height: 32px; }
+  @if $platform == "windows11" { height: 35px; }
   
 
   select {
