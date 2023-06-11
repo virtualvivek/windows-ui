@@ -32,20 +32,9 @@ function setLightScheme(save_changes = false) {
   if(save_changes) { localStorage.setItem(lc_storage_theme_key, "light"); }
 }
 
-
-
-function addThemeChangeTransition(callback) {
-  document.body.classList.add("transition-background-400ms");
-  document.querySelector(".app-navbar-wrap nav").classList.add("transition-background-400ms");
-  callback();
-}
-
 // [ThemeSwitch Toggle] -------------------------------------------
-
 function toggleDayNight() {
-  addThemeChangeTransition(() => {
-    getColorScheme() === "dark" ? setLightScheme(true) : setDarkScheme(true);
-  });
+  getColorScheme() === "dark" ? setLightScheme(true) : setDarkScheme(true);
 }
 
 const DayNightSwitch = document.querySelectorAll("#app-navbar-theme-switch");

@@ -7,7 +7,7 @@
   position: relative;
   align-items: center;
   display: inline-flex;
-  @extend .tap-highlight-none;
+  -webkit-tap-highlight-color: transparent;
 
   @if $platform == "windows10" {
     @include slider-bar-win-10();
@@ -38,9 +38,9 @@
     }
     @if $platform == "windows11" {
       border-radius: 4px;
-      background: var(--color-background-default);
+      background: var(--color-navbar-bg-default);
       border: 1px solid var(--color-ui-border-default);
-      box-shadow: 0 2px 2px #22222222;
+      box-shadow: 0 1px 1px #22222222;
     }
   }
 }

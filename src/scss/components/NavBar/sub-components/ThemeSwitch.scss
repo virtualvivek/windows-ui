@@ -44,7 +44,7 @@
   position: absolute;
   font-family: icons10;
   transform: scale(1);
-  transition: transform 0.4s ease 0.12s;
+  transition: transform 0.2s ease-in 0.12s;
 }
 // 🌙 Moon Icon Hidden
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:before {
@@ -58,10 +58,10 @@
   position: absolute;
   transform: scale(0);
   font-family: icons10;
-  transition: all 0.2s ease;
+  transition: all 0.2s ease-in;
 }
-// 🌙 Moon Icon Shown
+// ☀️ Sun Icon Hidden
 .app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:after {
   transform: scale(1);
-  transition: transform 0.4s ease 0.12s;
+  transition: transform 0.2s ease-in 0.12s;
 }

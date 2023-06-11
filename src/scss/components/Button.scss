@@ -6,7 +6,7 @@ button,
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  @extend .tap-highlight-none;
+  -webkit-tap-highlight-color: transparent;
 
   @if $platform == "windows11" {
     border-radius: 4px;
@@ -25,7 +25,7 @@ button,
 }
 
 .app-btn {
-  height: 35px;
+  height: 34px;
   font-size: 15px;
   user-select: none;
   vertical-align: middle;

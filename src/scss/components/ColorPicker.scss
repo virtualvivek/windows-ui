@@ -1,9 +1,8 @@
 .app-color-picker-item {
-  @extend .tap-highlight-none;
-
   cursor: pointer;
   padding: 0 4px 2px 0;
   display: inline-block;
+  -webkit-tap-highlight-color: transparent;
 
   div {
     height: 40px;

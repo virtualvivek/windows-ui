@@ -1,15 +1,17 @@
 .app-page-container {
   height: auto;
   flex: 1 1 auto;
+  width: -moz-available;
+  width: -webkit-fill-available;
   transition: 0.2s ease;
 
   &.has-padding {
-    padding: 0 20px;
+    padding: 0 20px 0 35px;
   }
 }
 
 .app-page-container-inner {
-  margin: 0 20px;
+  padding: 0 20px 0 35px;
 }
 
 @if $platform == "windows11" {
@@ -27,10 +29,10 @@
     padding-top: 50px !important;
     
     &.has-padding {
-      padding: 0 15px;
+      padding: 0 20px;
     }
   }
   .app-page-container-inner {
-    margin: 15px;
+    margin: 20px;
   }
 }

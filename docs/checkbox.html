@@ -21,7 +21,7 @@
     <aside class="app-navbar-wrap" id="NavBarMain">
       <div class="app-navbar-header-mobile">
         <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
-        <div style="display: flex; justify-content: space-between; width: calc(100% - 60px);">
+        <div style="display: flex; justify-content: space-between; flex: 1;">
           <span class="app-navbar-name">Windows UI</span>
           <span class="app-navbar-name">Home</span>
         </div>
@@ -79,25 +79,19 @@
     </aside>
     <div class="app-page-container has-padding">
       <h1>Checkbox</h1>
-      <label class="app-checkbox">
-        <input type="checkbox" checked>
-        <span>Checkbox</span>
-      </label> &nbsp;&nbsp;&nbsp;&nbsp;
-      <label class="app-checkbox">
-        <input type="checkbox" checked disabled>
-        <span>Checkbox Disabled</span>
-      </label>
+      <input class="app-checkbox" type="checkbox" value="" id="CheckBoxDefault" checked>
+      <label for="CheckBoxDefault">Checkbox</label>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input class="app-checkbox" type="checkbox" value="" id="CheckBoxDefault2" checked disabled>
+      <label for="CheckBoxDefault2">Checkbox Disabled</label>
       <br />
       <h2>Usage</h2>
       <pre><code id="code-switch"></code></pre>
       <h2>Checkbox Inline</h2>
       <p>• Just remove the <span class="app-code">span</span> from the checkbox.</p>
-      <p>Lorem ipsum dolor sit amet <label class="app-checkbox">
-          <input type="checkbox" checked>
-        </label> sed do eiusmod tempor incididunt ut labore.</p>
-      <label class="app-checkbox">
-        <input type="checkbox" checked>
-      </label>
+      <p>Lorem ipsum dolor sit amet
+        <input class="app-checkbox" type="checkbox" value="" checked> sed do eiusmod tempor incididunt ut labore.
+      </p>
+      <input class="app-checkbox" type="checkbox" value="" checked>
       <pre><code id="code-switch-nolabel"></code></pre>
       <br />
       <br />
@@ -111,18 +105,14 @@
 <script>hljs.highlightAll()</script>
 <script>document.getElementById("code-switch").innerHTML =
 hljs.highlightAuto(`
-<label class="app-checkbox">
-  <input type="checkbox" checked>
-  <span>Checkbox</span>
-</label>
+<input class="app-checkbox" type="checkbox" value="" id="CheckBoxDefault" checked>
+<label for="CheckBoxDefault">Checkbox</label>
 `).value;
 document.getElementById("code-switch-nolabel").innerHTML =
 hljs.highlightAuto(`
-<p>Lorem ipsum dolor sit amet <label class="app-checkbox"><input type="checkbox" checked></label> sed do eiusmod tempor incididunt ut labore.</p>
+<p>Lorem ipsum dolor sit amet <input class="app-checkbox" type="checkbox" value="" checked> sed do eiusmod tempor incididunt ut labore.</p>
 
-<label class="app-checkbox">
-  <input type="checkbox" checked>
-</label>
+<input class="app-checkbox" type="checkbox" value="" checked>
 `).value;</script>
 
 </html>

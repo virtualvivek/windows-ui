@@ -23,32 +23,35 @@
   position: sticky;
 
   nav {
-    height: inherit;
     width: var(--width-navbar-expanded);
+    height: inherit;
     padding: 0;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, width 0.2s ease;
     background-color: var(--color-navbar-bg-default);
-    @if $repository == "react-windows-ui" { @extend .transition-background-400ms; }
+    transition: transform 0.2s ease, width 0.2s ease;
   }
 }
 
 @mixin app-navbar-mobile() {
-  .app-navbar-wrap nav {
+  .app-navbar-wrap {
     z-index: 9;
-    position: fixed;
-    
-    .app-navbar-toggler {
-      @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
-      @if $platform=="windows11" { padding: 7.5px 20px; margin: 5px; }
+    position: unset;
+    nav {
+      z-index: 9;
+      position: fixed;
+      
+      .app-navbar-toggler {
+        @if $platform=="windows10" { padding: 12.5px 20px; margin: 0 5px; }
+        @if $platform=="windows11" { padding: 7.5px 20px; margin: 5px; }
+      }
+      :hover > li,
+      :hover > .app-navbar-toggler,
+      :hover > .app-navbar-submenu-title {
+        background-color: transparent !important;
+      }
     }
-    :hover > li,
-    :hover > .app-navbar-toggler,
-    :hover > .app-navbar-submenu-title {
-      background-color: transparent !important;
-    }
-  }
+  } 
   @if $platform=="windows11" {
     .app-navbar-wrap .app-navbar-toggler {
       margin: 0;

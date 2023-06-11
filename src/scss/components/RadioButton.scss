@@ -1,17 +1,13 @@
-.app-radio {
-  @extend .transition-background-400ms;
-  @extend .tap-highlight-none;
-
+.app-radio-button {
   height: 20px;
   width: 20px;
   margin: 0;
-  font: inherit;
-  outline: none;
   cursor: pointer;
   appearance: none;
   border-radius: 50%;
-  vertical-align: middle;
-  transition: border 0.2s ease;  
+  vertical-align: bottom;
+  transition: border 0.2s ease;
+  -webkit-tap-highlight-color: transparent; 
 
   @if $platform == "windows10" {
     border: 2px solid var(--color-text-default);
@@ -45,15 +41,5 @@
     filter: opacity(0.7);
     border-color: var(--color-input-border-strong);
     background-color: var(--color-input-border-strong);
-  }
-}
-
-.app-radio-button {
-  align-items: center;
-  display: inline-block;
-
-  .app-radio + span {
-    cursor: pointer;
-    vertical-align: middle;
   }
 }

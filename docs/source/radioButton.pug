@@ -8,25 +8,19 @@
     <div class="app-page-container has-padding">
       <h1>RadioButtons</h1>
 
-      <label class="app-radio-button">
-        <input type="radio" class="app-radio" name="2" checked>
-        <span> Hellow</span>
-      </label> &nbsp;&nbsp;
-      <label class="app-radio-button">
-        <input type="radio" class="app-radio" name="2">
-        <span> World</span>
-      </label>
+      <input type="radio" class="app-radio-button" id="RadioButtonDefault" name="2" checked>
+      <label for="RadioButtonDefault">Hellow</label> &nbsp;&nbsp;
+
+      <input type="radio" class="app-radio-button" id="RadioButtonDefault2" name="2">
+      <label for="RadioButtonDefault2">World</label>
+
       <br/><pre><code id="code_view_1"></code></pre>
 
       <h2>RadioButton no label</h2>
-      <p>Just remove the <span class="app-code">span</span> from the radio button.</p>
+      <p>Just remove the <span class="app-code">label</span> from the radio button.</p>
 
-      <label class="app-radio-button">
-        <input type="radio" class="app-radio" name="4" checked>
-      </label> &nbsp;&nbsp;
-      <label class="app-radio-button">
-        <input type="radio" class="app-radio" name="4">
-      </label>
+      <input type="radio" class="app-radio-button" name="4" checked>
+      <input type="radio" class="app-radio-button" name="4">
       <pre><code id="code_view_2"></code></pre>
 
       <br/><br/>
@@ -38,15 +32,15 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    <label class="app-radio-button">
-      <input type="radio" class="app-radio" name="2" checked>
-      <span> Hellow</span>
-    </label>
+    <input type="radio" class="app-radio-button" id="RadioButtonDefault" name="2" checked>
+    <label for="RadioButtonDefault">Hellow</label>
+
+    <input type="radio" class="app-radio-button" id="RadioButtonDefault2" name="2">
+    <label for="RadioButtonDefault2">World</label>
     `).value;
     document.getElementById("code_view_2").innerHTML =
     hljs.highlightAuto(`
-    <label class="app-radio-button">
-      <input type="radio" class="app-radio" name="4">
-    </label>
+    <input type="radio" class="app-radio-button" name="4" checked>
+    <input type="radio" class="app-radio-button" name="4">
     `).value;
 </html>

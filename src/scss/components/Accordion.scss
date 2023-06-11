@@ -2,16 +2,15 @@
   overflow: hidden;
 }
 .app-accordion-title {
-  @extend .transition-all-400ms;
-  @extend .tap-highlight-none;
-
   display: flex;
   font-size: 15px;
   cursor: pointer;
-  padding: 7px 15px;
+  padding: 6px 15px;
   user-select: none;
   flex-direction: row;
   justify-content: space-between;
+  -webkit-tap-highlight-color: transparent;
+
   @if $platform == "windows10" {
     background-color: var(--color-navbar-bg-default);
     &:active {

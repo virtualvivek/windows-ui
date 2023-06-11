@@ -7,19 +7,13 @@
   position: relative;
   display: inline-flex;
   flex-direction: column;
-  box-sizing: border-box;
   justify-content: center;
   @extend .input-field-default;
-  @extend .transition-background-400ms;
   @if $platform == "windows10" { height: 30px; }
   @if $platform == "windows11" { height: 35px; }
   
 
   select {
-    background-color: var(--color-background-default);
-    color: var(--color-text-default);
-    @extend .transition-background-400ms;
-
     width: 100%;
     height: 100%;
     border: none;
@@ -28,6 +22,8 @@
     border-radius: 4px;
     padding-left: 10px;
     padding-right: 35px;
+    color: var(--color-text-default);
+    background-color: var(--color-background-default);
 
     &:focus {
       outline: none;

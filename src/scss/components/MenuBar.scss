@@ -4,9 +4,8 @@
       width: 100%;
 
       .app-input-text {
-        height: 35px;
+        height: 34px;
         width: inherit;
-        box-sizing: border-box;
         @if $platform == "windows11" { margin-bottom: 1px; }
 
         &:not(:focus) {

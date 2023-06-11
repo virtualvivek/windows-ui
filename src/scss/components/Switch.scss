@@ -1,18 +1,18 @@
 .app-switch {
-  @extend .tap-highlight-none;
   user-select: none;
   align-items: center;
   display: inline-flex;
+  -webkit-tap-highlight-color: transparent;
 
   // State UnChecked
   >.app-switch-view {
-    height: 19px;
+    height: 21px;
     cursor: pointer;
     position: relative;
     border-radius: 50px;
     transition: 200ms ease-out;
-    @if $platform == "windows10" { width: 42px; border: 2px solid var(--color-text-default); }
-    @if $platform == "windows11" { width: 40px; border: 1px solid var(--color-text-default); }
+    @if $platform == "windows10" { width: 44px; border: 2px solid var(--color-text-default); }
+    @if $platform == "windows11" { width: 42px; border: 1px solid var(--color-text-default); }
 
     &:hover {
       opacity: 0.8;

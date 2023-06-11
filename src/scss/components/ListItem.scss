@@ -1,9 +1,7 @@
 .app-list-item {
-  @extend .transition-all-400ms;
-
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid var(--color-foreground-light);
+  border-bottom: 1px solid var(--color-foreground-dark);
 
   &:hover:not(.pointer-none) {
     background-color: var(--color-ui-hover-default);
@@ -15,12 +13,11 @@
   }
 
   a {
-    user-select: none;
-    @extend .tap-highlight-none;
-
     flex: 0.8;
+    user-select: none;
     padding: 12px 10px;
     align-items: center;
+    -webkit-tap-highlight-color: transparent;
 
     &:hover { background-color: unset; }
     &:active { background-color: unset; }

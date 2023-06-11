@@ -1,6 +1,5 @@
 .app-input-text {
   @extend .input-field-default;
-  @extend .transition-background-400ms;
 
   &:focus {
     outline: none;
@@ -48,7 +47,6 @@
     padding: 0 10px;
     border-right-width: 0 !important;
     background: var(--color-background-default);
-    @extend .transition-background-400ms;
 
     @if $platform == "windows10" {
       border: 2px solid #999;
