@@ -1,11 +1,10 @@
 .app-checkbox {
+  top: 1px;
   cursor: pointer;
   position: relative;
-  margin: 0 2px 0 3px;
   transition: 0.2s ease;
   -moz-appearance: none;
   -webkit-appearance: none;
-  vertical-align: middle;
 
   &:hover {
     opacity: 0.8;
@@ -16,15 +15,14 @@
   }
 
   &::before {
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     content: "";
     display: flex;
-    border-radius: 0;
-    margin-top: -3px;
-    margin-left: -3px;
+    transition: background 0.4s;
 
     @if $platform == "windows10" {
+      border-radius: 0;
       border: 2px solid var(--color-button-hover);
       background-color: var(--color-background-default);
     }
@@ -52,13 +50,13 @@
     }
     
     &::after {
-      width: 4px;
-      height: 9px;
+      width: 6px;
+      height: 11px;
       content: "";
       pointer-events: none;
       position: absolute;
-      top: 0;
-      left: 4px;
+      top: 3px;
+      left: 7px;
       transform: rotate(45deg);
       @if $platform == "windows10" { border: solid white; }
       @if $platform == "windows11" { border: solid var(--color-background-default); }

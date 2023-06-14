@@ -52,6 +52,26 @@
   transition: 0s;
 }
 
+.input-btn-default {
+  cursor: pointer;
+  font-size: 15px;
+  border: 1px solid;
+  user-select: none;
+  border-radius: 4px;
+  color: var(--color-text-default);
+  background-color: var(--color-button-default);
+  border-color: rgba(0,0,0,0.08);
+  border-bottom-color: rgba(0,0,0,0.2);
+  border-top-color: var(--dark, rgba(117,117,117,0.22)) var(--light, rgba(0,0,0,0.08));
+  &:hover {
+    opacity: 0.85;
+    filter: brightness(0.95);
+  }
+  &:active {
+    filter: brightness(0.85);
+  }
+}
+
 .input-field-default {
   width: inherit;
   line-height: 1;
@@ -86,8 +106,7 @@
   filter: contrast(0.6) !important;
 }
 .app-textarea,
-.app-input-text,
-.app-dropdown-title {
+.app-input-text {
   &:hover:not(:focus-within) {
     filter: contrast(0.97);
   }
@@ -180,13 +199,10 @@
       &:hover {
         background-color: var(--color-ui-hover-strong);
       }
-      
-      i {
-        height: 15px;
-        line-height: 0;
-        font-size: 18px;
-        padding-right: 5px;
-      }
+    }
+    i::before {
+      line-height: 0;
+      padding-inline-end: 8px;
     }
   }
 }

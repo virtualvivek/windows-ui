@@ -13,6 +13,12 @@ ul.app-cmdbar-menu-list {
   &.left-justify {
     right: 0;
   }
+  [data-win-toggle="dropdown"]::after {
+    line-height: 0;
+    content: "\f10e";
+    font-family: icons10;
+    padding-inline-start: 5px;
+  }
 }
 ul.app-cmdbar-menu-list .cmdbar-submenu {
   position: absolute;

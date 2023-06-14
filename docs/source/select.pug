@@ -11,6 +11,22 @@
         <span class="app-color-primary">Select</span> component is used to create a drop-down list to choose one value from multiple..
       </p>
 
+      <h2>Usage</h2>
+      <pre><code id="code_view_1"></code></pre>
+
+      <div class="app-select-menu">
+        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">blue</span>
+        <ul class="app-dropdown-list" id="MySelectMenu">
+          <li class="app-dropdown-list-item selected"><span>blue</span></li>
+          <li class="app-dropdown-list-item"><span>red</span></li>
+          <li class="app-dropdown-list-item"><span>orange</span></li>
+          <li class="app-dropdown-list-item"><span>pink</span></li>
+          <li class="app-dropdown-list-item"><span>green</span></li>
+        </ul>
+      </div>
+
+      <h2>Select Menu as Native</h2>
+
       <div class="app-select-menu">
         <select name="Some Name">
           <option value="red">red</option>
@@ -20,29 +36,15 @@
         </select>
       </div>
 
-
-
-      <div class="app-dropdown-menu app-select-menu">
-        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu1">blue</span>
-        <ul class="app-dropdown-list" id="MySelectMenu1">
-          <li class="app-dropdown-list-item selected"><span>blue</span></li>
-          <li class="app-dropdown-list-item"><span>red</span></li>
-          <li class="app-dropdown-list-item"><span>orange</span></li>
-          <li class="app-dropdown-list-item"><span>pink</span></li>
-          <li class="app-dropdown-list-item"><span>green</span></li>
-        </ul>
-      </div>
-
-
-    
       <h2>Usage</h2>
-      <pre><code id="code_view_1"></code></pre>
+      <pre><code id="code_view_2"></code></pre>
 
-      <h2>Select Dropdown</h2>
 
-      <div class="app-dropdown-menu app-select-text">
-        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">pink</span>
-        <ul class="app-dropdown-list" id="MySelectMenu">
+      <h2>Select Menu as Text</h2>
+
+      <div class="app-select-text">
+        <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu1">pink</span>
+        <ul class="app-dropdown-list" id="MySelectMenu1">
           <li class="app-dropdown-list-item"><span>blue</span></li>
           <li class="app-dropdown-list-item"><span>red</span></li>
           <li class="app-dropdown-list-item"><span>orange</span></li>
@@ -50,7 +52,7 @@
           <li class="app-dropdown-list-item"><span>green</span></li>
         </ul>
       </div>
-      <pre><code id="code_view_2"></code></pre>
+      <pre><code id="code_view_3"></code></pre>
       <br/><br/>
 
     </div>
@@ -62,6 +64,19 @@
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
     <div class="app-select-menu">
+      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">blue</span>
+      <ul class="app-dropdown-list" id="MySelectMenu">
+        <li class="app-dropdown-list-item selected"><span>blue</span></li>
+        <li class="app-dropdown-list-item"><span>red</span></li>
+        <li class="app-dropdown-list-item"><span>orange</span></li>
+        <li class="app-dropdown-list-item"><span>pink</span></li>
+        <li class="app-dropdown-list-item"><span>green</span></li>
+      </ul>
+    </div>
+    `).value;
+    document.getElementById("code_view_2").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-select-menu">
       <select name="Some Name">
         <option value="red">red</option>
         <option value="blue">blue</option>
@@ -70,11 +85,11 @@
       </select>
     </div>
     `).value;
-    document.getElementById("code_view_2").innerHTML =
+    document.getElementById("code_view_3").innerHTML =
     hljs.highlightAuto(`
-    <div class="app-dropdown-menu app-select-text">
-      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu">pink</span>
-      <ul class="app-dropdown-list" id="MySelectMenu">
+    <div class="app-select-text">
+      <span class="app-dropdown-title" data-win-toggle="dropdown" data-win-target="#MySelectMenu1">pink</span>
+      <ul class="app-dropdown-list" id="MySelectMenu1">
         <li class="app-dropdown-list-item"><span>blue</span></li>
         <li class="app-dropdown-list-item"><span>red</span></li>
         <li class="app-dropdown-list-item"><span>orange</span></li>

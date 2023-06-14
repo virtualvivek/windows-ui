@@ -100,8 +100,10 @@
       border-radius: 4px;
       background-color: var(--color-foreground-dark);
       padding: 20px;
-      width: max-content;">
-        <div style="align-items: center; display: flex; gap: 15px;">
+      max-width: 500px;">
+        <div style="align-items: center; display: flex; gap: 15px;display: flex;
+        flex-wrap: wrap;
+        justify-content: center;">
           <div class="app-input-container">
             <input class="app-input-text" type="password" placeholder="Enter a password" id="MyInputPass">
             <div class="app-input-end-content">
@@ -115,9 +117,7 @@
             <span class="app-switch-label" data-on="On" data-off="Off"></span>
           </label>
 
-          <label class="app-checkbox">
-            <input type="checkbox" checked="">
-          </label>
+          <input class="app-checkbox" type="checkbox" value="" checked>
          
           <input class="app-radio-button" type="radio" name="2" checked="">
 
