@@ -6,7 +6,7 @@
     link(rel='stylesheet', href='./css/navpagecontainer.css')
     include common/navbar.pug
 
-    <div class="app-page-container has-padding">
+    <main class="app-page-container has-padding">
       <h1>PageContainer</h1>
 
       <div class="demo-navpagecontainer-view">
@@ -19,7 +19,7 @@
       <h2>Usage</h2>
       <pre><code id="code_view_1"></code></pre>
 
-    </div>
+    </main>
     </div>
   </body>
   include common/footer.pug
@@ -27,8 +27,8 @@
   script.
     document.getElementById("code_view_1").innerHTML =
     hljs.highlightAuto(`
-    <div class="app-page-container has-padding">
+    <main class="app-page-container has-padding">
       <!-- Page Content -->
-    </div>
+    </main>
     `).value;
 </html>

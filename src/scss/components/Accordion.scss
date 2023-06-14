@@ -3,28 +3,10 @@
 }
 .app-accordion-title {
   display: flex;
-  font-size: 15px;
-  cursor: pointer;
   padding: 6px 15px;
-  user-select: none;
   flex-direction: row;
   justify-content: space-between;
-  -webkit-tap-highlight-color: transparent;
-
-  @if $platform == "windows10" {
-    background-color: var(--color-navbar-bg-default);
-    &:active {
-      background-color: var(--color-button-default);
-      @extend .transition-scale-active;
-    }
-  }
-  @if $platform == "windows11" {
-    border-radius: 4px;
-    border: 1px solid var(--color-ui-border-default);
-    background-color: var(--color-button-default);
-      &:hover { opacity: 0.8; }
-      &:active { filter: brightness(0.85); }
-  }
+  @extend .input-btn-default;
 
   &::after {
     line-height: 0;

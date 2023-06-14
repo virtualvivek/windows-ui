@@ -34,9 +34,8 @@
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
-            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <input id="app-navbar-theme-switch" type="checkbox">
             <div class="app-navbar-theme-switch-icon"></div>
-            <span id="app-navbar-theme-switch-text">Day Mode</span>
           </label>
           <li class="app-navbar-list-item">
             <a href="./../index.html" class="">
@@ -80,7 +79,7 @@
     </aside>
     <div class="app-page-container has-padding">
       <h1>NavBar</h1>
-      <div class="app-navbar-wrap">
+      <div class="app-navbar-wrap" style="position: relative; height: auto;">
         <nav class="animate custom" style="position: relative; z-index: 1;">
           <div class="app-navbar-header">
             <span class="app-navbar-toggler"></span>
@@ -122,7 +121,7 @@
 <script>hljs.highlightAll()</script>
 <script>document.getElementById("code_view_1").innerHTML =
 hljs.highlightAuto(`
-<div class="app-navbar-wrap" id="NavBarMain">
+<aside class="app-navbar-wrap" id="NavBarMain">
   <div class="app-navbar-header-mobile">
     <span class="app-navbar-toggler" data-win-toggle="navbar-left" data-win-target="#NavBarMain"></span>
     <div>
@@ -138,7 +137,6 @@ hljs.highlightAuto(`
       <label class="app-navbar-theme-switch">
         <input id="app-navbar-theme-switch" type="checkbox" checked>
         <div class="app-navbar-theme-switch-icon"></div>
-        <span id="app-navbar-theme-switch-text">Day Mode</span>
       </label>
       <li class="app-navbar-list-item">
         <a href="./page1.html" class="active">
@@ -149,7 +147,7 @@ hljs.highlightAuto(`
       <!-- .... -->
     </ul>
   </nav>
-</div>
+</aside>
 `).value;</script>
 
 </html>

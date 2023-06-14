@@ -42,7 +42,7 @@
         left: 0;
         content: "";
         position: absolute;
-        background: var(--PrimaryColor);
+        background: var(--color-primary-adaptive);
         transform: translate3d(-200%, 0, 0);
 
         @if $platform=="windows10" {
@@ -103,8 +103,4 @@
       background-color: var(--color-ui-hover-strong);
     }
   }
-}
-
-body.dark-theme .app-navbar-wrap .app-navbar-list-item a::after {
-  background: var(--PrimaryColorLight);
 }

@@ -30,7 +30,7 @@
       height: 100%;
       position: absolute;
       transition: width 1s ease-in-out;
-      background-color: var(--PrimaryColor);
+      background-color: var(--color-primary-adaptive);
       @if $platform == "windows11" { border-radius: 4px; }
     }
     &.indeterminate {
@@ -55,13 +55,6 @@
     }
   }
 }
-
-@if $platform == "windows11" {
-  body.dark-theme .app-progress-container .app-progress-bar span {
-    background-color: var(--PrimaryColorLight);
-  }
-}
-
 
 @mixin progress-bar-mobile() {
   .app-progress-container {

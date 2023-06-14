@@ -31,37 +31,35 @@
 }
 
 .app-navbar-theme-switch input + .app-navbar-theme-switch-icon {
-  position: relative;
+  gap: 10px;
   height: 22px;
-  width: 22px;
+  display: flex;
+  font-size: 15px;
+  position: relative;
+  align-items: center;
 }
 
 
 // 🌙 Moon Icon Shown
-.app-navbar-theme-switch input + .app-navbar-theme-switch-icon:before {
+input + .app-navbar-theme-switch-icon:before {
   font-size: 22px;
-  content: "\f18e";
-  position: absolute;
+  content: "\f120";
   font-family: icons10;
-  transform: scale(1);
-  transition: transform 0.2s ease-in 0.12s;
 }
-// 🌙 Moon Icon Hidden
-.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:before {
-  transform: scale(0);
+input + .app-navbar-theme-switch-icon::after {
+  width: 100px;
+  content: "Day Mode";
 }
 
 // ☀️ Sun Icon Shown
-.app-navbar-theme-switch input + .app-navbar-theme-switch-icon:after {
-  font-size: 22px;
-  content: "\f120";
-  position: absolute;
-  transform: scale(0);
-  font-family: icons10;
-  transition: all 0.2s ease-in;
+input:checked + .app-navbar-theme-switch-icon:before {
+  content: "\f18e";
 }
-// ☀️ Sun Icon Hidden
-.app-navbar-theme-switch input:checked + .app-navbar-theme-switch-icon:after {
-  transform: scale(1);
-  transition: transform 0.2s ease-in 0.12s;
+input:checked + .app-navbar-theme-switch-icon:after {
+  content: "Night Mode";
+}
+
+// Hide Text on NavBar Collapsed
+.app-navbar-wrap.collapsed .app-navbar-theme-switch-icon:after {
+  display: none;
 }

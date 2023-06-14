@@ -33,9 +33,8 @@
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
-            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <input id="app-navbar-theme-switch" type="checkbox">
             <div class="app-navbar-theme-switch-icon"></div>
-            <span id="app-navbar-theme-switch-text">Day Mode</span>
           </label>
           <li class="app-navbar-list-item">
             <a href="./../index.html" class="">
@@ -77,13 +76,13 @@
         </ul>
       </nav>
     </aside>
-    <div class="app-page-container has-padding">
+    <main class="app-page-container has-padding">
       <h1>Dialogs</h1>
       <p>
         <span class="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
       </p>
       <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-        <span>Open Dialog</span>
+        <span>Open Dialog using a Button</span>
       </button>
       <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
         <div class="app-dialog-modal" aria-modal="true" role="dialog">
@@ -143,7 +142,7 @@
       <pre><code id="code_view_1"></code></pre>
       <h2>Open Dialog</h2>
       <pre><code id="code_view_2"></code></pre>
-    </div>
+    </main>
   </div>
 </body>
 <script src="../dist/windows-ui.min.js"></script>

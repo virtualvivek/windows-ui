@@ -33,9 +33,8 @@
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
-            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <input id="app-navbar-theme-switch" type="checkbox">
             <div class="app-navbar-theme-switch-icon"></div>
-            <span id="app-navbar-theme-switch-text">Day Mode</span>
           </label>
           <li class="app-navbar-list-item">
             <a href="./../index.html" class="">
@@ -103,6 +102,11 @@
       </h2>
       <p>Set's app to <i>light</i> color scheme.</p>
       <pre><code id="code_view_4"></code></pre>
+      <h2>
+        <p class="app-code">setSystemScheme()</p>
+      </h2>
+      <p>Set's app to <i>system</i> color scheme.</p>
+      <pre><code id="code_view_5"></code></pre>
       <br />
       <br />
     </main>
@@ -132,6 +136,10 @@ Appearance.setDarkScheme();
 document.getElementById("code_view_4").innerHTML =
 hljs.highlightAuto(`
 Appearance.setLightScheme();
+`).value;
+document.getElementById("code_view_5").innerHTML =
+hljs.highlightAuto(`
+Appearance.setSystemScheme();
 `).value;</script>
 
 </html>

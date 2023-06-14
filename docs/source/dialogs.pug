@@ -5,14 +5,14 @@
   <div class="container-flex-row">
     include common/navbar.pug
 
-    <div class="app-page-container has-padding">
+    <main class="app-page-container has-padding">
       <h1>Dialogs</h1>
       <p>
         <span class="app-color-primary">Dialog</span> is a type of modal window that appears in front of app content to provide critical information or ask for a decision.
       </p>
 
       <button class="app-btn" type="button" data-win-toggle="modal" data-win-target="#MyDialog">
-        <span>Open Dialog</span>
+        <span>Open Dialog using a Button</span>
       </button>
 
       <div class="app-dialog" id="MyDialog" data-win-toggle="modal" data-win-target="#MyDialog" tabindex="-1">
@@ -55,7 +55,7 @@
 
       <h2>Open Dialog</h2>
       <pre><code id="code_view_2"></code></pre>
-    </div>
+    </main>
     </div>
   </body>
   include common/footer.pug

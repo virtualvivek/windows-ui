@@ -33,9 +33,8 @@
         </div>
         <ul class="app-navbar-list" id="app-navbar-list">
           <label class="app-navbar-theme-switch">
-            <input id="app-navbar-theme-switch" type="checkbox" checked>
+            <input id="app-navbar-theme-switch" type="checkbox">
             <div class="app-navbar-theme-switch-icon"></div>
-            <span id="app-navbar-theme-switch-text">Day Mode</span>
           </label>
           <li class="app-navbar-list-item">
             <a href="./../index.html" class="">
@@ -83,7 +82,6 @@
         <div class="app-navbar-submenu">
           <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
             <div>Title</div>
-            <i class="icons10-angle-down"></i>
           </div>
           <div class="app-navbar-submenu-content" style="height: 0px;" id="NavSubMenuID">
             <div class="app-navbar-wrap" style="height: 100px;">
@@ -91,7 +89,6 @@
                 <ul class="app-navbar-list" style="padding: 0px; margin: 0px;">
                   <li class="app-navbar-list-item">
                     <a href="#/navbar" aria-current="page" class="active">
-                      <i class="icons10-add"></i>
                       <span>NavItem1</span>
                     </a>
                   </li>
@@ -122,16 +119,14 @@ hljs.highlightAuto(`
 <div class="app-navbar-submenu">
   <div class="app-navbar-submenu-title" data-win-toggle="collapse" data-win-target="#NavSubMenuID">
     <div>Title</div>
-    <i class="icons10-angle-down"></i>
   </div>
   <div class="app-navbar-submenu-content" id="NavSubMenuID">
     <li class="app-navbar-list-item">
-      <a exact="false" class="unactive" href="./page.html">
-        <i class="icons10-angle-down"></i>
+      <a href="./page.html" aria-current="page" class="unactive">
         <span>NavItem</span>
       </a>
     </li>
-    <!-- More Content -->
+    <!-- More </li> Content -->
   </div>
 </div>
 `).value;</script>
