@@ -13,14 +13,7 @@
       border-color: #777;
     }
     &:focus {
-      outline: none;
       border-color: #666;
-    }
-  }
-  @if $platform == "windows11" {
-    &:focus {
-      outline: none;
-      border-bottom-color: var(--color-primary-adaptive);
     }
   }
 }

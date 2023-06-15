@@ -2,15 +2,7 @@
   @extend .input-field-default;
 
   &:focus {
-    outline: none;
     @if $platform == "windows10" { border-color: #666; }
-  }
-
-  &::-webkit-calendar-picker-indicator {
-    opacity: 1;
-    width: 24px;
-    height: 24px;
-    padding-right: 5px;
   }
 }
 

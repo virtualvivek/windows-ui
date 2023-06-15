@@ -114,9 +114,12 @@
       </div>
       <pre><code id="code_view_10"></code></pre>
 
+      <h2>InputDate</h2>
+
       <div class="app-input-container">
-        <input class="app-input-text" type="date" value="">
+        <input class="app-input-date" type="date" value="">
       </div>
+       <pre><code id="code_view_11"></code></pre>
 
 
       //- <!-- ------------------------------------------------------- -->
@@ -208,6 +211,12 @@
     hljs.highlightAuto(`
     <div class="app-input-search-box">
       <input class="app-input-text" type="search" placeholder="Enter to Search">
+    </div>
+    `).value;
+    document.getElementById("code_view_11").innerHTML =
+    hljs.highlightAuto(`
+    <div class="app-input-container">
+      <input class="app-input-date" type="date" value="">
     </div>
     `).value;
 </html>

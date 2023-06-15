@@ -44,6 +44,7 @@
 .input-field-focused,
 .app-input-container:focus-within .app-input-label {
   filter: none;
+  outline: none;
   border-bottom-color: var(--color-primary-adaptive);
   background-image: radial-gradient(var(--color-primary-adaptive) 100%, transparent 100%);
   background-repeat: no-repeat;
@@ -89,6 +90,7 @@
       border-color: #777;
     }
   }
+
   @if $platform == "windows11" {
     height: 34px;
     border-radius: 4px;
@@ -106,7 +108,8 @@
   filter: contrast(0.6) !important;
 }
 .app-textarea,
-.app-input-text {
+.app-input-text,
+.app-input-date {
   &:hover:not(:focus-within) {
     filter: contrast(0.97);
   }
