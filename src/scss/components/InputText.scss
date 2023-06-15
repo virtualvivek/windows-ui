@@ -74,7 +74,7 @@
       }
     }
     .app-input-end-content {
-      i::before {
+      .icons10-status::before {
         content: "\f12e";
         padding-right: 5px;
         color: var(--color-success-default);
@@ -94,7 +94,7 @@
       }
     }
     .app-input-end-content {
-      i::before {
+      .icons10-status::before {
         content: "\f116";
         padding-right: 5px;
         color: var(--color-danger-default);
@@ -138,12 +138,5 @@
   
   .app-loader-busy {
     display: none;
-  }
-}
-
-@mixin input-date-mobile() {
-  input[type="date"].app-input-text::before {
-    padding-right: 5px;
-    content: attr(placeholder);
   }
 }
