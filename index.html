@@ -139,7 +139,6 @@
   </div>
   </body>
   <script src="./docs/js/navbarItems.js"></script>
-  <script src="./docs/js/home.js"></script>
   <script>
     init_navbar_ul("Home","root");
     fetch('https://raw.githubusercontent.com/virtualvivek/windows-ui/master/package.json')
@@ -147,29 +146,4 @@
     .then(data => document.getElementById("current-version").innerHTML += data.version);
   </script>
   <script src="./dist/windows-ui.min.js"></script>
-  <script src="./docs/js/highlight.min.js"></script>
-  <script>hljs.highlightAll()</script>
-  <script>
-    document.getElementById("code_view_1").innerHTML =
-    hljs.highlightAuto(`
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous"/>
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/windows-ui.min.css" rel="stylesheet" crossorigin="anonymous"/>
-    <!-- Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/icons/winui-icons.css" rel="stylesheet" crossorigin="anonymous"/>
-
-    <!-- JS -->
-    <script src="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.1/dist/windows-ui.min.js" crossorigin="anonymous"><\/script>
-    `).value;
-    
-    document.getElementById("code_view_2").innerHTML =
-    hljs.highlightAuto(`
-    $ npm install windows-ui-fabric
-    
-    @import "windows-ui-fabric/dist/config/app-config.css";
-    @import "windows-ui-fabric/dist/windows-ui.min.css";
-    @import "windows-ui-fabric/dist/icons/winui-icons.css";
-    
-    `).value;
-  </script>
 </html>
