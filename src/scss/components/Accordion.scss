@@ -2,8 +2,9 @@
   overflow: hidden;
 }
 .app-accordion-title {
+  height: 33px;
   display: flex;
-  padding: 6px 15px;
+  padding: 4px 15px;
   flex-direction: row;
   justify-content: space-between;
   @extend .input-btn-default;

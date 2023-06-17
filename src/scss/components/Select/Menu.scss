@@ -9,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   @if $platform == "windows10" { height: 30px; }
-  @if $platform == "windows11" { height: 34px; }
+  @if $platform == "windows11" { height: 33px; }
   
   &::after {
     right: 10px;
