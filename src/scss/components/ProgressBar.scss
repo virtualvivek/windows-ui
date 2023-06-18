@@ -32,9 +32,8 @@
       transition: width 1s ease-in-out;
       background-color: var(--color-primary-adaptive);
       @if $platform == "windows11" { border-radius: 4px; }
-    }
-    &.indeterminate {
-      span {
+
+      &.indeterminate {
         height: 100%;
         width: 100%;
         transform-origin: 0% 50%;

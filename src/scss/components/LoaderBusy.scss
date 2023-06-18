@@ -4,122 +4,50 @@
   height: 30px;
   position: relative;
   align-items: center;
-  display: inline-flex;
-  justify-content: center;  
+  display: inline-flex;  
   transition: opacity 0.4s ease;
 
+  &[data-win-progress] > svg circle {
+    animation: unset;
+  }
+
   &.loader-lg {
-    width: 30px;
-    height: 30px;
-
-    .app-ldr-busy {
-      width: 34px;
-      height: 34px;
-
-      .ldr-busy-ball {
-        width: 4.8px;
-        height: 4.8px;
-      }
-    }
+    width: 42px;
+    height: 42px;
   }
 
   &.loader-sm {
-    .app-ldr-busy {
-      width: 16px;
-      height: 16px;
-
-      .ldr-busy-ball {
-        width: 3px;
-        height: 3px;
-      }
-    }
+    width: 20px;
+    height: 20px;
   }
-
-  .app-ldr-busy {
-    opacity: 0;
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    transform: rotate(225deg);
-    animation: orbit 4.8s infinite;
-    
-
-    .ldr-busy-ball {
-      width: 4.4px;
-      height: 4.4px;
-      top: 0;
-      left: 0;
-      box-shadow: none;
-      border-radius: 50%;
-      position: absolute;
-      background-color: var(--color-day-primary-night-white);
-    }
-
-    &.ball-1 {
-      animation-delay: 0.96s;
-    }
-    &.ball-2 {
-      animation-delay: 0.19s;
-    }
-    &.ball-3 {
-      animation-delay: 0.38s;
-    }
-    &.ball-4 {
-      animation-delay: 0.58s;
-    }
-    &.ball-5 {
-      animation-delay: 0.77s;
-    }
-  }
+ 
   &.animate {
     opacity: 1;
   }
 
-  &.light {
-    .app-ldr-busy .ldr-busy-ball {
-      background: #fff;
-    }
+  .app-ldr-busy {
+    stroke: var(--color-primary-adaptive);
+    fill: none;
+    stroke-width: 2px;
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transform: rotate(-90deg);
+    transition: all 0.2s ease-in-out 0s;
+    animation: 2s linear 0s infinite normal none running loader-spin;
   }
 
-      
-
-  @keyframes orbit {
+  @keyframes loader-spin {
     0% {
-      transform: rotate(225deg);
-      opacity: 1;
-      animation-timing-function: ease-out;
+      stroke-dasharray: 0.01px, 43.97px;
+      transform: rotate(0deg);
     }
-    7% {
-      transform: rotate(345deg);
-      animation-timing-function: linear;
-    }
-    35% {
-      transform: rotate(495deg);
-      animation-timing-function: ease-in-out;
-    }
-    42% {
-      transform: rotate(690deg);
-      animation-timing-function: linear;
-    }
-    70% {
-      opacity: 1;
-      transform: rotate(835deg);
-      animation-timing-function: linear;
-    }
-    76% {
-      opacity: 1;
-    }
-    77% {
-      transform: rotate(955deg);
-      animation-timing-function: ease-in;
-    }
-    78% {
-      transform: rotate(955deg);
-      opacity: 0;
+    50% {
+      stroke-dasharray: 21.99px, 21.99px;
+      transform: rotate(450deg);
     }
     100% {
-      transform: rotate(955deg);
-      opacity: 0;
+      stroke-dasharray: 0.01px, 43.97px;
+      transform: rotate(1080deg);
     }
   }
 }
