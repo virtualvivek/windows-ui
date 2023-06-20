@@ -10,12 +10,18 @@ function setDarkScheme() {
   localStorage.setItem(lc_storage_theme_key, "dark");
 }
 
+let _getCurrTheme_ = localStorage.getItem(lc_storage_theme_key);
+
 const getColorScheme = () => {
   let color = window.getComputedStyle(root_).getPropertyValue("color-scheme");
   return color.toString();
 }
 
-if(localStorage.getItem(lc_storage_theme_key) == "dark") {
+if(_getCurrTheme_ == "dark") {
+  setDarkScheme();
+}
+
+if(window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches && _getCurrTheme_ == null) {
   setDarkScheme();
 }
 
@@ -29,7 +35,7 @@ function setLightScheme() {
   localStorage.setItem(lc_storage_theme_key, "light");
 }
 
-if(localStorage.getItem(lc_storage_theme_key) == "light") {
+if(_getCurrTheme_ == "light") {
   setLightScheme();
 }
 
