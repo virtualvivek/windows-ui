@@ -1,7 +1,6 @@
 button,
 .app-btn {
   gap: 5px;
-  user-select: none;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -123,7 +122,6 @@ button,
   // If Icon is the only child
   i:only-child {
     font-size: 24px;
-    
   }
 }
 
