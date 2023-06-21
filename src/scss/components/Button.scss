@@ -51,7 +51,7 @@ button,
     @if $platform == "windows10" { background-color: var(--PrimaryColor); }
     @if $platform == "windows11" { background-color: var(--color-primary-adaptive); }
   }
-  &.app-btn-secondary {
+  &.app-btn-subtle {
     border-color: transparent;
     background-color: transparent;
     &:hover { background-color: var(--color-ui-hover-default); } 
@@ -59,7 +59,7 @@ button,
   &.app-btn-success { background: var(--color-success-default); }
   &.app-btn-danger { background: var(--color-danger-default); }
 
-  &.app-btn-primary-outline {
+  &.app-btn-outline-primary {
     color: var(--color-day-primary-night-white);
     @if $platform == "windows10" {
       border: 2px solid var(--PrimaryColor);
@@ -70,12 +70,12 @@ button,
       &:active { background-color: var(--color-primary-adaptive); }
     }
   }
-  &.app-btn-danger-outline {
+  &.app-btn-outline-danger {
     color: var(--color-danger-default);
     border-color: var(--color-danger-default);
     &:active { background-color: var(--color-danger-default); }
   }
-  &.app-btn-success-outline {
+  &.app-btn-outline-success {
     color: var(--color-success-default);
     border-color: var(--color-success-default);
     &:active { background-color: var(--color-success-default); }

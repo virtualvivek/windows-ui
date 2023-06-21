@@ -1,5 +1,4 @@
 .app-checkbox {
-  top: 1px;
   cursor: pointer;
   position: relative;
   transition: 0.2s ease;
@@ -19,7 +18,7 @@
     height: 20px;
     content: "";
     display: flex;
-    transition: background 0.4s;
+    transition: background 0.1s;
 
     @if $platform == "windows10" {
       border-radius: 0;

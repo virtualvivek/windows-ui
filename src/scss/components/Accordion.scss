@@ -6,6 +6,7 @@
   display: flex;
   padding: 4px 15px;
   flex-direction: row;
+  align-items: center;
   justify-content: space-between;
   @extend .input-btn-default;
 
