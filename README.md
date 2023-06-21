@@ -1,49 +1,7 @@
-<p align="center">     
+<p align="center">
   <img src="https://github.com/virtualvivek/windows-ui/blob/master/src/assets/logo.png" width="224" />
-</p>                              
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</p>
 <h1 align="center">windows-ui</h1>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
 <p align="center"><a href="https://windows-ui.github.io/" target="_blank">Explore Project Docs »</a></p>
@@ -114,19 +72,6 @@ $ npm install windows-ui-fabric
 
 # Find this project useful? :heart:
 Support it by joining [**stargazers**](https://github.com/virtualvivek/windows-ui/stargazers) for this repository. :star:
-
-# Branches
-
-<table>
-  <tr align="left">
-    <th><a href="https://github.com/virtualvivek/windows-ui">windows-ui<a/></th>
-    <th>‣ Current</th>
-  </tr>
-  <tr>
-    <th><a href="https://github.com/virtualvivek/windows-ui/tree/Windows10-framework">Windows10-framework<a/></th>
-    <th>Legacy</th>
-  </tr>
-</table>
 
 
 # License
