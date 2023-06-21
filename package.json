@@ -1,6 +1,6 @@
 {
   "name": "windows-ui-fabric",
-  "version": "4.0.1",
+  "version": "4.0.2",
   "description": "Build Windows Fluent UI apps using Html, CSS & JavaScript. Comes with Rich Native Like Components.",
   "main": "index.js",
   "scripts": {
@@ -9,15 +9,17 @@
   },
   "keywords": [
     "windows",
+    "windows11",
     "css-framework",
     "html",
     "css",
     "javascript",
     "responsive",
     "uwp",
-    "fluent-ui"
+    "fluent-ui",
+    "electron-apps"
   ],
-  "homepage": "https://virtualvivek.github.io/windows-ui/",
+  "homepage": "https://windows-ui.github.io/",
   "bugs": {
     "url": "https://github.com/virtualvivek/windows-ui/issues"
   },
