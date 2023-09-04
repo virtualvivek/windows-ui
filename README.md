@@ -49,7 +49,7 @@ You can use a local copies or import via [jsDelivr](https://www.jsdelivr.com/).
 
 ```html
 <!-- CSS -->
-<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.2/dist/config/app-config.css.css" rel="stylesheet" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.2/dist/config/app-config.css" rel="stylesheet" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.2/dist/windows-ui.min.css" rel="stylesheet" crossorigin="anonymous">
 <!-- Icons -->
 <link href="https://cdn.jsdelivr.net/npm/windows-ui-fabric@4.0.2/dist/icons/fonts/fonts.min.css" rel="stylesheet" crossorigin="anonymous">
