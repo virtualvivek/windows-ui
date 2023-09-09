@@ -1,6 +1,6 @@
 <p align="center">                   
   <img  src="https://github.com/virtualvivek/windows-ui/blob/master/src/assets/logo.png" width="224" />
-</p>
+</p> 
 <h1 align="center">windows-ui</h1>
 
 <p align="center">Build Windows Fluent UI apps using <b>Html</b>, <b>CSS</b> & <b>JavaScript</b>.</p>
